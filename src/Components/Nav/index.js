@@ -43,7 +43,7 @@ const styles = theme => ({
   },
 })
 
-class Layout extends Component {
+class Nav extends Component {
 
   state = {
     mobileOpen: false
@@ -51,6 +51,30 @@ class Layout extends Component {
 
   handleDrawerToggle = () => {
     this.setState({ mobileOpen: !this.state.mobileOpen })
+  }
+
+  createMenus = (categories, subcategories, pathname, classes) => {
+    const menus = []
+    for(const id of Object.keys(categories)){
+      const to = categories[id].link
+      const name = categories[id].name
+      menus.push(<MenuItem to={to} key={id} component={Link} selected={to === pathname}>{name}</MenuItem>);
+      
+      const subs = subcategories[id];
+      if(subs){
+        const submenus = [];
+        for(const sub of subs){
+          const id = sub.id;
+          const to = sub.link;
+          const name = sub.name;
+          submenus.push(<MenuItem to={to} key={id} className={classes.nested} component={Link} selected={to === pathname}>{name}</MenuItem>);
+        }
+        const listid = `/${id}-subs`
+        menus.push(<MenuList key={listid}>{submenus}</MenuList>)
+      }
+    }
+    return menus;
+    
   }
 
   render() {
@@ -64,24 +88,7 @@ class Layout extends Component {
           <div className={classes.toolbar} />
         </Hidden>
         <MenuList>
-            <MenuItem component={Link} to="/" selected={'/' === pathname}>
-                Home
-            </MenuItem>
-            {categories.map(({ id, link, name }) => {
-                const to = `/${link}`
-                const subs = subcategories.find((sub) => {
-                    return sub.parent === id
-                })
-    
-                return <MenuItem 
-                    to={to}
-                    key={id}
-                    component={Link}
-                    selected={to === pathname}
-                    >
-                    {name}
-                </MenuItem>
-            })} 
+            {this.createMenus(categories, subcategories, pathname, classes)}
         </MenuList>
       </div>
     )
@@ -143,4 +150,4 @@ class Layout extends Component {
 export default compose(
   withRouter,
   withStyles(styles)
-)(Layout)
+)(Nav)

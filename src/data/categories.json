@@ -1,17 +1,18 @@
-[
-   {
-       "id":"1",
-       "link":"gear-gadgets",
-       "name":"Gear + Gadgets"
-   },
-   {
-        "id":"2",
-        "link":"geeky-stuff",
+{
+    "0": {
+        "link":"/",
+        "name":"What's New"
+    },
+    "1": {
+        "link":"/gear-gadgets",
+        "name":"Gear + Gadgets"
+    },
+    "2": {
+        "link":"/geeky-stuff",
         "name":"Geeky Stuff"
     },
-    {
-        "id":"3",
-        "link":"toy-games",
+    "3": {
+        "link":"/toy-games",
         "name":"Toy + Games"
     }
-]
+}

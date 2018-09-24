@@ -1,56 +1,53 @@
-[
-    {
-        "parent":"1",
-        "id":"1-1",
-        "link":"tools-accessories",
-        "name":"Tools & Accessories"
-    },
-    {
-        "parent":"1",
-        "id":"1-2",
-        "link":"weapons-armor",
-        "name":"Weapons & Armor"
-    },
-    {
-        "parent":"1",
-        "id":"1-3",
-        "link":"apocalypse-survival",
-        "name":"Apocalypse Survival"
-    },
-    {
-        "parent":"2",
-        "id":"2-1",
-        "link":"gamers-tuff",
-        "name":"Gamer Stuff"
-    },
-    {
-        "parent":"2",
-        "id":"2-2",
-        "link":"computer-geekery",
-        "name":"Computer Geekeryr"
-    },
-    {
-        "parent":"2",
-        "id":"2-3",
-        "link":"internet-humor",
-        "name":"Internet Humor"
-    },
-    {
-        "parent":"3",
-        "id":"3-1",
-        "link":"action-figures",
-        "name":"Action Figures"
-    },
-    {
-        "parent":"3",
-        "id":"3-2",
-        "link":"remote-control-toys",
-        "name":"Remote Control Toys"
-    },
-    {
-        "parent":"3",
-        "id":"3-3",
-        "link":"plushies",
-        "name":"Plushies"
-    }
-]
+{
+    "1":[
+        {
+            "id":"1-1",
+            "link":"/tools-accessories",
+            "name":"Tools & Accessories"
+        },
+        {
+            "id":"1-2",
+            "link":"/weapons-armor",
+            "name":"Weapons & Armor"
+        },
+        {
+            "id":"1-3",
+            "link":"/apocalypse-survival",
+            "name":"Apocalypse Survival"
+        }
+    ],
+    "2":[
+        {
+            "id":"2-1",
+            "link":"/gamers-tuff",
+            "name":"Gamer Stuff"
+        },
+        {
+            "id":"2-2",
+            "link":"/computer-geekery",
+            "name":"Computer Geekeryr"
+        },
+        {
+            "id":"2-3",
+            "link":"/internet-humor",
+            "name":"Internet Humor"
+        }
+    ],
+    "3":[
+        {
+            "id":"3-1",
+            "link":"/action-figures",
+            "name":"Action Figures"
+        },
+        {
+            "id":"3-2",
+            "link":"/remote-control-toys",
+            "name":"Remote Control Toys"
+        },
+        {
+            "id":"3-3",
+            "link":"/plushies",
+            "name":"Plushies"
+        }
+    ]
+}
