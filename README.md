@@ -14,3 +14,5 @@
 * [images](https://www.youtube.com/watch?v=dzOrUmK4Qyw)
 * [How to include HTML in your React app with webpack](http://adrian.gaudebert.fr/blog/post/2015/12/24/how-to-include-html-in-your-react-app-with-webpack)
 * [react test seo - using google fetch](https://blog.pusher.com/seo-react-fetch-as-google/)
+
+* [Adding Google Analytics to your React Application](https://web-design-weekly.com/2016/07/08/adding-google-analytics-react-application/)
