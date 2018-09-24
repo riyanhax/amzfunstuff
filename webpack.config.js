@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   devtool: 'cheap-module-source-map',
   output: {
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -14,6 +15,9 @@ module.exports = {
     alias: {
       '@material-ui/core': '@material-ui/core/es'
     }
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

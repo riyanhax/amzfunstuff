@@ -1,12 +1,26 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Link, Route } from 'react-router-dom'
-import { CssBaseline } from '@material-ui/core'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from '../context'
+import NotFound from './Errors'
+import Layout from './Layout'
 
 class App extends Component {
 
   state = {
-    exercise: {}
+    writers: [
+      {
+        "id":"a",
+        "name":"first"
+      },
+      {
+        "id":"b",
+        "name":"second"
+      },
+      {
+        "id":"c",
+        "name":"third"
+      }
+    ]
   }
 
   getContext = () => ({
@@ -14,29 +28,19 @@ class App extends Component {
   })
 
   render() {
+
+    const { writers } = this.state
+
     return (
       <Provider value={this.getContext()}>
-        <CssBaseline />
         <BrowserRouter>
-          
-          <div>
-            <ul>
-              <li>
-                <Link to='/'>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to='/writers'>
-                  Writers
-                </Link>
-              </li>
-            </ul>
-
-            <Route exact path='/' render={() => <div>Home</div>} />
-            <Route path='/writers' render={() => <div>Writers</div>} />
-     
-          </div>
+          <Layout writers={writers}>
+              <Switch>
+                <Route exact path='/' render={() => <div>Home</div>} />
+                <Route path='/writers' render={() => <div>Writers</div>} />
+                <Route component={NotFound} />
+              </Switch>
+          </Layout>
         </BrowserRouter>
       </Provider>
     )
