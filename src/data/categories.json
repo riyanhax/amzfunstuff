@@ -1,0 +1,17 @@
+[
+   {
+       "id":"1",
+       "link":"gear-gadgets",
+       "name":"Gear + Gadgets"
+   },
+   {
+        "id":"2",
+        "link":"geeky-stuff",
+        "name":"Geeky Stuff"
+    },
+    {
+        "id":"3",
+        "link":"toy-games",
+        "name":"Toy + Games"
+    }
+]

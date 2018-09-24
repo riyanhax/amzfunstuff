@@ -2,25 +2,15 @@ import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from '../context'
 import NotFound from './Errors'
-import Layout from './Layout'
+import Nav from './Nav'
+import categories from '../data/categories'
+import subcategories from '../data/subcategories'
 
 class App extends Component {
 
   state = {
-    writers: [
-      {
-        "id":"a",
-        "name":"first"
-      },
-      {
-        "id":"b",
-        "name":"second"
-      },
-      {
-        "id":"c",
-        "name":"third"
-      }
-    ]
+    categories,
+    subcategories
   }
 
   getContext = () => ({
@@ -29,18 +19,20 @@ class App extends Component {
 
   render() {
 
-    const { writers } = this.state
+    const { categories, subcategories } = this.state
 
     return (
       <Provider value={this.getContext()}>
         <BrowserRouter>
-          <Layout writers={writers}>
+          <Nav categories={categories} subcategories={subcategories}>
               <Switch>
                 <Route exact path='/' render={() => <div>Home</div>} />
-                <Route path='/writers' render={() => <div>Writers</div>} />
+                <Route path='/gear-gadgets' render={() => <div>Gear + Gadgets</div>} />
+                <Route path='/geeky-stuff' render={() => <div>Geeky Stuff</div>} />
+                <Route path='/toy-games' render={() => <div>Toy + Games</div>} />
                 <Route component={NotFound} />
               </Switch>
-          </Layout>
+          </Nav>
         </BrowserRouter>
       </Provider>
     )

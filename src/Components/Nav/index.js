@@ -55,7 +55,7 @@ class Layout extends Component {
 
   render() {
       
-    const { classes, location: { pathname }, children, writers } = this.props
+    const { classes, location: { pathname }, children, categories, subcategories } = this.props
     const { mobileOpen } = this.state
 
     const drawer = (
@@ -64,27 +64,24 @@ class Layout extends Component {
           <div className={classes.toolbar} />
         </Hidden>
         <MenuList>
-          <MenuItem component={Link} to="/" selected={'/' === pathname}>
-            Home
-          </MenuItem>
-          <MenuItem component={Link} to="/writers" selected={'/writers' === pathname}>
-            Writers
-          </MenuItem>
-          <MenuList>
-            {writers.map(({ id, name }) => {
-              const to = `/writers/${id}`
-
-              return <MenuItem
-                to={to}
-                key={id}
-                className={classes.nested}
-                component={Link}
-                selected={to === pathname}
-              >
-                {name}
-              </MenuItem>
-            })}
-          </MenuList>
+            <MenuItem component={Link} to="/" selected={'/' === pathname}>
+                Home
+            </MenuItem>
+            {categories.map(({ id, link, name }) => {
+                const to = `/${link}`
+                const subs = subcategories.find((sub) => {
+                    return sub.parent === id
+                })
+    
+                return <MenuItem 
+                    to={to}
+                    key={id}
+                    component={Link}
+                    selected={to === pathname}
+                    >
+                    {name}
+                </MenuItem>
+            })} 
         </MenuList>
       </div>
     )
