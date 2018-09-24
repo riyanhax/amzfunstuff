@@ -27,9 +27,9 @@ class App extends Component {
           <Nav categories={categories} subcategories={subcategories}>
               <Switch>
                 <Route exact path='/' render={() => <div>Home</div>} />
-                <Route path='/gear-gadgets' render={() => <div>Gear + Gadgets</div>} />
-                <Route path='/geeky-stuff' render={() => <div>Geeky Stuff</div>} />
-                <Route path='/toy-games' render={() => <div>Toy + Games</div>} />
+                <Route exact path='/gear-gadgets' render={() => <div>Gear + Gadgets</div>} />
+                <Route exact path='/geeky-stuff' render={() => <div>Geeky Stuff</div>} />
+                <Route exact path='/toy-games' render={() => <div>Toy + Games</div>} />
                 <Route component={NotFound} />
               </Switch>
           </Nav>

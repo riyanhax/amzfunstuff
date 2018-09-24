@@ -41,6 +41,9 @@ const styles = theme => ({
   nested: {
     paddingLeft: theme.spacing.unit * 4,
   },
+  hidden: {
+    display: 'none',
+  }
 })
 
 class Nav extends Component {
@@ -55,26 +58,29 @@ class Nav extends Component {
 
   createMenus = (categories, subcategories, pathname, classes) => {
     const menus = []
+
     for(const id of Object.keys(categories)){
-      const to = categories[id].link
-      const name = categories[id].name
-      menus.push(<MenuItem to={to} key={id} component={Link} selected={to === pathname}>{name}</MenuItem>);
+      const navTo = categories[id].link
+      const navName = categories[id].name
+      menus.push(<MenuItem to={navTo} key={id} component={Link} selected={navTo === pathname}>{navName}</MenuItem>);
       
       const subs = subcategories[id];
       if(subs){
         const submenus = [];
+
         for(const sub of subs){
-          const id = sub.id;
-          const to = sub.link;
-          const name = sub.name;
-          submenus.push(<MenuItem to={to} key={id} className={classes.nested} component={Link} selected={to === pathname}>{name}</MenuItem>);
+          const subId = sub.id;
+          const subNavTo = sub.link;
+          const subNavname = sub.name;
+          submenus.push(<MenuItem to={subNavTo} key={subId} className={(navTo === pathname || `/${subNavTo.split('/')[1]}` === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden} component={Link} selected={subNavTo === pathname}>{subNavname}</MenuItem>);
         }
+
         const listid = `/${id}-subs`
         menus.push(<MenuList key={listid}>{submenus}</MenuList>)
       }
     }
+
     return menus;
-    
   }
 
   render() {
