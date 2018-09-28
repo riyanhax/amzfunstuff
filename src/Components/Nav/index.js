@@ -53,6 +53,7 @@ class Nav extends Component {
   }
 
   handleDrawerToggle = () => {
+    console.log('handleDrawerToggle')
     this.setState({ mobileOpen: !this.state.mobileOpen })
   }
 
@@ -72,11 +73,11 @@ class Nav extends Component {
           const subId = sub.id;
           const subNavTo = sub.link;
           const subNavname = sub.name;
-          submenus.push(<MenuItem to={subNavTo} key={subId} className={(navTo === pathname || `/${subNavTo.split('/')[1]}` === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden} component={Link} selected={subNavTo === pathname}>{subNavname}</MenuItem>);
+          submenus.push(<MenuItem to={subNavTo} key={subId} className={(navTo === pathname || navTo === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden} component={Link} selected={subNavTo === pathname} onClick={this.handleDrawerToggle}>{subNavname}</MenuItem>);
         }
 
         const listid = `/${id}-subs`
-        menus.push(<MenuList key={listid}>{submenus}</MenuList>)
+        menus.push(<MenuList key={listid} className={(navTo === pathname || navTo === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden}>{submenus}</MenuList>)
       }
     }
 
