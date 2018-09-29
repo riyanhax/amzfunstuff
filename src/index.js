@@ -1,12 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import { red } from '@material-ui/core/colors'
+import { teal, blueGrey } from '@material-ui/core/colors'
 import App from './Components/App'
 
 const theme = createMuiTheme({
     palette: {
-      primary: red
+      primary: teal,
+      secondary: blueGrey,
     },
     spacing: {
       unit: 10

@@ -1,18 +1,18 @@
 {
     "0": {
         "link":"/",
-        "name":"What's New"
+        "name":"最新产品"
     },
     "1": {
         "link":"/gear-gadgets",
-        "name":"Gear + Gadgets"
+        "name":"小玩意儿"
     },
     "2": {
         "link":"/geeky-stuff",
-        "name":"Geeky Stuff"
+        "name":"宅男+宅女"
     },
     "3": {
         "link":"/toy-games",
-        "name":"Toy + Games"
+        "name":"玩具+游戏"
     }
 }

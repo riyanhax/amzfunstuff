@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import cx from 'classnames/bind'
 import {
   AppBar, Toolbar, IconButton, Typography, Hidden, Drawer, CssBaseline, MenuList, MenuItem
 } from '@material-ui/core'
@@ -63,7 +64,7 @@ class Nav extends Component {
     for(const id of Object.keys(categories)){
       const navTo = categories[id].link
       const navName = categories[id].name
-      menus.push(<MenuItem to={navTo} key={id} component={Link} selected={navTo === pathname}>{navName}</MenuItem>);
+      menus.push(<MenuItem to={navTo} key={id} component={Link} selected={navTo === pathname}><span styles={{backgroundColor:'red'}}>{navName}</span></MenuItem>);
       
       const subs = subcategories[id];
       if(subs){

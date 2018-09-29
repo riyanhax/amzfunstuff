@@ -20,34 +20,34 @@
         {
             "id":"2-1",
             "link":"/geeky-stuff/gamers-stuff",
-            "name":"Gamer Stuff"
+            "name":"游戏爱好者"
         },
         {
             "id":"2-2",
             "link":"/geeky-stuff/computer-geekery",
-            "name":"Computer Geekeryr"
+            "name":"电脑极客"
         },
         {
             "id":"2-3",
             "link":"/geeky-stuff/internet-humor",
-            "name":"Internet Humor"
+            "name":"互联网幽默"
         }
     ],
     "3":[
         {
             "id":"3-1",
             "link":"/toy-games/action-figures",
-            "name":"Action Figures"
+            "name":"手办玩偶"
         },
         {
             "id":"3-2",
             "link":"/toy-games/remote-control-toys",
-            "name":"Remote Control Toys"
+            "name":"遥控玩具"
         },
         {
             "id":"3-3",
             "link":"/toy-games/plushies",
-            "name":"Plushies"
+            "name":"毛绒玩具"
         }
     ]
 }
