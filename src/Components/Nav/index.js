@@ -66,13 +66,13 @@ const styles = theme => ({
   },
   menuItem: {
     color: theme.palette.secondary.main,
-    '& $primary, & $icon': {
+    '& $icon': {
       color: theme.palette.secondary.main,
     },
   },
   menuItemSelected: {
     color: theme.palette.primary.main,
-    '& $primary, & $icon': {
+    '& $icon': {
       color: theme.palette.primary.main,
     },
   },
@@ -105,7 +105,15 @@ class Nav extends Component {
       const menuItemClass = selected ? classes.menuItemSelected : classes.menuItem
       const navClass = selected ? classes.navSelected : classes.nav
 
-      const navItem = <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass}>
+      const navItem = navTo === '/' ? 
+                      <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass} onClick={this.handleDrawerToggle}>
+                        <ListItemIcon className={classes.icon}>
+                          {icon}
+                        </ListItemIcon>
+                        <span className={navClass}>{navName}</span>
+                      </MenuItem>
+                      :
+                      <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass}>
                         <ListItemIcon className={classes.icon}>
                           {icon}
                         </ListItemIcon>
