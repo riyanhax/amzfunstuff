@@ -1,0 +1,22 @@
+{
+    "0": {
+        "link":"/",
+        "name":"最新产品",
+        "icon":"fas fa-bullhorn"
+    },
+    "1": {
+        "link":"/gear-gadgets",
+        "name":"小玩意儿",
+        "icon":"fas fa-cogs"
+    },
+    "2": {
+        "link":"/geeky-stuff",
+        "name":"宅男+宅女",
+        "icon":"fas fa-atlas"
+    },
+    "3": {
+        "link":"/toy-games",
+        "name":"玩具+游戏",
+        "icon":"fas fa-gamepad"
+    }
+}

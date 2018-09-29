@@ -1,12 +1,15 @@
 import React, { Component, Fragment } from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import cx from 'classnames/bind'
+import classNames from 'classnames/bind'
 import {
   AppBar, Toolbar, IconButton, Typography, Hidden, Drawer, CssBaseline, MenuList, MenuItem
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import { Menu } from '@material-ui/icons'
 import { compose } from 'recompose'
+
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import Icon from '@material-ui/core/Icon';
 
 const drawerWidth = 240
 
@@ -40,11 +43,42 @@ const styles = theme => ({
     padding: theme.spacing.unit * 3,
   },
   nested: {
-    paddingLeft: theme.spacing.unit * 4,
+    paddingLeft: theme.spacing.unit * 2,
   },
   hidden: {
     display: 'none',
-  }
+  },
+  nav: {
+    fontSize: '1rem',
+    fontWeight: '200'
+  },
+  navSelected: {
+    fontSize: '1rem',
+    fontWeight: '800'
+  },
+  subNav: {
+    fontSize: '.8rem',
+    fontWeight: '200'
+  },
+  subNavSelected: {
+    fontSize: '.8rem',
+    fontWeight: '800'
+  },
+  menuItem: {
+    color: theme.palette.secondary.main,
+    '& $primary, & $icon': {
+      color: theme.palette.secondary.main,
+    },
+  },
+  menuItemSelected: {
+    color: theme.palette.primary.main,
+    '& $primary, & $icon': {
+      color: theme.palette.primary.main,
+    },
+  },
+  icon: {
+    margin: theme.spacing.unit * 2,
+  },
 })
 
 class Nav extends Component {
@@ -54,7 +88,6 @@ class Nav extends Component {
   }
 
   handleDrawerToggle = () => {
-    console.log('handleDrawerToggle')
     this.setState({ mobileOpen: !this.state.mobileOpen })
   }
 
@@ -62,19 +95,48 @@ class Nav extends Component {
     const menus = []
 
     for(const id of Object.keys(categories)){
+      // iterate nav items
+
       const navTo = categories[id].link
       const navName = categories[id].name
-      menus.push(<MenuItem to={navTo} key={id} component={Link} selected={navTo === pathname}><span styles={{backgroundColor:'red'}}>{navName}</span></MenuItem>);
+      const icon = <Icon className={classNames(classes.icon, categories[id].icon)} style={{fontSize:25}} />
+
+      const selected = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)
+      const menuItemClass = selected ? classes.menuItemSelected : classes.menuItem
+      const navClass = selected ? classes.navSelected : classes.nav
+
+      const navItem = <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass}>
+                        <ListItemIcon className={classes.icon}>
+                          {icon}
+                        </ListItemIcon>
+                        <span className={navClass}>{navName}</span>
+                      </MenuItem>
+      menus.push(navItem);
       
       const subs = subcategories[id];
       if(subs){
         const submenus = [];
-
+        
         for(const sub of subs){
+           // if sub items exists, iterate sub nav items
+
           const subId = sub.id;
           const subNavTo = sub.link;
           const subNavname = sub.name;
-          submenus.push(<MenuItem to={subNavTo} key={subId} className={(navTo === pathname || navTo === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden} component={Link} selected={subNavTo === pathname} onClick={this.handleDrawerToggle}>{subNavname}</MenuItem>);
+          const icon = <Icon className={classNames(classes.icon, sub.icon)} style={{fontSize:20}} />
+
+          const visible = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)
+          const selected = subNavTo === pathname
+          const menuItemClass = visible ? selected ? classNames(classes.menuItemSelected, classes.nested) : classNames(classes.menuItem, classes.nested) : classes.hidden
+          const subNavClass = selected ? classes.subNavSelected : classes.subNav
+
+          const subNavItem = <MenuItem to={subNavTo} key={subId} className={menuItemClass} component={Link} selected={subNavTo === pathname} onClick={this.handleDrawerToggle}>
+                                <ListItemIcon className={classes.icon}>
+                                  {icon}
+                                </ListItemIcon>
+                                <span className={subNavClass}>{subNavname}</span>
+                             </MenuItem>
+          submenus.push(subNavItem);
         }
 
         const listid = `/${id}-subs`
@@ -89,7 +151,7 @@ class Nav extends Component {
       
     const { classes, location: { pathname }, children, categories, subcategories } = this.props
     const { mobileOpen } = this.state
-
+    
     const drawer = (
       <div>
         <Hidden smDown>

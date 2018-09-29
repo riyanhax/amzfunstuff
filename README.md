@@ -9,6 +9,9 @@
 ##Layout 
 * [Material-UI + React Router - #6 Responsive Drawer](https://www.youtube.com/watch?v=jQyCEEzgnTM)
 
+##Font
+* [Chinese Standard Web Fonts](http://www.kendraschaefer.com/2012/06/chinese-standard-web-fonts-the-ultimate-guide-to-css-font-family-declarations-for-web-design-in-simplified-chinese/)
+
 ## notes
 
 * [images](https://www.youtube.com/watch?v=dzOrUmK4Qyw)

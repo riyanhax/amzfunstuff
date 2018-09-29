@@ -3,51 +3,60 @@
         {
             "id":"1-1",
             "link":"/gear-gadgets/tools-accessories",
-            "name":"Tools & Accessories"
+            "name":"工具+附属品",
+            "icon":"far fa-hand-point-right"
         },
         {
             "id":"1-2",
             "link":"/gear-gadgets/weapons-armor",
-            "name":"Weapons & Armor"
+            "name":"武器+弹药",
+            "icon":"far fa-hand-point-right"
         },
         {
             "id":"1-3",
             "link":"/gear-gadgets/apocalypse-survival",
-            "name":"Apocalypse Survival"
+            "name":"末日生存必备",
+            "icon":"far fa-hand-point-right"
         }
     ],
     "2":[
         {
             "id":"2-1",
             "link":"/geeky-stuff/gamers-stuff",
-            "name":"游戏爱好者"
+            "name":"游戏爱好者",
+            "icon":"far fa-hand-point-right"
         },
         {
             "id":"2-2",
             "link":"/geeky-stuff/computer-geekery",
-            "name":"电脑极客"
+            "name":"电脑极客",
+            "icon":"far fa-hand-point-right"
         },
         {
             "id":"2-3",
             "link":"/geeky-stuff/internet-humor",
-            "name":"互联网幽默"
+            "name":"互联网幽默",
+            "icon":"far fa-hand-point-right"
         }
     ],
     "3":[
         {
             "id":"3-1",
             "link":"/toy-games/action-figures",
-            "name":"手办玩偶"
+            "name":"手办玩偶",
+            "icon":"far fa-hand-point-right"
         },
         {
             "id":"3-2",
             "link":"/toy-games/remote-control-toys",
-            "name":"遥控玩具"
+            "name":"遥控玩具",
+            "icon":"far fa-hand-point-right"
         },
         {
             "id":"3-3",
             "link":"/toy-games/plushies",
-            "name":"毛绒玩具"
+            "name":"毛绒玩具",
+            "icon":"far fa-hand-point-right"
         }
     ]
 }

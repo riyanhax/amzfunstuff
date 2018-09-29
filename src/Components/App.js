@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from '../context'
 import NotFound from './Errors'
 import Nav from './Nav'
-import categories from '../data/categories'
-import subcategories from '../data/subcategories'
+import categories from '../data-menu/categories'
+import subcategories from '../data-menu/subcategories'
 
 class App extends Component {
 

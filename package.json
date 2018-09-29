@@ -5,9 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --port 4000 --compress --mode development",
-    "dev": "rm -rf dist && webpack --mode development --progress",
     "build": "rm -rf dist && webpack --mode production --progress",
-    "stats": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json dist",
     "serve": "serve dist"
   },
   "dependencies": {
