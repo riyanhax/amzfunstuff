@@ -50,6 +50,8 @@ const styles = theme => ({
   nested: {
     paddingLeft: theme.spacing.unit * 2,
   },
+  //custom css
+  // nav
   hidden: {
     display: 'none',
   },
@@ -84,7 +86,7 @@ const styles = theme => ({
   icon: {
     margin: theme.spacing.unit * 2,
   },
-
+  // header
   header: {
     flexGrow: 1,
     [theme.breakpoints.up('md')]: {
@@ -120,6 +122,16 @@ class Nav extends Component {
     this.setState({ mobileOpen: !this.state.mobileOpen })
   }
 
+  // custom method - nav to specified link (either open new window or redirect in same window)
+  navToLink = (link, newWindow) => {
+    if(newWindow){
+      window.open(link)
+    }else{
+      window.location.replace(link)
+    }
+  }
+
+  // custom method - used to create nav and subnav in the drawer
   createMenus = (categories, subcategories, pathname, classes) => {
     const menus = []
 
@@ -189,14 +201,15 @@ class Nav extends Component {
     const { classes, location: { pathname }, children, categories, subcategories } = this.props
     const { mobileOpen } = this.state
 
-    const logo = <div><Icon className={classNames(classes.headerItem, 'fas fa-hamsa')} style={{fontSize:30}} /></div>
+    // custom code - used to construct header
+    const logo = <div onClick={() => this.navToLink('/', false)}><Icon className={classNames(classes.headerItem, 'fas fa-hamsa')} style={{fontSize:30}}/></div>
     const vertical = <div className={classNames(classes.headerItem, classes.vertical)}></div>
-    const title = <div className={classNames(classes.headerItem, classes.title)}>奇葩好物</div>
+    const title = <div className={classNames(classes.headerItem, classes.title)} onClick={() => this.navToLink('/', false)}>奇葩好物</div>
 
-    const pinterest = <div><Icon className={classNames(classes.headerItem, 'fab fa-pinterest')} style={{fontSize:15, marginLeft:2}} /></div>
-    const twitter = <div><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:2}} /></div>
-    const facebook = <div><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:2}} /></div>
-    const wechat = <div><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:2}} /></div>
+    const pinterest = <div onClick={() => this.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-pinterest')} style={{fontSize:15, marginLeft:2}} /></div>
+    const twitter = <div onClick={() => this.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:2}} /></div>
+    const facebook = <div onClick={() => this.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:2}} /></div>
+    const wechat = <div onClick={() => this.navToLink('/', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:2}} /></div>
 
     const header = <div className={classes.header}>
                       <Grid container>   
