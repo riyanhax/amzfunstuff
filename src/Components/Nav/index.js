@@ -24,6 +24,7 @@ const styles = theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    position: 'fixed'
   },
   navIconHide: {
     [theme.breakpoints.up('md')]: {
@@ -33,14 +34,18 @@ const styles = theme => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
+    borderRight: 0,
     [theme.breakpoints.up('md')]: {
-      position: 'relative',
-    },
+      position: 'fixed',
+    }
   },
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 3,
+    [theme.breakpoints.up('md')]: {
+      marginLeft: drawerWidth,
+    }
   },
   nested: {
     paddingLeft: theme.spacing.unit * 2,
