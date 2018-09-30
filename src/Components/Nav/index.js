@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import classNames from 'classnames/bind'
 import {
-  AppBar, Toolbar, IconButton, Typography, Hidden, Drawer, CssBaseline, MenuList, MenuItem
+  AppBar, Toolbar, IconButton, Grid, Hidden, Drawer, CssBaseline, MenuList, MenuItem
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import { Menu } from '@material-ui/icons'
@@ -24,7 +24,7 @@ const styles = theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    position: 'fixed'
+    position: 'fixed',
   },
   navIconHide: {
     [theme.breakpoints.up('md')]: {
@@ -37,7 +37,7 @@ const styles = theme => ({
     borderRight: 0,
     [theme.breakpoints.up('md')]: {
       position: 'fixed',
-    }
+    },
   },
   content: {
     flexGrow: 1,
@@ -45,7 +45,7 @@ const styles = theme => ({
     padding: theme.spacing.unit * 3,
     [theme.breakpoints.up('md')]: {
       marginLeft: drawerWidth,
-    }
+    },
   },
   nested: {
     paddingLeft: theme.spacing.unit * 2,
@@ -55,19 +55,19 @@ const styles = theme => ({
   },
   nav: {
     fontSize: '1rem',
-    fontWeight: '200'
+    fontWeight: '200',
   },
   navSelected: {
     fontSize: '1rem',
-    fontWeight: '800'
+    fontWeight: '800',
   },
   subNav: {
     fontSize: '.8rem',
-    fontWeight: '200'
+    fontWeight: '200',
   },
   subNavSelected: {
     fontSize: '.8rem',
-    fontWeight: '800'
+    fontWeight: '800',
   },
   menuItem: {
     color: theme.palette.secondary.main,
@@ -84,6 +84,30 @@ const styles = theme => ({
   icon: {
     margin: theme.spacing.unit * 2,
   },
+
+  header: {
+    flexGrow: 1,
+    [theme.breakpoints.up('md')]: {
+      marginLeft: drawerWidth
+    },
+    marginLeft: 10,
+  },
+  headerItem: {
+    display: 'inline-block',
+    cursor: 'pointer',
+  },
+  vertical: {
+    height: 20,
+    width: .5,
+    backgroundColor: 'white',
+    opacity: 0.5,
+    marginLeft: 10,
+    marginRight: 10,
+  },
+  title: {
+    fontSize: '1.5rem',
+    fontWeight: '900',
+  }
 })
 
 class Nav extends Component {
@@ -164,6 +188,30 @@ class Nav extends Component {
       
     const { classes, location: { pathname }, children, categories, subcategories } = this.props
     const { mobileOpen } = this.state
+
+    const logo = <div><Icon className={classNames(classes.headerItem, 'fas fa-hamsa')} style={{fontSize:30}} /></div>
+    const vertical = <div className={classNames(classes.headerItem, classes.vertical)}></div>
+    const title = <div className={classNames(classes.headerItem, classes.title)}>奇葩好物</div>
+
+    const pinterest = <div><Icon className={classNames(classes.headerItem, 'fab fa-pinterest')} style={{fontSize:15, marginLeft:2}} /></div>
+    const twitter = <div><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:2}} /></div>
+    const facebook = <div><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:2}} /></div>
+    const wechat = <div><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:2}} /></div>
+
+    const header = <div className={classes.header}>
+                      <Grid container>   
+                        <Grid item xs={8}>
+                          <Grid container alignItems="center">  
+                            {logo}{vertical}{title}
+                          </Grid>
+                        </Grid>
+                        <Grid item xs={4}>
+                          <Grid container justify="flex-end" alignItems="center" style={{height:'100%'}}>  
+                            {pinterest}{twitter}{facebook}{wechat}
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    </div>
     
     const drawer = (
       <div>
@@ -190,9 +238,7 @@ class Nav extends Component {
             >
               <Menu />
             </IconButton>
-            <Typography variant="title" color="inherit" noWrap>
-              Writers Blog
-            </Typography>
+            {header}
           </Toolbar>
         </AppBar>
         <Hidden mdUp>
