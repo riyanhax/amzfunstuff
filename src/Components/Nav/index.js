@@ -2,14 +2,12 @@ import React, { Component, Fragment } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import classNames from 'classnames/bind'
 import {
-  AppBar, Toolbar, IconButton, Grid, Hidden, Drawer, CssBaseline, MenuList, MenuItem
+  AppBar, Toolbar, IconButton, Grid, Hidden, Drawer, CssBaseline, MenuList, MenuItem, ListItemIcon, Icon
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import { Menu } from '@material-ui/icons'
 import { compose } from 'recompose'
-
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import Icon from '@material-ui/core/Icon';
+import { withContext } from '../../context'
 
 const drawerWidth = 240
 
@@ -116,15 +114,31 @@ const styles = theme => ({
     backgroundColor: theme.palette.secondary.light,
     position: 'fixed',
     bottom: '0',
-    height: 60,
     width: '100%',
+    boxShadow: `0 -8px 6px -6px ${theme.palette.secondary.main}`
   }
 })
 
 class Nav extends Component {
 
   state = {
-    mobileOpen: false
+    mobileOpen: false,
+  }
+
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if(innerHeight + scrollY >= document.body.offsetHeight - 20){
+      this.props.onHandleScroll(true)
+    }else{
+      this.props.onHandleScroll(false)
+    }
   }
 
   handleDrawerToggle = () => {
@@ -209,6 +223,7 @@ class Nav extends Component {
       
     const { classes, location: { pathname }, children, categories, subcategories } = this.props
     const { mobileOpen } = this.state
+    const { footerHeight } = this.props
 
     // custom code - used to construct header
     const logo = <div onClick={() => this.navToLink('/', false)}><Icon className={classNames(classes.headerItem, 'fas fa-hamsa')} style={{fontSize:30}}/></div>
@@ -235,8 +250,8 @@ class Nav extends Component {
                       </Grid>
                     </div>
     
-    const footer = <div className={classes.footer}>
-                     footer
+    const footer = <div className={classes.footer} style={{height:footerHeight}}>
+                     
                   </div>
 
     const drawer = (
@@ -304,6 +319,7 @@ class Nav extends Component {
 }
 
 export default compose(
+  withContext,
   withRouter,
   withStyles(styles)
 )(Nav)
