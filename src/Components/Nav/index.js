@@ -109,6 +109,15 @@ const styles = theme => ({
   title: {
     fontSize: '1.5rem',
     fontWeight: '900',
+  },
+  //footer
+  footer: {
+    zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: theme.palette.secondary.light,
+    position: 'fixed',
+    bottom: '0',
+    height: 60,
+    width: '100%',
   }
 })
 
@@ -226,6 +235,10 @@ class Nav extends Component {
                       </Grid>
                     </div>
     
+    const footer = <div className={classes.footer}>
+                     footer
+                  </div>
+
     const drawer = (
       <div>
         <Hidden smDown>
@@ -254,6 +267,7 @@ class Nav extends Component {
             {header}
           </Toolbar>
         </AppBar>
+        {footer}
         <Hidden mdUp>
           <Drawer
             variant="temporary"
