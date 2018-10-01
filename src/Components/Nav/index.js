@@ -111,11 +111,18 @@ const styles = theme => ({
   //footer
   footer: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: '#ce5829',
     position: 'fixed',
+    borderTopLeftRadius: '40%',
+    cursor: 'pointer',
     bottom: '0',
-    width: '100%',
-    boxShadow: `0 -8px 6px -6px ${theme.palette.secondary.main}`
+    right: 80,
+    height: 50,
+    width: 140,
+    boxShadow: `0 -7px 7px -6px ${theme.palette.secondary.main}`,
+    '&:hover': {
+      height: 55,
+    },
   }
 })
 
@@ -126,19 +133,19 @@ class Nav extends Component {
   }
 
   componentDidMount(){
-    window.addEventListener('scroll', this.handleScroll);
+    // window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount(){
-    window.removeEventListener('scroll', this.handleScroll);
+    // window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = () => {
-    if(innerHeight + scrollY >= document.body.offsetHeight - 20){
-      this.props.onHandleScroll(true)
-    }else{
-      this.props.onHandleScroll(false)
-    }
+    // if(innerHeight + scrollY >= document.body.offsetHeight - 20){
+    //   this.props.onHandleScroll(true)
+    // }else{
+    //   this.props.onHandleScroll(false)
+    // }
   }
 
   handleDrawerToggle = () => {
@@ -230,10 +237,10 @@ class Nav extends Component {
     const vertical = <div className={classNames(classes.headerItem, classes.vertical)}></div>
     const title = <div className={classNames(classes.headerItem, classes.title)} onClick={() => this.navToLink('/', false)}>奇葩好物</div>
 
-    const pinterest = <div onClick={() => this.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-pinterest')} style={{fontSize:15, marginLeft:2}} /></div>
-    const twitter = <div onClick={() => this.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:2}} /></div>
-    const facebook = <div onClick={() => this.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:2}} /></div>
-    const wechat = <div onClick={() => this.navToLink('/', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:2}} /></div>
+    const pinterest = <div onClick={() => this.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-pinterest')} style={{fontSize:15, marginLeft:10}} /></div>
+    const twitter = <div onClick={() => this.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:10}} /></div>
+    const facebook = <div onClick={() => this.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:10}} /></div>
+    const wechat = <div onClick={() => this.navToLink('/', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:10}} /></div>
 
     const header = <div className={classes.header}>
                       <Grid container>   
@@ -244,13 +251,13 @@ class Nav extends Component {
                         </Grid>
                         <Grid item xs={4}>
                           <Grid container justify="flex-end" alignItems="center" style={{height:'100%'}}>  
-                            {pinterest}{twitter}{facebook}{wechat}
+                            <Hidden xsDown>{pinterest}{twitter}{facebook}{wechat}</Hidden>  
                           </Grid>
                         </Grid>
                       </Grid>
                     </div>
     
-    const footer = <div className={classes.footer} style={{height:footerHeight}}>
+    const footer = <div className={classes.footer}>
                      
                   </div>
 
@@ -282,7 +289,7 @@ class Nav extends Component {
             {header}
           </Toolbar>
         </AppBar>
-        {footer}
+        <Hidden mdDown>{footer}</Hidden>  
         <Hidden mdUp>
           <Drawer
             variant="temporary"

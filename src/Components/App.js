@@ -11,24 +11,24 @@ class App extends Component {
   state = {
     categories,
     subcategories,
-    footerHeight:0,
+    // footerHeight:0,
   }
 
   getContext = () => ({
     ...this.state,
-    onHandleScroll: this.handleScroll
+    // onHandleScroll: this.handleScroll
   })
 
   handleScroll = (bottom) => {
-    if(bottom){
-      this.setState({
-        footerHeight: 50
-      })
-    }else{
-      this.setState({
-        footerHeight: 0
-      })
-    }
+    // if(bottom){
+    //   this.setState({
+    //     footerHeight: 50
+    //   })
+    // }else{
+    //   this.setState({
+    //     footerHeight: 0
+    //   })
+    // }
   }
 
   render() {
