@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from '../context'
 import NotFound from './Errors'
-import Nav from './Nav'
+import Layout from './Layout'
 import categories from '../data-menu/categories'
 import subcategories from '../data-menu/subcategories'
 
@@ -38,7 +38,7 @@ class App extends Component {
     return (
       <Provider value={this.getContext()}>
         <BrowserRouter>
-          <Nav categories={categories} subcategories={subcategories}>
+          <Layout categories={categories} subcategories={subcategories}>
               <Switch>
                 <Route exact path='/' render={() => <div>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home</div>} />
                 <Route exact path='/gear-gadgets' render={() => <div>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>} />
@@ -46,7 +46,7 @@ class App extends Component {
                 <Route exact path='/toy-games' render={() => <div>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>} />
                 <Route component={NotFound} />
               </Switch>
-          </Nav>
+          </Layout>
         </BrowserRouter>
       </Provider>
     )
