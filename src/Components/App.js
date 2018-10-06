@@ -13,7 +13,6 @@ class App extends Component {
     categories,
     subcategories,
     mobileOpen: false,
-    // footerHeight:0,
   }
 
   getContext = () => ({
@@ -50,6 +49,7 @@ class App extends Component {
 
   createRoutes = (categories, subcategories) => {
     const routes = []
+    const reload = () => window.location.reload()
 
     for(const id of Object.keys(categories)){
       routes.push(<Route exact key={id} path={categories[id].link} component={Products} />);
@@ -61,6 +61,8 @@ class App extends Component {
         }
       }
     }
+
+    routes.push(<Route key={'assets'} path="assets/*" onEnter={reload} />)
 
     routes.push(<Route key={'404'} component={NotFound} />)
 
