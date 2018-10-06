@@ -4,8 +4,8 @@ import { Provider } from '../context'
 import NotFound from './Errors'
 import Layout from './Layout'
 import Products from './Products'
-import categories from '../data-menu/categories'
-import subcategories from '../data-menu/subcategories'
+import categories from '../menus/categories'
+import subcategories from '../menus/subcategories'
 
 class App extends Component {
 
@@ -61,6 +61,8 @@ class App extends Component {
         }
       }
     }
+
+    routes.push(<Route key={'404'} component={NotFound} />)
 
     return <Switch>{routes}</Switch>
   }
