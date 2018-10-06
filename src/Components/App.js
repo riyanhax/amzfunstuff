@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from '../context'
 import NotFound from './Errors'
 import Layout from './Layout'
+import Products from './Products'
 import categories from '../data-menu/categories'
 import subcategories from '../data-menu/subcategories'
 
@@ -18,8 +19,7 @@ class App extends Component {
   getContext = () => ({
     ...this.state,
     navToLink: this.navToLink,
-    handleDrawerToggle: this.handleDrawerToggle
-    // onHandleScroll: this.handleScroll
+    handleDrawerToggle: this.handleDrawerToggle,
   })
 
   handleScroll = (bottom) => {
@@ -48,6 +48,23 @@ class App extends Component {
     }
   }
 
+  createRoutes = (categories, subcategories) => {
+    const routes = []
+
+    for(const id of Object.keys(categories)){
+      routes.push(<Route exact key={id} path={categories[id].link} component={Products} />);
+
+      const subs = subcategories[id];
+      if(subs){
+        for(const sub of subs){
+          routes.push(<Route exact key={sub.id} path={sub.link} component={Products} />);
+        }
+      }
+    }
+
+    return <Switch>{routes}</Switch>
+  }
+
   render() {
 
     const { categories, subcategories } = this.state
@@ -55,14 +72,8 @@ class App extends Component {
     return (
       <Provider value={this.getContext()}>
         <BrowserRouter>
-          <Layout categories={categories} subcategories={subcategories}>
-              <Switch>
-                <Route exact path='/' render={() => <div>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Home</div>} />
-                <Route exact path='/gear-gadgets' render={() => <div>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Gear + Gadgets<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>} />
-                <Route exact path='/geeky-stuff' render={() => <div>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Geeky Stuff<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>} />
-                <Route exact path='/toy-games' render={() => <div>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Toy + Games<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>} />
-                <Route component={NotFound} />
-              </Switch>
+          <Layout>
+            {this.createRoutes(categories, subcategories)}
           </Layout>
         </BrowserRouter>
       </Provider>
