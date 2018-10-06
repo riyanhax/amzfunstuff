@@ -5,12 +5,13 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --port 4000 --compress --mode development",
-    "build": "rm -rf dist && webpack --mode production --progress",
+    "build": "rm -rf dist && webpack --mode production --progress && cp -R assets dist/assets",
     "serve": "serve dist"
   },
   "dependencies": {
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
+    "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
