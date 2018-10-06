@@ -11,11 +11,14 @@ class App extends Component {
   state = {
     categories,
     subcategories,
+    mobileOpen: false,
     // footerHeight:0,
   }
 
   getContext = () => ({
     ...this.state,
+    navToLink: this.navToLink,
+    handleDrawerToggle: this.handleDrawerToggle
     // onHandleScroll: this.handleScroll
   })
 
@@ -29,6 +32,20 @@ class App extends Component {
     //     footerHeight: 0
     //   })
     // }
+  }
+
+  // toggle drawer
+  handleDrawerToggle = () => {
+    this.setState({ mobileOpen: !this.state.mobileOpen })
+  }
+
+  // nav to specified link (either open new window or redirect in same window)
+  navToLink = (link, newWindow) => {
+    if(newWindow){
+        window.open(link)
+    }else{
+        window.location.replace(link)
+    }
   }
 
   render() {

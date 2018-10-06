@@ -1,12 +1,14 @@
 import React, { Component, Fragment } from 'react'
-import { Link, withRouter } from 'react-router-dom'
-import classNames from 'classnames/bind'
+import { withRouter } from 'react-router-dom'
 import {
-  AppBar, Toolbar, IconButton, Grid, Hidden, Drawer, CssBaseline, MenuList, MenuItem, ListItemIcon, Icon
+  AppBar, Toolbar, IconButton, Hidden, Drawer, CssBaseline, MenuList
 } from '@material-ui/core'
-import { withStyles } from '@material-ui/core/styles'
 import { Menu } from '@material-ui/icons'
+import Nav from '../Nav'
+import Header from '../Header'
+import FootTip from '../FootTip'
 import { compose } from 'recompose'
+import { withStyles } from '@material-ui/core/styles'
 import { withContext } from '../../context'
 
 const drawerWidth = 240
@@ -48,89 +50,9 @@ const styles = theme => ({
   nested: {
     paddingLeft: theme.spacing.unit * 2,
   },
-  //custom css
-  // nav
-  hidden: {
-    display: 'none',
-  },
-  nav: {
-    fontSize: '1rem',
-    fontWeight: '200',
-  },
-  navSelected: {
-    fontSize: '1rem',
-    fontWeight: '800',
-  },
-  subNav: {
-    fontSize: '.8rem',
-    fontWeight: '200',
-  },
-  subNavSelected: {
-    fontSize: '.8rem',
-    fontWeight: '800',
-  },
-  menuItem: {
-    color: theme.palette.secondary.main,
-    '& $icon': {
-      color: theme.palette.secondary.main,
-    },
-  },
-  menuItemSelected: {
-    color: theme.palette.primary.main,
-    '& $icon': {
-      color: theme.palette.primary.main,
-    },
-  },
-  icon: {
-    margin: theme.spacing.unit * 2,
-  },
-  // header
-  header: {
-    flexGrow: 1,
-    [theme.breakpoints.up('md')]: {
-      marginLeft: drawerWidth
-    },
-    marginLeft: 10,
-  },
-  headerItem: {
-    display: 'inline-block',
-    cursor: 'pointer',
-  },
-  vertical: {
-    height: 20,
-    width: .5,
-    backgroundColor: 'white',
-    opacity: 0.5,
-    marginLeft: 10,
-    marginRight: 10,
-  },
-  title: {
-    fontSize: '1.5rem',
-    fontWeight: '900',
-  },
-  //footer
-  footer: {
-    zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: '#ce5829',
-    position: 'fixed',
-    borderTopLeftRadius: '40%',
-    cursor: 'pointer',
-    bottom: '0',
-    right: 80,
-    height: 50,
-    width: 140,
-    boxShadow: `0 -7px 7px -6px ${theme.palette.secondary.main}`,
-    '&:hover': {
-      height: 55,
-    },
-  }
 })
 
-class Nav extends Component {
-
-  state = {
-    mobileOpen: false,
-  }
+class Layout extends Component {
 
   componentDidMount(){
     // window.addEventListener('scroll', this.handleScroll);
@@ -148,118 +70,9 @@ class Nav extends Component {
     // }
   }
 
-  handleDrawerToggle = () => {
-    this.setState({ mobileOpen: !this.state.mobileOpen })
-  }
-
-  // custom method - nav to specified link (either open new window or redirect in same window)
-  navToLink = (link, newWindow) => {
-    if(newWindow){
-      window.open(link)
-    }else{
-      window.location.replace(link)
-    }
-  }
-
-  // custom method - used to create nav and subnav in the drawer
-  createMenus = (categories, subcategories, pathname, classes) => {
-    const menus = []
-
-    for(const id of Object.keys(categories)){
-      // iterate nav items
-
-      const navTo = categories[id].link
-      const navName = categories[id].name
-      const icon = <Icon className={classNames(classes.icon, categories[id].icon)} style={{fontSize:25}} />
-
-      const selected = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)
-      const menuItemClass = selected ? classes.menuItemSelected : classes.menuItem
-      const navClass = selected ? classes.navSelected : classes.nav
-
-      const navItem = navTo === '/' ? 
-                      <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass} onClick={this.handleDrawerToggle}>
-                        <ListItemIcon className={classes.icon}>
-                          {icon}
-                        </ListItemIcon>
-                        <span className={navClass}>{navName}</span>
-                      </MenuItem>
-                      :
-                      <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass}>
-                        <ListItemIcon className={classes.icon}>
-                          {icon}
-                        </ListItemIcon>
-                        <span className={navClass}>{navName}</span>
-                      </MenuItem>
-      menus.push(navItem);
-      
-      const subs = subcategories[id];
-      if(subs){
-        const submenus = [];
-        
-        for(const sub of subs){
-           // if sub items exists, iterate sub nav items
-
-          const subId = sub.id;
-          const subNavTo = sub.link;
-          const subNavname = sub.name;
-          const icon = <Icon className={classNames(classes.icon, sub.icon)} style={{fontSize:20}} />
-
-          const visible = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)
-          const selected = subNavTo === pathname
-          const menuItemClass = visible ? selected ? classNames(classes.menuItemSelected, classes.nested) : classNames(classes.menuItem, classes.nested) : classes.hidden
-          const subNavClass = selected ? classes.subNavSelected : classes.subNav
-
-          const subNavItem = <MenuItem to={subNavTo} key={subId} className={menuItemClass} component={Link} selected={subNavTo === pathname} onClick={this.handleDrawerToggle}>
-                                <ListItemIcon className={classes.icon}>
-                                  {icon}
-                                </ListItemIcon>
-                                <span className={subNavClass}>{subNavname}</span>
-                             </MenuItem>
-          submenus.push(subNavItem);
-        }
-
-        const listid = `/${id}-subs`
-        menus.push(<MenuList key={listid} className={(navTo === pathname || navTo === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden}>{submenus}</MenuList>)
-      }
-    }
-
-    return menus;
-  }
-
   render() {
       
-    const { classes, location: { pathname }, children, categories, subcategories } = this.props
-    const { mobileOpen } = this.state
-    const { footerHeight } = this.props
-
-    // custom code - used to construct header
-    const logo = <div onClick={() => this.navToLink('/', false)}><Icon className={classNames(classes.headerItem, 'fas fa-hamsa')} style={{fontSize:30}}/></div>
-    const vertical = <div className={classNames(classes.headerItem, classes.vertical)}></div>
-    const title = <div className={classNames(classes.headerItem, classes.title)} onClick={() => this.navToLink('/', false)}>奇葩好物</div>
-
-    const pinterest = <div onClick={() => this.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-pinterest')} style={{fontSize:15, marginLeft:10}} /></div>
-    const twitter = <div onClick={() => this.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:10}} /></div>
-    const facebook = <div onClick={() => this.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:10}} /></div>
-    const wechat = <div onClick={() => this.navToLink('/', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:10}} /></div>
-
-    const header = <div className={classes.header}>
-                      <Grid container>   
-                        <Grid item xs={8}>
-                          <Grid container alignItems="center">  
-                            {logo}{vertical}{title}
-                          </Grid>
-                        </Grid>
-                        <Grid item xs={4}>
-                          <Grid container justify="flex-end" alignItems="center" style={{height:'100%'}}>  
-                            <Hidden xsDown>{pinterest}{twitter}{facebook}{wechat}</Hidden>  
-                          </Grid>
-                        </Grid>
-                      </Grid>
-                    </div>
-    
-    const footer = <div className={classes.footer}>
-                     
-                  </div>
+    const { classes, children, mobileOpen } = this.props
 
     const drawer = (
       <div>
@@ -267,7 +80,7 @@ class Nav extends Component {
           <div className={classes.toolbar} />
         </Hidden>
         <MenuList>
-            {this.createMenus(categories, subcategories, pathname, classes)}
+          <Nav/>
         </MenuList>
       </div>
     )
@@ -281,20 +94,22 @@ class Nav extends Component {
             <IconButton
               color="inherit"
               aria-label="open drawer"
-              onClick={this.handleDrawerToggle}
+              onClick={this.props.handleDrawerToggle}
               className={classes.navIconHide}
             >
               <Menu />
             </IconButton>
-            {header}
+            <Header />
           </Toolbar>
         </AppBar>
-        <Hidden mdDown>{footer}</Hidden>  
+        <Hidden mdDown>
+          <FootTip />
+        </Hidden>  
         <Hidden mdUp>
           <Drawer
             variant="temporary"
             open={mobileOpen}
-            onClose={this.handleDrawerToggle}
+            onClose={this.props.handleDrawerToggle}
             classes={{
               paper: classes.drawerPaper,
             }}
@@ -329,4 +144,4 @@ export default compose(
   withContext,
   withRouter,
   withStyles(styles)
-)(Nav)
+)(Layout)
