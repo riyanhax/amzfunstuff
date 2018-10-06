@@ -51,7 +51,7 @@ class Header extends Component {
         const twitter = <div onClick={() => this.props.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:10}} /></div>
         const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:10}} /></div>
         const wechat = <div onClick={() => this.props.navToLink('/', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:10}} /></div>
-        
+
         return <Grid container className={classes.header}>   
                     <Grid item xs={8}>
                         <Grid container alignItems="center">  
@@ -60,7 +60,7 @@ class Header extends Component {
                     </Grid>
                     <Grid item xs={4}>
                         <Grid container justify="flex-end" alignItems="center" style={{height:'100%'}}>  
-                        <Hidden xsDown>{pinterest}{twitter}{facebook}{wechat}</Hidden>  
+                            <Hidden xsDown>{pinterest}{twitter}{facebook}{wechat}</Hidden>  
                         </Grid>
                     </Grid>
                 </Grid>
