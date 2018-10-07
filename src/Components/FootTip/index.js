@@ -27,6 +27,7 @@ const styles = theme => ({
         color: 'white',
         fontSize: '1rem',
         fontWeight: '600',
+        zIndex: theme.zIndex.drawer + 1,
     },
     foottipItem: {
         display: 'inline-block',
