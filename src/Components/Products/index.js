@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import classNames from 'classnames/bind'
 import {
-    Grid, Paper
+    Grid
 } from '@material-ui/core'
+import Product from '../Product'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
-import { withContext } from '../../context'
 import axios from "axios"
 
 
@@ -17,41 +16,7 @@ const styles = theme => ({
         marginRight: '5%',
         marginBottom: 10,
     },
-    image: {
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: theme.palette.secondary.light,
-        position: 'relative',
-        "&:hover $shadow": {
-            opacity: 0.8,
-        },
-        "&:hover $titleCN": {
-            fontSize: '1.1rem',
-            fontWeight: '800',
-        },
-        "&:hover $titleEN": {
-            fontSize: '.9rem',
-            fontWeight: '400',
-        }
-    },
-    shadow: {
-        position: 'absolute',
-        bottom: 0,
-        background: '#000',
-        opacity: 0.6,
-        color: '#f1f1f1',
-        width: '100%',
-        padding: 20,
-    },
-    titleCN: {
-        fontSize: '1rem',
-        fontWeight: '800',
-    },
-    titleEN: {
-        fontSize: '.8rem',
-        fontWeight: '400',
-        marginLeft: 20,
-    }
+    
 })
 
   
@@ -116,20 +81,7 @@ class Products extends Component {
         return <div className={classes.root}>
                     <Grid container spacing={8}>
                         {this.state.products.map(product => (
-                            <Grid item xs={12} sm={6} md={4} lg={4} xl={3} key={product.id}>
-                                <Grid container justify="center">
-                                    <div className={classes.image}>
-                                        <a href={product.link} rel="nofollow" target="_blank">
-                                            <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} />
-                                            <div className={classes.shadow}>
-                                                <div className={classes.titleCN}>{product.titleCN}</div>
-                                                <div className={classes.titleEN}>{product.titleEN}</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </Grid>
-                                
-                            </Grid>
+                            <Product key={product.id} product={product}/>
                         ))}
                     </Grid>
                 </div>
@@ -137,7 +89,6 @@ class Products extends Component {
 }
 
 export default compose(
-    withContext,
     withRouter,
     withStyles(styles)
 )(Products)

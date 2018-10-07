@@ -5,7 +5,6 @@ import {
 } from '@material-ui/core'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
-import { withContext } from '../../context'
 
 const drawerWidth = 240
 
@@ -68,6 +67,5 @@ class Header extends Component {
 }
 
 export default compose(
-    withContext,
     withStyles(styles)
 )(Header)
