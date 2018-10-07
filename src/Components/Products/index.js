@@ -24,7 +24,7 @@ class Products extends Component {
 
     state = {
         products: [],
-        width: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth
+        viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth
     }
 
 
@@ -92,7 +92,7 @@ class Products extends Component {
     }
 
     handleResize = () => {
-        this.setState({width: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth})
+        this.setState({viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth})
     }
 
 
@@ -100,12 +100,12 @@ class Products extends Component {
         const { classes } = this.props
 
         console.log('window.innerWidth ',window.innerWidth)
-        console.log('width ',this.state.width)
+        console.log('viewWidth ',this.state.viewWidth)
 
         return <div className={classes.root}>
                     <Grid container spacing={8}>
                         {this.state.products.map(product => (
-                            <Product key={product.id} product={product} width={this.state.width}/>
+                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth}/>
                         ))}
                     </Grid>
                 </div>

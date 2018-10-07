@@ -46,9 +46,15 @@ const styles = theme => ({
   
 class Product extends Component {
 
+    /* 
+        < 650 : 1 col 
+        < 1280 : 2 col
+        < 1920 : 3 col 
+    */
+
     render() {
 
-        const { classes, product, width } = this.props
+        const { classes, product, viewWidth, windowWidth } = this.props
 
         return <Grid item xs={12} sm={6} md={6} lg={4} xl={3}>
                 <Grid container justify="center">
