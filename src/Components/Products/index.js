@@ -12,9 +12,9 @@ import axios from "axios"
 const styles = theme => ({
     root: {
         flexGrow: 1,
-        marginLeft: '5%',
-        marginRight: '5%',
-        marginBottom: 10,
+        // marginLeft: '5%',
+        // marginRight: '5%',
+        // marginBottom: 10,
     },
     
 })
@@ -23,8 +23,11 @@ const styles = theme => ({
 class Products extends Component {
 
     state = {
-        products: []
+        products: [],
+        width: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth
     }
+
+
 
     async componentDidMount() {
         console.log('componentDidMount')
@@ -34,13 +37,15 @@ class Products extends Component {
         const category = pathname.split('/')[1]
         const subcategory = pathname.split('/')[2]
 
-        console.log('pathname ', pathname)
-        console.log('category ', category)
-        console.log('subcategory ', subcategory)
+        // console.log('pathname ', pathname)
+        // console.log('category ', category)
+        // console.log('subcategory ', subcategory)
+
+        window.addEventListener("resize", this.handleResize)
 
         if(pathname == '/'){
             console.log('add scroll event')
-            window.addEventListener('scroll', this.handleScroll);
+            window.addEventListener('scroll', this.handleScroll)
         }else{
             // only load data if subcategory being clicked, and would load all data 
             if(category != null && subcategory != null){
@@ -54,7 +59,7 @@ class Products extends Component {
                     next = content.data.next
                 }
                 this.setState({ products })
-                console.log('size ',this.state.products.length)
+                // console.log('size ',this.state.products.length)
             }
         }
     }
@@ -66,22 +71,41 @@ class Products extends Component {
 
         // console.log('pathname ', pathname)
 
+        window.removeEventListener('resize', this.handleResize)
+
         if(pathname == '/'){
             console.log('remove scroll event')
-            window.removeEventListener('scroll', this.handleScroll);
-        }else{
-
+            window.removeEventListener('scroll', this.handleScroll)
         }
+    }
+
+    handleScroll = (bottom) => {
+        // if(bottom){
+        //   this.setState({
+        //     footerHeight: 50
+        //   })
+        // }else{
+        //   this.setState({
+        //     footerHeight: 0
+        //   })
+        // }
+    }
+
+    handleResize = () => {
+        this.setState({width: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth})
     }
 
 
     render() {
         const { classes } = this.props
 
+        console.log('window.innerWidth ',window.innerWidth)
+        console.log('width ',this.state.width)
+
         return <div className={classes.root}>
                     <Grid container spacing={8}>
                         {this.state.products.map(product => (
-                            <Product key={product.id} product={product}/>
+                            <Product key={product.id} product={product} width={this.state.width}/>
                         ))}
                     </Grid>
                 </div>

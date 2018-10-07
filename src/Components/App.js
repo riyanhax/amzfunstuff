@@ -21,18 +21,6 @@ class App extends Component {
     handleDrawerToggle: this.handleDrawerToggle,
   })
 
-  handleScroll = (bottom) => {
-    // if(bottom){
-    //   this.setState({
-    //     footerHeight: 50
-    //   })
-    // }else{
-    //   this.setState({
-    //     footerHeight: 0
-    //   })
-    // }
-  }
-
   // toggle drawer
   handleDrawerToggle = () => {
     this.setState({ mobileOpen: !this.state.mobileOpen })

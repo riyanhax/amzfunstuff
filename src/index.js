@@ -12,6 +12,15 @@ const theme = createMuiTheme({
     typography: {
       fontFamily: 'Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif',
     },
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 720,
+        md: 960,
+        lg: 1280,
+        xl: 1920,
+      }
+    }
   })
 
   render(

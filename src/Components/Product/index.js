@@ -48,9 +48,9 @@ class Product extends Component {
 
     render() {
 
-        const { classes, product } = this.props
+        const { classes, product, width } = this.props
 
-        return <Grid item xs={12} sm={6} md={4} lg={4} xl={3}>
+        return <Grid item xs={12} sm={6} md={6} lg={4} xl={3}>
                 <Grid container justify="center">
                     <div className={classes.image}>
                         <a href={product.link} rel="nofollow" target="_blank">
