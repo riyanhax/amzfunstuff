@@ -12,8 +12,8 @@ import axios from "axios"
 const styles = theme => ({
     root: {
         flexGrow: 1,
-        // marginLeft: '5%',
-        // marginRight: '5%',
+        marginLeft: '5%',
+        marginRight: '5%',
         // marginBottom: 10,
     },
     
@@ -103,7 +103,7 @@ class Products extends Component {
         console.log('viewWidth ',this.state.viewWidth)
 
         return <div className={classes.root}>
-                    <Grid container spacing={8}>
+                    <Grid container justify="center">
                         {this.state.products.map(product => (
                             <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth}/>
                         ))}

@@ -10,6 +10,7 @@ const styles = theme => ({
         borderStyle: 'solid',
         borderWidth: 1,
         borderColor: theme.palette.secondary.light,
+        marginBottom: 10,
         position: 'relative',
         "&:hover $shadow": {
             opacity: 0.8,
@@ -49,8 +50,27 @@ class Product extends Component {
     /* 
         < 650 : 1 col 
         < 1280 : 2 col
-        < 1920 : 3 col 
+        < 1650 : 3 col 
     */
+    createProduct = () => {
+
+    }
+
+    createOneColProduct = () => {
+
+    }
+
+    createTwoColProduct = () => {
+
+    }
+
+    createThreeColProduct = () => {
+
+    }
+
+    createFourColProduct = () => {
+
+    }
 
     render() {
 
