@@ -18,3 +18,10 @@
 * [How to include HTML in your React app with webpack](http://adrian.gaudebert.fr/blog/post/2015/12/24/how-to-include-html-in-your-react-app-with-webpack)
 * [react test seo - using google fetch](https://blog.pusher.com/seo-react-fetch-as-google/)
 * [Adding Google Analytics to your React Application](https://web-design-weekly.com/2016/07/08/adding-google-analytics-react-application/)
+
+
+
+## redirect rule 
+* [Fixing the "cannot GET /URL" error on refresh with React Router (or how client side routers work](https://tylermcginnis.com/react-router-cannot-get-url-refresh/)
+* [How to set up React Router and deploy to Amazon S3](https://medium.com/@ervib/how-to-set-up-react-router-and-deploy-to-amazon-s3-d3dffa6ae43)
+* [If you're hosting a react app via AWS Static S3 Hosting & CloudFront](https://code.i-harness.com/en/q/1aa2734)
