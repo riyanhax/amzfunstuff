@@ -13,6 +13,7 @@ const styles = theme => ({
         fontWeight: '600',
         color:theme.palette.primary.main,
         marginBottom: 3,
+        cursor: 'pointer',
         textAlign: 'center',
     },
     singleColTitleEN: {
@@ -20,6 +21,7 @@ const styles = theme => ({
         fontWeight: '400',
         color:theme.palette.secondary.main,
         marginBottom: 5,
+        cursor: 'pointer',
         textAlign: 'center',
     },
     singleColImage: {
