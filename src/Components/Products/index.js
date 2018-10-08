@@ -20,8 +20,9 @@ const styles = theme => ({
 class Products extends Component {
 
     state = {
-        products: [],
-        viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth
+        viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth,
+        category:null,
+        subcategory:null,
     }
 
 
@@ -33,6 +34,8 @@ class Products extends Component {
 
         const category = pathname.split('/')[1]
         const subcategory = pathname.split('/')[2]
+
+        this.setState({ category, subcategory })
 
         // console.log('pathname ', pathname)
         // console.log('category ', category)
@@ -93,7 +96,7 @@ class Products extends Component {
         return <div className={classes.root}>
                     <Grid container justify="center">
                         {products.map(product => (
-                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth}/>
+                            <Product key={product.id} product={product} category={this.state.category} subcategory={this.state.subcategory} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth}/>
                         ))}
                     </Grid>
                 </div>

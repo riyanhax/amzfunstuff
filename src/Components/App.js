@@ -4,6 +4,7 @@ import { Provider } from '../context'
 import NotFound from './Errors'
 import Layout from './Layout'
 import Products from './Products'
+import ProductDetail from './ProductDetail'
 import categories from '../menus/categories'
 import subcategories from '../menus/subcategories'
 import axios from "axios"
@@ -69,8 +70,8 @@ class App extends Component {
       }
     }
 
+    routes.push(<Route key={'detail'} path="/products/*" component={ProductDetail} />)
     routes.push(<Route key={'assets'} path="assets/*" onEnter={reload} />)
-
     routes.push(<Route key={'404'} component={NotFound} />)
 
     return <Switch>{routes}</Switch>

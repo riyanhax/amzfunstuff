@@ -13,14 +13,14 @@ const styles = theme => ({
         fontWeight: '600',
         color:theme.palette.primary.main,
         marginBottom: 3,
-        display: 'block',
+        textAlign: 'center',
     },
     singleColTitleEN: {
         fontSize: '.6rem',
         fontWeight: '400',
         color:theme.palette.secondary.main,
         marginBottom: 5,
-        display: 'block',
+        textAlign: 'center',
     },
     singleColImage: {
         borderStyle: 'solid',
@@ -91,22 +91,28 @@ class Product extends Component {
         < 650 : 1 col 
         < 1280 : 2 col
         < 1650 : 3 col 
+
+        1. 'windowWidth' would match material-ui's breakpoints, however, due to the fact that drawer would display after 960, the viewWidth is actually used when calculating item's width and height
+        2. we will use localStorage to pass product info to detail page, the key is 'amzfunstuff-{productId}', and the value is stringified product info
     */
-    createProduct = (classes, product, viewWidth, windowWidth) => {
+    createProduct = (classes, product, category, subcategory, viewWidth, windowWidth) => {
 
         if(windowWidth < 650){
-            return this.createOneColProduct(classes, product, viewWidth)
+            return this.createOneColProduct(classes, product, category, subcategory, viewWidth)
         }else if(windowWidth < 1280){
-            return this.createTwoColProduct(classes, product, viewWidth)
+            return this.createTwoColProduct(classes, product, category, subcategory, viewWidth)
         }else if(windowWidth < 1650){
-            return this.createThreeColProduct(classes, product, viewWidth)
+            return this.createThreeColProduct(classes, product, category, subcategory, viewWidth)
         }else{
-            return this.createFourColProduct(classes, product, viewWidth)
+            return this.createFourColProduct(classes, product, category, subcategory, viewWidth)
         }
     }
 
-    createOneColProduct = (classes, product, viewWidth) => {
-        
+    createOneColProduct = (classes, product, category, subcategory, viewWidth) => {
+       
+        product.category = category
+        product.subcategory = subcategory
+
         const viewWidthRatio = 0.8
         const heightToWidthRatio = 250/300
         const maxWidth = 380
@@ -116,31 +122,18 @@ class Product extends Component {
 
         return <Grid item>
                     <Grid container justify="center">
-                        <div className={classes.singleColTitleCN} onClick={() => this.props.navToLink('/', true)}>{product.titleCN}</div>
-                        <div className={classes.singleColTitleEN} onClick={() => this.props.navToLink('/', true)}>{product.titleEN}</div>
+                        <div className={classes.singleColTitleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.titleEN.replace(/\s+/g, '-').toLowerCase()}-${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
+                        <div className={classes.singleColTitleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.titleEN.replace(/\s+/g, '-').toLowerCase()}-${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>    
                         <div className={classes.singleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.singleColShadow}>
-                                    <Button variant="contained" color="primary" className={classes.button}>查看详情</Button>
+                                    <Button variant="contained" className={classes.button} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.titleEN.replace(/\s+/g, '-').toLowerCase()}-${product.id}`, true)}}>查看详情</Button>
                                 </Grid>
                             </a>
                         </div>
                     </Grid>
                 </Grid>
-
-        // return <Grid item className={classes.image}>
-        //             <a href={product.link} rel="nofollow" target="_blank">
-        //                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
-        //                 <Grid container justify="center" className={classes.shadow} style={{ opacity: 0.7 }}>
-        //                     <div className={classes.titleCN} style={{ fontSize: '1.1rem', fontWeight: '800' }}>{product.titleCN}</div>
-        //                     <div className={classes.titleEN} style={{ fontSize: '.9rem', fontWeight: '400' }}>{product.titleEN}</div>
-        //                     <div style={{ marginTop: 8 }}>
-        //                         price
-        //                     </div>
-        //                 </Grid>
-        //             </a>
-        //         </Grid>
                 
     }
 
@@ -185,15 +178,15 @@ class Product extends Component {
 
     render() {
 
-        const { classes, product, viewWidth, windowWidth } = this.props
+        const { classes, product, category, subcategory, viewWidth, windowWidth } = this.props
         
-        const content = this.createProduct(classes, product, viewWidth, windowWidth)
+        const content = this.createProduct(classes, product, category, subcategory, viewWidth, windowWidth)
 
         return <Grid item xs={12} sm={6} md={6} lg={4} xl={3}>
-                <Grid container justify="center">
-                    {content}
-                </Grid>  
-            </Grid>
+                    <Grid container justify="center">
+                        {content}
+                    </Grid>  
+                </Grid>
     }
 }
 
