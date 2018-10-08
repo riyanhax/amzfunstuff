@@ -6,6 +6,7 @@ import Layout from './Layout'
 import Products from './Products'
 import categories from '../menus/categories'
 import subcategories from '../menus/subcategories'
+import axios from "axios"
 
 class App extends Component {
 
@@ -13,13 +14,30 @@ class App extends Component {
     categories,
     subcategories,
     mobileOpen: false,
+    products: [],
+    selectedProduct: null,
   }
 
   getContext = () => ({
     ...this.state,
     navToLink: this.navToLink,
     handleDrawerToggle: this.handleDrawerToggle,
+    loadSubCategoryProducts: this.loadSubCategoryProducts,
   })
+
+  // load subcategory products (load once for all) 
+  loadSubCategoryProducts = async (category, subcategory) => {
+    let next = true
+    let counter = 1
+    let products = []
+    while(next){
+        const content = await axios.get(`/assets/products/${category}/${subcategory}/${counter}.json`)
+        products = content.data.products.concat(products)
+        counter++
+        next = content.data.next
+    }
+    this.setState({ products })
+  }
 
   // toggle drawer
   handleDrawerToggle = () => {
@@ -35,6 +53,7 @@ class App extends Component {
     }
   }
 
+  // create routes based on categories and subcategories
   createRoutes = (categories, subcategories) => {
     const routes = []
     const reload = () => window.location.reload()
