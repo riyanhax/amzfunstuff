@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-const inputfilepath = '../assets/products/gear-gadgets/weapons-armor/1.json'
+const inputfilepath = '../assets/products/whatsnew/6.json'
 
 let rawJson 
 
@@ -15,8 +15,9 @@ try{
 let counter = 1
 
 rawJson.products.forEach((product) => {
-    product.id = counter
-    counter++
+    product.imageLarge = product.imageLarge.replace(/300x250/g, '640x534')
+    product.category = 'gear-gadgets'
+    product.subcategory = 'weapons-armor'
 })
 
 let json = JSON.stringify(rawJson)
