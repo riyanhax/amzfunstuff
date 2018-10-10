@@ -97,23 +97,20 @@ class Product extends Component {
         1. 'windowWidth' would match material-ui's breakpoints, however, due to the fact that drawer would display after 960, the viewWidth is actually used when calculating item's width and height
         2. we will use localStorage to pass product info to detail page, the key is 'amzfunstuff-{productId}', and the value is stringified product info
     */
-    createProduct = (classes, product, category, subcategory, viewWidth, windowWidth) => {
+    createProduct = (classes, product, viewWidth, windowWidth) => {
 
         if(windowWidth < 650){
-            return this.createOneColProduct(classes, product, category, subcategory, viewWidth)
+            return this.createOneColProduct(classes, product, viewWidth)
         }else if(windowWidth < 1280){
-            return this.createTwoColProduct(classes, product, category, subcategory, viewWidth)
+            return this.createTwoColProduct(classes, product, viewWidth)
         }else if(windowWidth < 1650){
-            return this.createThreeColProduct(classes, product, category, subcategory, viewWidth)
+            return this.createThreeColProduct(classes, product, viewWidth)
         }else{
-            return this.createFourColProduct(classes, product, category, subcategory, viewWidth)
+            return this.createFourColProduct(classes, product, viewWidth)
         }
     }
 
-    createOneColProduct = (classes, product, category, subcategory, viewWidth) => {
-       
-        product.category = category
-        product.subcategory = subcategory
+    createOneColProduct = (classes, product, viewWidth) => {
 
         const viewWidthRatio = 0.8
         const heightToWidthRatio = 250/300
@@ -124,13 +121,13 @@ class Product extends Component {
 
         return <Grid item>
                     <Grid container justify="center">
-                        <div className={classes.singleColTitleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.titleEN.replace(/\s+/g, '-').toLowerCase()}-${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
-                        <div className={classes.singleColTitleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.titleEN.replace(/\s+/g, '-').toLowerCase()}-${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>    
+                        <div className={classes.singleColTitleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
+                        <div className={classes.singleColTitleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>    
                         <div className={classes.singleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.singleColShadow}>
-                                    <Button variant="contained" className={classes.button} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.titleEN.replace(/\s+/g, '-').toLowerCase()}-${product.id}`, true)}}>查看详情</Button>
+                                    <Button variant="contained" className={classes.button} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}}>查看详情</Button>
                                 </Grid>
                             </a>
                         </div>
@@ -180,9 +177,9 @@ class Product extends Component {
 
     render() {
 
-        const { classes, product, category, subcategory, viewWidth, windowWidth } = this.props
+        const { classes, product, viewWidth, windowWidth } = this.props
         
-        const content = this.createProduct(classes, product, category, subcategory, viewWidth, windowWidth)
+        const content = this.createProduct(classes, product, viewWidth, windowWidth)
 
         return <Grid item xs={12} sm={6} md={6} lg={4} xl={3}>
                     <Grid container justify="center">

@@ -20,7 +20,7 @@ class ProductDetail extends Component {
 
         const { classes } = this.props
         
-        const links= window.location.href.split('-')
+        const links= window.location.href.split('/')
         const productId = links[links.length-1]
 
         let product = JSON.parse(localStorage.getItem(`amzfunstuff-${productId}`))
