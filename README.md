@@ -25,3 +25,5 @@
 * [Fixing the "cannot GET /URL" error on refresh with React Router (or how client side routers work](https://tylermcginnis.com/react-router-cannot-get-url-refresh/)
 * [How to set up React Router and deploy to Amazon S3](https://medium.com/@ervib/how-to-set-up-react-router-and-deploy-to-amazon-s3-d3dffa6ae43)
 * [If you're hosting a react app via AWS Static S3 Hosting & CloudFront](https://code.i-harness.com/en/q/1aa2734)
+
+* [Serving a Static Site Over HTTPS Using S3, CloudFront, and GoDaddy](https://medium.com/@brodartec/hosting-a-static-site-with-https-enabled-using-aws-s3-cloudfront-and-godaddy-826dae41fdc6)
