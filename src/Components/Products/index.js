@@ -71,7 +71,14 @@ class Products extends Component {
     handleScroll = () => {
         // if(innerHeight + scrollY >= document.body.offsetHeight - 50) - this worked added 100% height to html and body tags, and the new solution was to use document.getElementById('root').offsetHeight (with 'root' being a container that actually occupied 100% of the page height)
 
-        if(innerHeight + document.body.scrollTop >= document.getElementById('root').offsetHeight - 50){
+        const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+
+        // console.log('innerHeight ',innerHeight)
+        // console.log('document.body.scrollTop ', innerHeight + scrollTop)
+        // console.log('total ',document.getElementById('root').offsetHeight)
+
+
+        if(innerHeight + scrollTop >= document.getElementById('root').offsetHeight - 50){
             console.log('bottom')
             const index = this.state.index + 12 > this.state.products.length ? this.state.products.length : this.state.index + 12
             this.setState({ index })
@@ -89,9 +96,9 @@ class Products extends Component {
         const index = this.state.index > this.state.products.length ? this.state.products.length : this.state.index
         const products = this.state.products.slice(0, index)
 
-        // console.log('old products ',this.state.products.length)
-        // console.log('new products ',products.length)
-        // console.log('index ',index)
+        console.log('old products ',this.state.products.length)
+        console.log('new products ',products.length)
+        console.log('index ',index)
         // console.log('window.innerWidth ',window.innerWidth)
         // console.log('viewWidth ',this.state.viewWidth)
 
