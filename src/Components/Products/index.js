@@ -23,7 +23,7 @@ class Products extends Component {
         viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth,
         type: '',
         products: [],
-        index: 24,
+        index: null,
     }
 
     componentDidMount() {
@@ -65,7 +65,8 @@ class Products extends Component {
             counter++
             next = content.data.next
         }
-        this.setState({ products })
+        const index = 24
+        this.setState({ products, index })
     }
 
     handleScroll = () => {
