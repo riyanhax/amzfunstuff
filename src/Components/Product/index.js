@@ -121,8 +121,8 @@ class Product extends Component {
 
         return <Grid item>
                     <Grid container justify="center">
-                        <div className={classes.singleColTitleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
-                        <div className={classes.singleColTitleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>    
+                        <div className={classes.singleColTitleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}-{product.id}</div>
+                        <div className={classes.singleColTitleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}-{product.id}</div>    
                         <div className={classes.singleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
