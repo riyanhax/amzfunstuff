@@ -54,22 +54,6 @@ const styles = theme => ({
 
 class Layout extends Component {
 
-  componentDidMount(){
-    // window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount(){
-    // window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = () => {
-    // if(innerHeight + scrollY >= document.body.offsetHeight - 20){
-    //   this.props.onHandleScroll(true)
-    // }else{
-    //   this.props.onHandleScroll(false)
-    // }
-  }
-
   render() {
       
     const { classes, children, mobileOpen } = this.props

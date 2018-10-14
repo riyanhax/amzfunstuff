@@ -6,7 +6,7 @@ import {
 import Product from '../Product'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
-import { withContext } from '../../context'
+import axios from "axios"
 
 const styles = theme => ({
     root: {
@@ -21,12 +21,16 @@ class Products extends Component {
 
     state = {
         viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth,
+        type: '',
+        products: [],
+        index: 24,
     }
 
     componentDidMount() {
-        console.log('componentDidMount')
+        window.addEventListener("resize", this.handleResize)
+        window.addEventListener('scroll', this.handleScroll, true)
 
-        const { location: { pathname }, loadSubCategoryProducts } = this.props
+        const { location: { pathname } } = this.props
 
         const category = pathname.split('/')[1]
         const subcategory = pathname.split('/')[2]
@@ -35,59 +39,63 @@ class Products extends Component {
         // console.log('category ', category)
         // console.log('subcategory ', subcategory)
 
-        window.addEventListener("resize", this.handleResize)
+        
 
         if(pathname == '/'){
-            console.log('add scroll event')
-            window.addEventListener('scroll', this.handleScroll)
-        }else{
-            // only load data if subcategory being clicked, and would load all data 
-            if(category != null && subcategory != null){
-                loadSubCategoryProducts(category, subcategory)
-            }
+            this.setState({type:'whatsnew'})
+        }else if(category != null && subcategory != null){
+            this.setState({type:'subcategory'})
+            this.loadSubCategoryProducts(category, subcategory)
         }
     }
 
     componentWillUnmount(){
-        console.log('componentWillUnmount')
-
-        const { location: { pathname } } = this.props
-
-        // console.log('pathname ', pathname)
-
         window.removeEventListener('resize', this.handleResize)
+        window.removeEventListener('scroll', this.handleScroll)
+    }
 
-        if(pathname == '/'){
-            console.log('remove scroll event')
-            window.removeEventListener('scroll', this.handleScroll)
+    // load subcategory products (load once for all) 
+    loadSubCategoryProducts = async (category, subcategory) => {
+        let next = true
+        let counter = 1
+        let products = []
+        while(next){
+            const content = await axios.get(`/assets/products/${category}/${subcategory}/${counter}.json`)
+            products = content.data.products.concat(products)
+            counter++
+            next = content.data.next
+        }
+        this.setState({ products })
+    }
+
+    handleScroll = () => {
+        // if(innerHeight + scrollY >= document.body.offsetHeight - 50) - this worked added 100% height to html and body tags, and the new solution was to use document.getElementById('root').offsetHeight (with 'root' being a container that actually occupied 100% of the page height)
+
+        if(innerHeight + document.body.scrollTop >= document.getElementById('root').offsetHeight - 50){
+            console.log('bottom')
+            const index = this.state.index + 12 > this.state.products.length ? this.state.products.length : this.state.index + 12
+            this.setState({ index })
         }
     }
 
-    handleScroll = (bottom) => {
-        // if(bottom){
-        //   this.setState({
-        //     footerHeight: 50
-        //   })
-        // }else{
-        //   this.setState({
-        //     footerHeight: 0
-        //   })
-        // }
-    }
-
     handleResize = () => {
-        this.setState({viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth})
+        this.setState({ viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth })
     }
 
 
     render() {
-        const { classes, products } = this.props
+        const { classes } = this.props
 
-        console.log('size ',products.length)
+        const index = this.state.index > this.state.products.length ? this.state.products.length : this.state.index
+        const products = this.state.products.slice(0, index)
+
+        // console.log('old products ',this.state.products.length)
+        // console.log('new products ',products.length)
+        // console.log('index ',index)
         // console.log('window.innerWidth ',window.innerWidth)
         // console.log('viewWidth ',this.state.viewWidth)
 
-        return <div className={classes.root}>
+        return <div className={classes.root} ref={this.productsRef}>
                     <Grid container justify="center">
                         {products.map(product => (
                             <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth}/>
@@ -98,7 +106,6 @@ class Products extends Component {
 }
 
 export default compose(
-    withContext,
     withRouter,
     withStyles(styles)
 )(Products)

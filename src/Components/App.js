@@ -7,7 +7,6 @@ import Products from './Products'
 import ProductDetail from './ProductDetail'
 import categories from '../menus/categories'
 import subcategories from '../menus/subcategories'
-import axios from "axios"
 
 class App extends Component {
 
@@ -15,30 +14,13 @@ class App extends Component {
     categories,
     subcategories,
     mobileOpen: false,
-    products: [],
-    selectedProduct: null,
   }
 
   getContext = () => ({
     ...this.state,
     navToLink: this.navToLink,
     handleDrawerToggle: this.handleDrawerToggle,
-    loadSubCategoryProducts: this.loadSubCategoryProducts,
   })
-
-  // load subcategory products (load once for all) 
-  loadSubCategoryProducts = async (category, subcategory) => {
-    let next = true
-    let counter = 1
-    let products = []
-    while(next){
-        const content = await axios.get(`/assets/products/${category}/${subcategory}/${counter}.json`)
-        products = content.data.products.concat(products)
-        counter++
-        next = content.data.next
-    }
-    this.setState({ products })
-  }
 
   // toggle drawer
   handleDrawerToggle = () => {
