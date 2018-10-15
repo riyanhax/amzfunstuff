@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-const inputfilepath = '../assets/products/whatsnew/6.json'
+const inputfilepath = __dirname + '/../assets/products/gear-gadgets/weapons-armor/1.json'
 
 let rawJson 
 
@@ -12,15 +12,11 @@ try{
     console.log('Error: invalid json')
 }
 
-let counter = 1
-
 rawJson.products.forEach((product) => {
-    product.imageLarge = product.imageLarge.replace(/300x250/g, '640x534')
-    product.category = 'gear-gadgets'
-    product.subcategory = 'weapons-armor'
+    product.likes = product.price + 10
 })
 
-let json = JSON.stringify(rawJson)
+let json = JSON.stringify(rawJson, undefined, 2)
 
-fs.writeFileSync(__dirname + '/../assets/output.json', json, 'utf8')
+fs.writeFileSync(inputfilepath, json, 'utf8')
 
