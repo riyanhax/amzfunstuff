@@ -24,6 +24,7 @@ class Products extends Component {
         type: '',
         products: [],
         index: null,
+        liked: null,
     }
 
     componentDidMount() {
@@ -39,7 +40,7 @@ class Products extends Component {
         // console.log('category ', category)
         // console.log('subcategory ', subcategory)
 
-        
+        this.loadLiked()
 
         if(pathname == '/'){
             this.setState({type:'whatsnew'})
@@ -52,6 +53,20 @@ class Products extends Component {
     componentWillUnmount(){
         window.removeEventListener('resize', this.handleResize)
         window.removeEventListener('scroll', this.handleScroll)
+    }
+
+    // load liked set
+    loadLiked = () => {
+        const liked = new Set(JSON.parse(localStorage.getItem(`amzfunstuff-liked`)))
+        this.setState({ liked })
+    }
+
+    // add like into liked
+    addLiked = (productId) => {
+        const liked = this.state.liked
+        liked.add(productId)
+        this.setState({ liked })
+        localStorage.setItem('amzfunstuff-liked', JSON.stringify(Array.from(liked)))
     }
 
     // load subcategory products (load once for all) 
@@ -74,11 +89,6 @@ class Products extends Component {
 
         const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
 
-        // console.log('innerHeight ',innerHeight)
-        // console.log('document.body.scrollTop ', innerHeight + scrollTop)
-        // console.log('total ',document.getElementById('root').offsetHeight)
-
-
         if(innerHeight + scrollTop >= document.getElementById('root').offsetHeight - 50){
             console.log('bottom')
             const index = this.state.index + 12 > this.state.products.length ? this.state.products.length : this.state.index + 12
@@ -97,16 +107,16 @@ class Products extends Component {
         const index = this.state.index > this.state.products.length ? this.state.products.length : this.state.index
         const products = this.state.products.slice(0, index)
 
-        console.log('old products ',this.state.products.length)
-        console.log('new products ',products.length)
-        console.log('index ',index)
+        // console.log('old products ',this.state.products.length)
+        // console.log('new products ',products.length)
+        // console.log('index ',index)
         // console.log('window.innerWidth ',window.innerWidth)
         // console.log('viewWidth ',this.state.viewWidth)
 
         return <div className={classes.root} ref={this.productsRef}>
                     <Grid container justify="center">
                         {products.map(product => (
-                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth}/>
+                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth} liked={this.state.liked} addLiked={this.addLiked}/>
                         ))}
                     </Grid>
                 </div>

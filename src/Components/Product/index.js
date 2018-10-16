@@ -102,16 +102,16 @@ class Product extends Component {
         1. 'windowWidth' would match material-ui's breakpoints, however, due to the fact that drawer would display after 960, the viewWidth is actually used when calculating item's width and height
         2. we will use localStorage to pass product info to detail page, the key is 'amzfunstuff-{productId}', and the value is stringified product info
     */
-    createProduct = (classes, product, viewWidth, windowWidth) => {
+    createProduct = (classes, product, viewWidth, windowWidth, liked, addLiked) => {
 
         if(windowWidth < 650){
             return this.createSingleColProduct(classes, product, viewWidth)
         }else if(windowWidth < 1280){
-            return this.createMultipleColProduct(classes, product, viewWidth, 2)
+            return this.createMultipleColProduct(classes, product, viewWidth, liked, addLiked, 2)
         }else if(windowWidth < 1650){
-            return this.createMultipleColProduct(classes, product, viewWidth, 3)
+            return this.createMultipleColProduct(classes, product, viewWidth, liked, addLiked, 3)
         }else{
-            return this.createMultipleColProduct(classes, product, viewWidth, 4)
+            return this.createMultipleColProduct(classes, product, viewWidth, liked, addLiked, 4)
         }
     }
 
@@ -141,7 +141,7 @@ class Product extends Component {
                 
     }
 
-    createMultipleColProduct = (classes, product, viewWidth, column) => {
+    createMultipleColProduct = (classes, product, viewWidth, liked, addLiked, column) => {
 
         const viewWidthRatio = 0.8
         const heightToWidthRatio = 250/300
@@ -149,6 +149,10 @@ class Product extends Component {
         
         const adjustedWidth = (viewWidth * viewWidthRatio)/column > maxWidth ? maxWidth : (viewWidth * viewWidthRatio)/column
         const adjustedHeight = adjustedWidth * heightToWidthRatio
+
+        const likeOrNot = liked.has(product.id) ?
+                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes}</div> :
+                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 
         return <Grid item style={{ marginBottom: 20 }}>
                     <Grid container justify="center">
@@ -158,7 +162,7 @@ class Product extends Component {
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.multipleColShadow}>
-                                    <Button variant="contained" className={classes.likeButton} onClick={(event) => { event.preventDefault(), console.log('like')}}>喜欢</Button>
+                                    <Button variant="contained" className={classes.likeButton} onClick={(event) => { event.preventDefault(), addLiked(product.id) }}>喜欢</Button>
                                 </Grid>
                             </a>
                         </div>
@@ -169,9 +173,8 @@ class Product extends Component {
                             <Grid container justify="space-between" alignItems="center" style={{ width:adjustedWidth }}>
                                 <Grid item>
                                     <div className={classes.multipleColPrice}><span style={{fontSize:'12px'}}><i className="fas fa-dollar-sign"></i></span> {product.price}</div>
-                                    <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
+                                    {likeOrNot}
                                 </Grid>
-                               
                                 <Grid item>
                                     <Button variant="contained" className={classes.detailButton} onClick={(event) => { event.preventDefault(), localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true) }}>查看详情</Button>
                                 </Grid>
@@ -183,9 +186,9 @@ class Product extends Component {
 
     render() {
 
-        const { classes, product, viewWidth, windowWidth } = this.props
+        const { classes, product, viewWidth, windowWidth, liked, addLiked } = this.props
         
-        const content = this.createProduct(classes, product, viewWidth, windowWidth)
+        const content = this.createProduct(classes, product, viewWidth, windowWidth, liked, addLiked)
 
         return <Grid item xs={12} sm={6} md={6} lg={4} xl={3}>
                     <Grid container justify="center">
