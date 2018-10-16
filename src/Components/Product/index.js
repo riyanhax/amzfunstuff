@@ -2,32 +2,49 @@ import React, { Component } from 'react'
 import {
     Grid, Button
 } from '@material-ui/core'
-import orange from '@material-ui/core/colors/orange'
+import { orange, red } from '@material-ui/core/colors'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import { withContext } from '../../context'
 
 const styles = theme => ({
-    singleColTitleCN: {
-        fontSize: '.8rem',
-        fontWeight: '600',
-        color:theme.palette.primary.main,
+    // generic css
+    titleCN: {
+        fontSize: '1rem',
+        fontWeight: '900',
+        color: theme.palette.primary.main,
         marginBottom: 3,
         cursor: 'pointer',
         textAlign: 'center',
     },
-    singleColTitleEN: {
+    titleEN: {
         fontSize: '.6rem',
         fontWeight: '400',
-        color:theme.palette.secondary.main,
-        marginBottom: 5,
+        color: '#000000',
+        marginBottom: 10,
         cursor: 'pointer',
         textAlign: 'center',
     },
+    detailButton: {
+        color: '#fff',
+        backgroundColor: orange[500],
+        '&:hover': {
+            backgroundColor: orange[800],
+          },
+        fontSize: '1rem',
+        fontWeight: '900',
+    },
+    likeButton: {
+        color: '#fff',
+        backgroundColor: red[500],
+        '&:hover': {
+            backgroundColor: red[800],
+          },
+        fontSize: '1rem',
+        fontWeight: '900',
+    },
+    // single col css
     singleColImage: {
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: theme.palette.secondary.light,
         marginBottom: 25,
         position: 'relative',
     },
@@ -35,54 +52,42 @@ const styles = theme => ({
         position: 'absolute',
         bottom: 0,
         background: 'transparent',
-        color: '#f1f1f1',
         width: '100%',
         padding: 20,
     },
-    button: {
-        color: '#f1f1f1',
-        backgroundColor: orange[500],
-        '&:hover': {
-            backgroundColor: orange[800],
-          },
-        fontSize: '.8rem',
-        fontWeight: '600',
-    },
-    image: {
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: theme.palette.secondary.light,
-        marginBottom: 25,
+    // multiple col css
+    multipleColImage: {
+        marginBottom: 5,
         position: 'relative',
-        "&:hover $shadow": {
-            opacity: 0.8,
+        "&:hover $multipleColShadow": {
+            visibility: 'visible',
         },
-        "&:hover $titleCN": {
-            fontSize: '1.1rem',
-            fontWeight: '800',
-        },
-        "&:hover $titleEN": {
-            fontSize: '.9rem',
-            fontWeight: '400',
-        }
     },
-    shadow: {
+    multipleColShadow: {
         position: 'absolute',
-        bottom: 0,
-        background: '#000',
-        opacity: 0.6,
-        color: '#f1f1f1',
+        top: 0,
+        background: 'transparent',
         width: '100%',
         padding: 20,
+        visibility: 'hidden',
     },
-    titleCN: {
-        fontSize: '1rem',
-        fontWeight: '800',
+    multipleColDescription: {
+        overflowWrap: 'break-word',
+        fontSize: '.7rem',
+        fontWeight: '400',
+        color: '#000000',
+        letterSpacing: .9,
     },
-    titleEN: {
+    multipleColInfo: {
+        marginTop: 10,
+    },
+    multipleColPrice: {
+        fontSize: '.9rem',
+        fontWeight: '900',
+    },
+    multipleColLikes: {
         fontSize: '.8rem',
         fontWeight: '400',
-        marginLeft: 20,
     },
 })
 
@@ -100,34 +105,34 @@ class Product extends Component {
     createProduct = (classes, product, viewWidth, windowWidth) => {
 
         if(windowWidth < 650){
-            return this.createOneColProduct(classes, product, viewWidth)
+            return this.createSingleColProduct(classes, product, viewWidth)
         }else if(windowWidth < 1280){
-            return this.createTwoColProduct(classes, product, viewWidth)
+            return this.createMultipleColProduct(classes, product, viewWidth, 2)
         }else if(windowWidth < 1650){
-            return this.createThreeColProduct(classes, product, viewWidth)
+            return this.createMultipleColProduct(classes, product, viewWidth, 3)
         }else{
-            return this.createFourColProduct(classes, product, viewWidth)
+            return this.createMultipleColProduct(classes, product, viewWidth, 4)
         }
     }
 
-    createOneColProduct = (classes, product, viewWidth) => {
+    createSingleColProduct = (classes, product, viewWidth) => {
 
-        const viewWidthRatio = 0.8
+        const viewWidthRatio = 0.85
         const heightToWidthRatio = 250/300
-        const maxWidth = 380
+        const maxWidth = 400
         
         const adjustedWidth = viewWidth * viewWidthRatio > maxWidth ? maxWidth : viewWidth * viewWidthRatio
         const adjustedHeight = adjustedWidth * heightToWidthRatio
 
         return <Grid item>
                     <Grid container justify="center">
-                        <div className={classes.singleColTitleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}-{product.id}</div>
-                        <div className={classes.singleColTitleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}-{product.id}</div>    
+                        <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}-{product.id}</div>
+                        <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}-{product.id}</div>
                         <div className={classes.singleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.singleColShadow}>
-                                    <Button variant="contained" className={classes.button} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}}>查看详情</Button>
+                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { event.preventDefault(), localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true) }}>查看详情</Button>
                                 </Grid>
                             </a>
                         </div>
@@ -136,43 +141,44 @@ class Product extends Component {
                 
     }
 
-    createTwoColProduct = (classes, product, viewWidth) => {
+    createMultipleColProduct = (classes, product, viewWidth, column) => {
 
-        return <div className={classes.image}>
-                    <a href={product.link} rel="nofollow" target="_blank">
-                        <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} />
-                        <div className={classes.shadow}>
-                            <div className={classes.titleCN}>{product.titleCN}</div>
-                            <div className={classes.titleEN}>{product.titleEN}</div>
+        const viewWidthRatio = 0.8
+        const heightToWidthRatio = 250/300
+        const maxWidth = 400
+        
+        const adjustedWidth = (viewWidth * viewWidthRatio)/column > maxWidth ? maxWidth : (viewWidth * viewWidthRatio)/column
+        const adjustedHeight = adjustedWidth * heightToWidthRatio
+
+        return <Grid item style={{ marginBottom: 20 }}>
+                    <Grid container justify="center">
+                        <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}-{product.id}</div>
+                        <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}-{product.id}</div>    
+                        <div className={classes.multipleColImage}>
+                            <a href={product.link} rel="nofollow" target="_blank">
+                                <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                <Grid container justify="flex-end" className={classes.multipleColShadow}>
+                                    <Button variant="contained" className={classes.likeButton} onClick={(event) => { event.preventDefault(), console.log('like')}}>喜欢</Button>
+                                </Grid>
+                            </a>
                         </div>
-                    </a>
-                </div>
-    }
-
-    createThreeColProduct = (classes, product, viewWidth) => {
-
-        return <div className={classes.image}>
-                    <a href={product.link} rel="nofollow" target="_blank">
-                        <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} />
-                        <div className={classes.shadow}>
-                            <div className={classes.titleCN}>{product.titleCN}</div>
-                            <div className={classes.titleEN}>{product.titleEN}</div>
+                        <div className={classes.multipleColDescription} style={{ width:adjustedWidth }}>
+                            {product.description}
                         </div>
-                    </a>
-                </div>
-    }
-
-    createFourColProduct = (classes, product, viewWidth) => {
-
-        return <div className={classes.image}>
-                    <a href={product.link} rel="nofollow" target="_blank">
-                        <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} />
-                        <div className={classes.shadow}>
-                            <div className={classes.titleCN}>{product.titleCN}</div>
-                            <div className={classes.titleEN}>{product.titleEN}</div>
+                        <div className={classes.multipleColInfo}>
+                            <Grid container justify="space-between" alignItems="center" style={{ width:adjustedWidth }}>
+                                <Grid item>
+                                    <div className={classes.multipleColPrice}><span style={{fontSize:'12px'}}><i className="fas fa-dollar-sign"></i></span> {product.price}</div>
+                                    <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
+                                </Grid>
+                               
+                                <Grid item>
+                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { event.preventDefault(), localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true) }}>查看详情</Button>
+                                </Grid>
+                            </Grid>
                         </div>
-                    </a>
-                </div>
+                    </Grid>
+                </Grid>
     }
 
     render() {

@@ -28,7 +28,7 @@ class Products extends Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.handleResize)
-        window.addEventListener('scroll', this.handleScroll, true)
+        window.addEventListener('scroll', this.handleScroll)
 
         const { location: { pathname } } = this.props
 
