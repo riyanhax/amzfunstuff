@@ -154,13 +154,13 @@ class Products extends Component {
 
     render() {
         const { classes } = this.props
+        const { products, index, info, viewWidth, price, liked } = this.state
 
         // get correct products array
-        const index = this.state.index > this.state.products.length ? this.state.products.length : this.state.index
-        const products = this.state.products.slice(0, index)
+        const currentIndex = index > products.length ? products.length : index
+        const currentProducts = products.slice(0, currentIndex)
 
         // create header sub-component
-        const info = this.state.info
         const header = info == null ? null : 
                        <Grid container direction="column" justify="center" className={classes.header}>
                             <div className={classes.headerTitle}>{info.title}</div>
@@ -172,11 +172,10 @@ class Products extends Component {
         // create setting sub-component
         let sliderWidth = null
         if(window.innerWidth < 650){
-            sliderWidth = this.state.viewWidth * 0.8
+            sliderWidth = viewWidth * 0.8
         }else{
-            sliderWidth = this.state.viewWidth * 0.8 / 2
+            sliderWidth = viewWidth * 0.8 / 2
         }
-        const price = this.state.price
         const panel = info == null ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
@@ -204,18 +203,18 @@ class Products extends Component {
                         </Grid>
                     </Grid>
 
-        // console.log('old products ',this.state.products.length)
-        // console.log('new products ',products.length)
-        // console.log('index ',index)
-        console.log('window.innerWidth ',window.innerWidth)
-        console.log('viewWidth ',this.state.viewWidth)
+        // console.log('old products ', products.length)
+        // console.log('new products ', currentProducts.length)
+        // console.log('index ', index)
+        // console.log('window.innerWidth ', window.innerWidth)
+        // console.log('viewWidth ', viewWidth)
 
         return <div className={classes.root}>
                     {header}
                     {panel}
                     <Grid container justify="center">
-                        {products.map(product => (
-                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth} liked={this.state.liked} addLiked={this.addLiked}/>
+                        {currentProducts.map(product => (
+                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked}/>
                         ))}
                     </Grid>
                 </div>
