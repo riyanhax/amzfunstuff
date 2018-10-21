@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import {
-    Grid, Hidden
+    Grid, Hidden,
 } from '@material-ui/core'
+import Slider from '@material-ui/lab/Slider'
 import Product from '../Product'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
@@ -16,6 +17,7 @@ const styles = theme => ({
     },
     header: {
         borderBottom: `1px solid #ccc`,
+        marginBottom: 20,
     },
     headerTitle: {
         fontSize: '1.3rem',
@@ -27,7 +29,20 @@ const styles = theme => ({
         fontSize: '.8rem',
         fontWeight: '400',
         color: '#000000',
-        marginBottom: 10,
+        marginBottom: 15,
+    },
+    setting: {
+        marginBottom: 20,
+    },
+    slider: {
+        padding: '22px 0px',
+    },
+    price: {
+        fontSize: '.8rem',
+        fontWeight: '800',
+        marginRight: 10,
+        marginLeft: 10,
+        color: '#E64A19',
     }
 })
 
@@ -40,6 +55,7 @@ class Products extends Component {
         info: null,
         index: null,
         liked: null,
+        price: 3,
     }
 
     componentDidMount() {
@@ -139,9 +155,11 @@ class Products extends Component {
     render() {
         const { classes } = this.props
 
+        // get correct products array
         const index = this.state.index > this.state.products.length ? this.state.products.length : this.state.index
         const products = this.state.products.slice(0, index)
 
+        // create header sub-component
         const info = this.state.info
         const header = info == null ? null : 
                        <Grid container direction="column" justify="center" className={classes.header}>
@@ -150,15 +168,51 @@ class Products extends Component {
                                 <div className={classes.headerDescription}>{info.description}</div>
                             </Hidden>
                        </Grid>
+        
+        // create setting sub-component
+        let sliderWidth = null
+        if(window.innerWidth < 650){
+            sliderWidth = this.state.viewWidth * 0.8
+        }else{
+            sliderWidth = this.state.viewWidth * 0.8 / 2
+        }
+        const price = this.state.price
+        const panel = info == null ? null : 
+                    <Grid container justify="center" alignItems="center" className={classes.setting}>
+                        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+                            <Grid container direction="column" justify="center" alignItems="center">
+                                <span className={classes.price}>价格区间 : 高于${price}</span>
+                                <div style={{ width:sliderWidth }}>
+                                    <Slider
+                                    classes={{ container: classes.slider }}
+                                    value={price}
+                                    min={0}
+                                    max={6}
+                                    step={1}
+                                    // onChange={this.handleChange}
+                                    />
+                                </div>
+                                
+                            </Grid>
+                        
+                       
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+                        <Hidden xsDown>
+                            dropdown list here
+                        </Hidden>
+                        </Grid>
+                    </Grid>
 
         // console.log('old products ',this.state.products.length)
         // console.log('new products ',products.length)
         // console.log('index ',index)
-        // console.log('window.innerWidth ',window.innerWidth)
-        // console.log('viewWidth ',this.state.viewWidth)
+        console.log('window.innerWidth ',window.innerWidth)
+        console.log('viewWidth ',this.state.viewWidth)
 
         return <div className={classes.root}>
                     {header}
+                    {panel}
                     <Grid container justify="center">
                         {products.map(product => (
                             <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth} liked={this.state.liked} addLiked={this.addLiked}/>
