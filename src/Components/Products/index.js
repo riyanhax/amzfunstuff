@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import {
-    Grid, Hidden,
+    Grid, Hidden, FormControl, Select, MenuItem
 } from '@material-ui/core'
 import Slider from '@material-ui/lab/Slider'
 import Product from '../Product'
@@ -43,7 +43,15 @@ const styles = theme => ({
         marginRight: 10,
         marginLeft: 10,
         color: '#E64A19',
-    }
+    },
+    selector: {
+        display: 'flex',
+        flexWrap: 'wrap',
+    },
+    formControl: {
+        margin: theme.spacing.unit,
+        minWidth: 120,
+    },
 })
 
   
@@ -172,13 +180,13 @@ class Products extends Component {
         // create setting sub-component
         let sliderWidth = null
         if(window.innerWidth < 650){
-            sliderWidth = viewWidth * 0.8
+            sliderWidth = viewWidth * 0.7
         }else{
-            sliderWidth = viewWidth * 0.8 / 2
+            sliderWidth = viewWidth * 0.5
         }
         const panel = info == null ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
-                        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+                        <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
                                 <span className={classes.price}>价格区间 : 高于${price}</span>
                                 <div style={{ width:sliderWidth }}>
@@ -191,15 +199,31 @@ class Products extends Component {
                                     // onChange={this.handleChange}
                                     />
                                 </div>
-                                
                             </Grid>
-                        
-                       
                         </Grid>
-                        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                        <Hidden xsDown>
-                            dropdown list here
-                        </Hidden>
+                        <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
+                            <Grid container justify="center" alignItems="center">
+                                <Hidden xsDown>
+                                    <form className={classes.selector} autoComplete="off">
+                                        <FormControl className={classes.formControl}>
+                                            {/* <InputLabel htmlFor="age-simple">Age</InputLabel> */}
+                                            <Select
+                                                value={1}
+                                                // onChange={this.handleChange}
+                                                // inputProps={{
+                                                //     name: 'age',
+                                                //     id: 'age-simple',
+                                                // }}
+                                            >
+                                                <MenuItem value={1}>添加时间</MenuItem>
+                                                <MenuItem value={2}>喜欢数量</MenuItem>
+                                                <MenuItem value={3}>高价-低价</MenuItem>
+                                                <MenuItem value={4}>低价-高价</MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                    </form>
+                                </Hidden>
+                            </Grid>
                         </Grid>
                     </Grid>
 
