@@ -21,7 +21,6 @@ class Products extends Component {
 
     state = {
         viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth,
-        type: '',
         products: [],
         index: null,
         liked: null,
@@ -43,10 +42,11 @@ class Products extends Component {
         this.loadLiked()
 
         if(pathname == '/'){
-            this.setState({type:'whatsnew'})
+            this.loadProducts('whatsnew', null)
+        }else if(category != null && subcategory == null){
+            this.loadProducts(category, null)
         }else if(category != null && subcategory != null){
-            this.setState({type:'subcategory'})
-            this.loadSubCategoryProducts(category, subcategory)
+            this.loadProducts(category, subcategory)
         }
     }
 
@@ -69,13 +69,19 @@ class Products extends Component {
         localStorage.setItem('amzfunstuff-liked', JSON.stringify(Array.from(liked)))
     }
 
-    // load subcategory products (load once for all) 
-    loadSubCategoryProducts = async (category, subcategory) => {
+    // load products (load once for all) 
+    loadProducts = async (category, subcategory) => {
+        let url = null
+        if(subcategory != null){
+            url = `/assets/products/${category}/${subcategory}`
+        }else{
+            url = `/assets/products/${category}`
+        } 
         let next = true
         let counter = 1
         let products = []
         while(next){
-            const content = await axios.get(`/assets/products/${category}/${subcategory}/${counter}.json`)
+            const content = await axios.get(`${url}/${counter}.json`)
             products = content.data.products.concat(products)
             counter++
             next = content.data.next
