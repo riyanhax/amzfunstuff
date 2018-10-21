@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import {
-    Grid
+    Grid, Hidden
 } from '@material-ui/core'
 import Product from '../Product'
 import { compose } from 'recompose'
@@ -14,6 +14,21 @@ const styles = theme => ({
         marginLeft: '5%',
         marginRight: '5%',
     },
+    header: {
+        borderBottom: `1px solid #ccc`,
+    },
+    headerTitle: {
+        fontSize: '1.3rem',
+        fontWeight: '900',
+        color: theme.palette.primary.main,
+        marginBottom: 10,
+    },
+    headerDescription: {
+        fontSize: '.8rem',
+        fontWeight: '400',
+        color: '#000000',
+        marginBottom: 10,
+    }
 })
 
   
@@ -22,6 +37,7 @@ class Products extends Component {
     state = {
         viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth,
         products: [],
+        info: null,
         index: null,
         liked: null,
     }
@@ -71,23 +87,36 @@ class Products extends Component {
 
     // load products (load once for all) 
     loadProducts = async (category, subcategory) => {
-        let url = null
-        if(subcategory != null){
-            url = `/assets/products/${category}/${subcategory}`
+        // load product info
+        let info = await axios.get('/assets/products/info.json')
+        info = info.data
+        if(category != 'whatsnew'){
+            info = info[category]
+            if(subcategory != null){
+                info = info[subcategory]
+            }
         }else{
-            url = `/assets/products/${category}`
+            info = null
+        } 
+ 
+        // load products
+        let productsURL = null
+        if(subcategory != null){
+            productsURL = `/assets/products/${category}/${subcategory}`
+        }else{
+            productsURL = `/assets/products/${category}`
         } 
         let next = true
         let counter = 1
         let products = []
         while(next){
-            const content = await axios.get(`${url}/${counter}.json`)
+            const content = await axios.get(`${productsURL}/${counter}.json`)
             products = content.data.products.concat(products)
             counter++
             next = content.data.next
         }
         const index = 24
-        this.setState({ products, index })
+        this.setState({ info, products, index })
     }
 
     handleScroll = () => {
@@ -113,13 +142,23 @@ class Products extends Component {
         const index = this.state.index > this.state.products.length ? this.state.products.length : this.state.index
         const products = this.state.products.slice(0, index)
 
+        const info = this.state.info
+        const header = info == null ? null : 
+                       <Grid container direction="column" justify="center" className={classes.header}>
+                            <div className={classes.headerTitle}>{info.title}</div>
+                            <Hidden xsDown>
+                                <div className={classes.headerDescription}>{info.description}</div>
+                            </Hidden>
+                       </Grid>
+
         // console.log('old products ',this.state.products.length)
         // console.log('new products ',products.length)
         // console.log('index ',index)
         // console.log('window.innerWidth ',window.innerWidth)
         // console.log('viewWidth ',this.state.viewWidth)
 
-        return <div className={classes.root} ref={this.productsRef}>
+        return <div className={classes.root}>
+                    {header}
                     <Grid container justify="center">
                         {products.map(product => (
                             <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={this.state.viewWidth} liked={this.state.liked} addLiked={this.addLiked}/>
