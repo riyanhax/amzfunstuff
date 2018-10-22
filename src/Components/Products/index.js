@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import {
-    Grid, Hidden, FormControl, Select, MenuItem
+    Grid, Hidden, FormControl, Select, MenuItem, CircularProgress
 } from '@material-ui/core'
 import { Slider } from 'material-ui-slider'
 import Product from '../Product'
@@ -216,14 +216,6 @@ class Products extends Component {
         const { classes } = this.props
         const { products, index, info, viewWidth, price, liked, sort } = this.state
 
-        // get correct products array
-        const filteredProducts = products.filter((product) => {
-            return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
-        })
-        const sortedProducts = this.sortProducts(filteredProducts)
-        const finalIndex = index > sortedProducts.length ? sortedProducts.length : index
-        const finalProducts = sortedProducts.slice(0, finalIndex)
-
         // create header sub-component
         const header = info == null ? null : 
                        <Grid container direction="column" justify="center" className={classes.header}>
@@ -255,7 +247,6 @@ class Products extends Component {
                                 <Hidden xsDown>
                                     <form className={classes.selector} autoComplete="off">
                                         <FormControl className={classes.formControl}>
-                                            {/* <InputLabel htmlFor="age-simple">Age</InputLabel> */}
                                             <Select
                                                 value={sort}
                                                 onChange={this.handleSelectorChange}
@@ -274,6 +265,25 @@ class Products extends Component {
                             </Grid>
                         </Grid>
                     </Grid>
+            
+        // create content sub-component
+        let content = null
+        if(products.length == 0){
+            content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress className={classes.progress} size={100} /></Grid>
+        }else{
+            const filteredProducts = products.filter((product) => {
+                return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
+            })
+            const sortedProducts = this.sortProducts(filteredProducts)
+            const finalIndex = index > sortedProducts.length ? sortedProducts.length : index
+            const finalProducts = sortedProducts.slice(0, finalIndex)
+
+            content = <Grid container justify="center">
+                        {finalProducts.map(product => (
+                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked}/>
+                        ))}
+                    </Grid>
+        }
 
         // console.log('old products ', products.length)
         // console.log('new products ', finalProducts.length)
@@ -284,11 +294,7 @@ class Products extends Component {
         return <div className={classes.root}>
                     {header}
                     {panel}
-                    <Grid container justify="center">
-                        {finalProducts.map(product => (
-                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked}/>
-                        ))}
-                    </Grid>
+                    {content}
                 </div>
     }
 }
