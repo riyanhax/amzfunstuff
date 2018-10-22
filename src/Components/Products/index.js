@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom'
 import {
     Grid, Hidden, FormControl, Select, MenuItem
 } from '@material-ui/core'
-import Slider from '@material-ui/lab/Slider'
+import { Slider } from 'material-ui-slider'
 import Product from '../Product'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
@@ -34,15 +34,17 @@ const styles = theme => ({
     setting: {
         marginBottom: 20,
     },
-    slider: {
-        padding: '22px 0px',
-    },
-    price: {
+    priceText: {
         fontSize: '.8rem',
-        fontWeight: '800',
-        marginRight: 10,
-        marginLeft: 10,
+        fontWeight: '600',
+        color: '#212121',
+    },
+    priceValue: {
+        fontSize: '1rem',
+        fontWeight: '900',
         color: '#E64A19',
+        marginLeft: 3,
+        marginRight: 3,
     },
     selector: {
         display: 'flex',
@@ -63,7 +65,8 @@ class Products extends Component {
         info: null,
         index: null,
         liked: null,
-        price: 3,
+        price: [0,210],
+        sort: 1,
     }
 
     componentDidMount() {
@@ -143,6 +146,7 @@ class Products extends Component {
         this.setState({ info, products, index })
     }
 
+    // handle scroll - load more by modifying index
     handleScroll = () => {
         // if(innerHeight + scrollY >= document.body.offsetHeight - 50) - this worked added 100% height to html and body tags, and the new solution was to use document.getElementById('root').offsetHeight (with 'root' being a container that actually occupied 100% of the page height)
 
@@ -155,18 +159,70 @@ class Products extends Component {
         }
     }
 
+    // handle resize - pass viewWidth to each Product sub-component for better responsive design
     handleResize = () => {
         this.setState({ viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth })
     }
 
+    // handle slider change - modify price low and high, which would be used for product filtering
+    handleSliderChange = (price) => {
+        this.setState({ price })
+    }
+
+    // handle selector change - modify sort option, which would be used for product sorting
+    handleSelectorChange = (event) => {
+        this.setState({ sort: event.target.value })
+    }
+
+    // used for product sorting
+    sortProducts = (filteredProducts) => {
+        const sort = this.state.sort 
+        if(sort == 1){
+            return filteredProducts
+        }else if(sort == 2){
+            return filteredProducts.sort((productA, productB) => {
+                if(productA.likes < productB.likes){
+                    return 1
+                }
+                if(productA.likes > productB.likes){
+                    return -1
+                }
+                return 0
+            })
+        }else if(sort == 3){
+            return filteredProducts.sort((productA, productB) => {
+                if(productA.price < productB.price){
+                    return 1
+                }
+                if(productA.price > productB.price){
+                    return -1
+                }
+                return 0
+            })
+        }else if(sort == 4){
+            return filteredProducts.sort((productA, productB) => {
+                if(productA.price < productB.price){
+                    return -1
+                }
+                if(productA.price > productB.price){
+                    return 1
+                }
+                return 0
+            })
+        }
+    }
 
     render() {
         const { classes } = this.props
-        const { products, index, info, viewWidth, price, liked } = this.state
+        const { products, index, info, viewWidth, price, liked, sort } = this.state
 
         // get correct products array
-        const currentIndex = index > products.length ? products.length : index
-        const currentProducts = products.slice(0, currentIndex)
+        const filteredProducts = products.filter((product) => {
+            return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
+        })
+        const sortedProducts = this.sortProducts(filteredProducts)
+        const finalIndex = index > sortedProducts.length ? sortedProducts.length : index
+        const finalProducts = sortedProducts.slice(0, finalIndex)
 
         // create header sub-component
         const header = info == null ? null : 
@@ -184,21 +240,14 @@ class Products extends Component {
         }else{
             sliderWidth = viewWidth * 0.5
         }
+        const startPrice = <span className={classes.priceValue}>${price[0]}</span>
+        const endPrice = price[1] == 210 ? <span className={classes.priceValue}>Max</span> : <span className={classes.priceValue}>${price[1]}</span>
         const panel = info == null ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
-                                <span className={classes.price}>价格区间 : 高于${price}</span>
-                                <div style={{ width:sliderWidth }}>
-                                    <Slider
-                                    classes={{ container: classes.slider }}
-                                    value={price}
-                                    min={0}
-                                    max={6}
-                                    step={1}
-                                    // onChange={this.handleChange}
-                                    />
-                                </div>
+                                <span className={classes.priceText}>价格区间 : {startPrice} to {endPrice}</span>
+                                <div style={{ width:sliderWidth }}><Slider color="#FF5252" range min={0} max={210} value={price} scaleLength={10} onChange={this.handleSliderChange}/></div>
                             </Grid>
                         </Grid>
                         <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
@@ -208,12 +257,11 @@ class Products extends Component {
                                         <FormControl className={classes.formControl}>
                                             {/* <InputLabel htmlFor="age-simple">Age</InputLabel> */}
                                             <Select
-                                                value={1}
-                                                // onChange={this.handleChange}
-                                                // inputProps={{
-                                                //     name: 'age',
-                                                //     id: 'age-simple',
-                                                // }}
+                                                value={sort}
+                                                onChange={this.handleSelectorChange}
+                                                inputProps={{
+                                                    name: 'sort',
+                                                }}
                                             >
                                                 <MenuItem value={1}>添加时间</MenuItem>
                                                 <MenuItem value={2}>喜欢数量</MenuItem>
@@ -228,7 +276,7 @@ class Products extends Component {
                     </Grid>
 
         // console.log('old products ', products.length)
-        // console.log('new products ', currentProducts.length)
+        // console.log('new products ', finalProducts.length)
         // console.log('index ', index)
         // console.log('window.innerWidth ', window.innerWidth)
         // console.log('viewWidth ', viewWidth)
@@ -237,7 +285,7 @@ class Products extends Component {
                     {header}
                     {panel}
                     <Grid container justify="center">
-                        {currentProducts.map(product => (
+                        {finalProducts.map(product => (
                             <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked}/>
                         ))}
                     </Grid>
