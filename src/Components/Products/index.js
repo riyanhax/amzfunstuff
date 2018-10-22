@@ -35,7 +35,7 @@ const styles = theme => ({
         marginBottom: 20,
     },
     priceText: {
-        fontSize: '.8rem',
+        fontSize: '.7rem',
         fontWeight: '600',
         color: '#212121',
     },
@@ -240,8 +240,8 @@ class Products extends Component {
         }else{
             sliderWidth = viewWidth * 0.5
         }
-        const startPrice = <span className={classes.priceValue}>${price[0]}</span>
-        const endPrice = price[1] == 210 ? <span className={classes.priceValue}>Max</span> : <span className={classes.priceValue}>${price[1]}</span>
+        const startPrice = <span className={classes.priceValue}>$ {price[0]}</span>
+        const endPrice = price[1] == 210 ? <span className={classes.priceValue}>Max</span> : <span className={classes.priceValue}>$ {price[1]}</span>
         const panel = info == null ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
