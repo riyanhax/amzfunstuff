@@ -27,3 +27,6 @@
 * [If you're hosting a react app via AWS Static S3 Hosting & CloudFront](https://code.i-harness.com/en/q/1aa2734)
 
 * [Serving a Static Site Over HTTPS Using S3, CloudFront, and GoDaddy](https://medium.com/@brodartec/hosting-a-static-site-with-https-enabled-using-aws-s3-cloudfront-and-godaddy-826dae41fdc6)
+
+## use cloudfront to compress
+* [New – Gzip Compression Support for Amazon CloudFront](https://aws.amazon.com/blogs/aws/new-gzip-compression-support-for-amazon-cloudfront/)
