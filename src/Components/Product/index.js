@@ -132,7 +132,7 @@ class Product extends Component {
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.singleColShadow}>
-                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { event.preventDefault(), this.props.navToLink(product.link, true) }}>查看详情</Button>
+                                    <Button variant="contained" className={classes.detailButton} onClick={() => { this.props.navToLink(product.link, true) }}>查看详情</Button>
                                 </Grid>
                             </a>
                         </div>
@@ -151,7 +151,7 @@ class Product extends Component {
         const adjustedHeight = adjustedWidth * heightToWidthRatio
 
         const likeOrNot = liked.has(product.id) ?
-                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes}</div> :
+                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
                              <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 
         return <Grid item style={{ marginBottom: 20 }}>
@@ -176,7 +176,7 @@ class Product extends Component {
                                     {likeOrNot}
                                 </Grid>
                                 <Grid item>
-                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { this.props.navToLink(product.link, true) }}>查看详情</Button>
+                                    <Button variant="contained" className={classes.detailButton} onClick={() => { this.props.navToLink(product.link, true) }}>查看详情</Button>
                                 </Grid>
                             </Grid>
                         </div>
