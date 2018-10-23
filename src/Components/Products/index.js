@@ -223,11 +223,10 @@ class Products extends Component {
 
         //create banner sub-component (display on whatsnew only)
         const banner = info != null ? null :
-                        // <div>
-                            <a href="www.amazon.com" rel="nofollow" target="_blank">
-                                <img className={classes.banner} src={`/assets/images/banner.png`}/>
-                            </a>
-                        // </div>
+                        <a href="www.amazon.com" rel="nofollow" target="_blank">
+                            <img className={classes.banner} src={`/assets/images/banner.png`}/>
+                        </a>
+
         // create header sub-component (display on non-whatsnew only)
         const header = info == null ? null : 
                        <Grid container direction="column" justify="center" className={classes.header}>
@@ -250,7 +249,7 @@ class Products extends Component {
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
-                                <span className={classes.priceText}>价格区间 : {startPrice} to {endPrice}</span>
+                                <span className={classes.priceText}> {startPrice} 至 {endPrice}</span>
                                 <div style={{ width:sliderWidth }}><Slider color="#FF5252" range min={0} max={210} value={price} scaleLength={10} onChange={this.handleSliderChange}/></div>
                             </Grid>
                         </Grid>
