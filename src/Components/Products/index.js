@@ -15,6 +15,11 @@ const styles = theme => ({
         marginLeft: '5%',
         marginRight: '5%',
     },
+    banner: {
+        width: '100%',
+        height: 'auto',
+        marginBottom: 20,
+    },
     header: {
         borderBottom: `1px solid #ccc`,
         marginBottom: 20,
@@ -216,7 +221,14 @@ class Products extends Component {
         const { classes } = this.props
         const { products, index, info, viewWidth, price, liked, sort } = this.state
 
-        // create header sub-component
+        //create banner sub-component (display on whatsnew only)
+        const banner = info != null ? null :
+                        // <div>
+                            <a href="www.amazon.com" rel="nofollow" target="_blank">
+                                <img className={classes.banner} src={`/assets/images/banner.png`}/>
+                            </a>
+                        // </div>
+        // create header sub-component (display on non-whatsnew only)
         const header = info == null ? null : 
                        <Grid container direction="column" justify="center" className={classes.header}>
                             <div className={classes.headerTitle}>{info.title}</div>
@@ -292,6 +304,7 @@ class Products extends Component {
         // console.log('viewWidth ', viewWidth)
 
         return <div className={classes.root}>
+                    {banner}
                     {header}
                     {panel}
                     {content}
