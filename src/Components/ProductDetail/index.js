@@ -57,6 +57,34 @@ const styles = theme => ({
     },
     buttonDiv: {
         marginTop: 10,
+    },
+    ad: {
+        width: '100%',
+        height: 'auto',
+        marginBottom: 20,
+    },
+    image: {
+        position: 'relative',
+    },
+    imageShadow: {
+        position: 'absolute',
+        top: 0,
+        background: 'transparent',
+        width: '100%',
+        padding: 20,
+    },
+    imageTitleCN: {
+        fontSize: '1.8rem',
+        fontWeight: '900',
+        color: '#fff',
+        textShadow: `2px 2px 2px #222`,
+    },
+    imageTitleEN: {
+        fontSize: '1.2rem',
+        fontWeight: '600',
+        color: '#fff',
+        textShadow: `2px 2px 2px #222`,
+        marginLeft: 20,
     }
 })
 
@@ -80,7 +108,6 @@ class ProductDetail extends Component {
     // load liked set
     loadLiked = () => {
         const liked = new Set(JSON.parse(localStorage.getItem(`amzfunstuff-liked`)))
-        
         this.setState({ liked })
     }
 
@@ -97,16 +124,19 @@ class ProductDetail extends Component {
         this.setState({ viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth })
     }
 
-    createProduct = (classes, product, windowWidth, viewWidth, liked) => {
+    /* 
+        used viewWidth to determin 1 col or 2 cols, and the breakpoint is 900
+    */
+    createContent = (classes, product, viewWidth, liked) => {
 
-        if(windowWidth < 650){
-            return this.createProductForSingleCol(classes, product, viewWidth, liked)
+        if(viewWidth < 900){
+            return this.createContentForSingleCol(classes, product, viewWidth, liked)
         }else{
-            return this.createProductForTwoCol(classes, product, viewWidth, liked)
+            return this.createContentForTwoCol(classes, product, viewWidth, liked)
         }
     }
 
-    createProductForSingleCol = (classes, product, viewWidth, liked) => {
+    createContentForSingleCol = (classes, product, viewWidth, liked) => {
 
         const viewWidthRatio = 0.85
         const heightToWidthRatio = 534/640
@@ -120,7 +150,7 @@ class ProductDetail extends Component {
                              <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 
 
-        return <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
+        return <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <Grid container justify="center" alignItems="center">
                         <div>
                             <a href={product.link} rel="nofollow" target="_blank">
@@ -147,10 +177,50 @@ class ProductDetail extends Component {
                 
     }
 
-    createProductForTwoCol = (classes, product, viewWidth, liked) => {
+    createContentForTwoCol = (classes, product, viewWidth, liked) => {
 
-        return <Grid>
-                  
+        const viewWidthRatio = 0.6
+        const heightToWidthRatio = 534/640
+        const maxWidth = 800
+        
+        const adjustedWidth = viewWidth * viewWidthRatio > maxWidth ? maxWidth : viewWidth * viewWidthRatio
+        const adjustedHeight = adjustedWidth * heightToWidthRatio
+
+        const likeOrNot = liked != null && liked.has(product.id) ?
+                             <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
+                             <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
+
+
+        return <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Grid container justify="center" alignItems="center">
+                        <Grid>
+                            <div className={classes.image}>
+                                <a href={product.link} rel="nofollow" target="_blank">
+                                    <img src={`/assets/images/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                    <Grid container direction="column" justify="flex-end" className={classes.imageShadow}>
+                                        <div className={classes.imageTitleCN}>{product.titleCN}</div>
+                                        <div className={classes.imageTitleEN}>{product.titleEN}</div>
+                                    </Grid>
+                                </a>
+                            </div>
+                        </Grid>
+                        <Grid>
+                            <Grid container direction="column" justify="space-evenly" alignItems="center" style={{ height:adjustedHeight, marginLeft: 20 }}>
+                                <div>
+                                    <a href="www.amazon.com" rel="nofollow" target="_blank">
+                                        <img className={classes.banner} src={`/assets/images/ad.png`}/>
+                                    </a>
+                                </div>
+                                <div className={classes.description} style={{ width: 280 }}>{product.description}</div>
+                                <Grid container justify="space-around" alignItems="center" className={classes.priceAndLikes} style={{ width: 280 }}>
+                                    {likeOrNot}
+                                    <div><span style={{fontSize:'12px'}}><i className="fas fa-dollar-sign"></i></span> {product.price}</div>
+                                </Grid>
+                                <Button variant="contained" style={{ width: 280 }} className={classes.detailButton} onClick={() => { this.props.navToLink(product.link, true) }}>查看详情</Button>
+                                <Button variant="contained" style={{ width: 280 }} className={classes.likeButton} onClick={(event) => { event.preventDefault(), this.addLiked(product.id) }}>喜欢</Button>
+                            </Grid>
+                        </Grid>
+                    </Grid>
                 </Grid>
     }
 
@@ -163,13 +233,10 @@ class ProductDetail extends Component {
         const productId = links[links.length-1]
 
         let product = JSON.parse(localStorage.getItem(`amzfunstuff-${productId}`))
-        console.log('product ',product)
-
+   
         //TODO: redirect to home page if product not found
 
-        console.log('window width ', window.innerWidth)
-
-        const content = this.createProduct(classes, product, window.innerWidth, viewWidth, liked)
+        const content = this.createContent(classes, product, viewWidth, liked)
 
         return <Grid container justify="center" alignItems="center">
                     {content}
