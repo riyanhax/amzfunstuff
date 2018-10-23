@@ -150,7 +150,7 @@ class Product extends Component {
         const adjustedWidth = (viewWidth * viewWidthRatio)/column > maxWidth ? maxWidth : (viewWidth * viewWidthRatio)/column
         const adjustedHeight = adjustedWidth * heightToWidthRatio
 
-        const likeOrNot = liked.has(product.id) ?
+        const likeOrNot = liked != null && liked.has(product.id) ?
                              <div className={classes.multipleColLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
                              <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 

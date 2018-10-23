@@ -217,7 +217,7 @@ class Products extends Component {
         }
     }
 
-    render() {
+    render() { 
         const { classes } = this.props
         const { products, index, info, viewWidth, price, liked, sort } = this.state
 
