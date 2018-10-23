@@ -132,7 +132,7 @@ class Product extends Component {
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.singleColShadow}>
-                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { event.preventDefault(), localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true) }}>查看详情</Button>
+                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { event.preventDefault(), this.props.navToLink(product.link, true) }}>查看详情</Button>
                                 </Grid>
                             </a>
                         </div>
@@ -176,7 +176,7 @@ class Product extends Component {
                                     {likeOrNot}
                                 </Grid>
                                 <Grid item>
-                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { event.preventDefault(), localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.id}`, true) }}>查看详情</Button>
+                                    <Button variant="contained" className={classes.detailButton} onClick={(event) => { this.props.navToLink(product.link, true) }}>查看详情</Button>
                                 </Grid>
                             </Grid>
                         </div>
