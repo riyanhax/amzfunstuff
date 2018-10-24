@@ -234,7 +234,9 @@ class ProductDetail extends Component {
 
         let product = JSON.parse(localStorage.getItem(`amzfunstuff-${productId}`))
    
-        //TODO: redirect to home page if product not found
+        if(product == null){
+            this.props.navToLink('/', false)
+        }
 
         const content = this.createContent(classes, product, viewWidth, liked)
 
