@@ -39,11 +39,6 @@ const styles = theme => ({
     setting: {
         marginBottom: 20,
     },
-    priceText: {
-        fontSize: '.7rem',
-        fontWeight: '600',
-        color: '#212121',
-    },
     priceValue: {
         fontSize: '1rem',
         fontWeight: '900',
@@ -243,13 +238,16 @@ class Products extends Component {
         }else{
             sliderWidth = viewWidth * 0.5
         }
-        const startPrice = <span className={classes.priceValue}>$ {price[0]}</span>
-        const endPrice = price[1] == 210 ? <span className={classes.priceValue}>Max</span> : <span className={classes.priceValue}>$ {price[1]}</span>
+        const startPrice = <span className={classes.priceValue}>${price[0]}</span>
+        const endPrice = price[1] == 210 ? <span className={classes.priceValue}>Max</span> : <span className={classes.priceValue}>${price[1]}</span>
+        const leftPadding = (sliderWidth / 210 * price[0]) - (price[0] >= 100 ? 35 : 30)
+        const rightPadding = (sliderWidth / 210 * (210 - price[1])) - (price[1] >= 100 ? 35 : 30)
+
         const panel = info == null ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
-                                <span className={classes.priceText}> {startPrice} 至 {endPrice}</span>
+                                <div style={{ width:sliderWidth, paddingLeft:leftPadding, paddingRight:rightPadding }}><Grid container justify="space-between" alignItems="center">{startPrice}{endPrice}</Grid></div>
                                 <div style={{ width:sliderWidth }}><Slider color="#FF5252" range min={0} max={210} value={price} scaleLength={10} onChange={this.handleSliderChange}/></div>
                             </Grid>
                         </Grid>
