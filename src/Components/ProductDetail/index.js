@@ -6,8 +6,12 @@ import { orange, red } from '@material-ui/core/colors'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import { withContext } from '../../context'
+import Products from '../Products'
 
 const styles = theme => ({
+    content:{
+        marginBottom: 25,
+    },
     titleCN: {
         fontSize: '1.2rem',
         fontWeight: '900',
@@ -85,6 +89,12 @@ const styles = theme => ({
         color: '#fff',
         textShadow: `2px 2px 2px #222`,
         marginLeft: 20,
+    },
+    related: {
+        marginTop: 20,
+        fontSize: '.9rem',
+        fontWeight: '600',
+        letterSpacing: .8,
     }
 })
 
@@ -150,7 +160,7 @@ class ProductDetail extends Component {
                              <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 
 
-        return <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        return <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.content}>
                     <Grid container justify="center" alignItems="center">
                         <div>
                             <a href={product.link} rel="nofollow" target="_blank">
@@ -172,6 +182,9 @@ class ProductDetail extends Component {
                         <div className={classes.buttonDiv}>
                             <Button variant="contained" style={{ width:adjustedWidth }} className={classes.likeButton} onClick={(event) => { event.preventDefault(), this.addLiked(product.id) }}>喜欢</Button>
                         </div>
+                        <Grid container justify="center" alignItems="center" style={{ width:adjustedWidth }}>
+                            <div className={classes.related}>你或许也想把辛苦赚来的💰浪费在下面这些奇葩好物上...</div>
+                        </Grid>
                     </Grid>
                 </Grid>
                 
@@ -191,7 +204,7 @@ class ProductDetail extends Component {
                              <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 
 
-        return <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        return <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.content}>
                     <Grid container justify="center" alignItems="center">
                         <Grid>
                             <div className={classes.image}>
@@ -221,6 +234,9 @@ class ProductDetail extends Component {
                             </Grid>
                         </Grid>
                     </Grid>
+                    <Grid container justify="center" alignItems="center">
+                        <div className={classes.related}>你或许也想把辛苦赚来的💰浪费在下面这些奇葩好物上...</div>
+                    </Grid>
                 </Grid>
     }
 
@@ -242,6 +258,7 @@ class ProductDetail extends Component {
 
         return <Grid container justify="center" alignItems="center">
                     {content}
+                    <Products category={product.category} subcategory={product.subcategory} />
                 </Grid>
     }
 }

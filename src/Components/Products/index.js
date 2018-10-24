@@ -65,6 +65,7 @@ class Products extends Component {
         info: null,
         index: null,
         liked: null,
+        type: null,
         price: [0,220],
         sort: 1,
     }
@@ -75,16 +76,27 @@ class Products extends Component {
 
         const { location: { pathname } } = this.props
 
-        const category = pathname.split('/')[1]
-        const subcategory = pathname.split('/')[2]
+        let category = null
+        let subcategory = null 
 
+        // if used as related products in product detail component, then these 2 props would be passed; otherwise, it's used as independent component
+        if(this.props.category != null && this.props.subcategory != null){
+            category = this.props.category
+            subcategory = this.props.subcategory
+            this.setState({ type:'related' })
+        }else{
+            category = pathname.split('/')[1]
+            subcategory = pathname.split('/')[2]
+            this.setState({ type:'independent' })
+        }
+        
         // console.log('pathname ', pathname)
         // console.log('category ', category)
         // console.log('subcategory ', subcategory)
 
         this.loadLiked()
 
-        if(pathname == '/'){
+        if(pathname != null & pathname == '/'){
             this.loadProducts('whatsnew', null)
         }else if(category != null && subcategory == null){
             this.loadProducts(category, null)
@@ -214,7 +226,7 @@ class Products extends Component {
 
     render() { 
         const { classes } = this.props
-        const { products, index, info, viewWidth, price, liked, sort } = this.state
+        const { products, index, info, viewWidth, price, liked, sort, type } = this.state
 
         //create banner sub-component (display on whatsnew only)
         const banner = info != null ? null :
@@ -223,7 +235,7 @@ class Products extends Component {
                         </a>
 
         // create header sub-component (display on non-whatsnew only)
-        const header = info == null ? null : 
+        const header = info == null || (type == null || type == 'related') ? null : 
                        <Grid container direction="column" justify="center" className={classes.header}>
                             <div className={classes.headerTitle}>{info.title}</div>
                             <Hidden xsDown>
@@ -244,7 +256,7 @@ class Products extends Component {
         const leftMargin = price[0] == 0 ? 0 : (sliderWidth / 220 * price[0])
         const rightMargin = price[1] == 220 ? 0 : (sliderWidth / 220 * (220 - price[1]))
 
-        const panel = info == null ? null : 
+        const panel = info == null || (type == null || type == 'related') ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
