@@ -186,7 +186,7 @@ class Products extends Component {
         this.setState({ sort: event.target.value })
     }
 
-    // used for product sorting
+    // used for products sorting
     sortProducts = (filteredProducts) => {
         const sort = this.state.sort 
         if(sort == 1){
@@ -222,6 +222,24 @@ class Products extends Component {
                 return 0
             })
         }
+    }
+
+    // used for products shuffle (https://gomakethings.com/how-to-shuffle-an-array-with-vanilla-js/)
+    shuffle = (products) => {
+        let currentIndex = products.length
+        let temporaryValue = null 
+        let randomIndex = null 
+
+        while(0 !== currentIndex) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            temporaryValue = products[currentIndex];
+            products[currentIndex] = products[randomIndex];
+            products[randomIndex] = temporaryValue;
+        }
+
+        return products;
     }
 
     render() { 
@@ -296,7 +314,7 @@ class Products extends Component {
             const filteredProducts = products.filter((product) => {
                 return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
             })
-            const sortedProducts = this.sortProducts(filteredProducts)
+            const sortedProducts = (type == null || type != 'related') ? this.sortProducts(filteredProducts) : this.shuffle(filteredProducts)
             const finalIndex = index > sortedProducts.length ? sortedProducts.length : index
             const finalProducts = sortedProducts.slice(0, finalIndex)
 
