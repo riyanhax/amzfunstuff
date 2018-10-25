@@ -9,8 +9,11 @@ import { withContext } from '../../context'
 import Products from '../Products'
 
 const styles = theme => ({
-    content:{
-        marginBottom: 25,
+    content: {
+        marginBottom: 20,
+    },
+    share: {
+        marginTop: 20,
     },
     titleCN: {
         fontSize: '1.2rem',
@@ -182,7 +185,8 @@ class ProductDetail extends Component {
                         <div className={classes.buttonDiv}>
                             <Button variant="contained" style={{ width:adjustedWidth }} className={classes.likeButton} onClick={(event) => { event.preventDefault(), this.addLiked(product.id) }}>喜欢</Button>
                         </div>
-                        <Grid container justify="center" alignItems="center" style={{ width:adjustedWidth }}>
+                        <Grid container justify="center" alignItems="center" className={classes.share}>
+                            <div className="addthis_inline_share_toolbox"></div>
                             <div className={classes.related}>你或许也想把辛苦赚来的💰浪费在下面这些奇葩好物上...</div>
                         </Grid>
                     </Grid>
@@ -234,7 +238,8 @@ class ProductDetail extends Component {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid container justify="center" alignItems="center">
+                    <Grid container direction="column" justify="center" alignItems="center" className={classes.share}>
+                        <div className="addthis_inline_share_toolbox"></div>
                         <div className={classes.related}>你或许也想把辛苦赚来的💰浪费在下面这些奇葩好物上...</div>
                     </Grid>
                 </Grid>
