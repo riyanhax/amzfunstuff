@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import {
-    Grid, Button
+    Grid, Button, CircularProgress
 } from '@material-ui/core'
 import { orange, red } from '@material-ui/core/colors'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import { withContext } from '../../context'
 import Products from '../Products'
+import axios from "axios"
 
 const styles = theme => ({
     content: {
@@ -107,15 +108,50 @@ class ProductDetail extends Component {
     state = {
         viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth,
         liked: null,
+        product: null,
     }
 
     componentDidMount() {
         this.loadLiked()
         window.addEventListener("resize", this.handleResize)
+
+        const links= window.location.href.split('/')
+        const category = links[links.length-3]
+        const subcategory = links[links.length-2]
+        const productId = links[links.length-1]
+
+        let product = JSON.parse(localStorage.getItem(`amzfunstuff-${productId}`))
+
+        if(product == null){
+            this.loadProduct(category, subcategory, productId)
+        }else{
+            this.setState({ product })
+        }
     }
 
     componentWillUnmount(){
         window.removeEventListener('resize', this.handleResize)
+    }
+
+    // load product
+    loadProduct = async (category, subcategory, productId) => {
+        // load products
+        let productsURL = `/assets/products/${category}/${subcategory}`
+        let next = true
+        let counter = 1
+        let products = []
+        while(next){
+            const content = await axios.get(`${productsURL}/${counter}.json`)
+            products = content.data.products.concat(products)
+            counter++
+            next = content.data.next
+        }
+
+        // find product
+        const product = products.find((product) => {
+            return product.id == productId
+        })
+        this.setState({ product })
     }
 
     // load liked set
@@ -246,24 +282,22 @@ class ProductDetail extends Component {
     }
 
     render() {
-
         const { classes } = this.props
-        const { viewWidth, liked } = this.state
-        
-        const links= window.location.href.split('/')
-        const productId = links[links.length-1]
+        const { viewWidth, liked, product } = this.state
 
-        let product = JSON.parse(localStorage.getItem(`amzfunstuff-${productId}`))
-   
+        let content = null 
+        let related = null
+
         if(product == null){
-            this.props.navToLink('/', false)
+            content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress size={100} /></Grid>
+        }else{
+            content = this.createContent(classes, product, viewWidth, liked)
+            related = <Products category={product.category} subcategory={product.subcategory} />
         }
-
-        const content = this.createContent(classes, product, viewWidth, liked)
-
+        
         return <Grid container justify="center" alignItems="center">
                     {content}
-                    <Products category={product.category} subcategory={product.subcategory} />
+                    {related}
                 </Grid>
     }
 }

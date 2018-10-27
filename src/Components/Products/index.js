@@ -309,7 +309,7 @@ class Products extends Component {
         // create content sub-component
         let content = null
         if(products.length == 0){
-            content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress className={classes.progress} size={100} /></Grid>
+            content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress size={100} /></Grid>
         }else{
             const filteredProducts = products.filter((product) => {
                 return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
