@@ -151,6 +151,7 @@ class ProductDetail extends Component {
         const product = products.find((product) => {
             return product.id == productId
         })
+        localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product))
         this.setState({ product })
     }
 
