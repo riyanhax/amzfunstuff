@@ -20,7 +20,7 @@
         "icon":"fas fa-gamepad"
     },
     "4": {
-        "name":"divider"
+        "link":"divider"
     },
     "5": {
         "link":"/blogs",

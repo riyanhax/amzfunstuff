@@ -54,12 +54,11 @@ class Nav extends Component {
 
         for(const id of Object.keys(categories)){
             // iterate nav items
-            const navName = categories[id].name
-            if(navName == 'divider'){
+            if(categories[id].link == 'divider'){
                 menus.push(<Divider key={id}/>);
                 continue
             }
-
+            const navName = categories[id].name
             const navTo = categories[id].link
             const icon = <Icon className={classNames(classes.icon, categories[id].icon)} style={{fontSize:25}} />
 

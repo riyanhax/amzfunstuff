@@ -5,6 +5,7 @@ import NotFound from './Errors'
 import Layout from './Layout'
 import Products from './Products'
 import ProductDetail from './ProductDetail'
+import Articles from './Articles'
 import categories from '../menus/categories'
 import subcategories from '../menus/subcategories'
 
@@ -42,12 +43,19 @@ class App extends Component {
     const reload = () => window.location.reload()
 
     for(const id of Object.keys(categories)){
-      routes.push(<Route exact key={id} path={categories[id].link} component={Products} />);
+      if(categories[id].name == 'divider'){
+          continue
+      }
+      if(categories[id].link == '/blogs'){
+        routes.push(<Route exact key={id} path={categories[id].link} component={Articles} />)
+      }else{
+        routes.push(<Route exact key={id} path={categories[id].link} component={Products} />)
 
-      const subs = subcategories[id];
-      if(subs){
-        for(const sub of subs){
-          routes.push(<Route exact key={sub.id} path={sub.link} component={Products} />);
+        const subs = subcategories[id];
+        if(subs){
+          for(const sub of subs){
+            routes.push(<Route exact key={sub.id} path={sub.link} component={Products} />)
+          }
         }
       }
     }
