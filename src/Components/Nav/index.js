@@ -66,7 +66,7 @@ class Nav extends Component {
             const menuItemClass = selected ? classes.menuItemSelected : classes.menuItem
             const navClass = selected ? classes.navSelected : classes.nav
 
-            const navItem = navTo === '/' ? 
+            const navItem = navTo == '/' || navTo == '/blogs' || navTo == '/guides' ? 
                             <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass} onClick={this.props.handleDrawerToggle}>
                                 <ListItemIcon className={classes.icon}>
                                 {icon}
