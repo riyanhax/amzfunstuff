@@ -172,10 +172,10 @@ class Article extends Component {
                             </a>
                         </div>
                         <Grid container direction="column" justify="center" alignItems="center" style={{ width:adjustedWidth }}>
-                            <div className={classes.multipleColTitle} onClick={() => {this.props.navToLink(`/blogs/${article.link}`, true)}}>
+                            <div className={classes.multipleColTitle} onClick={() => {this.props.navToLink(`${article.link}`, true)}}>
                                 {article.title}
                             </div>
-                            <div className={classes.multipleColSummary} style={{ width:adjustedWidth - 20 }}>
+                            <div className={classes.multipleColSummary} style={{ width:adjustedWidth - 20 }} onClick={() => {this.props.navToLink(`${article.link}`, true)}}>
                                 {article.summary}
                             </div>
                             <div className={classes.multipleColInfo} style={{ width:adjustedWidth - 20 }}>
