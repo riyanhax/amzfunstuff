@@ -151,8 +151,12 @@ class ProductDetail extends Component {
         const product = products.find((product) => {
             return product.id == productId
         })
-        localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product))
-        this.setState({ product })
+        if(product == null){
+            this.setState({ product:'not found' })
+        }else{
+            localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product))
+            this.setState({ product })
+        }
     }
 
     // load liked set
@@ -291,6 +295,8 @@ class ProductDetail extends Component {
 
         if(product == null){
             content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress size={100} /></Grid>
+        }else if(product == 'not found'){
+            this.props.navToLink('/', false)
         }else{
             content = this.createContent(classes, product, viewWidth, liked)
             related = <Products category={product.category} subcategory={product.subcategory} />
