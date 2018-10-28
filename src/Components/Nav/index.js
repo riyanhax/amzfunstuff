@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import classNames from 'classnames/bind'
 import {
-    MenuList, MenuItem, ListItemIcon, Icon
+    MenuList, MenuItem, ListItemIcon, Icon, Divider
 } from '@material-ui/core'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
@@ -54,9 +54,13 @@ class Nav extends Component {
 
         for(const id of Object.keys(categories)){
             // iterate nav items
+            const navName = categories[id].name
+            if(navName == 'divider'){
+                menus.push(<Divider key={id}/>);
+                continue
+            }
 
             const navTo = categories[id].link
-            const navName = categories[id].name
             const icon = <Icon className={classNames(classes.icon, categories[id].icon)} style={{fontSize:25}} />
 
             const selected = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)

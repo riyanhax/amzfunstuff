@@ -18,5 +18,18 @@
         "link":"/toy-games",
         "name":"玩具+游戏",
         "icon":"fas fa-gamepad"
+    },
+    "4": {
+        "name":"divider"
+    },
+    "5": {
+        "link":"/blogs",
+        "name":"随笔",
+        "icon":"fas fa-pen-fancy"
+    },
+    "6": {
+        "link":"/guides",
+        "name":"败家指南",
+        "icon":"fab fa-glide-g"
     }
 }
