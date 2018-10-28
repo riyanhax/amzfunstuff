@@ -165,7 +165,6 @@ class Products extends Component {
         const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
 
         if(innerHeight + scrollTop >= document.getElementById('root').offsetHeight - 50){
-            console.log('bottom')
             const index = this.state.index + 12 > this.state.products.length ? this.state.products.length : this.state.index + 12
             this.setState({ index })
         }
