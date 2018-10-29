@@ -176,17 +176,22 @@
    padding-top: 15px;
  }
  
- #sidedrawer strong {
+ #sidedrawer .category {
    display: block;
    padding: 15px 22px;
    cursor: pointer;
  }
+
+ #sidedrawer .category i {
+    font-size: 25px;
+    margin-right: 10px;
+  }
  
- #sidedrawer strong:hover {
+ #sidedrawer .category:hover {
    background-color: #E0E0E0;
  }
  
- #sidedrawer strong + ul > li {
+ #sidedrawer .category + ul > li {
    padding: 6px 0px;
  }
  

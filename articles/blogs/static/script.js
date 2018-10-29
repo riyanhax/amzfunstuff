@@ -38,7 +38,7 @@ jQuery(function($) {
     // ==========================================================================
     // Animate menu
     // ==========================================================================
-    var $titleEls = $('strong', $sidedrawerEl);
+    var $titleEls = $('.category', $sidedrawerEl);
     
     $titleEls
       .next()
