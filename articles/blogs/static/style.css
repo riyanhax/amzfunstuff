@@ -1,11 +1,11 @@
-/**
+/*
  * Body CSS
  */
 
  html,
  body {
    height: 100%;
-   background-color: #ffe;
+   background-color: #fff;
  }
  
  html,
@@ -19,7 +19,7 @@
  }
  
  
- /**
+ /*
   * Layout CSS
   */
  
@@ -48,7 +48,6 @@
    min-height: 100%;
    overflow-x: hidden;
    margin-left: 0px;
-   /* background-color: #fff; */
    transition: margin-left 0.2s;
 
    /* sticky bottom */
@@ -63,18 +62,21 @@
    margin-left: 0px;
    transition: margin-left 0.2s;
  }
-
+ 
+ /* content container */
  .content {
     margin: 3% 8% 3% 8%;
  }
-
+ 
+ /* title */
  .title {
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
  }
 
+ /* paragragh */
  p {
     line-height: 1.7;
     font-size: 16px;
@@ -82,6 +84,60 @@
     word-break: break-word!important;
     color:#2f2f2f;
     margin-top: 30px;
+ }
+
+ /* image */
+ img {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+ }
+
+ /* blockquote */
+ blockquote {
+    border-radius: 3px;
+    position: relative;  
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    background: #E8E8E8;
+}
+blockquote::before,
+blockquote::after{
+    font-family: FontAwesome;
+    position: absolute;
+    top: 13px;
+    color: #E8E8E8;
+    font-size: 34px;
+}
+blockquote::before{
+    content: "\f10d";
+    margin-right: 13px;
+    right: 100%;
+}
+blockquote::after{
+    content: "\f10e";
+    margin-left: 13px;
+    left: 100%;  
+}
+
+/* video */
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+ }
+ .video-responsive object{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
  }
  
  @media (min-width: 768px) {
@@ -116,17 +172,19 @@
    body.hide-sidedrawer #footer {
      margin-left: 0;
    }
-
+ 
+   /* content container in larger screen */
    .content {
-        margin: 3% 18% 3% 18%;
-    }
+     margin: 3% 18% 3% 18%;
+   }
 
-    .title {
-        text-align: center;
-        font-size: 34px;
-        font-weight: 400;
-        line-height: 40px;
-     }
+   /* title in larger screen */
+   .title {
+     text-align: left;
+     font-size: 34px;
+     font-weight: 400;
+     line-height: 40px;
+    }
  }
  
  
@@ -156,12 +214,17 @@
  }
  
  
- /**
+ /*
   * Sidedrawer CSS
   */
  
  #sidedrawer-brand {
    padding-left: 20px;
+ }
+
+ #sidedrawer a {
+    color: inherit;
+    text-decoration: none;
  }
  
  #sidedrawer ul {
@@ -176,37 +239,40 @@
    padding-top: 15px;
  }
  
- #sidedrawer .category {
+ #sidedrawer span {
    display: block;
    padding: 15px 22px;
    cursor: pointer;
  }
 
- #sidedrawer .category i {
+ #sidedrawer span i {
     font-size: 25px;
     margin-right: 10px;
   }
  
- #sidedrawer .category:hover {
+ #sidedrawer span:hover {
    background-color: #E0E0E0;
  }
  
- #sidedrawer .category + ul > li {
+ #sidedrawer span + ul > li {
    padding: 6px 0px;
  }
  
  
- /**
+ /*
   * Footer CSS
   */
  
  #footer {
-   background-color: #0288D1;
-   color: #fff;
+   /* background-color: #B2DFDB; */
+   color: #00796B;
  }
  
- #footer a {
-   color: #fff;
+ #footer a span {
+   color: #00796B;
    text-decoration: underline;
+   font-weight: 600;
+   margin-left: 3px;
+   margin-right: 6px;
  }
  
