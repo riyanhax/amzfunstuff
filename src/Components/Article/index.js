@@ -184,7 +184,7 @@ class Article extends Component {
                                         {likeOrNot}
                                     </Grid>
                                     <Grid item>
-                                        <div>{article.category}</div>
+                                        <div>{article.date}</div>
                                     </Grid>
                                 </Grid>
                             </div>
