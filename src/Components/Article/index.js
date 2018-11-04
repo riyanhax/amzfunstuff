@@ -134,7 +134,7 @@ class Article extends Component {
                     <Grid container justify="center">
                         <div className={classes.singleColImage}>
                             <a href={article.link} rel="nofollow" target="_blank">
-                                <img src={`/articles/images/${article.image}.jpg`} alt={article.title} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                <img src={`/articles/covers/${article.image}.jpg`} alt={article.title} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="center" className={classes.singleColTitleShadow}>
                                     <div className={classes.singleColTitle} style={{ fontSize:adjustedFontSize }}>{article.title}</div>
                                 </Grid>
@@ -165,7 +165,7 @@ class Article extends Component {
                     <Grid container justify="center">
                         <div className={classes.multipleColImage}>
                             <a href={article.link} rel="nofollow" target="_blank">
-                                <img src={`/articles/images/${article.image}.jpg`} alt={article.title} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                <img src={`/articles/covers/${article.image}.jpg`} alt={article.title} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.multipleColShadow}>
                                     <Button variant="contained" className={classes.likeButton} onClick={(event) => { event.preventDefault(), addLiked('b-'+article.id) }}>喜欢</Button>
                                 </Grid>

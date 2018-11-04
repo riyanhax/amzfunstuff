@@ -111,7 +111,7 @@ class Articles extends Component {
 
         //create banner sub-component
         const banner =  <a href="www.amazon.com" rel="nofollow" target="_blank">
-                            <img className={classes.banner} src={`/articles/images/banner.png`}/>
+                            <img className={classes.banner} src={`/articles/covers/banner.png`}/>
                         </a>
                         
         // create content sub-component

@@ -48,6 +48,8 @@ class App extends Component {
       }
       if(categories[id].link == '/blogs'){
         routes.push(<Route exact key={id} path={categories[id].link} component={Articles} />)
+      }if(categories[id].link == '/guides'){
+        routes.push(<Route exact key={id} path={categories[id].link} component={Articles} />)
       }else{
         routes.push(<Route exact key={id} path={categories[id].link} component={Products} />)
 
