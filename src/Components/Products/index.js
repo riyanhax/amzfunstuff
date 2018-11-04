@@ -62,6 +62,7 @@ class Products extends Component {
     state = {
         viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth,
         products: [],
+        shuffled: [],
         info: null,
         index: null,
         liked: null,
@@ -155,7 +156,8 @@ class Products extends Component {
             next = content.data.next
         }
         const index = 24
-        this.setState({ info, products, index })
+        const shuffled = this.shuffle(products)
+        this.setState({ info, products, shuffled, index })
     }
 
     // handle scroll - load more by modifying index
@@ -243,7 +245,7 @@ class Products extends Component {
 
     render() { 
         const { classes } = this.props
-        const { products, index, info, viewWidth, price, liked, sort, type } = this.state
+        const { products, shuffled, index, info, viewWidth, price, liked, sort, type } = this.state
 
         //create banner sub-component (display on whatsnew only)
         const banner = info != null ? null :
@@ -313,7 +315,7 @@ class Products extends Component {
             const filteredProducts = products.filter((product) => {
                 return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
             })
-            const sortedProducts = (type == null || type != 'related') ? this.sortProducts(filteredProducts) : this.shuffle(filteredProducts)
+            const sortedProducts = (type == null || type != 'related') ? this.sortProducts(filteredProducts) : shuffled
             const finalIndex = index > sortedProducts.length ? sortedProducts.length : index
             const finalProducts = sortedProducts.slice(0, finalIndex)
 
