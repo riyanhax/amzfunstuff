@@ -244,7 +244,7 @@ class Products extends Component {
 
     render() { 
         const { classes } = this.props
-        const { products, shuffled, index, info, viewWidth, price, liked, sort, type } = this.state
+        const { products, index, info, viewWidth, price, liked, sort, type } = this.state
 
         //create banner sub-component (display on whatsnew only)
         const banner = info != null ? null :
