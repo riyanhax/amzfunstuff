@@ -31,5 +31,18 @@
         "link":"/guides",
         "name":"败家指南",
         "icon":"fab fa-glide-g"
+    },
+    "7": {
+        "link":"/about",
+        "name":"关于我们",
+        "icon":"far fa-comment-dots"
+    },
+    "8": {
+        "link":"divider"
+    },
+    "9": {
+        "link":"/myfavs",
+        "name":"我喜欢的",
+        "icon":"fas fa-heart"
     }
 }

@@ -30,3 +30,11 @@
 
 ## use cloudfront to compress
 * [New – Gzip Compression Support for Amazon CloudFront](https://aws.amazon.com/blogs/aws/new-gzip-compression-support-for-amazon-cloudfront/)
+
+## Associate Help
+* [Links & Banners](https://affiliate-program.amazon.com/promotion/buildlinks)
+* [1500*500 headers](https://www.tumblr.com/tagged/1500x500-headers)
+
+## 3rd Party Services Used
+* xihongshishoufu@gmail.com (Go***@#)
+* [Add This](https://www.addthis.com)
