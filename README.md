@@ -34,6 +34,7 @@
 ## Associate Help
 * [Links & Banners](https://affiliate-program.amazon.com/promotion/buildlinks)
 * [1500*500 headers](https://www.tumblr.com/tagged/1500x500-headers)
+* [Amazon Influencer Program](https://affiliate-program.amazon.com/influencers)
 
 ## 3rd Party Services Used
 * xihongshishoufu@gmail.com (Go***@#)
