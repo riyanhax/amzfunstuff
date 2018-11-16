@@ -36,12 +36,12 @@ const main = async () => {
                 titleEN: post.title,
                 description: '',
                 content: post.content,
-                exId: post.id,
                 price: post.price,
                 likes: post.saves,
-                link: post.link,
+                link: '',
                 uri: `https://www.thisiswhyimbroke.com${post.uri}`,
-                source: 'thisiswhyimbroke'
+                source: 'thisiswhyimbroke',
+                exId: post.id
             }
             products.push(product)
         }
@@ -49,6 +49,7 @@ const main = async () => {
         counter++
     }
 
+    // write to file
     const json = JSON.stringify(products, undefined, 2)
     fs.writeFileSync(filepath, json, 'utf8')  
 }

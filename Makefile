@@ -10,3 +10,6 @@ uploadSandbox:
 
 retrieve-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/retrieve.js 
+
+imagelink-thisiswhyimbroke:
+	node ./utils/products/thisiswhyimbroke/imagelink.js 

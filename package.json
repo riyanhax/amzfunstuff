@@ -28,6 +28,7 @@
     "babel-loader": "^8.0.2",
     "babel-plugin-import": "^1.9.1",
     "html-webpack-plugin": "^4.0.0-alpha.2",
+    "puppeteer": "^1.10.0",
     "serve": "^10.0.1",
     "webpack": "^4.19.0",
     "webpack-bundle-analyzer": "^3.0.2",
