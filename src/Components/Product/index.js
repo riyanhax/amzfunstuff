@@ -130,7 +130,7 @@ class Product extends Component {
                         <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.category}/${product.subcategory}/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}-{product.id}</div>
                         <div className={classes.singleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
-                                <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                <img src={`/assets/images/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.singleColShadow}>
                                     <Button variant="contained" className={classes.detailButton} onClick={() => { this.props.navToLink(product.link, true) }}>查看详情</Button>
                                 </Grid>
@@ -160,7 +160,7 @@ class Product extends Component {
                         <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.category}/${product.subcategory}/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}-{product.id}</div>    
                         <div className={classes.multipleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
-                                <img src={`/assets/images/${product.imageSmall}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                <img src={`/assets/images/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.multipleColShadow}>
                                     <Button variant="contained" className={classes.likeButton} onClick={(event) => { event.preventDefault(), addLiked(product.id) }}>喜欢</Button>
                                 </Grid>
