@@ -38,6 +38,7 @@ const main = async () => {
                 content: post.content,
                 price: post.price,
                 likes: post.saves,
+                categories: post.categories,
                 link: '',
                 uri: `https://www.thisiswhyimbroke.com${post.uri}`,
                 source: 'thisiswhyimbroke',
