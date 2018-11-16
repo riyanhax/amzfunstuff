@@ -42,18 +42,14 @@ const main = async () => {
             waituntil: "networkidle0"
         })
 
-        // await pages[0].goto('https://www.thisiswhyimbroke.com/vehicle-hitch-step-for-dogs/', {
-        //     waituntil: "networkidle0"
-        // })
         await pages[0].waitFor(1000)
 
         const imagelinks = await pages[0].evaluate(
             () => [...document.querySelectorAll('div.flex-image > a > img')]
             .map(img => img.src)
         )
-        // console.log('imagelinks ',imagelinks)
+
         product.imagelink = imagelinks[0]
-        // break
     }
 
     // close browser

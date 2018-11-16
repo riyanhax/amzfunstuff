@@ -13,3 +13,6 @@ retrieve-thisiswhyimbroke:
 
 imagelink-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/imagelink.js 
+
+imagedownload-thisiswhyimbroke:
+	node ./utils/products/thisiswhyimbroke/imagedownload.js 
