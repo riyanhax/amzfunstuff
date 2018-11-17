@@ -3,7 +3,7 @@
 ## thisiswhyimbroke
 
 # scrap data
-* provide a stop date in `scrap.js` file before running the command 
+* provide a stop date in `scrap.js` file before running the command , this command would scrap newest data from `thisiswhyimbroke.com` to the end date defined, and save the scrapped data into `amazon.json`, `etsy.json`, `kickstarter.json`, and `others.json` based on products' platforms
 * command: `make scrap-thisiswhyimbroke`
 
 # get image link
