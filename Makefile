@@ -8,11 +8,11 @@ uploadSandbox:
 
 # thisiswhyimbroke
 
-retrieve-thisiswhyimbroke:
-	node ./utils/products/thisiswhyimbroke/retrieve.js 
+scrap-thisiswhyimbroke:
+	node ./utils/products/thisiswhyimbroke/scrap.js 
 
-imagelink-thisiswhyimbroke:
-	node ./utils/products/thisiswhyimbroke/imagelink.js 
+image-thisiswhyimbroke:
+	node ./utils/products/thisiswhyimbroke/image.js 
 
-imagedownload-thisiswhyimbroke:
-	node ./utils/products/thisiswhyimbroke/imagedownload.js 
+download-thisiswhyimbroke:
+	node ./utils/products/thisiswhyimbroke/download.js 

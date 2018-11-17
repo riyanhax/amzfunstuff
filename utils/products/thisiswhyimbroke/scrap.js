@@ -29,7 +29,7 @@ const main = async () => {
             if(post.link.indexOf('amazon') == -1){
                 continue
             }
-
+            
             let product = {
                 id: post.link.split('dp/')[1].split('/')[0],
                 titleCN: '',
@@ -38,7 +38,7 @@ const main = async () => {
                 content: post.content,
                 price: post.price,
                 likes: post.saves,
-                categories: post.categories,
+                categories: JSON.parse(post.categories).filter((category) => { return category != 'thisiswhyimbroke' }),
                 link: '',
                 uri: `https://www.thisiswhyimbroke.com${post.uri}`,
                 source: 'thisiswhyimbroke',
