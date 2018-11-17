@@ -14,7 +14,7 @@ const main = async () => {
         products = require(filepath)
     }catch(ex){
         console.log('Error: invalid json')
-        exit(1)
+        process.exit(1)
     }
 
     // initialize puppeteer

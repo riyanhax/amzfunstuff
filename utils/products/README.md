@@ -14,7 +14,8 @@
 * based on the image link retrieved in last step, this command will download images for each product
 * command: `make download-thisiswhyimbroke`
 
-# 
+# list categories (this step is only for reference)
+* based on data.json file, list all categories and put the result in categories.json
 
 ## generic 
 

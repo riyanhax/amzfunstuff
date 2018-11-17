@@ -16,3 +16,6 @@ image-thisiswhyimbroke:
 
 download-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/download.js 
+
+categories-thisiswhyimbroke:
+	node ./utils/products/thisiswhyimbroke/categories.js 
