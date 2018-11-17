@@ -2,7 +2,11 @@
 
 const fs = require('fs')
 
-const filepath = __dirname + '/data/data.json'
+const filepath = __dirname + '/data/amazon.json'
+// const filepath = __dirname + '/data/etsy.json'
+// const filepath = __dirname + '/data/kickstarter.json'
+// const filepath = __dirname + '/data/others.json'
+
 const categoriespath = __dirname + '/data/categories.json'
 
 const main = () => {
