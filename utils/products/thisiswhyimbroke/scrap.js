@@ -44,6 +44,7 @@ const main = async () => {
                 likes: post.saves,
                 categories: JSON.parse(post.categories).filter((category) => { return category != 'thisiswhyimbroke' }),
                 link: '',
+                published: post.published,
                 uri: `https://www.thisiswhyimbroke.com${post.uri}`,
                 source: 'thisiswhyimbroke',
                 exId: post.id,
