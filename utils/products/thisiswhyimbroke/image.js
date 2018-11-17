@@ -3,7 +3,7 @@
 const puppeteer = require('puppeteer')
 const fs = require('fs')
 
-const filepath = __dirname + '/data.json'
+const filepath = __dirname + '/data/data.json'
 
 const main = async () => {
 

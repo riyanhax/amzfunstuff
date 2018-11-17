@@ -3,7 +3,7 @@
 const axios = require('axios') 
 const fs = require('fs')
 
-const filepath = __dirname + '/data.json'
+const filepath = __dirname + '/data/data.json'
 
 // date to stop search (start date of last time)
 const dateToStop = '2018-11-11T09:02:00.000Z'
@@ -29,7 +29,7 @@ const main = async () => {
             if(post.link.indexOf('amazon') == -1){
                 continue
             }
-            
+
             let product = {
                 id: post.link.split('dp/')[1].split('/')[0],
                 titleCN: '',

@@ -2,8 +2,8 @@
 
 const fs = require('fs')
 
-const filepath = __dirname + '/data.json'
-const categoriespath = __dirname + '/categories.json'
+const filepath = __dirname + '/data/data.json'
+const categoriespath = __dirname + '/data/categories.json'
 
 const main = () => {
 
