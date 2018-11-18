@@ -20,7 +20,7 @@ const styles = theme => ({
         },
         marginTop: 70,
     },
-    thanksforsubscribing: {
+    thanksnote: {
         fontSize: '1rem',
         fontWeight: '900',
         width: '80%',
@@ -39,6 +39,11 @@ const styles = theme => ({
     wechat: {
         marginTop: 20,
         width: '80%',
+    },
+    email: {
+        marginTop: 50,
+        height:'100%',
+        color: theme.palette.primary.main,
     },
     iconItem: {
         display: 'inline-block',
@@ -71,22 +76,32 @@ class About extends Component {
     state = {
         name: null,
         email: null,
-        loading: false,
-        success: false,
+        subscriber_loading: false,
+        subscriber_success: false,
+        contactus_loading: false,
+        contactus_success: false,
     }
 
     subscribe = () => {
-        if (!this.state.loading) {
-          this.setState({ loading: true }),
-          setTimeout(() => { this.setState({ loading: false, success: true }) }, 2000)
-          setTimeout(() => { this.setState({ success: false }) }, 4000)
+        if (!this.state.subscriber_loading) {
+          this.setState({ subscriber_loading: true }),
+          setTimeout(() => { this.setState({ subscriber_loading: false, subscriber_success: true }) }, 2000)
+          setTimeout(() => { this.setState({ subscriber_success: false }) }, 4000)
+        }
+    }
+
+    contactus = () => {
+        if (!this.state.contactus_loading) {
+          this.setState({ contactus_loading: true }),
+          setTimeout(() => { this.setState({ contactus_loading: false, contactus_success: true }) }, 2000)
+          setTimeout(() => { this.setState({ contactus_success: false }) }, 4000)
         }
     }
 
     render() {
 
         const { classes } = this.props
-        const { loading, success } = this.state
+        const { subscriber_loading, subscriber_success, contactus_loading, contactus_success } = this.state
 
         const instagram = <div onClick={() => this.props.navToLink('https://www.instagram.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-instagram')} style={{fontSize:30, marginLeft:10}} /></div>
         const pinterest = <div onClick={() => this.props.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-pinterest')} style={{fontSize:30, marginLeft:10}} /></div>
@@ -94,10 +109,18 @@ class About extends Component {
         const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-facebook')} style={{fontSize:30, marginLeft:10}} /></div>
         const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weibo')} style={{fontSize:30, marginLeft:10}} /></div>
 
-        const subscriber = success ? 
-                            <div className={classes.thanksforsubscribing}>
+        const follower = <Grid container justify="center" alignItems="center" className={classes.follower}>  
+                                {instagram}{pinterest}{twitter}{facebook}{weibo}
+                            </Grid>
+
+        const wechat = <Grid container direction="column" justify="center" alignItems="center" style={{ width:'100%' }}>
+                            <img src={`/assets/images/wechat.png`} className={classes.wechat}/>
+                        </Grid>
+
+        const subscriber = subscriber_success ? 
+                            <div className={classes.thanksnote}>
                                 <Grid container direction="column" justify="center" alignItems="center" style={{ height:'100%' }}>
-                                    感谢您订阅我们的邮件列表！
+                                    感谢订阅我们的邮件列表！
                                 </Grid>
                             </div> :
                             <div style={{ width:'100%' }}>
@@ -124,20 +147,60 @@ class About extends Component {
                                     />
                                 </Grid>
                                 <Grid container direction="column" justify="center" alignItems="center" style={{ position: 'relative', width:'100%' }}>
-                                    <Button variant="contained" color="primary" className={classes.button} disabled={loading} onClick={this.subscribe}>
+                                    <Button variant="contained" color="primary" className={classes.button} disabled={subscriber_loading} onClick={this.subscribe}>
                                         订阅我们
                                     </Button>
-                                    {loading && <CircularProgress size={24} className={classes.buttonProgress} />}
+                                    {subscriber_loading && <CircularProgress size={24} className={classes.buttonProgress} />}
                                 </Grid>
                             </div>
-            
-            const follower = <Grid container justify="center" alignItems="center" className={classes.follower}>  
-                                {instagram}{pinterest}{twitter}{facebook}{weibo}
-                            </Grid>
 
-            const wechat = <Grid container direction="column" justify="center" alignItems="center" style={{ width:'100%' }}>
-                                <img src={`/assets/images/wechat.png`} className={classes.wechat}/>
-                            </Grid>
+            const contactus = contactus_success ? 
+                                <div className={classes.thanksnote} style={{ marginTop: 40 }}>
+                                    <Grid container direction="column" justify="center" alignItems="center" style={{ height:'100%' }}>
+                                        感谢您的回馈，我们的团队会尽快回复您！
+                                    </Grid>
+                                </div> :
+                                <div style={{ width:'100%', marginTop: 40 }} id="wechat">
+                                    <Grid container direction="column" justify="center" alignItems="center">
+                                        <TextField
+                                            required
+                                            id="contactName"
+                                            label="如何称呼您"
+                                            className={classes.textField}
+                                            // value={this.state.name}
+                                            margin="dense"
+                                            variant="outlined"
+                                        />
+                                        <TextField
+                                            required
+                                            id="contactEmail"
+                                            label="邮件地址"
+                                            className={classes.textField}
+                                            type="email"
+                                            name="email"
+                                            autoComplete="email"
+                                            margin="dense"
+                                            variant="outlined"
+                                        />
+                                        <TextField
+                                            required
+                                            id="contactMessage"
+                                            label="请输入内容"
+                                            multiline
+                                            rows="4"
+                                            defaultValue=""
+                                            className={classes.textField}
+                                            margin="normal"
+                                            variant="outlined"
+                                            />
+                                    </Grid>
+                                    <Grid container direction="column" justify="center" alignItems="center" style={{ position: 'relative', width:'100%' }}>
+                                        <Button variant="contained" color="primary" className={classes.button} disabled={contactus_loading} onClick={this.contactus}>
+                                            联系我们
+                                        </Button>
+                                        {contactus_loading && <CircularProgress size={24} className={classes.buttonProgress} />}
+                                    </Grid>
+                                </div>
 
         return <Grid container justify="center">
             <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
@@ -157,6 +220,7 @@ class About extends Component {
             <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
                 <Grid container direction="column" justify="center" alignItems="center" className={classes.sidebar}>
                     {subscriber}
+                    {contactus}
                     {follower}
                     {wechat}
                 </Grid> 

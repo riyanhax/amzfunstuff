@@ -52,7 +52,7 @@ class Header extends Component {
         const twitter = <div onClick={() => this.props.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter')} style={{fontSize:15, marginLeft:10}} /></div>
         const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook')} style={{fontSize:15, marginLeft:10}} /></div>
         const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weibo')} style={{fontSize:15, marginLeft:10}} /></div>
-        const wechat = <div onClick={() => this.props.navToLink('/', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:10}} /></div>
+        const wechat = <div onClick={() => this.props.navToLink('/about#wechat', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:15, marginLeft:10}} /></div>
 
         return <Grid container className={classes.header}>   
                     <Grid item xs={8}>

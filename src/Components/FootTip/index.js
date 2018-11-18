@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
+import { withContext } from '../../context'
 
 const styles = theme => ({
     foottip: {
@@ -48,5 +49,6 @@ class FootTip extends Component {
 }
 
 export default compose(
+    withContext,
     withStyles(styles)
 )(FootTip)
