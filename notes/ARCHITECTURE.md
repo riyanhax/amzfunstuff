@@ -1,8 +1,8 @@
-###ARCHITECTURE NOTES
+# ARCHITECTURE NOTES
 
-## Components 
+# Components 
 
-# App.js
+## App.js
 * this is the fundamental component, and it contains the following 3 components:
     * added `Provider` component
         * `context.js` exported `withContext`
@@ -17,15 +17,15 @@
         * `404` was handled by `NotFound` component
     * added `Layout` component
 
-# props
+## props
 * if component composed `withContext`, then it can access central context data/methods via `this.props`
 * if component composed `withRouter`, then it can access `location` via `this.props`
 * if component composed `withStyles(styles)`, then it can access `classes` (defined at the top of each component) via `this.props`
 
-# Layout.js
+## Layout.js
 * this component implemented the `Responsive Drawer` (refer `TECH.md`)
 
-# Products.js
+## Products.js
 * this component can be used as
     * independent products page: it will load products based on url (can be `whatsnew` or some category/subcategory)
     * related products page: it will be used as related products in detailed product page, and will load products based on current product's category/subcategory
@@ -39,10 +39,10 @@
 * this component also registered `resize` and `scroll` event - `resize` would help responsive UI, and `scroll` would help for dynamic data loading
 * localStorage was used to store `likes` for each product 
 
-# Product.js
+## Product.js
 * this compnent simply render product, the biggest task it does is to maintain a responsive UI based on `viewWidth` and `windowWidth` props passed from `Products.js` parent component 
 
-# Articles.js & Article.js
+## Articles.js & Article.js
 * these 2 components were similar to `Products.js` and `Product.js`
     * there are 2 types of Article - `blogs` or `guides`, based on url
     * blogs and guides lists were stored under `articles/blogs or guides/x.json`
