@@ -2,29 +2,41 @@
 
 const fs = require('fs')
 
-const filepath = __dirname + '/data/amazon.json'
-// const filepath = __dirname + '/data/etsy.json'
-// const filepath = __dirname + '/data/kickstarter.json'
-// const filepath = __dirname + '/data/others.json'
+const amazonfilepath = __dirname + '/data/amazon.json'
+const etsyfilepath = __dirname + '/data/etsy.json'
+const kickstarterfilepath = __dirname + '/data/kickstarter.json'
+const othersfilepath = __dirname + '/data/others.json'
 
 const categoriespath = __dirname + '/data/categories.json'
 
 const main = () => {
 
     // load products from file
-    let products 
+    let amazonproducts
+    let etsyproducts
+    let kickstarterproducts
+    let othersproducts 
 
     try{
-        products = require(filepath)
+        amazonproducts = require(amazonfilepath)
+        etsyproducts = require(etsyfilepath)
+        kickstarterproducts = require(kickstarterfilepath)
+        othersproducts = require(othersfilepath)
     }catch(ex){
         console.log('Error: invalid json')
         process.exit(1)
     }
 
+    let allprodcuts = []
+    allprodcuts = amazonproducts.concat(allprodcuts)
+    allprodcuts = etsyproducts.concat(allprodcuts)
+    allprodcuts = kickstarterproducts.concat(allprodcuts)
+    allprodcuts = othersproducts.concat(allprodcuts)
+
     let categories = []
 
     // iterate each page to get catefories
-    for(let product of products){
+    for(let product of allprodcuts){
         categories = product.categories.concat(categories)
     }
 
