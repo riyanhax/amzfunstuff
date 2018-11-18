@@ -41,7 +41,7 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: '#fff',
     padding: theme.spacing.unit * 3,
     [theme.breakpoints.up('md')]: {
       marginLeft: drawerWidth,
