@@ -27,15 +27,24 @@
 
 ## Products.js
 * this component can be used as
-    * independent products page: it will load products based on url (can be `whatsnew` or some category/subcategory)
-    * related products page: it will be used as related products in detailed product page, and will load products based on current product's category/subcategory
+    * `independent` type: it will load products based on url (can be `whatsnew` or some category/subcategory)
+    * `related` type: it will be used as related products in detailed product page, and will load products based on the passed in category/subcategory
+    * `myfavs` type: it will be used in `/myfavs` page and display only liked products (based on localstorage) 
 * banner subcomponent will only display on `whatsnew` 
-* header subcomponent (title and description for category and subcategory, defined in `info.json` file) will only display on `non-whatsnew` 
-* panel subcomponent will only display on `non-whatsnew` 
+* header subcomponent (title and description for category and subcategory, defined in `info.json` file) will only display on `non-whatsnew non-myfavs` 
+* panel subcomponent will only display on `non-whatsnew non-myfavs` 
 * content subcomponent will display on all situations
     * if products array not loaded yet, then display loading symbol
-    * filter method used for filter products basd on max/min prices set via price slider in panel (if panel was available on page and price slider was modified by user)
-    * if not used as `related`, then products would be sorted based on the option selected (default value is 1, which is doing nothing); if used as `related`, then products won't be sorted at all (using the default), however, it would be shuffled after loading, therefore, user would see different relatedproducts in detail product page each time
+    * load products:
+        * if pathname is either `/` or `/myfavs`, then need to load all products
+        * otherwise, it only need to subset products based on category/subcategory
+    * filter method:
+        * if not `myfavs` type, then it will filter products basd on max/min prices set via price slider in panel (if panel was available on page and price slider was modified by user)
+        * if `myfavs` type, then it will filter products based on whether the product is liked or not (via localstorage)
+    * sort method:
+        * if not used as `related` or `myfavs`, then products would be sorted based on the option selected (default value is 1, which is doing nothing
+        * if used as `related` or `myfavs`, then products won't be sorted at all (using the default)
+        * if used as `related`, products would be shuffled after loading so user would see different relatedproducts in detail product page each time
 * this component also registered `resize` and `scroll` event - `resize` would help responsive UI, and `scroll` would help for dynamic data loading
 * localStorage was used to store `likes` for each product 
 

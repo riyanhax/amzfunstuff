@@ -7,6 +7,7 @@ import Products from './Products'
 import ProductDetail from './ProductDetail'
 import Articles from './Articles'
 import About from './About'
+import MyFavs from './MyFavs'
 import categories from '../menus/categories'
 import subcategories from '../menus/subcategories'
 
@@ -53,6 +54,8 @@ class App extends Component {
         routes.push(<Route exact key={id} path={categories[id].link} component={Articles} />)
       }if(categories[id].link == '/about'){
         routes.push(<Route exact key={id} path={categories[id].link} component={About} />)
+      }if(categories[id].link == '/myfavs'){
+        routes.push(<Route exact key={id} path={categories[id].link} component={MyFavs} />)
       }else{
         routes.push(<Route exact key={id} path={categories[id].link} component={Products} />)
 

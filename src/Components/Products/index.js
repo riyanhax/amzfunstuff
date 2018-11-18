@@ -84,11 +84,15 @@ class Products extends Component {
         if(this.props.category != null && this.props.subcategory != null){
             category = this.props.category
             subcategory = this.props.subcategory
-            this.setState({ type:'related' })
+            if(category == 'myfavs'){
+                this.setState({ type: 'myfavs' })
+            }else{
+                this.setState({ type:'related' })
+            }
         }else{
             category = pathname.split('/')[1]
             subcategory = pathname.split('/')[2]
-            this.setState({ type:'independent' })
+            this.setState({ type:'independent' }) 
         }
         
         // console.log('pathname ', pathname)
@@ -97,7 +101,7 @@ class Products extends Component {
 
         this.loadLiked()
 
-        if(pathname != null & pathname == '/'){
+        if((pathname != null && pathname == '/') || category == 'myfavs'){
             this.loadProducts('whatsnew', null)
         }else if(category != null && subcategory == null){
             this.loadProducts(category, null)
@@ -130,7 +134,7 @@ class Products extends Component {
         // load product info
         let info = await axios.get('/assets/products/info.json')
         info = info.data
-        if(category != 'whatsnew'){
+        if(category != 'whatsnew' && category != 'myfavs'){
             info = info[category]
             if(subcategory != null){
                 info = info[subcategory]
@@ -248,13 +252,13 @@ class Products extends Component {
         const { products, index, info, viewWidth, price, liked, sort, type } = this.state
 
         //create banner sub-component (display on whatsnew only)
-        const banner = info != null ? null :
+        const banner = info != null || (type == null || type == 'myfavs') ? null :
                         <a href="www.amazon.com" rel="nofollow" target="_blank">
                             <img className={classes.banner} src={`/assets/images/banner.png`}/>
                         </a>
 
-        // create header sub-component (display on non-whatsnew only)
-        const header = info == null || (type == null || type == 'related') ? null : 
+        // create header sub-component (display on non-whatsnew non-myfavs only)
+        const header = info == null || (type == null || type == 'related' || type == 'myfavs') ? null : 
                        <Grid container direction="column" justify="center" className={classes.header}>
                             <div className={classes.headerTitle}>{info.title}</div>
                             <Hidden xsDown>
@@ -262,7 +266,7 @@ class Products extends Component {
                             </Hidden>
                        </Grid>
         
-        // create panel sub-component (display on non-whatsnew only)
+        // create panel sub-component (display on non-whatsnew non-myfavs only)
         let sliderWidth = null
         if(window.innerWidth < 650){
             sliderWidth = viewWidth * 0.7
@@ -275,7 +279,7 @@ class Products extends Component {
         const leftMargin = price[0] == 0 ? 0 : (sliderWidth / 220 * price[0])
         const rightMargin = price[1] == 220 ? 0 : (sliderWidth / 220 * (220 - price[1]))
 
-        const panel = info == null || (type == null || type == 'related') ? null : 
+        const panel = info == null || (type == null || type == 'related' || type == 'myfavs') ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
@@ -312,10 +316,20 @@ class Products extends Component {
         if(products.length == 0){
             content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress size={100} /></Grid>
         }else{
-            const filteredProducts = products.filter((product) => {
+            const filteredProducts = (type == null || type != 'myfavs') ? products.filter((product) => {
                 return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
+            }) : products.filter((product) => {
+                if(liked == null){
+                    return false
+                }else{
+                    if(liked.has(product.id)){
+                        return true
+                    }else{
+                        return false
+                    }
+                }
             })
-            const sortedProducts = (type == null || type != 'related') ? this.sortProducts(filteredProducts) : filteredProducts
+            const sortedProducts = (type == null || type != 'related' || type != 'myfavs') ? this.sortProducts(filteredProducts) : filteredProducts
             const finalIndex = index > sortedProducts.length ? sortedProducts.length : index
             const finalProducts = sortedProducts.slice(0, finalIndex)
 
