@@ -6,6 +6,7 @@ import {
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import { withContext } from '../../context'
+import Footer from '../Footer'
 
 const styles = theme => ({
     paragraph: {
@@ -107,7 +108,7 @@ class About extends Component {
         const pinterest = <div onClick={() => this.props.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-pinterest')} style={{fontSize:30, marginLeft:10}} /></div>
         const twitter = <div onClick={() => this.props.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-twitter')} style={{fontSize:30, marginLeft:10}} /></div>
         const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-facebook')} style={{fontSize:30, marginLeft:10}} /></div>
-        const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weibo')} style={{fontSize:30, marginLeft:10}} /></div>
+        const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-weibo')} style={{fontSize:30, marginLeft:10}} /></div>
 
         const follower = <Grid container justify="center" alignItems="center" className={classes.follower}>  
                                 {instagram}{pinterest}{twitter}{facebook}{weibo}
@@ -225,6 +226,7 @@ class About extends Component {
                     {wechat}
                 </Grid> 
             </Grid>
+            <Footer/>
         </Grid>
     }
 }

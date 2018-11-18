@@ -4,6 +4,7 @@ import {
     Grid, CircularProgress
 } from '@material-ui/core'
 import Article from '../Article'
+import Footer from '../Footer'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import axios from "axios"
@@ -135,6 +136,7 @@ class Articles extends Component {
         return <div className={classes.root}>
                     {banner}
                     {content}
+                    <Footer/>
                 </div>
     }
 }

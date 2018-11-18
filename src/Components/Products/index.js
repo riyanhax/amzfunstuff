@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core'
 import { Slider } from 'material-ui-slider'
 import Product from '../Product'
+import Footer from '../Footer'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import axios from "axios"
@@ -336,6 +337,7 @@ class Products extends Component {
                     {header}
                     {panel}
                     {content}
+                    <Footer/>
                 </div>
     }
 }
