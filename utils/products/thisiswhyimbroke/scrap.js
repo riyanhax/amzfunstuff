@@ -10,7 +10,7 @@ const kickstarterfilepath = __dirname + '/data/kickstarter.json'
 const othersfilepath = __dirname + '/data/others.json'
 
 // date to stop search (start date of last time)
-const dateToStop = '2018-11-04T09:05:00.000Z'
+const dateToStop = '2018-11-17T09:05:00.000Z'
 
 const main = async () => {
 
@@ -42,7 +42,7 @@ const main = async () => {
                 content: post.content,
                 price: post.price,
                 likes: post.saves,
-                categories: JSON.parse(post.categories).filter((category) => { return category != 'thisiswhyimbroke' }),
+                categories: JSON.parse(post.categories) == null ? [] : JSON.parse(post.categories).filter((category) => { return category != 'thisiswhyimbroke' }),
                 link: '',
                 published: post.published,
                 uri: `https://www.thisiswhyimbroke.com${post.uri}`,
