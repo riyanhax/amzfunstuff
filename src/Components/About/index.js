@@ -12,8 +12,12 @@ const styles = theme => ({
     paragraph: {
         [theme.breakpoints.down('sm')]: {
             width: '80%',
+            marginLeft: 0,
+            marginRight: 0,
         },
         width: '100%',
+        marginLeft: 30,
+        marginRight: 30,
     },
     sidebar: {
         [theme.breakpoints.down('sm')]: {
