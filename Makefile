@@ -19,3 +19,6 @@ download-thisiswhyimbroke:
 
 categories-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/categories.js 
+
+divide-thisiswhyimbroke:
+	node ./utils/products/thisiswhyimbroke/divide.js 

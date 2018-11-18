@@ -6,12 +6,16 @@
 * provide a stop date in `scrap.js` file before running the command , this command would scrap newest data from `thisiswhyimbroke.com` to the end date defined, and save the scrapped data into `amazon.json`, `etsy.json`, `kickstarter.json`, and `others.json` based on products' platforms
 * command: `make scrap-thisiswhyimbroke`
 
+# divide data
+* divide data in `amazon.json`, `etsy.json`, `kickstarter.json`, and `others.json` into corresponding folders with smaller batches (100 products per batch) for later process
+* command: `make divide-thisiswhyimbroke`
+
 # get image link
-* based on the data retrieved above, this command will get the image link for each product
+* based on the file path provided in the file, this command will get the image link for each product
 * command: `make image-thisiswhyimbroke`
 
 # download image
-* based on the image link retrieved in last step, this command will download images for each product
+* based on the file path provided in the file, this command will download images for each product based on the image link retrieve from last step
 * command: `make download-thisiswhyimbroke`
 
 # list categories (this step is only for reference)
