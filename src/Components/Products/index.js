@@ -261,7 +261,7 @@ class Products extends Component {
                             </Hidden>
                        </Grid>
         
-        // create setting sub-component
+        // create panel sub-component (display on non-whatsnew only)
         let sliderWidth = null
         if(window.innerWidth < 650){
             sliderWidth = viewWidth * 0.7
