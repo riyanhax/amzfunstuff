@@ -18,8 +18,13 @@
 * based on the file path provided in the file, this command will download images for each product based on the image link retrieve from last step
 * command: `make download-thisiswhyimbroke`
 
+# clean product
+* based on the file path provided in the file, this command will clean product (removing unnecessary attributes)
+* command: `make clean-thisiswhyimbroke`
+
 # list categories (this step is only for reference)
 * based on data.json file, list all categories and put the result in categories.json
+* command: `categories-thisiswhyimbroke`
 
 ## generic 
 
