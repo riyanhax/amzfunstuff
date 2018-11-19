@@ -79,34 +79,222 @@ const styles = theme => ({
 class About extends Component {
 
     state = {
-        name: null,
-        email: null,
+        subscriber_name: '',
+        subscriber_email: '',
+
+        subscriber_name_error: false,
+        subscriber_email_error: false,
+
+        subscriber_name_too_long: false,
+        subscriber_email_too_long: false,
+
         subscriber_loading: false,
         subscriber_success: false,
+
+        contactus_name: '',
+        contactus_email: '',
+        contactus_message: '',
+
+        contactus_name_error: false,
+        contactus_email_error: false,
+        contactus_message_error: false,
+
+        contactus_name_too_long: false,
+        contactus_email_too_long: false,
+        contactus_message_too_long: false,
+
         contactus_loading: false,
         contactus_success: false,
     }
 
+    handleChange = name => event => {
+        this.setState({
+          [name]: event.target.value,
+        });
+    }
+
+    validateNull = (value) => {
+        if(typeof value == 'undefined' || value == null || value == ''){
+            return false
+        }else{
+            return true 
+        }
+    }
+
+    validateLength = (value, length) => {
+        if(value.length > length){
+            return false
+        }else{
+            return true 
+        }
+    }
+
+    validateEmail = (email) => {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        return re.test(String(email).toLowerCase())
+    }
+
     subscribe = () => {
+        let subscriberNameHasError = false
+        let subscriberEmailHasError = false
+
+        let subscriberNameTooLong = false
+        let subscriberEmailTooLong = false
+
+        // check subscriber_name null or not
+        if(!this.validateNull(this.state.subscriber_name)){
+            this.setState({ subscriber_name_error: true })
+            subscriberNameHasError = true
+        }else{
+            this.setState({ subscriber_name_error: false })
+            subscriberNameHasError = false
+        }
+
+        // check subscriber_email null or not || valid email format or not
+        if(!this.validateNull(this.state.subscriber_email) || !this.validateEmail(this.state.subscriber_email)){
+            this.setState({ subscriber_email_error: true })
+            subscriberEmailHasError = true
+        }else{
+            this.setState({ subscriber_email_error: false })
+            subscriberEmailHasError = false
+        }
+
+        // check subscriber_name if too long
+        if(!this.validateLength(this.state.subscriber_name, 40)){
+            this.setState({ subscriber_name_too_long: true })
+            subscriberNameTooLong = true
+        }else{
+            this.setState({ subscriber_name_too_long: false })
+            subscriberNameTooLong = false
+        }
+
+        // check subscriber_email if too long
+        if(!this.validateLength(this.state.subscriber_email, 40)){
+            this.setState({ subscriber_email_too_long: true })
+            subscriberEmailTooLong = true
+        }else{
+            this.setState({ subscriber_email_too_long: false })
+            subscriberEmailTooLong = false
+        }
+
+        if(subscriberNameHasError || subscriberEmailHasError || subscriberNameTooLong || subscriberEmailTooLong){
+            return
+        }
+
+        // validation pass, proceed with data saving
         if (!this.state.subscriber_loading) {
           this.setState({ subscriber_loading: true }),
           setTimeout(() => { this.setState({ subscriber_loading: false, subscriber_success: true }) }, 2000)
-          setTimeout(() => { this.setState({ subscriber_success: false }) }, 4000)
+          setTimeout(() => { this.setState({ subscriber_name: '', subscriber_email: '', subscriber_success: false }) }, 4000)
         }
     }
 
     contactus = () => {
+        let contactNameHasError = false
+        let contactEmailHasError = false
+        let contactMessageHasError = false
+
+        let contactNameTooLong = false
+        let contactEmailTooLong = false
+        let contactMessageTooLong = false
+
+        // check contactus_name null or not
+        if(!this.validateNull(this.state.contactus_name)){
+            this.setState({ contactus_name_error: true })
+            contactNameHasError = true
+        }else{
+            this.setState({ contactus_name_error: false })
+            contactNameHasError = false
+        }
+
+        // check contactus_email null or not || valid email format or not
+        if(!this.validateNull(this.state.contactus_email) || !this.validateEmail(this.state.contactus_email)){
+            this.setState({ contactus_email_error: true })
+            contactEmailHasError = true
+        }else{
+            this.setState({ contactus_email_error: false })
+            contactEmailHasError = false
+        }
+
+        // check contactus_message null or not || valid email format or not
+        if(!this.validateNull(this.state.contactus_message)){
+            this.setState({ contactus_message_error: true })
+            contactMessageHasError = true
+        }else{
+            this.setState({ contactus_message_error: false })
+            contactMessageHasError = false
+        }
+
+        // check contactus_name if too long
+        if(!this.validateLength(this.state.contactus_name, 40)){
+            this.setState({ contactus_name_too_long: true })
+            contactNameTooLong = true
+        }else{
+            this.setState({ contactus_name_too_long: false })
+            contactNameTooLong = false
+        }
+
+        // check contactus_email if too long
+        if(!this.validateLength(this.state.contactus_email, 40)){
+            this.setState({ contactus_email_too_long: true })
+            contactEmailTooLong = true
+        }else{
+            this.setState({ contactus_email_too_long: false })
+            contactEmailTooLong = false
+        }
+
+        // check contactus_message if too long
+        if(!this.validateLength(this.state.contactus_message, 1000)){
+            this.setState({ contactus_message_too_long: true })
+            contactMessageTooLong = true
+        }else{
+            this.setState({ contactus_message_too_long: false })
+            contactMessageTooLong = false
+        }
+
+        if(contactNameHasError || contactEmailHasError || contactMessageHasError || contactNameTooLong || contactEmailTooLong || contactMessageTooLong){
+            return
+        }
+
+        // validation pass, proceed with data saving
         if (!this.state.contactus_loading) {
           this.setState({ contactus_loading: true }),
           setTimeout(() => { this.setState({ contactus_loading: false, contactus_success: true }) }, 2000)
-          setTimeout(() => { this.setState({ contactus_success: false }) }, 4000)
+          setTimeout(() => { this.setState({ contactus_name: '', contactus_email: '', contactus_message: '', contactus_success: false }) }, 4000)
         }
     }
 
     render() {
 
         const { classes } = this.props
-        const { subscriber_loading, subscriber_success, contactus_loading, contactus_success } = this.state
+        const { 
+            subscriber_name,
+            subscriber_email,
+
+            subscriber_name_error,
+            subscriber_email_error,
+
+            subscriber_name_too_long,
+            subscriber_email_too_long,
+
+            subscriber_loading, 
+            subscriber_success, 
+
+            contactus_name,
+            contactus_email,
+            contactus_message,
+
+            contactus_name_error,
+            contactus_email_error,
+            contactus_message_error,
+
+            contactus_name_too_long,
+            contactus_email_too_long,
+            contactus_message_too_long,
+
+            contactus_loading, 
+            contactus_success
+         } = this.state
 
         const instagram = <div onClick={() => this.props.navToLink('https://www.instagram.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-instagram')} style={{fontSize:30, marginLeft:10}} /></div>
         const pinterest = <div onClick={() => this.props.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-pinterest')} style={{fontSize:30, marginLeft:10}} /></div>
@@ -131,24 +319,27 @@ class About extends Component {
                             <div style={{ width:'100%' }}>
                                 <Grid container direction="column" justify="center" alignItems="center">
                                     <TextField
-                                        required
-                                        id="subscriberEmail"
-                                        label="邮件地址"
-                                        className={classes.textField}
-                                        type="email"
-                                        name="email"
-                                        autoComplete="email"
-                                        margin="dense"
-                                        variant="outlined"
-                                    />
-                                    <TextField
+                                        error={subscriber_name_error || subscriber_name_too_long}
                                         required
                                         id="subscriberName"
-                                        label="如何称呼您"
+                                        label= {subscriber_name_too_long ? "请勿超过40字" : "请问如何称呼您"}
                                         className={classes.textField}
-                                        // value={this.state.name}
                                         margin="dense"
                                         variant="outlined"
+                                        onChange={this.handleChange('subscriber_name')}
+                                        value={subscriber_name}
+                                    />
+                                    <TextField
+                                        error={subscriber_email_error || subscriber_email_too_long}
+                                        required
+                                        id="subscriberEmail"
+                                        label= {subscriber_email_too_long ? "请勿超过40字" : "请输入邮件地址"}
+                                        className={classes.textField}
+                                        type="email"
+                                        margin="dense"
+                                        variant="outlined"
+                                        onChange={this.handleChange('subscriber_email')}
+                                        value={subscriber_email}
                                     />
                                 </Grid>
                                 <Grid container direction="column" justify="center" alignItems="center" style={{ position: 'relative', width:'100%' }}>
@@ -168,35 +359,40 @@ class About extends Component {
                                 <div style={{ width:'100%', marginTop: 40 }} id="wechat">
                                     <Grid container direction="column" justify="center" alignItems="center">
                                         <TextField
+                                            error={contactus_name_error || contactus_name_too_long}
                                             required
                                             id="contactName"
-                                            label="如何称呼您"
+                                            label= {contactus_name_too_long ? "请勿超过40字" : "请问如何称呼您"}
                                             className={classes.textField}
-                                            // value={this.state.name}
                                             margin="dense"
                                             variant="outlined"
+                                            onChange={this.handleChange('contactus_name')}
+                                            value={contactus_name}
                                         />
                                         <TextField
+                                            error={contactus_email_error || contactus_email_too_long}
                                             required
                                             id="contactEmail"
-                                            label="邮件地址"
+                                            label= {contactus_email_too_long ? "请勿超过40字" : "请输入邮件地址"}
                                             className={classes.textField}
                                             type="email"
-                                            name="email"
-                                            autoComplete="email"
                                             margin="dense"
                                             variant="outlined"
+                                            onChange={this.handleChange('contactus_email')}
+                                            value={contactus_email}
                                         />
                                         <TextField
+                                            error={contactus_message_error || contactus_message_too_long}
                                             required
                                             id="contactMessage"
-                                            label="请输入内容"
+                                            label= {contactus_message_too_long ? "请勿超过1000字" : "请输入邮件内容"}
                                             multiline
                                             rows="4"
-                                            defaultValue=""
                                             className={classes.textField}
                                             margin="normal"
                                             variant="outlined"
+                                            onChange={this.handleChange('contactus_message')}
+                                            value={contactus_message}
                                             />
                                     </Grid>
                                     <Grid container direction="column" justify="center" alignItems="center" style={{ position: 'relative', width:'100%' }}>
