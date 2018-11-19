@@ -25,6 +25,9 @@
 ## Layout.js
 * this component implemented the `Responsive Drawer` (refer `TECH.md`)
 
+## Nav.js
+* this component build navigation bar based on `categories.json` and `subcategories.json` under `menus` folder
+ 
 ## Products.js
 * this component can be used as
     * `independent` type: it will load products based on url (can be `whatsnew` or some category/subcategory)
