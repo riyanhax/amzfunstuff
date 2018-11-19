@@ -129,6 +129,7 @@ class Products extends Component {
         localStorage.setItem('amzfunstuff-liked', JSON.stringify(Array.from(liked)))
     }
 
+    // remove like from liked
     removeLike = (productId) => {
         const liked = this.state.liked
         liked.delete(productId)

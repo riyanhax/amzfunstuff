@@ -84,6 +84,14 @@ class Articles extends Component {
         localStorage.setItem('amzfunstuff-articles-liked', JSON.stringify(Array.from(liked)))
     }
 
+    // remove like from liked
+    removeLike = (articleId) => {
+        const liked = this.state.liked
+        liked.delete(articleId)
+        this.setState({ liked })
+        localStorage.setItem('amzfunstuff-articles-liked', JSON.stringify(Array.from(liked)))
+    }
+
     // load blogs (load once for all) 
     loadArticles = async (type) => {
         // load blogs/guides 
@@ -155,7 +163,7 @@ class Articles extends Component {
 
             content = <Grid container justify="center">
                         {finalArticle.map(article => (
-                            <Article key={article.id} article={article} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked}/>
+                            <Article key={article.id} article={article} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked} removeLiked={this.removeLike}/>
                         ))}
                     </Grid>
         }
