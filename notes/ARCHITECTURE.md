@@ -53,5 +53,7 @@
 
 ## Articles.js & Article.js
 * these 2 components were similar to `Products.js` and `Product.js`
-    * there are 2 types of Article - `blogs` or `guides`, based on url
-    * blogs and guides lists were stored under `articles/blogs or guides/x.json`
+* there are 2 types of Article - `myfavs` or `independent`, based on url
+    * for `myfavs`, based on this.props.type, load blogs or guides; also, introduce `componentWillReceiveProps()` to deal with props change
+    * for `independent`, based on url, load blogs or guides
+* blogs and guides lists were stored under `articles/blogs or guides/x.json`

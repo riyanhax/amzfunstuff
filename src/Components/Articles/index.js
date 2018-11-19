@@ -30,6 +30,7 @@ class Articles extends Component {
         articles: [],
         index: null,
         liked: null,
+        type: null,
     }
 
     componentDidMount() {
@@ -40,10 +41,27 @@ class Articles extends Component {
 
         const { location: { pathname } } = this.props
 
-        if(pathname != null & pathname == '/blogs'){
-            this.loadArticles('blogs')
+        if(pathname != null & pathname == '/myfavs'){
+            if(this.props.type == 'blogs'){
+                this.loadArticles('blogs')
+            }else{
+                this.loadArticles('guides')
+            }
+            this.setState({ type:'myfavs' }) 
         }else{
-            this.loadArticles('guides')
+            if(pathname != null & pathname == '/blogs'){
+                this.loadArticles('blogs')
+            }else{
+                this.loadArticles('guides')
+            }
+            this.setState({ type:'independent' }) 
+        } 
+    }
+
+    componentWillReceiveProps(props) {
+        const { type } = this.props
+        if (props.type != type) {
+            this.loadArticles(props.type)
         }
     }
 
@@ -67,10 +85,10 @@ class Articles extends Component {
     }
 
     // load blogs (load once for all) 
-    loadArticles = async (types) => {
+    loadArticles = async (type) => {
         // load blogs/guides 
         let articlesURL = null
-        if(types == 'blogs'){
+        if(type == 'blogs'){
             articlesURL = `/articles/blogs`
         }else{
             articlesURL = `/articles/guides`
@@ -108,10 +126,11 @@ class Articles extends Component {
 
     render() { 
         const { classes } = this.props
-        const { articles, index, viewWidth, liked } = this.state
+        const { type, articles, index, viewWidth, liked } = this.state
 
         //create banner sub-component
-        const banner =  <a href="www.amazon.com" rel="nofollow" target="_blank">
+        const banner =  (type == null || type == 'myfavs') ? null : 
+                        <a href="www.amazon.com" rel="nofollow" target="_blank">
                             <img className={classes.banner} src={`/articles/covers/banner.png`}/>
                         </a>
                         
@@ -120,8 +139,19 @@ class Articles extends Component {
         if(articles.length == 0){
             content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress size={100} /></Grid>
         }else{
-            const finalIndex = index > articles.length ? articles.length : index
-            const finalArticle = articles.slice(0, finalIndex)
+            const filteredArticles = (type == null || type != 'myfavs') ? articles : articles.filter((article) => {
+                if(liked == null){
+                    return false
+                }else{
+                    if(liked.has(article.id)){
+                        return true
+                    }else{
+                        return false
+                    }
+                }
+            })
+            const finalIndex = index > filteredArticles.length ? filteredArticles.length : index
+            const finalArticle = filteredArticles.slice(0, finalIndex)
 
             content = <Grid container justify="center">
                         {finalArticle.map(article => (

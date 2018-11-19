@@ -157,7 +157,7 @@ class Article extends Component {
         const adjustedWidth = (viewWidth * viewWidthRatio)/column > maxWidth ? maxWidth : (viewWidth * viewWidthRatio)/column
         const adjustedHeight = adjustedWidth * heightToWidthRatio
 
-        const likeOrNot = liked != null && liked.has('b-'+article.id) ?
+        const likeOrNot = liked != null && liked.has(article.id) ?
                              <div className={classes.multipleColLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
                              <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {article.likes}</div>
 
@@ -167,7 +167,7 @@ class Article extends Component {
                             <a href={article.link} rel="nofollow" target="_blank">
                                 <img src={`/articles/covers/${article.image}.jpg`} alt={article.title} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                 <Grid container justify="flex-end" className={classes.multipleColShadow}>
-                                    <Button variant="contained" className={classes.likeButton} onClick={(event) => { event.preventDefault(), addLiked('b-'+article.id) }}>喜欢</Button>
+                                    <Button variant="contained" className={classes.likeButton} onClick={(event) => { event.preventDefault(), addLiked(article.id) }}>喜欢</Button>
                                 </Grid>
                             </a>
                         </div>
