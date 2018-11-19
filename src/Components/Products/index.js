@@ -129,6 +129,13 @@ class Products extends Component {
         localStorage.setItem('amzfunstuff-liked', JSON.stringify(Array.from(liked)))
     }
 
+    removeLike = (productId) => {
+        const liked = this.state.liked
+        liked.delete(productId)
+        this.setState({ liked })
+        localStorage.setItem('amzfunstuff-liked', JSON.stringify(Array.from(liked)))
+    }
+
     // load products (load once for all) 
     loadProducts = async (category, subcategory) => {
         // load product info
@@ -335,7 +342,7 @@ class Products extends Component {
 
             content = <Grid container justify="center">
                         {finalProducts.map(product => (
-                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked}/>
+                            <Product key={product.id} product={product} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked} removeLiked={this.removeLike}/>
                         ))}
                     </Grid>
         }

@@ -20,6 +20,8 @@ const styles = theme => ({
         width: '100%',
     },
     note: {
+        marginLeft: 20,
+        marginRight: 20,
         marginBottom: 30,
         fontSize: '.8rem',
         fontWeight: 600,
