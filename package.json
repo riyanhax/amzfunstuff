@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --port 4000 --compress --mode development",
-    "build": "rm -rf dist && webpack --mode production --progress && cp -R assets dist/assets && cp -R articles dist/articles",
-    "serve": "serve dist"
+    "build": "rm -rf dist && webpack --mode production --progress && cp -R assets dist/assets && cp -R articles dist/articles"
   },
   "dependencies": {
     "@material-ui/core": "^3.0.3",

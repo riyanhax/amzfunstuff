@@ -6,6 +6,11 @@
 * [modified the project to not use create-react-app scripts based on this video](https://www.youtube.com/watch?v=A4swyDR45SY)
 * [delete olde node_modules folder, copy "package.json", "webpack.config.js", and ".babelrc" from this repo, run "npm install" again, and run "npm start"](https://github.com/alex996/react-exercises)
 
+## Dev & Build 
+* `npm start` to run the webpack server for development
+* `npm run build` to clean `dist` folder, create `js file`, create `html file`, and copy `assets` and `articles` folders into `dist`
+* `make uploadSandbox` to sync local `dist` folder with s3 hosting sandbox bucket
+
 ## Layout 
 * [Material-UI + React Router - #6 Responsive Drawer](https://www.youtube.com/watch?v=jQyCEEzgnTM)
 
