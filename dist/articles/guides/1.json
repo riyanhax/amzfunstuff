@@ -6,7 +6,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-1.html",
         "image": "blog1",
-        "id": 1,
+        "id": "g-1",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -15,7 +15,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-2.html",
         "image": "blog2",
-        "id": 2,
+        "id": "g-2",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -24,7 +24,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-3.html",
         "image": "blog3",
-        "id": 3,
+        "id": "g-3",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -33,7 +33,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-4.html",
         "image": "blog4",
-        "id": 4,
+        "id": "g-4",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -42,7 +42,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-5.html",
         "image": "blog1",
-        "id": 5,
+        "id": "g-5",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -51,7 +51,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-6.html",
         "image": "blog2",
-        "id": 6,
+        "id": "g-6",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -60,7 +60,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-7.html",
         "image": "blog3",
-        "id": 7,
+        "id": "g-7",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -69,7 +69,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-8.html",
         "image": "blog4",
-        "id": 8,
+        "id": "g-8",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -78,7 +78,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-9.html",
         "image": "blog1",
-        "id": 9,
+        "id": "g-9",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -87,7 +87,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-10.html",
         "image": "blog2",
-        "id": 10,
+        "id": "g-10",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -96,7 +96,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-11.html",
         "image": "blog3",
-        "id": 11,
+        "id": "g-11",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -105,7 +105,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-12.html",
         "image": "blog4",
-        "id": 12,
+        "id": "g-12",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -114,7 +114,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-13.html",
         "image": "blog1",
-        "id": 13,
+        "id": "g-13",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -123,7 +123,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-14.html",
         "image": "blog2",
-        "id": 14,
+        "id": "g-14",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -132,7 +132,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-15.html",
         "image": "blog3",
-        "id": 15,
+        "id": "g-15",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -141,7 +141,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-16.html",
         "image": "blog4",
-        "id": 16,
+        "id": "g-16",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -150,7 +150,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-17.html",
         "image": "blog1",
-        "id": 17,
+        "id": "g-17",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -159,7 +159,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-18.html",
         "image": "blog2",
-        "id": 18,
+        "id": "g-18",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -168,7 +168,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-19.html",
         "image": "blog3",
-        "id": 19,
+        "id": "g-19",
         "date": "2018-11-01",
         "likes": 10
       },
@@ -177,7 +177,7 @@
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-20.html",
         "image": "blog4",
-        "id": 20,
+        "id": "g-20",
         "date": "2018-11-01",
         "likes": 10
       }
