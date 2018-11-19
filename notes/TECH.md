@@ -31,5 +31,7 @@
 * [Amazon Influencer Program](https://affiliate-program.amazon.com/influencers)
 
 ## 3rd Party Services Used
-* xihongshishoufu@gmail.com (Go***@#)
 * [Add This](https://www.addthis.com)
+    * xihongshishoufu@gmail.com (Go***@#)
+* [Firebase](https://console.firebase.google.com)
+    * xihongshishoufu@gmail.com (b***H)

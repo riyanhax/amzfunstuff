@@ -183,7 +183,15 @@ class About extends Component {
 
         // validation pass, proceed with data saving
         if (!this.state.subscriber_loading) {
-          this.setState({ subscriber_loading: true }),
+          this.setState({ subscriber_loading: true })
+ 
+          const subscriberListRef = firebase.database().ref().child('subscriberList')
+          const newSubscriber = subscriberListRef.push()
+          newSubscriber.set({
+              name: this.state.subscriber_name,
+              email: this.state.subscriber_email
+          })
+
           setTimeout(() => { this.setState({ subscriber_loading: false, subscriber_success: true }) }, 2000)
           setTimeout(() => { this.setState({ subscriber_name: '', subscriber_email: '', subscriber_success: false }) }, 4000)
         }
@@ -258,7 +266,16 @@ class About extends Component {
 
         // validation pass, proceed with data saving
         if (!this.state.contactus_loading) {
-          this.setState({ contactus_loading: true }),
+          this.setState({ contactus_loading: true })
+
+          const contactUsListRef = firebase.database().ref().child('contactUsList')
+          const newContacUs = contactUsListRef.push()
+          newContacUs.set({
+              name: this.state.contactus_name,
+              email: this.state.contactus_email,
+              message: this.state.contactus_message
+          })
+
           setTimeout(() => { this.setState({ contactus_loading: false, contactus_success: true }) }, 2000)
           setTimeout(() => { this.setState({ contactus_name: '', contactus_email: '', contactus_message: '', contactus_success: false }) }, 4000)
         }
