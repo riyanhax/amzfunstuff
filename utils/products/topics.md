@@ -7,3 +7,5 @@
 * [卡尔萨根,podcast](https://www.amazon.com/dp/1473696402)
 * [Bob Ross 绘画 艺术情操](https://www.zhihu.com/question/28171964)
 * [Nerf枪 076035782X](https://home.gamer.com.tw/creationDetail.php?sn=3507818)
+* [Rick & Morty 系列，以及桌游](https://www.amazon.com/dp/B079ZL6NC2)
+* [Canvas 系列](https://www.amazon.com/s/ref=w_bl_hsx_s_ho_web_0?ie=UTF8&search-alias=aps&field-keywords=OneCanvas)
