@@ -9,3 +9,24 @@
 * [Nerf枪 076035782X](https://home.gamer.com.tw/creationDetail.php?sn=3507818)
 * [Rick & Morty 系列，以及桌游](https://www.amazon.com/dp/B079ZL6NC2)
 * [Canvas 系列](https://www.amazon.com/s/ref=w_bl_hsx_s_ho_web_0?ie=UTF8&search-alias=aps&field-keywords=OneCanvas)
+* [托福GRE写作科目必读](https://www.amazon.com/dp/1523504455 和笠翁对韵一样 熟记)
+    * how i met your mother: 
+        * Marshall: Lily, when Evel Knievel sat his stride to star spangled rocket to the on the rim of Snake River Canon, do you think his wife said get down from there?
+        * Lily: For the last time I am not Linda Knievel. I will never be Linda Knievel
+        * no, he flied, failed, and stand up again so to become a legend
+    * big bang theory
+        * Sheldon: Gentlemen, use your imagination. Innovate. Did Han Solo let Luke Skywalker freeze to death on the ice planet of Hoth? No. He cut open a tauntaun and used its internal body heat to warm him up.
+        * Sheldon: Did Davy Crockett quit at the Alamo? (when they were surrounded and outnumbered by the mexican army? no they fought until the last men and were remembered as heroes...)
+    * two and half men
+        * Jake: Berta, you know what's a good book? Lord of the Flies.
+        * Berta: Oh, yeah. I read that when I was about your age.
+        * Jake: So, what'd you think? 
+        * Berta: I liked it. It was like Survivor with kids.
+
+        * Charlie: Okay, I think I got it. The demons Oshikuru fights only exist because they are a reflection of the tortured demons in his own soul.
+        * Jake: Yes.
+        * Charlie: So, in essence Oshikuru is like a Japanese sci-fi version of Moby Dick.
+
+Read more: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=two-and-a-half-men&episode=s02e10
+Read more: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=two-and-a-half-men&episode=s02e10
+* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT)
