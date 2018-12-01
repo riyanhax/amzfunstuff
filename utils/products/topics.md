@@ -27,6 +27,5 @@
         * Jake: Yes.
         * Charlie: So, in essence Oshikuru is like a Japanese sci-fi version of Moby Dick.
 
-Read more: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=two-and-a-half-men&episode=s02e10
-Read more: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=two-and-a-half-men&episode=s02e10
+* [现代易容术](https://www.amazon.com/dp/B07177R3J9)
 * [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT)
