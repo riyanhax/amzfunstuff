@@ -31,7 +31,10 @@
 
 * [cricket joke](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=cricket+fried&rh=i%3Aaps%2Ck%3Acricket+fried B01F0TYT5M B00E3E4XN4)
 * [吸入式咖啡因](B007Y4BIAQ)
+* [啤酒冷藏箱电动车 - davis beer shop, microbrewery - gift, hops market](B000NMSI54)
+* [蜡烛 homesick蜡烛 pop culture蜡烛 Jane candle business 请你在为我点上一盏烛光](https://www.amazon.com/dp/B00KPY1RH6/)
 * [现代易容术](https://www.amazon.com/dp/B07177R3J9)
+* [奇怪的树脂工艺品](https://www.amazon.com/s/ref=hnd_pdp_byline?_encoding=UTF8&node=11260432011&lo=image&me=A2U7L4YWHVSUTP)
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
 * [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT )
