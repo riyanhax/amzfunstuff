@@ -30,3 +30,6 @@
 
 # translate
 * use `https://codebeautify.org/online-json-editor`, choose `form` in right section, and translate
+* remove picture metadata
+    * `brew update` & `brew install imagemagick`
+    * [possible solution](https://superuser.com/questions/335489/how-to-strip-exif-info-from-files-in-osx-with-batch-or-command-line)

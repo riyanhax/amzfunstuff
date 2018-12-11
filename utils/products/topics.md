@@ -8,7 +8,7 @@
 * [上帝说 要有光 NPR 光在历史中的价值 万古长夜 牛顿带来光 lumos illuminati enlighten 红太阳 对光的崇拜 光明左使 B004NBZLJ2 B07FD2Q3MW](https://www.kickstarter.com/projects/lantern/lantern-1000-lumen-flashlight-with-usb-battery-bac)
 * [卡尔萨根,podcast](https://www.amazon.com/dp/1473696402)
 * [Bob Ross 绘画 艺术情操](https://www.zhihu.com/question/28171964)
-* [Nerf枪 076035782X](https://home.gamer.com.tw/creationDetail.php?sn=3507818)
+* [Nerf枪 076035782X B07BFP45TH](https://home.gamer.com.tw/creationDetail.php?sn=3507818)
 * [Rick & Morty 系列，以及桌游](https://www.amazon.com/dp/B079ZL6NC2)
 * [Canvas 系列](https://www.amazon.com/s/ref=w_bl_hsx_s_ho_web_0?ie=UTF8&search-alias=aps&field-keywords=OneCanvas)
 * [托福GRE写作科目必读](https://www.amazon.com/dp/1523504455 和笠翁对韵一样 熟记)
@@ -31,7 +31,7 @@
 
 * [cricket joke](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=cricket+fried&rh=i%3Aaps%2Ck%3Acricket+fried B01F0TYT5M B00E3E4XN4)
 * [吸入式咖啡因](B007Y4BIAQ)
-* [啤酒冷藏箱电动车 - davis beer shop, microbrewery - gift, hops market](B000NMSI54)
+* [啤酒冷藏箱电动车 - geeky world homebrew, davis beer shop, microbrewery - gift, hops market](B000NMSI54)
 * [蜡烛 homesick蜡烛 pop culture蜡烛 Jane candle business 请你在为我点上一盏烛光](https://www.amazon.com/dp/B00KPY1RH6/)
 * [现代易容术](https://www.amazon.com/dp/B07177R3J9)
 * [奇怪的树脂工艺品](https://www.amazon.com/s/ref=hnd_pdp_byline?_encoding=UTF8&node=11260432011&lo=image&me=A2U7L4YWHVSUTP)
