@@ -32,7 +32,7 @@
 * [cricket joke](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=cricket+fried&rh=i%3Aaps%2Ck%3Acricket+fried B01F0TYT5M B00E3E4XN4)
 * [吸入式咖啡因](B007Y4BIAQ)
 * [恐龙系列](B06W2M22ZJ)
-* [怀旧复刻 小时候苹果机](https://www.amazon.com/dp/B075YT5K59)
+* [怀旧复刻 小时候苹果机 B002HFG6YA](https://www.amazon.com/dp/B075YT5K59)
 * [能量 future president](B06Y3XMQTK)
 * [bridal buddy B0758H7S9D](https://2paragraphs.com/2017/09/bridal-buddy-what-happened-after-75000-shark-tank-deal/ https://bridalbuddy.net/pages/about-us)
 * [sharktank products on amazon](https://2paragraphs.com/2017/04/27-favorite-shark-tank-products-at-amazon-new-2017-list/)
@@ -42,5 +42,7 @@
 * [奇怪的树脂工艺品](https://www.amazon.com/s/ref=hnd_pdp_byline?_encoding=UTF8&node=11260432011&lo=image&me=A2U7L4YWHVSUTP)
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
-* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT )
+* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC)
 * [这款邦德打火机 贵的没道理 B017PQJ3S6](http://www.jamesbondlifestyle.com/news/ultimate-guide-spectre-bond-24-products-and-locations)
+
+* [无用之用 one man's garbage is...无用之趣 两层含义 一个是产品无用，至少不是必须，但有趣味和情趣 另一个是这件事挺无用，但做的过程学到了东西 金庸傳写戏剧和影评](http://www.sohu.com/a/156797699_310459)
