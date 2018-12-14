@@ -5,6 +5,8 @@
 
 * [sphero](https://www.amazon.com/stores/page/B764699D-B4B9-4710-97E4-AF4448AED671)
 * [Anki Vector A Home Robot 和sphero可以一起写](https://www.anki.com/en-us/vector)
+* [一款STEM机器人 顺便介绍一下Scratch](https://www.amazon.com/dp/B078K2T8T8/)
+
 * [上帝说 要有光 NPR 光在历史中的价值 万古长夜 牛顿带来光 lumos illuminati enlighten 红太阳 对光的崇拜 光明左使 B004NBZLJ2 B07FD2Q3MW](https://www.kickstarter.com/projects/lantern/lantern-1000-lumen-flashlight-with-usb-battery-bac)
 * [卡尔萨根,podcast](https://www.amazon.com/dp/1473696402)
 * [Bob Ross 绘画 艺术情操](https://www.zhihu.com/question/28171964)
@@ -36,13 +38,18 @@
 * [能量 future president](B06Y3XMQTK)
 * [bridal buddy B0758H7S9D](https://2paragraphs.com/2017/09/bridal-buddy-what-happened-after-75000-shark-tank-deal/ https://bridalbuddy.net/pages/about-us)
 * [sharktank products on amazon](https://2paragraphs.com/2017/04/27-favorite-shark-tank-products-at-amazon-new-2017-list/)
-* [啤酒冷藏箱电动车 - geeky world homebrew, davis beer shop, microbrewery - gift, hops market](B000NMSI54)
+* [啤酒冷藏箱电动车 - geeky world homebrew, davis beer shop, microbrewery - gift, hops market](B000NMSI54 B07C7QWGWF)
 * [蜡烛 homesick蜡烛 pop culture蜡烛 Jane candle business 请你在为我点上一盏烛光](https://www.amazon.com/dp/B00KPY1RH6/)
 * [现代易容术](https://www.amazon.com/dp/B07177R3J9)
 * [奇怪的树脂工艺品](https://www.amazon.com/s/ref=hnd_pdp_byline?_encoding=UTF8&node=11260432011&lo=image&me=A2U7L4YWHVSUTP)
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
-* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC)
+
+* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX)
+* [其他有趣产品](B075ZKDHD3 B01KILG2UM https://onewheel.com)
+* [绝妙的书架装饰](https://www.amazon.com/stores/node/9519792011?_encoding=UTF8&field-lbr_brands_browse-bin=Artori%20Design&ref_=w_bl_hsx_s_ho_web_9519792011)
+
 * [这款邦德打火机 贵的没道理 B017PQJ3S6](http://www.jamesbondlifestyle.com/news/ultimate-guide-spectre-bond-24-products-and-locations)
 
+* [各种刀](B002JTWRDS 0711238898 B00EP6UPYQ)
 * [无用之用 one man's garbage is...无用之趣 两层含义 一个是产品无用，至少不是必须，但有趣味和情趣 另一个是这件事挺无用，但做的过程学到了东西 金庸傳写戏剧和影评](http://www.sohu.com/a/156797699_310459)
