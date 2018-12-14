@@ -67,6 +67,7 @@ class Products extends Component {
         index: null,
         liked: null,
         type: null,
+        scale: [1,15],
         price: [0,100000000000],
         sort: 1,
     }
@@ -192,8 +193,108 @@ class Products extends Component {
     }
 
     // handle slider change - modify price low and high, which would be used for product filtering
-    handleSliderChange = (price) => {
-        this.setState({ price })
+    handleSliderChange = (scale) => {
+        let price, startPrice, endPrice
+
+        switch (scale[0]) {
+            case 1:
+                startPrice = 0
+                break;
+            case 2:
+                startPrice = 40
+                break;
+            case 3:
+                startPrice = 60
+                break;
+            case 4:
+                startPrice = 80
+                break;
+            case 5:
+                startPrice = 100
+                break;
+            case 6:
+                startPrice = 200
+                break;
+            case 7:
+                startPrice = 400
+                break;
+            case 8:
+                startPrice = 600
+                break;
+            case 9:
+                startPrice = 800
+                break;
+            case 10:
+                startPrice = 1000
+                break;
+            case 11:
+                startPrice = 2000
+                break;
+            case 12:
+                startPrice = 4000
+                break;
+            case 13:
+                startPrice = 6000
+                break;
+            case 14:
+                startPrice = 8000
+                break;
+            default:
+                startPrice = 0
+                break;
+        }
+
+        switch (scale[1]) {
+            case 2:
+                endPrice = 40
+                break;
+            case 3:
+                endPrice = 60
+                break;
+            case 4:
+                endPrice = 80
+                break;
+            case 5:
+                endPrice = 100
+                break;
+            case 6:
+                endPrice = 200
+                break;
+            case 7:
+                endPrice = 400
+                break;
+            case 8:
+                endPrice = 600
+                break;
+            case 9:
+                endPrice = 800
+                break;
+            case 10:
+                endPrice = 1000
+                break;
+            case 11:
+                endPrice = 2000
+                break;
+            case 12:
+                endPrice = 4000
+                break;
+            case 13:
+                endPrice = 6000
+                break;
+            case 14:
+                endPrice = 8000
+                break;
+            case 15:
+                endPrice = 100000000000
+                break;
+            default:
+                endPrice = 100000000000
+                break;
+        }
+
+        price = [startPrice, endPrice]
+
+        this.setState({ scale, price })
     }
 
     // handle selector change - modify sort option, which would be used for product sorting
@@ -255,9 +356,64 @@ class Products extends Component {
         }
     }
 
+    getPriceIcon = (scale) => {
+
+        const dollar = <i className="fas fa-dollar-sign"/>
+        const coins = <i className="fas fa-coins"/>
+        const diamond = <i className="far fa-gem"/>
+        
+        switch (scale) {
+            case 1:
+                return <span style={{ color:'#85bb65' }}>{dollar}</span>
+            case 2:
+                return <span style={{ color:'#85bb65' }}>{dollar}✖2</span>
+            case 3:
+                return <span style={{ color:'#85bb65' }}>{dollar}✖3</span>
+            case 4:
+                return <span style={{ color:'#85bb65' }}>{dollar}✖4</span>
+            case 5:
+                return <span style={{ color:'#85bb65' }}>{dollar}✖5</span>
+            case 6:
+                return <span style={{ color:'#f7931a' }}>{coins}</span>
+            case 7:
+                return <span style={{ color:'#f7931a' }}>{coins}✖2</span>
+            case 8:
+                return <span style={{ color:'#f7931a' }}>{coins}✖3</span>
+            case 9:
+                return <span style={{ color:'#f7931a' }}>{coins}✖4</span>
+            case 10:
+                return <span style={{ color:'#f7931a' }}>{coins}✖5</span>
+            case 11:
+                return <span style={{ color:'#2196F3' }}>{diamond}</span>
+            case 12:
+                return <span style={{ color:'#2196F3' }}>{diamond}✖2</span>
+            case 13:
+                return <span style={{ color:'#2196F3' }}>{diamond}✖3</span>
+            case 14:
+                return <span style={{ color:'#2196F3' }}>{diamond}✖4</span>
+            case 15:
+                return <span style={{ color:'#2196F3' }}>{diamond}✖5</span>
+            default:
+                return <span style={{ color:'#2196F3' }}>{diamond}✖5</span>
+        }
+    }
+
+    getPriceDivWidth = (sliderWidth, scale) => {
+
+        if(scale[1] - scale[0] == 1){
+            if(scale[0] == 1 || scale[1] == 1 || scale[0] == 6 || scale[1] == 6 || scale[0] == 11 || scale[1] == 11){
+                return 60
+            }else{
+                return 80
+            }  
+        }else{
+            return sliderWidth - sliderWidth / 15 * ((15 - scale[1]) + (scale[0] - 1)) < 80 ? 80 : sliderWidth - sliderWidth / 15 * ((15 - scale[1]) + (scale[0] - 1))
+        }
+    }
+
     render() { 
         const { classes } = this.props
-        const { products, index, info, viewWidth, price, liked, sort, type } = this.state
+        const { products, index, info, viewWidth, price, scale, liked, sort, type } = this.state
 
         //create banner sub-component (display on whatsnew only)
         const banner = info != null || (type == null || type == 'myfavs') ? null :
@@ -281,18 +437,19 @@ class Products extends Component {
         }else{
             sliderWidth = viewWidth * 0.5
         }
-        const startPrice = <span className={classes.priceValue}>${price[0]}</span>
-        const endPrice = price[1] == 220 ? <span className={classes.priceValue}>Max</span> : <span className={classes.priceValue}>${price[1]}</span>
-        const priceDivWidth = sliderWidth + 22 - sliderWidth / 220 * ((220 - price[1]) + (price[0] - 0)) < 65 ? 65 : sliderWidth + 22 - sliderWidth / 220 * ((220 - price[1]) + (price[0] - 0))
-        const leftMargin = price[0] == 0 ? 0 : (sliderWidth / 220 * price[0])
-        const rightMargin = price[1] == 220 ? 0 : (sliderWidth / 220 * (220 - price[1]))
-
+  
+        const startPrice = this.getPriceIcon(scale[0])
+        const endPrice = this.getPriceIcon(scale[1])
+        const priceDivWidth = this.getPriceDivWidth(sliderWidth, scale)
+        const leftMargin = scale[0] == 1 ? 0 : (sliderWidth / 15 * (scale[0]-1))
+        const rightMargin = scale[1] == 15 ? 0 : (sliderWidth / 15 * (15 - scale[1]))
+        
         const panel = info == null || (type == null || type == 'related' || type == 'myfavs') ? null : 
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
                                 <div style={{ width:priceDivWidth, marginLeft:leftMargin, marginRight: rightMargin }}><Grid container justify="space-between" alignItems="center">{startPrice}{endPrice}</Grid></div>
-                                <div style={{ width:sliderWidth }}><Slider color="#FF5252" range min={0} max={220} value={price} scaleLength={20} onChange={this.handleSliderChange}/></div>
+                                <div style={{ width:sliderWidth }}><Slider color="#FF5252" range min={1} max={15} value={scale} scaleLength={1} onChange={this.handleSliderChange}/></div>
                             </Grid>
                         </Grid>
                         <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
