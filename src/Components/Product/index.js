@@ -180,7 +180,7 @@ class Product extends Component {
                                 {likeButton}
                             </a>
                         </div>
-                        <div className={classes.multipleColDescription} style={{ width:adjustedWidth }}>
+                        <div className={classes.multipleColDescription} style={{ width:adjustedWidth, height: adjustedWidth < 280 ? 78 : 65 }}>
                             {product.description}
                         </div>
                         <div className={classes.multipleColInfo}>
