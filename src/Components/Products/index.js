@@ -67,7 +67,7 @@ class Products extends Component {
         index: null,
         liked: null,
         type: null,
-        price: [0,220],
+        price: [0,100000000000],
         sort: 1,
     }
 
@@ -325,7 +325,7 @@ class Products extends Component {
             content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress size={100} /></Grid>
         }else{
             const filteredProducts = (type == null || type != 'myfavs') ? products.filter((product) => {
-                return product.price >= price[0] && (price[1] == 210 ? true : product.price <= price[1])
+                return product.price >= price[0] && (price[1] == 100000000000 ? true : product.price <= price[1])
             }) : products.filter((product) => {
                 if(liked == null){
                     return false

@@ -50,6 +50,10 @@ const styles = theme => ({
         fontSize: '1rem',
         fontWeight: '900',
     },
+    priceIcons: {
+        fontSize: '13px',
+        marginBottom: 2,
+    },
     description: {
         marginTop: 10,
         overflowWrap: 'break-word',
@@ -203,6 +207,7 @@ class ProductDetail extends Component {
                              <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
                              <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 
+        const priceIcons = this.getPriceIcons(product.price, classes)
 
         return <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.content}>
                     <Grid container justify="center" alignItems="center">
@@ -218,7 +223,7 @@ class ProductDetail extends Component {
                         <div className={classes.description} style={{ width:adjustedWidth }}>{product.description}</div>
                         <Grid container justify="space-around" alignItems="center" className={classes.priceAndLikes} style={{ width:adjustedWidth }}>
                             {likeOrNot}
-                            <div><span style={{fontSize:'12px'}}><i className="fas fa-dollar-sign"></i></span> {product.price}</div>
+                            <div>{priceIcons}</div>
                         </Grid>
                         <div className={classes.buttonDiv}>
                             <Button variant="contained" style={{ width:adjustedWidth }} className={classes.detailButton} onClick={() => { this.props.navToLink(product.link, true) }}>查看详情</Button>
@@ -248,6 +253,7 @@ class ProductDetail extends Component {
                              <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
                              <div className={classes.singleColPriceAndLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
 
+        const priceIcons = this.getPriceIcons(product.price, classes)
 
         return <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.content}>
                     <Grid container justify="center" alignItems="center">
@@ -272,7 +278,7 @@ class ProductDetail extends Component {
                                 <div className={classes.description} style={{ width: 280 }}>{product.description}</div>
                                 <Grid container justify="space-around" alignItems="center" className={classes.priceAndLikes} style={{ width: 280 }}>
                                     {likeOrNot}
-                                    <div><span style={{fontSize:'12px'}}><i className="fas fa-dollar-sign"></i></span> {product.price}</div>
+                                    <div>{priceIcons}</div>
                                 </Grid>
                                 <Button variant="contained" style={{ width: 280 }} className={classes.detailButton} onClick={() => { this.props.navToLink(product.link, true) }}>查看详情</Button>
                                 <Button variant="contained" style={{ width: 280 }} className={classes.likeButton} onClick={(event) => { event.preventDefault(), this.addLiked(product.id) }}>喜欢</Button>
@@ -284,6 +290,46 @@ class ProductDetail extends Component {
                         <div className={classes.related}>你或许也想把辛苦赚来的💰浪费在下面这些奇葩好物上...</div>
                     </Grid>
                 </Grid>
+    }
+
+    // convert price to icons
+    getPriceIcons = (price, classes) => {
+
+        const dollar = <i className="fas fa-dollar-sign" style={{ marginRight: 2 }}/>
+        const coins = <i className="fas fa-coins" style={{ marginRight: 2 }}/>
+        const diamond = <i className="far fa-gem" style={{ marginRight: 2 }}/>
+
+        if(price > 0 && price <= 20){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#85bb65' }}>{dollar}</Grid>
+        }else if(price > 20 && price <= 40){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#85bb65' }}>{dollar}{dollar}</Grid>
+        }else if(price > 40 && price <= 60){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#85bb65' }}>{dollar}{dollar}{dollar}</Grid>
+        }else if(price > 60 && price <= 80){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#85bb65' }}>{dollar}{dollar}{dollar}{dollar}</Grid>
+        }else if(price > 80 && price <= 100){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#85bb65' }}>{dollar}{dollar}{dollar}{dollar}{dollar}</Grid>
+        }else if(price > 100 && price <= 200){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#f7931a' }}>{coins}</Grid>
+        }else if(price > 200 && price <= 400){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#f7931a' }}>{coins}{coins}</Grid>
+        }else if(price > 400 && price <= 600){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#f7931a' }}>{coins}{coins}{coins}</Grid>
+        }else if(price > 600 && price <= 800){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#f7931a' }}>{coins}{coins}{coins}{coins}</Grid>
+        }else if(price > 800 && price <= 1000){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#f7931a' }}>{coins}{coins}{coins}{coins}{coins}</Grid>
+        }else if(price > 1000 && price <= 2000){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#2196F3' }}>{diamond}</Grid>
+        }else if(price > 2000 && price <= 4000){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#2196F3' }}>{diamond}{diamond}</Grid>
+        }else if(price > 4000 && price <= 6000){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#2196F3' }}>{diamond}{diamond}{diamond}</Grid>
+        }else if(price > 6000 && price <= 8000){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#2196F3' }}>{diamond}{diamond}{diamond}{diamond}</Grid>
+        }else if(price > 8000){
+            return <Grid container justify="flex-start" className={classes.priceIcons} style={{ color:'#2196F3' }}>{diamond}{diamond}{diamond}{diamond}{diamond}</Grid>
+        }
     }
 
     render() {
