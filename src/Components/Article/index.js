@@ -33,7 +33,6 @@ const styles = theme => ({
         position: 'relative',
     },
     singleColTitle: {
-        // fontSize: '1.3rem',
         fontWeight: '900',
         color: '#fff',
         textShadow: `2px 2px 2px #222`,
@@ -69,29 +68,58 @@ const styles = theme => ({
         visibility: 'hidden',
     },
     multipleColTitle: {
-        fontSize: '1.1rem',
+        fontSize: '1.2rem',
         fontWeight: '900',
         color: theme.palette.primary.main,
         letterSpacing: .7,
         cursor: 'pointer',
     },
+    multipleColAuthor: {
+        marginTop: 5,
+        cursor: 'pointer',
+    },
     multipleColSummary: {
         overflowWrap: 'break-word',
         fontSize: '.75rem',
-        fontWeight: '400',
+        fontWeight: '500',
         lineHeight: 1.5,
-        color: '#000000',
+        color: theme.palette.secondary.main,
         letterSpacing: .9,
-        marginTop: 5,
+        marginTop: 10,
         paddingBottom: 10,
         borderBottom: `1px solid #ccc`,
         cursor: 'pointer',
     },
     multipleColInfo: {
-        fontSize: '.6rem',
+        fontSize: '.7rem',
         fontWeight: '800',
         marginTop: 5,
-        color: theme.palette.primary.main,
+    },
+    // css for multipleColAuthor
+    authorAvatar: {
+        borderRadius: '50%',
+        width: 21,
+        marginRight: 10,
+    },
+    authorName: {
+        fontSize: '.7rem',
+        fontWeight: '900',
+        marginBottom: 1,
+        color: red[800],
+    },
+    authorDate: {
+        fontSize: '.4rem',
+        fontWeight: '600',
+        color: theme.palette.secondary.light
+    },
+    // css for multipleColInfo
+    likeOrNot: {
+        cursor: 'pointer',
+        color: red[500],
+    },
+    category: {
+        cursor: 'pointer',
+        color: theme.palette.primary.dark,
     }
 })
 
@@ -168,8 +196,8 @@ class Article extends Component {
                             </Grid>
 
         const likeOrNot = ifLiked ?
-                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
-                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {article.likes}</div>
+                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', false)}><span style={{fontSize:'12px', color:'red'}}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
+                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', false)}><span style={{fontSize:'12px'}}><i className="far fa-heart"></i></span> {article.likes}</div>
 
         return <Grid item style={{ marginBottom: 20 }}>
                     <Grid container justify="center">
@@ -183,6 +211,17 @@ class Article extends Component {
                             <div className={classes.multipleColTitle} onClick={() => {this.props.navToLink(`${article.link}`, true)}}>
                                 {article.title}
                             </div>
+                            <div className={classes.multipleColAuthor} style={{ width:adjustedWidth - 20 }} onClick={() => this.props.navToLink('/about', true)}>
+                                <Grid container justify="center" alignItems="center">
+                                    <img src={`/articles/authors/${article.avatar}.png`} alt={article.author} className={classes.authorAvatar} />
+                                    <div>
+                                        <Grid container direction="column" justify="center" alignItems="flex-start">
+                                            <div className={classes.authorName}>{article.author}</div>
+                                            <div className={classes.authorDate}>{article.date}</div>
+                                        </Grid>
+                                    </div>
+                                </Grid>
+                            </div>
                             <div className={classes.multipleColSummary} style={{ width:adjustedWidth - 20 }} onClick={() => {this.props.navToLink(`${article.link}`, true)}}>
                                 {article.summary}
                             </div>
@@ -192,7 +231,7 @@ class Article extends Component {
                                         {likeOrNot}
                                     </Grid>
                                     <Grid item>
-                                        <div>{article.date}</div>
+                                        <div className={classes.category}>{article.category}</div>
                                     </Grid>
                                 </Grid>
                             </div>
