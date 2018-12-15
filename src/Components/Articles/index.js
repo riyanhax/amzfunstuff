@@ -185,6 +185,7 @@ class Articles extends Component {
                                                                     }
                                                                     label={authorFilter.split('|')[0]}
                                                                     onDelete={() => this.removeFilter('author')}
+                                                                    style={{ marginLeft:5 }}
                                                                     />
         const filters = <Grid container justify="center" className={classes.filters}>
                             {categoryFilterChip}
