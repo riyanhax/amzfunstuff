@@ -134,16 +134,16 @@ class Article extends Component {
         1. 'windowWidth' would match material-ui's breakpoints, however, due to the fact that drawer would display after 960, the viewWidth is actually used when calculating item's width and height
         2. article was passed via props
     */
-   createArticles = (classes, article, viewWidth, windowWidth, liked, addLiked, removeLiked) => {
+   createArticles = (classes, article, viewWidth, windowWidth, liked, addLiked, removeLiked, addFilter) => {
 
         if(viewWidth < 650){
             return this.createSingleColArticle(classes, article, viewWidth)
         }else if(windowWidth < 1280){
-            return this.createMultipleColArticle(classes, article, viewWidth, liked, addLiked, removeLiked, 2)
+            return this.createMultipleColArticle(classes, article, viewWidth, liked, addLiked, removeLiked, addFilter, 2)
         }else if(windowWidth < 1650){
-            return this.createMultipleColArticle(classes, article, viewWidth, liked, addLiked, removeLiked, 2)
+            return this.createMultipleColArticle(classes, article, viewWidth, liked, addLiked, removeLiked, addFilter, 2)
         }else{
-            return this.createMultipleColArticle(classes, article, viewWidth, liked, addLiked, removeLiked, 3)
+            return this.createMultipleColArticle(classes, article, viewWidth, liked, addLiked, removeLiked, addFilter, 3)
         }
     }
 
@@ -176,7 +176,7 @@ class Article extends Component {
                 
     }
 
-    createMultipleColArticle = (classes, article, viewWidth, liked, addLiked, removeLiked, column) => {
+    createMultipleColArticle = (classes, article, viewWidth, liked, addLiked, removeLiked, addFilter, column) => {
 
         const viewWidthRatio = 0.8
         const heightToWidthRatio = 350/525
@@ -211,7 +211,7 @@ class Article extends Component {
                             <div className={classes.multipleColTitle} onClick={() => {this.props.navToLink(`${article.link}`, true)}}>
                                 {article.title}
                             </div>
-                            <div className={classes.multipleColAuthor} style={{ width:adjustedWidth - 20 }} onClick={() => this.props.navToLink('/about', true)}>
+                            <div className={classes.multipleColAuthor} style={{ width:adjustedWidth - 20 }} onClick={() => addFilter('author',article.author+'|'+article.avatar)}>
                                 <Grid container justify="center" alignItems="center">
                                     <img src={`/articles/authors/${article.avatar}.png`} alt={article.author} className={classes.authorAvatar} />
                                     <div>
@@ -231,7 +231,7 @@ class Article extends Component {
                                         {likeOrNot}
                                     </Grid>
                                     <Grid item>
-                                        <div className={classes.category}>{article.category}</div>
+                                        <div className={classes.category} onClick={() => addFilter('category',article.category)}>{article.category}</div>
                                     </Grid>
                                 </Grid>
                             </div>
@@ -242,9 +242,9 @@ class Article extends Component {
 
     render() {
 
-        const { classes, article, viewWidth, windowWidth, liked, addLiked, removeLiked } = this.props
+        const { classes, article, viewWidth, windowWidth, liked, addLiked, removeLiked, addFilter } = this.props
         
-        const content = this.createArticles(classes, article, viewWidth, windowWidth, liked, addLiked, removeLiked)
+        const content = this.createArticles(classes, article, viewWidth, windowWidth, liked, addLiked, removeLiked, addFilter)
 
         return <Grid item xs={12} sm={6} md={6} lg={6} xl={4}>
                     <Grid container justify="center">

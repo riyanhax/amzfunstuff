@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import classNames from 'classnames/bind'
 import {
-    Grid, CircularProgress
+    Grid, CircularProgress, Chip, Avatar, Icon
 } from '@material-ui/core'
 import Article from '../Article'
 import Footer from '../Footer'
@@ -20,6 +21,9 @@ const styles = theme => ({
         height: 'auto',
         marginBottom: 20,
     },
+    filters: {
+        marginBottom: 20,
+    },
 })
 
   
@@ -31,6 +35,8 @@ class Articles extends Component {
         index: null,
         liked: null,
         type: null,
+        authorFilter: null,
+        categoryFilter: null,
     }
 
     componentDidMount() {
@@ -132,22 +138,74 @@ class Articles extends Component {
         this.setState({ viewWidth: window.innerWidth >= 960 ? window.innerWidth - 240 : window.innerWidth })
     }
 
+    // add filters (passed into Article component) 
+    addFilter = (filterType, value) => {
+        if(filterType == 'category'){
+            this.setState({ categoryFilter: value })
+        }else{
+            this.setState({ authorFilter: value })
+        }
+    }
+
+    // delete filters 
+    removeFilter = (filterType) => {
+        if(filterType == 'category'){
+            this.setState({ categoryFilter: null })
+        }else{
+            this.setState({ authorFilter: null })
+        }
+    }
+
     render() { 
+        
         const { classes } = this.props
-        const { type, articles, index, viewWidth, liked } = this.state
+        const { type, articles, index, viewWidth, liked, categoryFilter, authorFilter } = this.state
 
         //create banner sub-component
         const banner =  (type == null || type == 'myfavs') ? null : 
                         <a href="www.amazon.com" rel="nofollow" target="_blank">
                             <img className={classes.banner} src={`/articles/covers/banner.png`}/>
                         </a>
-                        
+        
+        // create filters sub-component
+        const categoryFilterChip = categoryFilter == null ? null : <Chip 
+                                                                    color="primary"
+                                                                    avatar={
+                                                                        <Avatar>
+                                                                            <Icon className={classNames(classes.iconItem, 'fas fa-tag')} style={{ fontSize:15 }} />
+                                                                        </Avatar>
+                                                                    }
+                                                                    label={categoryFilter}
+                                                                    onDelete={() => this.removeFilter('category')}
+                                                                        />
+        const authorFilterChip = authorFilter == null ? null : <Chip 
+                                                                    color="secondary"
+                                                                    avatar={
+                                                                        <Avatar alt={authorFilter.split('|')[0]} src={`/articles/authors/${authorFilter.split('|')[1]}.png`} />
+                                                                    }
+                                                                    label={authorFilter.split('|')[0]}
+                                                                    onDelete={() => this.removeFilter('author')}
+                                                                    />
+        const filters = <Grid container justify="center" className={classes.filters}>
+                            {categoryFilterChip}
+                            {authorFilterChip}
+                        </Grid>
+
         // create content sub-component
         let content = null
         if(articles.length == 0){
             content = <Grid container justify="center" alignItems="center" style={{ height: window.innerHeight * .6 }} ><CircularProgress size={100} /></Grid>
         }else{
-            const filteredArticles = (type == null || type != 'myfavs') ? articles : articles.filter((article) => {
+            const filteredArticles = (type == null || type != 'myfavs') ? articles.filter((article) => {
+                let flag = true
+                if(categoryFilter != null){
+                    flag = article.category == categoryFilter
+                }
+                if(flag && authorFilter != null){
+                    flag = article.author == authorFilter.split('|')[0]
+                }
+                return flag
+            }) : articles.filter((article) => {
                 if(liked == null){
                     return false
                 }else{
@@ -163,7 +221,7 @@ class Articles extends Component {
 
             content = <Grid container justify="center">
                         {finalArticle.map(article => (
-                            <Article key={article.id} article={article} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked} removeLiked={this.removeLike}/>
+                            <Article key={article.id} article={article} windowWidth={window.innerWidth} viewWidth={viewWidth} liked={liked} addLiked={this.addLiked} removeLiked={this.removeLike} addFilter={this.addFilter}/>
                         ))}
                     </Grid>
         }
@@ -173,6 +231,7 @@ class Articles extends Component {
 
         return <div className={classes.root}>
                     {banner}
+                    {filters}
                     {content}
                     <Footer/>
                 </div>
