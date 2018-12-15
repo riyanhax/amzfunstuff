@@ -81,17 +81,21 @@ const styles = theme => ({
         fontWeight: '400',
         color: '#000000',
         letterSpacing: .9,
+        cursor: 'pointer',
     },
     multipleColInfo: {
         marginTop: 10,
+        cursor: 'pointer',
     },
     multipleColPrice: {
         fontSize: '.9rem',
         fontWeight: '900',
+        marginBottom: 3,
     },
     multipleColLikes: {
-        fontSize: '.8rem',
-        fontWeight: '400',
+        fontSize: '.7rem',
+        fontWeight: '800',
+        color: red[500],
     },
 })
 
@@ -165,8 +169,8 @@ class Product extends Component {
                             </Grid>
 
         const likeOrNot = ifLiked ?
-                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
-                             <div className={classes.multipleColLikes}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
+                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
+                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
         
         const priceIcons = this.getPriceIcons(product.price, classes)
 
@@ -186,7 +190,7 @@ class Product extends Component {
                         <div className={classes.multipleColInfo}>
                             <Grid container justify="space-between" alignItems="center" style={{ width:adjustedWidth }}>
                                 <Grid item>
-                                    <div className={classes.multipleColPrice}>{priceIcons}</div>
+                                    <div className={classes.multipleColPrice} onClick={() => { this.props.navToLink(product.link, true) }}>{priceIcons}</div>
                                     {likeOrNot}
                                 </Grid>
                                 <Grid item>

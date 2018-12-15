@@ -196,8 +196,8 @@ class Article extends Component {
                             </Grid>
 
         const likeOrNot = ifLiked ?
-                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', false)}><span style={{fontSize:'12px', color:'red'}}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
-                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', false)}><span style={{fontSize:'12px'}}><i className="far fa-heart"></i></span> {article.likes}</div>
+                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'12px', color:'red'}}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
+                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'12px'}}><i className="far fa-heart"></i></span> {article.likes}</div>
 
         return <Grid item style={{ marginBottom: 20 }}>
                     <Grid container justify="center">
