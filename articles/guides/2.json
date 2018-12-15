@@ -2,38 +2,50 @@
     "next": false,
     "articles": [
       {
-        "title": "如何才能买到最好的甜甜圈~",
+        "title": "如何才能买到最好的甜甜圈",
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-21.html",
         "image": "blog1",
         "id": "g-21",
+        "author":"抓不到韵脚的Jeff",
+        "avatar":"J",
+        "category":"蕴藏在亚马逊中的美国文化",
         "date": "2018-11-02",
         "likes": 10
       },
       {
-        "title": "如何才能买到最好的甜甜圈~",
+        "title": "如何才能买到最好的甜甜圈",
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-22.html",
         "image": "blog2",
         "id": "g-22",
+        "author":"茉黛女勋爵",
+        "avatar":"D",
+        "category":"时尚教主的碎碎念",
         "date": "2018-11-02",
         "likes": 10
       },
       {
-        "title": "如何才能买到最好的甜甜圈~",
+        "title": "如何才能买到最好的甜甜圈",
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-23.html",
         "image": "blog3",
         "id": "g-23",
+        "author":"茉黛女勋爵",
+        "avatar":"D",
+        "category":"时尚教主的碎碎念",
         "date": "2018-11-02",
         "likes": 10
       },
       {
-        "title": "如何才能买到最好的甜甜圈~",
+        "title": "如何才能买到最好的甜甜圈",
         "summary": "买甜甜圈是一个很需要科学技巧的问题，经过我的反复试验，我发现其实这是符合正态分布图的，这篇文章讲给你娓娓道来买甜甜圈的所有潜规则..",
         "link": "articles/guides/how-to-buy-the-best-donuts-24.html",
         "image": "blog4",
         "id": "g-24",
+        "author":"茉黛女勋爵",
+        "avatar":"D",
+        "category":"时尚教主的碎碎念",
         "date": "2018-11-02",
         "likes": 10
       }
