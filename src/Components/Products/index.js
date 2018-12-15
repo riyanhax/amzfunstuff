@@ -418,7 +418,7 @@ class Products extends Component {
         //create banner sub-component (display on whatsnew only)
         const banner = info != null || (type == null || type == 'myfavs') ? null :
                         <a href="www.amazon.com" rel="nofollow" target="_blank">
-                            <img className={classes.banner} src={`/assets/images/banner.png`}/>
+                            <img className={classes.banner} src={`/assets/images/ads/banner.png`}/>
                         </a>
 
         // create header sub-component (display on non-whatsnew non-myfavs only)

@@ -213,7 +213,7 @@ class ProductDetail extends Component {
                     <Grid container justify="center" alignItems="center">
                         <div>
                             <a href={product.link} rel="nofollow" target="_blank">
-                                <img src={`/assets/images/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                <img src={`/assets/images/products/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                             </a>
                         </div>
                         <Grid container direction="column" justify="center" alignItems="center">
@@ -260,7 +260,7 @@ class ProductDetail extends Component {
                         <Grid>
                             <div className={classes.image}>
                                 <a href={product.link} rel="nofollow" target="_blank">
-                                    <img src={`/assets/images/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                    <img src={`/assets/images/products/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                     <Grid container direction="column" justify="flex-end" className={classes.imageShadow}>
                                         <div className={classes.imageTitleCN}>{product.titleCN}</div>
                                         <div className={classes.imageTitleEN}>{product.titleEN}</div>
@@ -272,7 +272,7 @@ class ProductDetail extends Component {
                             <Grid container direction="column" justify="space-evenly" alignItems="center" style={{ height:adjustedHeight, marginLeft: 20 }}>
                                 <div>
                                     <a href="www.amazon.com" rel="nofollow" target="_blank">
-                                        <img className={classes.banner} src={`/assets/images/ad.png`}/>
+                                        <img className={classes.banner} src={`/assets/images/ads/ad.png`}/>
                                     </a>
                                 </div>
                                 <div className={classes.description} style={{ width: 280 }}>{product.description}</div>
