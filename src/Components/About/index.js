@@ -324,7 +324,7 @@ class About extends Component {
                             </Grid>
 
         const wechat = <Grid container direction="column" justify="center" alignItems="center" style={{ width:'100%' }}>
-                            <img src={`/assets/images/wechat.png`} className={classes.wechat}/>
+                            <img src={`/assets/images/ads/wechat.png`} className={classes.wechat}/>
                         </Grid>
 
         const subscriber = subscriber_success ? 
