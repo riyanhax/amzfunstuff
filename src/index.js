@@ -10,7 +10,7 @@ const theme = createMuiTheme({
       secondary: grey,
     },
     typography: {
-      fontFamily: 'Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif',
+      fontFamily: 'Georgia, "Times New Roman", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", "华文细黑", serif',
     },
     breakpoints: {
       values: {

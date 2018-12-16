@@ -45,7 +45,11 @@ const styles = theme => ({
     },
     priceIcons: {
         fontSize: '13px',
-        marginBottom: 2,
+        marginBottom: 3,
+    },
+    likeOrNot: {
+        fontSize: '10px',
+        color: red[500],
     },
     // single col css
     singleColImage: {
@@ -77,14 +81,14 @@ const styles = theme => ({
     },
     multipleColDescription: {
         overflowWrap: 'break-word',
-        fontSize: '.7rem',
-        fontWeight: '400',
-        color: '#000000',
-        letterSpacing: .9,
+        fontSize: '.72rem',
+        fontWeight: '600',
+        color: theme.palette.secondary.main,
+        letterSpacing: 1,
         cursor: 'pointer',
     },
     multipleColInfo: {
-        marginTop: 10,
+        marginTop: 13,
         cursor: 'pointer',
     },
     multipleColPrice: {
@@ -95,7 +99,7 @@ const styles = theme => ({
     multipleColLikes: {
         fontSize: '.7rem',
         fontWeight: '800',
-        color: red[500],
+        color: theme.palette.secondary.dark,
     },
 })
 
@@ -169,8 +173,8 @@ class Product extends Component {
                             </Grid>
 
         const likeOrNot = ifLiked ?
-                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'10px', color:'red'}}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
-                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'10px'}}><i className="far fa-heart"></i></span> {product.likes}</div>
+                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span className={classes.likeOrNot}><i className="fas fa-heart"></i></span> {product.likes+1}</div> :
+                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span className={classes.likeOrNot}><i className="far fa-heart"></i></span> {product.likes}</div>
         
         const priceIcons = this.getPriceIcons(product.price, classes)
 

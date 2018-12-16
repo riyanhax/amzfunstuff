@@ -80,20 +80,23 @@ const styles = theme => ({
     },
     multipleColSummary: {
         overflowWrap: 'break-word',
-        fontSize: '.75rem',
-        fontWeight: '500',
-        lineHeight: 1.5,
+        fontSize: '.72rem',
+        fontWeight: '600',
         color: theme.palette.secondary.main,
-        letterSpacing: .9,
+        letterSpacing: 1,
         marginTop: 10,
         paddingBottom: 10,
         borderBottom: `1px solid #ccc`,
         cursor: 'pointer',
     },
     multipleColInfo: {
+        marginTop: 5,
         fontSize: '.7rem',
         fontWeight: '800',
-        marginTop: 5,
+        cursor: 'pointer',
+    },
+    multipleColLikes: {
+        color: theme.palette.secondary.dark,
     },
     // css for multipleColAuthor
     authorAvatar: {
@@ -114,7 +117,7 @@ const styles = theme => ({
     },
     // css for multipleColInfo
     likeOrNot: {
-        cursor: 'pointer',
+        fontSize: '10px',
         color: red[500],
     },
     category: {
@@ -196,8 +199,8 @@ class Article extends Component {
                             </Grid>
 
         const likeOrNot = ifLiked ?
-                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'12px', color:'red'}}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
-                             <div className={classes.likeOrNot} onClick={() => this.props.navToLink('/myfavs', true)}><span style={{fontSize:'12px'}}><i className="far fa-heart"></i></span> {article.likes}</div>
+                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span className={classes.likeOrNot}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
+                             <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span className={classes.likeOrNot}><i className="far fa-heart"></i></span> {article.likes}</div>
 
         return <Grid item style={{ marginBottom: 20 }}>
                     <Grid container justify="center">
