@@ -448,8 +448,10 @@ class Products extends Component {
                     <Grid container justify="center" alignItems="center" className={classes.setting}>
                         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
                             <Grid container direction="column" justify="center" alignItems="center">
-                                <div style={{ width:priceDivWidth, marginLeft:leftMargin, marginRight: rightMargin }}><Grid container justify="space-between" alignItems="center">{startPrice}{endPrice}</Grid></div>
-                                <div style={{ width:sliderWidth }}><Slider color="#FF5252" range min={1} max={15} value={scale} scaleLength={1} onChange={this.handleSliderChange}/></div>
+                                <Hidden xsDown>
+                                    <div style={{ width:priceDivWidth, marginLeft:leftMargin, marginRight: rightMargin }}><Grid container justify="space-between" alignItems="center">{startPrice}{endPrice}</Grid></div>
+                                    <div style={{ width:sliderWidth }}><Slider color="#FF5252" range min={1} max={15} value={scale} scaleLength={1} onChange={this.handleSliderChange}/></div>
+                                </Hidden>
                             </Grid>
                         </Grid>
                         <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
