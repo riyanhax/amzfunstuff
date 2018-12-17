@@ -45,7 +45,7 @@
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
 
-* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX)
+* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88)
 * [其他有趣产品](B075ZKDHD3 B01KILG2UM https://onewheel.com)
 * [绝妙的书架装饰](https://www.amazon.com/stores/node/9519792011?_encoding=UTF8&field-lbr_brands_browse-bin=Artori%20Design&ref_=w_bl_hsx_s_ho_web_9519792011)
 
@@ -53,3 +53,5 @@
 
 * [各种刀](B002JTWRDS 0711238898 B00EP6UPYQ)
 * [无用之用 one man's garbage is...无用之趣 两层含义 一个是产品无用，至少不是必须，但有趣味和情趣 另一个是这件事挺无用，但做的过程学到了东西 金庸傳写戏剧和影评](http://www.sohu.com/a/156797699_310459)
+
+* [现实版的铁甲钢拳](https://techcrunch.com/2018/01/11/this-1600-fighting-robot-toy-kicks-serious-butt/   B07BHDXY6K B079MDS92B  https://www.youtube.com/watch?v=0r5I5QGCgjw)
