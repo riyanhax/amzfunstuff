@@ -58,7 +58,7 @@
  
  /* content container */
  .content {
-    margin: 3% 8% 40px 8%;
+    margin: 3% 10% 40px 10%;
  }
  
  /* title */
@@ -74,8 +74,9 @@
     line-height: 1.7;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.8em;
     word-break: break-word!important;
-    color:#2f2f2f;
+    color:#000;
     margin-top: 30px;
  }
 
@@ -124,14 +125,16 @@ blockquote::after{
     padding-bottom:56.25%;
     position:relative;
     height:0;
- }
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
  .video-responsive object{
     left:0;
     top:0;
     height:100%;
     width:100%;
     position:absolute;
- }
+}
  
  @media (min-width: 770px) {
    #header {
@@ -164,7 +167,7 @@ blockquote::after{
  
    /* content container in larger screen */
    .content {
-     margin: 3% 18% 3% 18%;
+     margin: 3% 20% 3% 20%;
    }
 
    /* title in larger screen */
@@ -212,7 +215,7 @@ blockquote::after{
  }
 
  #sidedrawer-brand span {
-  font-weight: 900;
+   font-weight: 900;
    color:#009688;
  }
  #sidedrawer a {
