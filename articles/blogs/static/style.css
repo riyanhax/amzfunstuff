@@ -80,11 +80,21 @@
     margin-top: 30px;
  }
 
- /* image */
+  /* image */
+ .banner {
+   margin-left:-15px;
+   margin-right:-15px;
+   margin-top: 30px;
+  }
+
+ .picture {
+   margin-top: 30px;
+   text-align:center;
+ }
+
  img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 30px;
+   max-width: 100%;
+   height: auto;
  }
 
  /* blockquote */
