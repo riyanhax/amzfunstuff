@@ -6,6 +6,8 @@ import {
 } from '@material-ui/core'
 import Article from '../Article'
 import Footer from '../Footer'
+import articleAuthors from '../../menus/articleAuthors'
+import articleCategories from '../../menus/articleCategories'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import axios from "axios"
@@ -130,30 +132,12 @@ class Articles extends Component {
 
     // convert category
     convertCategory = (code) => {
-        switch (code) {
-            case '1':
-                return '时尚教主的碎碎念'
-            case '2':
-                return '教我如何不想她'
-            case '3':
-                return '蕴藏在亚马逊中的美国文化'
-            default:
-                return null
-        }
+        return articleCategories[code]
     }
 
     // convert category
     convertAuthor = (code) => {
-        switch (code) {
-            case '1':
-                return '茉黛女勋爵|D'
-            case '2':
-                return '我有一座格莱美|S'
-            case '3':
-                return '抓不到韵脚的Jeff|J'
-            default:
-                return null
-        }
+        return articleAuthors[code]
     }
 
     // handle scroll - load more by modifying index
