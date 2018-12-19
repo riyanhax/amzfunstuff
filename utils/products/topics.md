@@ -38,16 +38,16 @@
 * [能量 future president](B06Y3XMQTK)
 * [bridal buddy B0758H7S9D](https://2paragraphs.com/2017/09/bridal-buddy-what-happened-after-75000-shark-tank-deal/ https://bridalbuddy.net/pages/about-us)
 * [sharktank products on amazon](https://2paragraphs.com/2017/04/27-favorite-shark-tank-products-at-amazon-new-2017-list/)
-* [啤酒冷藏箱电动车 - geeky world homebrew, davis beer shop, microbrewery - gift, hops market](B000NMSI54 B07C7QWGWF)
-* [蜡烛 homesick蜡烛 pop culture蜡烛 Jane candle business 请你在为我点上一盏烛光](https://www.amazon.com/dp/B00KPY1RH6/)
+* [啤酒冷藏箱电动车 - geeky world homebrew, davis beer shop, microbrewery - gift, hops market](B000NMSI54 B07C7QWGWF B012Y5T4QE)
+* [蜡烛 homesick蜡烛 pop culture蜡烛 Jane candle business B01MZEH0WV 请你在为我点上一盏烛光](https://www.amazon.com/dp/B00KPY1RH6/)
 * [现代易容术](https://www.amazon.com/dp/B07177R3J9)
 * [奇怪的树脂工艺品](https://www.amazon.com/s/ref=hnd_pdp_byline?_encoding=UTF8&node=11260432011&lo=image&me=A2U7L4YWHVSUTP)
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
 
-* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J)
+* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J B01HDO7A08 办公室会议室冥想屋 B07D97JYRS)
 
-* [创意好物](B01CQJ3E0U)
+* [创意好物](B01CQJ3E0U B07GCSSS27 B07BTHL7MH)
 
 * [史上最辣的龙之气息 B079DDFLCD](https://zh.wikipedia.org/wiki/%E5%8F%B2%E9%AB%98%E7%B6%AD%E7%88%BE%E6%8C%87%E6%A8%99)
 * [其他有趣产品](B075ZKDHD3 B01KILG2UM https://onewheel.com)
