@@ -45,9 +45,9 @@
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
 
-* [仿照5大囧 出每周脑残商品列表](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J B01HDO7A08 办公室会议室冥想屋 B07D97JYRS)
+* [仿照5大囧 出每周脑残商品列表 无药可救的第一世界 stupid first world](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J B01HDO7A08 办公室会议室冥想屋 B07D97JYRS B01MY0FOOI B00UA95IDA B072BWKHNY B0773MZH3H)
 
-* [创意好物](B01CQJ3E0U B07GCSSS27 B07BTHL7MH)
+* [创意好物](B01CQJ3E0U B07GCSSS27 B07BTHL7MH B07BP1G35P B07C7X8LG9 B004R08W0O B01MTIH2YB)
 
 * [史上最辣的龙之气息 B079DDFLCD](https://zh.wikipedia.org/wiki/%E5%8F%B2%E9%AB%98%E7%B6%AD%E7%88%BE%E6%8C%87%E6%A8%99)
 * [其他有趣产品](B075ZKDHD3 B01KILG2UM https://onewheel.com)
@@ -55,7 +55,7 @@
 
 * [这款邦德打火机 贵的没道理 B017PQJ3S6](http://www.jamesbondlifestyle.com/news/ultimate-guide-spectre-bond-24-products-and-locations)
 
-* [各种刀](B002JTWRDS 0711238898 B00EP6UPYQ)
+* [各种刀](B002JTWRDS 0711238898 B00EP6UPYQ B07DTHCDVR)
 * [无用之用 one man's garbage is...无用之趣 两层含义 一个是产品无用，至少不是必须，但有趣味和情趣 另一个是这件事挺无用，但做的过程学到了东西 金庸傳写戏剧和影评](http://www.sohu.com/a/156797699_310459)
 
 * [现实版的铁甲钢拳](https://techcrunch.com/2018/01/11/this-1600-fighting-robot-toy-kicks-serious-butt/   B07BHDXY6K B079MDS92B  https://www.youtube.com/watch?v=0r5I5QGCgjw)
