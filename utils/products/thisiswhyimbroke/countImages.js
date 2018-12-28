@@ -1,7 +1,7 @@
 'use strict'
 
 const fs = require('fs')
-const filepath = __dirname + '/etl/images/2'
+const filepath = __dirname + '/etl/images/3'
 
 fs.readdir(filepath, (err, files) => {
     if(err){
