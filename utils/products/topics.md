@@ -12,7 +12,7 @@
 * [Anki Vector A Home Robot 和sphero可以一起写](https://www.anki.com/en-us/vector)
 * [一款STEM机器人 顺便介绍一下Scratch](https://www.amazon.com/dp/B078K2T8T8/)
 
-* [上帝说 要有光 NPR 光在历史中的价值 万古长夜 牛顿带来光 lumos illuminati enlighten 红太阳 对光的崇拜 光明左使 B004NBZLJ2 B07FD2Q3MW](https://www.kickstarter.com/projects/lantern/lantern-1000-lumen-flashlight-with-usb-battery-bac)
+* [上帝说 要有光 NPR 光在历史中的价值 万古长夜 牛顿带来光 lumos illuminati enlighten 红太阳 对光的崇拜 光明左使 B004NBZLJ2 B07FD2Q3MW B017WOCZAY 在欠发达地区取代煤油灯](https://www.kickstarter.com/projects/lantern/lantern-1000-lumen-flashlight-with-usb-battery-bac)
 * [卡尔萨根,podcast](https://www.amazon.com/dp/1473696402)
 * [Bob Ross 绘画 艺术情操](https://www.zhihu.com/question/28171964)
 * [Nerf枪 076035782X B07BFP45TH B076JCQFD1](https://home.gamer.com.tw/creationDetail.php?sn=3507818)
@@ -37,7 +37,7 @@
         * Charlie: So, in essence Oshikuru is like a Japanese sci-fi version of Moby Dick.
 
 * [cricket joke](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=cricket+fried&rh=i%3Aaps%2Ck%3Acricket+fried B01F0TYT5M B00E3E4XN4)
-* [吸入式咖啡因](B007Y4BIAQ)
+* [吸入式咖啡因](B007Y4BIAQ B06XPSFYJB)
 * [恐龙系列](B06W2M22ZJ)
 * [怀旧复刻 小时候苹果机 B002HFG6YA](https://www.amazon.com/dp/B075YT5K59)
 * [能量 future president](B06Y3XMQTK)
@@ -50,15 +50,17 @@
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
 
-* [养蜂人 B01J9CG2A6 加州众多果树 缺少蜜蜂 后院养蜂 老顽童小龙女 杨过古墓喂蜂蜜给郭襄 农夫市场自制蜂蜜治过敏鼻炎](http://www.wtfshouldidowithmylife.com/be-a-beekeeper/ 包括下面的推荐链接   https://www.keepingbackyardbees.com/11-considerations-before-becoming-beekeeper/ https://www.npr.org/sections/money/2017/02/24/517076055/episode-756-the-bees-go-to-california https://www.youtube.com/watch?v=4QPes0V7ios
+* [各种主题的上色绘本 还有之前看到的恐怖风格 也可列入5大囧](1945056088)
+
+* [养蜂人 B01J9CG2A6 加州众多果树 缺少蜜蜂 后院养蜂 老顽童小龙女 杨过古墓喂蜂蜜给郭襄 农夫市场自制蜂蜜治过敏鼻炎 硅谷新潮流](http://www.wtfshouldidowithmylife.com/be-a-beekeeper/ 包括下面的推荐链接   https://www.keepingbackyardbees.com/11-considerations-before-becoming-beekeeper/ https://www.npr.org/sections/money/2017/02/24/517076055/episode-756-the-bees-go-to-california https://www.youtube.com/watch?v=4QPes0V7ios
 http://technews.tw/2015/04/17/flowhive/)
 
-* [仿照5大囧 出每周脑残商品列表 无药可救的第一世界 stupid first world](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J B01HDO7A08 办公室会议室冥想屋 B07D97JYRS B01MY0FOOI B00UA95IDA B072BWKHNY B0773MZH3H B005P0WOZE 比kale还脑残 B00OXMQ9EC 爆炸的手机和打火机 B003AY34A6 B07FFR18VZ 看评论完全不work   B01JZM0CEC and B01MTN5XWB 无用的产品 B005OLZNTS B000GBJ8H4 B07791K9HY)
+* [仿照5大囧 出每周脑残商品列表 无药可救的第一世界 stupid first world](那木买水 比kombucha更离奇alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J B01HDO7A08 办公室会议室冥想屋 B07D97JYRS B01MY0FOOI B00UA95IDA B072BWKHNY B0773MZH3H B005P0WOZE 比kale还脑残 B00OXMQ9EC 爆炸的手机和打火机 B003AY34A6 B07FFR18VZ 看评论完全不work   B01JZM0CEC and B01MTN5XWB 无用的产品 B005OLZNTS B000GBJ8H4 B07791K9HY B078W52ZGN B079C3XSDG B075CWYXRH 0762435755 B079MJJNDG 0670887269)
 
 * [breaking bad, geologist joke about rock band](B017JF8YME)
 * [beauty horror](https://www.amazon.com/Alan-Robert/e/B0047EGCS4/ref=dp_byline_cont_book_1)
 
-* [创意好物](B01CQJ3E0U B07GCSSS27 B07BTHL7MH B07BP1G35P B07C7X8LG9 B004R08W0O B01MTIH2YB B06Y3TC113 B0752WHGFH B01LWWXVIB B00303KHSY 0761189513 1523503335 0761160965 B077MNWP9L impress people B00BCQ4F8Y 疤面人电影造型 B0772MXJJR B07FFCXSPM+B01LY0WM4A B00NC6ZJA0 B07CMW8JG3 B07C6PT36R)
+* [创意好物](B01CQJ3E0U B07GCSSS27 B07BTHL7MH B07BP1G35P B07C7X8LG9 B004R08W0O B01MTIH2YB B06Y3TC113 B0752WHGFH B01LWWXVIB B00303KHSY 0761189513 1523503335 0761160965 B077MNWP9L impress people B00BCQ4F8Y 疤面人电影造型 B0772MXJJR B07FFCXSPM+B01LY0WM4A B00NC6ZJA0 B07CMW8JG3 B07C6PT36R B001628LIE B00X0ACG0Y B075JMMQ9B B0756BD1B7 B06VW9HJVB B00F37SX5Y B071CQ3G61 B01LXVMGXN B000095SGF B003CIYMYW)
 
 * [rotis 和 煎饼果子 和 面皮 B01MZHRP4O B07GSFVVDB B00005UP2L](https://rotimatic.com/?gclid=CjwKCAiAx4fhBRB6EiwA3cV4KiLRws6rSaU73Q3YogXwskBCopEqaHlZ0kXeA1BX6IQcKP6mUpHnGRoCPeAQAvD_BwE&utm_id=XY-9b739303b8ff7f80c)
 
@@ -67,6 +69,7 @@ http://technews.tw/2015/04/17/flowhive/)
 
 * [其他有趣产品](B075ZKDHD3 B01KILG2UM https://onewheel.com)
 * [绝妙的书架装饰](https://www.amazon.com/stores/node/9519792011?_encoding=UTF8&field-lbr_brands_browse-bin=Artori%20Design&ref_=w_bl_hsx_s_ho_web_9519792011)
+* [想和你再去吹吹风](https://www.amazon.com/DecoBREEZE-Decorative-Electric-Tabletop-Figurine/dp/B0050OH62Q/ref=pd_bxgy_201_img_2?_encoding=UTF8&pd_rd_i=B0050OH62Q&pd_rd_r=63cc8f88-0a07-11e9-ade5-fb19e6f8bfdd&pd_rd_w=90cvo&pd_rd_wg=rtKeD&pf_rd_p=6725dbd6-9917-451d-beba-16af7874e407&pf_rd_r=9M6YCAY7PYNJQSY604S3&psc=1&refRID=9M6YCAY7PYNJQSY604S3)
 
 * [这款邦德打火机 贵的没道理 B017PQJ3S6](http://www.jamesbondlifestyle.com/news/ultimate-guide-spectre-bond-24-products-and-locations)
 
