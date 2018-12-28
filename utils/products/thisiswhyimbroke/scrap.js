@@ -4,10 +4,11 @@ const axios = require('axios')
 const fs = require('fs')
 const shortid = require('shortid')
 
-const amazonfilepath = __dirname + '/data/amazon.json'
-const etsyfilepath = __dirname + '/data/etsy.json'
-const kickstarterfilepath = __dirname + '/data/kickstarter.json'
-const othersfilepath = __dirname + '/data/others.json'
+const currentDate = '2018-11-17'
+const amazonfilepath = __dirname + `/data/${currentDate}/amazon.json`
+const etsyfilepath = __dirname + `/data/${currentDate}/etsy.json`
+const kickstarterfilepath = __dirname + `/data/${currentDate}kickstarter.json`
+const othersfilepath = __dirname + `/data/${currentDate}/others.json`
 
 // date to stop search (start date of last time)
 const dateToStop = '2018-11-17T09:05:00.000Z'

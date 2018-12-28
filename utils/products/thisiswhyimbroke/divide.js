@@ -2,10 +2,11 @@
 
 const fs = require('fs')
 
-const amazonfilepath = __dirname + '/data/amazon.json'
-const etsyfilepath = __dirname + '/data/etsy.json'
-const kickstarterfilepath = __dirname + '/data/kickstarter.json'
-const othersfilepath = __dirname + '/data/others.json'
+const currentDate = '2018-11-17'
+const amazonfilepath = __dirname + `/data/${currentDate}/amazon.json`
+const etsyfilepath = __dirname + `/data/${currentDate}/etsy.json`
+const kickstarterfilepath = __dirname + `/data/${currentDate}kickstarter.json`
+const othersfilepath = __dirname + `/data/${currentDate}/others.json`
 
 const main = () => {
 
@@ -30,10 +31,10 @@ const main = () => {
     let amazonbatchpath
     let amazoncounter = 1
     for(let batch of amazonbatches){
-        amazonbatchpath = __dirname + `/data/amazon/${amazoncounter}.json`
+        amazonbatchpath = __dirname + `/data/${currentDate}/amazon/${amazoncounter}.json`
         fs.openSync(amazonbatchpath, 'w')
         const batchjson = JSON.stringify(batch, undefined, 2)
-        fs.writeFileSync(__dirname + `/data/amazon/${amazoncounter}.json`, batchjson, 'utf8') 
+        fs.writeFileSync(amazonbatchpath, batchjson, 'utf8') 
         amazoncounter++
     }
 
@@ -42,10 +43,10 @@ const main = () => {
     let etsybatchpath
     let etsycounter = 1
     for(let batch of etsybatches){
-        etsybatchpath = __dirname + `/data/etsy/${etsycounter}.json`
+        etsybatchpath = __dirname + `/data/${currentDate}/etsy/${etsycounter}.json`
         fs.openSync(etsybatchpath, 'w')
         const batchjson = JSON.stringify(batch, undefined, 2)
-        fs.writeFileSync(__dirname + `/data/etsy/${etsycounter}.json`, batchjson, 'utf8') 
+        fs.writeFileSync(etsybatchpath, batchjson, 'utf8') 
         etsycounter++
     }
 
@@ -54,10 +55,10 @@ const main = () => {
     let kickstarterbatchpath
     let kickstartercounter = 1
     for(let batch of kickstarterbatches){
-        kickstarterbatchpath = __dirname + `/data/kickstarter/${kickstartercounter}.json`
+        kickstarterbatchpath = __dirname + `/data/${currentDate}/kickstarter/${kickstartercounter}.json`
         fs.openSync(kickstarterbatchpath, 'w')
         const batchjson = JSON.stringify(batch, undefined, 2)
-        fs.writeFileSync(__dirname + `/data/kickstarter/${kickstartercounter}.json`, batchjson, 'utf8') 
+        fs.writeFileSync(kickstarterbatchpath, batchjson, 'utf8') 
         kickstartercounter++
     }
 
@@ -66,10 +67,10 @@ const main = () => {
     let othersbatchpath
     let otherscounter = 1
     for(let batch of othersbatches){
-        othersbatchpath = __dirname + `/data/others/${otherscounter}.json`
+        othersbatchpath = __dirname + `/data/${currentDate}/others/${otherscounter}.json`
         fs.openSync(othersbatchpath, 'w')
         const batchjson = JSON.stringify(batch, undefined, 2)
-        fs.writeFileSync(__dirname + `/data/others/${otherscounter}.json`, batchjson, 'utf8') 
+        fs.writeFileSync(othersbatchpath, batchjson, 'utf8') 
         otherscounter++
     }
 }
