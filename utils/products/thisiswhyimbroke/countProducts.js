@@ -1,7 +1,5 @@
 'use strict'
 
-const fs = require('fs')
-
 const filepath = __dirname + '/etl/1.json'
 
 const main = () => {

@@ -26,7 +26,7 @@ const main = async () => {
 // download image (based on this tutorial: https://futurestud.io/tutorials/download-files-images-with-axios-in-node-js)
 const download = async (id, imagelink) => {
 
-    const imagepath = __dirname + `/images/${id}.jpg`
+    const imagepath = __dirname + `/etl/images/${id}.jpg`
         
     const response = await axios({
         method: 'GET',

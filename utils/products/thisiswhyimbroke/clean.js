@@ -24,7 +24,7 @@ const main = () => {
         delete product.source
         delete product.exId
         delete product.exLink
-        delete product.type
+        delete product.imagelink
     } 
 
     // write to files
