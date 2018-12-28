@@ -1,6 +1,6 @@
 'use strict'
 
-const filepath = __dirname + '/etl/1.json'
+const filepath = __dirname + '/etl/2.json'
 
 const main = () => {
 
