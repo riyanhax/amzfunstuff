@@ -16,16 +16,10 @@ const main = () => {
         process.exit(1)
     }
 
-    // iterate each product to clean
-    for(let product of products){
-        delete product.content
-        delete product.published
-        delete product.uri
-        delete product.source
-        delete product.exId
-        delete product.exLink
-        delete product.type
-    } 
+    // iterate each product to remove delted
+    products = products.filter((product) => {
+        return product.titleCN != 'deleted'
+    })
 
     // write to files
     const json = JSON.stringify(products, undefined, 2)

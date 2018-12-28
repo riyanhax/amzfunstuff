@@ -18,6 +18,18 @@
 * based on the file path provided in the file, this command will download images for each product based on the image link retrieve from last step
 * command: `make download-thisiswhyimbroke`
 
+# remove deleted
+* based on the file path provided in the file, this command will remove "deleted" products (whose "titleCN" being marked as "deleted")
+* command: `make clean-thisiswhyimbroke`
+
+# count products
+* based on the file path provided in the file, this command will count products
+* command: `make clean-thisiswhyimbroke`
+
+# count images
+* based on the folder path provided in the file, this command will count images
+* command: `make clean-thisiswhyimbroke`
+
 # clean product
 * based on the file path provided in the file, this command will clean product (removing unnecessary attributes)
 * command: `make clean-thisiswhyimbroke`

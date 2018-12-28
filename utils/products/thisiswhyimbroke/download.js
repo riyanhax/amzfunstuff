@@ -3,10 +3,7 @@
 const axios = require('axios') 
 const fs = require('fs')
 
-const filepath = __dirname + '/data/amazon/1.json'
-// const filepath = __dirname + '/data/etsy/1.json'
-// const filepath = __dirname + '/data/kickstarter/1.json'
-// const filepath = __dirname + '/data/others/1.json'
+const filepath = __dirname + '/etl/1.json'
 
 const main = async () => {
 
