@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-const filepath = __dirname + '/etl/3.json'
+const filepath = __dirname + '/etl/4.json'
 
 const main = () => {
 
