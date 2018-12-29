@@ -8,6 +8,12 @@ uploadSandbox:
 
 # thisiswhyimbroke
 
+countProducts-thisiswhyimbroke:
+	node ./utils/products/countProducts.js 
+
+countImages-thisiswhyimbroke:
+	node ./utils/products/countImages.js
+
 scrap-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/scrap.js 
 
@@ -23,14 +29,14 @@ download-thisiswhyimbroke:
 removeDeleted-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/removeDeleted.js 
 
-countProducts-thisiswhyimbroke:
-	node ./utils/products/thisiswhyimbroke/countProducts.js 
-
-countImages-thisiswhyimbroke:
-	node ./utils/products/thisiswhyimbroke/countImages.js
-
 clean-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/clean.js 
+
+move-thisiswhyimbroke:
+	mv ./utils/products/cleaned/4/* ./utils/products/cleaned/images
+
+combine-thisiswhyimbroke:
+	node ./utils/products/cleaned/combine.js 
 
 categories-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/categories.js 
