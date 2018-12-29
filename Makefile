@@ -38,6 +38,9 @@ move-thisiswhyimbroke:
 combine-thisiswhyimbroke:
 	node ./utils/products/cleaned/combine.js 
 
+check-thisiswhyimbroke:
+	node ./utils/products/cleaned/check.js 
+
 categories-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/categories.js 
 
