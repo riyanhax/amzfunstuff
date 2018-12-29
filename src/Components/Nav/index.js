@@ -13,7 +13,7 @@ const styles = theme => ({
         display: 'none',
     },
     nav: {
-        fontSize: '1rem',
+        fontSize: '.9rem',
         fontWeight: '200',
     },
     navSelected: {
@@ -56,6 +56,9 @@ class Nav extends Component {
             // iterate nav items
             if(categories[id].link == 'divider'){
                 menus.push(<Divider key={id}/>);
+                continue
+            }
+            if(categories[id].show != true){
                 continue
             }
             const navName = categories[id].name
