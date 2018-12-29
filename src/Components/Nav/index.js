@@ -17,7 +17,7 @@ const styles = theme => ({
         fontWeight: '200',
     },
     navSelected: {
-        fontSize: '1rem',
+        fontSize: '.9rem',
         fontWeight: '800',
     },
     subNav: {
@@ -91,7 +91,9 @@ class Nav extends Component {
                 
                 for(const sub of subs){
                 // if sub items exists, iterate sub nav items
-
+                if(sub.show != true){
+                    continue
+                }
                 const subId = sub.id;
                 const subNavTo = sub.link;
                 const subNavname = sub.name;

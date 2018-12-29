@@ -17,7 +17,6 @@
     * wallets
     * pool-and-water
     * car-accessories
-    * first-world-solutions
     * sports-equiptment
     * road-trip
     * smart-home
