@@ -3,6 +3,8 @@
 * [ideas](https://www.huffpost.com/life/)
 * [ideas](https://laughingsquid.com)
 
+* [thinkgeek affiliate program](https://www.thinkgeek.com/)
+
 * [珍妮杰克逊 摇滚book](https://www.youtube.com/watch?v=suUkJqG0ZG0)
 
 * [玩物志](https://www.ifanr.com/author/coolbuy)

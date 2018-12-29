@@ -395,7 +395,10 @@
     "description": "这款原产新西兰纯手工打造外观颇似李小龙经典武道服的16盎司香茅灭蚊蜡烛，点燃后可持续燃烧8小时，能在沁人心脾的淡淡香味里悄无声息地让所有惹人讨厌的夏日蚊虫灰飞烟灭",
     "price": 24.95,
     "likes": 183,
-    "categories": [],
+    "categories": [
+      "home-and-office-gifts",
+      "home-decor"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -944,7 +947,11 @@
     "description": "生活中总是有一些让你忍不住骂人的时刻，即便身处异国用另一种语言，也决不能在互飙脏话的比赛中甘拜下风，这本充满邪恶智慧的混搭脏话生成器绝对让你的亵渎口吐莲花出神入化神鬼莫测",
     "price": 8.99,
     "likes": 559,
-    "categories": [],
+    "categories": [
+      "prank",
+      "wtf",
+      "blasphemy"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -1653,7 +1660,10 @@
     "description": "睡觉睡到自然醒，数钱数到手抽筋儿？这款自带紫外线防伪功能、每分钟能清点1300张钞票的点钞机不但工作起来准确高效，类似蛤壳的设计也便于清洗保养，是高净值人士必备的私人定制",
     "price": 146.86,
     "likes": 181,
-    "categories": [],
+    "categories": [
+      "home-and-office-gifts",
+      "office-goodies"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -2023,7 +2033,11 @@
     "description": "这款设计独特的空中花园垂直墙壁种植袋采用结实耐用的毛毡布制成，透气性好吸水性强，让你在没有后院的情况下也可以种植喜欢的植物，为自己的都市生活增添自然地情趣与芬芳",
     "price": 10.99,
     "likes": 674,
-    "categories": [],
+    "categories": [
+      "home-and-office-gifts",
+      "yard-and-garden",
+      "housewarming-gifts"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -2117,7 +2131,11 @@
     "description": "是否有邻居曾横刀立马将车堵在你的车库门前？是否有同事曾莫名其妙占用了你的半个车位？这款“你停车太差劲”卡片让你既保持了绅士风度/淑女礼仪，又委婉而坚定地表达了你的态度",
     "price": 9.99,
     "likes": 397,
-    "categories": [],
+    "categories": [
+      "funny-gifts",
+      "prank",
+      "wtf"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -2484,7 +2502,10 @@
     "description": "杰克的魔法种子长成了直通云中巨人国的豆茎，而这款90天成熟的超级西瓜籽则能结出绿皮红壤香甜多汁且重达200磅的巨型西瓜，让你后院的小农场成为茶余饭后和朋友们海阔天空神侃时的绝佳谈资",
     "price": 1.5,
     "likes": 384,
-    "categories": [],
+    "categories": [
+      "home-and-office-gifts",
+      "yard-and-garden"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -2594,7 +2615,12 @@
     "description": "随机抽取一个角色，如Miley Cyrus/Lady Gaga/Kim Jong-Un/Donald Trump/Tony Soprano，然后打出手中最为政治不正确的牌，赢得本局的胜利...",
     "price": 25,
     "likes": 232,
-    "categories": [],
+    "categories": [
+      "funny-gifts",
+      "novelty-and-gag-gifts",
+      "wtf",
+      "offensive"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -2788,7 +2814,11 @@
     "description": "这款价格不菲的打火机完全仿照《幽灵党》电影中邦德使用的同款设计，和你的贝瑞塔手枪及阿斯顿马丁跑车非常般配，中间的弹孔和隐藏的隔断让你可以像王牌特工一样将机密藏匿其中",
     "price": 1395,
     "likes": 535,
-    "categories": [],
+    "categories": [
+      "gifts-for-men",
+      "smokers",
+      "gifts-for-boyfriends"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -3428,7 +3458,10 @@
     "description": "这款猫脸纸巾盒把每次拿纸巾的动作都变成了和爱丽丝梦游仙境里那只身体消失的柴郡猫夺取食物的战斗，在伤风感冒或难过流泪这些需要纸巾的至暗时刻，为你带来些许幽默与丝丝慰藉",
     "price": 21,
     "likes": 78,
-    "categories": [],
+    "categories": [
+      "home-and-office-gifts",
+      "housewarming-gifts"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -3838,7 +3871,10 @@
     "description": "猜拳太费时，扔鞋太老土，这款1美分大小两面分别镌刻着“f**k yes”和“f**k no”的决策者硬币，让你把所有左右为难的抉择都交给命运，正所谓老天自有安排老天爱笨小孩",
     "price": 24.99,
     "likes": 358,
-    "categories": [],
+    "categories": [
+      "funny-gifts",
+      "novelty-and-gag-gifts"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -3876,7 +3912,12 @@
     "description": "无论你是想模仿草薙京的赤炎拳、乌拉拉的火焰咒、伏地魔的incendio，这个安全又小巧的腕带火焰喷射器都会让你在朋友面前大出风头...",
     "price": 149.95,
     "likes": 2595,
-    "categories": [],
+    "categories": [
+      "gifts-for-men",
+      "gifts-for-boyfriends",
+      "funny-gifts",
+      "novelty-and-gag-gifts"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -4025,7 +4066,10 @@
     "description": "再浓郁的爱意也无法在彻夜不休的鼾声中长久，而”打鼾者胶带“致力于解决您的烦恼，无论昨夜如何风急雨骤，保证浓睡后海棠依旧，婴儿般的睡眠体验，每个人都值得拥有~",
     "price": 17.99,
     "likes": 150,
-    "categories": [],
+    "categories": [
+      "gifts-for-boyfriends",
+      "gifts-for-couples"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -4107,7 +4151,10 @@
     "description": "不管你准备装饰美国万圣节还是墨西哥亡灵节，这款充满浓郁哥特风格的骷髅吊灯都绝对能让你客厅的恐怖指数直线飙升，你说这是从《盗墓笔记》片场拿回来的，我绝对相信~",
     "price": 299.95,
     "likes": 100,
-    "categories": [],
+    "categories": [
+      "home-and-office-gifts",
+      "home-decor"
+    ],
     "link": "",
     "type": "amazon"
   },
@@ -4425,7 +4472,10 @@
     "description": "选择困难症患者的终极福音！这枚直径1.5英尺，两面分别镌刻着“hell naw”和“f*ck yeah”的硬币，让你从此把生活中所有艰难的抉择都交付给万有引力和随机概率",
     "price": 18.95,
     "likes": 1477,
-    "categories": [],
+    "categories": [
+      "funny-gifts",
+      "novelty-and-gag-gifts"
+    ],
     "link": "",
     "type": "amazon"
   },

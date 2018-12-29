@@ -314,21 +314,21 @@
     "30":[
         {
             "id":"30-10",
-            "link":"/toy-games/toy-gifts/action-figures",
+            "link":"/toy-gifts/action-figures",
             "name":"人形玩偶",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"30-20",
-            "link":"/toy-games/toy-gifts/remote-control-toys",
+            "link":"/toy-gifts/remote-control-toys",
             "name":"遥控玩具",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"30-30",
-            "link":"/toy-games/toy-gifts/plushies",
+            "link":"/toy-gifts/plushies",
             "name":"绒毛玩具",
             "icon":"far fa-hand-point-right",
             "show": true
