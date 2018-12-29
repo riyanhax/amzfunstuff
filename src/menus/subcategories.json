@@ -3,138 +3,131 @@
         {
             "id":"10-10",
             "link":"/gear-and-gadgets-gifts/tools",
-            "name":"工具饰品系列",
+            "name":"工具饰品",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-20",
-            "link":"/gear-gadgets/weapons-and-armor",
-            "name":"武器弹药系列",
+            "link":"/gear-and-gadgets-gifts/weapons-and-armor",
+            "name":"武器弹药",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-30",
-            "link":"/gear-gadgets/apocalypse-survival",
-            "name":"末日生存系列",
+            "link":"/gear-and-gadgets-gifts/apocalypse-survival",
+            "name":"末日生存",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-40",
             "link":"/gear-and-gadgets-gifts/transportation",
-            "name":"交通工具系列",
+            "name":"交通工具",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-50",
             "link":"/gear-and-gadgets-gifts/electronic-gadgets",
-            "name":"电子产品系列",
+            "name":"电子产品",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-60",
             "link":"/gear-and-gadgets-gifts/gifts-for-travelers",
-            "name":"旅行装备系列",
+            "name":"旅行装备",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-70",
             "link":"/gear-and-gadgets-gifts/gifts-for-photographers",
-            "name":"相机摄影系列",
+            "name":"摄影装备",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-80",
             "link":"/gear-and-gadgets-gifts/health-and-fitness",
-            "name":"健身达人系列",
+            "name":"健身达人",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-90",
             "link":"/gear-and-gadgets-gifts/musical-instruments",
-            "name":"乐器与配件系列",
+            "name":"乐器与配件",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-100",
             "link":"/gear-and-gadgets-gifts/bicycling",
-            "name":"越野自行车系列",
+            "name":"越野自行车",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-110",
             "link":"/gear-and-gadgets-gifts/alcoholic-gear",
-            "name":"酒精爱好者系列",
+            "name":"酒精爱好者",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-120",
             "link":"/gear-and-gadgets-gifts/camping-outdoors",
-            "name":"露营与户外系列",
+            "name":"露营与户外",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-130",
             "link":"/gear-and-gadgets-gifts/everyday-carry",
-            "name":"每日携带物系列",
+            "name":"每日携带物",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-140",
             "link":"/gear-and-gadgets-gifts/wallets",
-            "name":"钱包系列",
+            "name":"钱包",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-150",
-            "link":"/gear-and-gadgets-gifts/pool-and-water",
-            "name":"水上运动系列",
+            "link":"/gear-and-gadgets-gifts/car-accessories",
+            "name":"车载配件",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-160",
-            "link":"/gear-and-gadgets-gifts/car-accessories",
-            "name":"车载配件系列",
+            "link":"/gear-and-gadgets-gifts/sports-equiptment",
+            "name":"体育装备",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-170",
-            "link":"/gear-and-gadgets-gifts/sports-equiptment",
-            "name":"体育装备系列",
+            "link":"/gear-and-gadgets-gifts/road-trip",
+            "name":"公路旅行",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-180",
-            "link":"/gear-and-gadgets-gifts/road-trip",
-            "name":"公路旅行系列",
+            "link":"/gear-and-gadgets-gifts/smart-home",
+            "name":"智能家居",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"10-190",
-            "link":"/gear-and-gadgets-gifts/smart-home",
-            "name":"智能家居系列",
-            "icon":"far fa-hand-point-right",
-            "show": true
-        },
-        {
-            "id":"10-200",
             "link":"/gear-and-gadgets-gifts/miscellaneous",
             "name":"其他",
             "icon":"far fa-hand-point-right",
@@ -145,197 +138,579 @@
         {
             "id":"20-10",
             "link":"/gifts-for-geeks/gifts-for-gamers",
-            "name":"游戏发烧友系列",
+            "name":"游戏发烧友",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-20",
             "link":"/gifts-for-geeks/gifts-for-computer-geeks",
-            "name":"电脑极客系列",
+            "name":"电脑极客",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-30",
             "link":"/gifts-for-geeks/internet-humor",
-            "name":"互联网幽默系列",
+            "name":"互联网幽默",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-40",
             "link":"/gifts-for-geeks/star-wars-gifts",
-            "name":"星球大战系列",
+            "name":"星球大战",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-50",
             "link":"/gifts-for-geeks/legend-of-zelda",
-            "name":"塞尔达传说系列",
+            "name":"塞尔达传说",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-60",
             "link":"/gifts-for-geeks/doctor-who",
-            "name":"神秘博士系列",
+            "name":"神秘博士",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-70",
             "link":"/gifts-for-geeks/hello-kitty",
-            "name":"凯蒂猫系列",
+            "name":"凯蒂猫",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-80",
             "link":"/gifts-for-geeks/minecraft-gifts",
-            "name":"我的世界系列",
+            "name":"我的世界",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-90",
             "link":"/gifts-for-geeks/harry-potter-gifts",
-            "name":"哈利波特系列",
+            "name":"哈利波特",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-100",
             "link":"/gifts-for-geeks/batman",
-            "name":"蝙蝠侠系列",
+            "name":"蝙蝠侠",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-110",
             "link":"/gifts-for-geeks/pokemon",
-            "name":"精灵宝可梦系列",
+            "name":"精灵宝可梦",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-120",
             "link":"/gifts-for-geeks/game-of-thrones",
-            "name":"权力的游戏系列",
+            "name":"权力的游戏",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-130",
             "link":"/gifts-for-geeks/star-trek",
-            "name":"星际迷航系列",
+            "name":"星际迷航",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-140",
             "link":"/gifts-for-geeks/breaking-bad",
-            "name":"绝命毒师系列",
+            "name":"绝命毒师",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-150",
             "link":"/gifts-for-geeks/portal",
-            "name":"传送门系列",
+            "name":"传送门",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-160",
             "link":"/gifts-for-geeks/lord-of-the-rings",
-            "name":"指环王系列",
+            "name":"指环王",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-170",
             "link":"/gifts-for-geeks/transformers",
-            "name":"变形金刚系列",
+            "name":"变形金刚",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-180",
             "link":"/gifts-for-geeks/tetris",
-            "name":"俄罗斯方块系列",
+            "name":"俄罗斯方块",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-190",
             "link":"/gifts-for-geeks/skyrim-gifts",
-            "name":"上古卷轴系列",
+            "name":"上古卷轴",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-200",
             "link":"/gifts-for-geeks/thinkgeek",
-            "name":"thinkgeek系列",
+            "name":"thinkgeek",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-210",
             "link":"/gifts-for-geeks/3d-printed-stuff",
-            "name":"3D打印系列",
+            "name":"3D打印",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-220",
             "link":"/gifts-for-geeks/lego-2",
-            "name":"乐高系列",
+            "name":"乐高",
             "icon":"far fa-hand-point-right",
             "show": true
         },
         {
             "id":"20-230",
             "link":"/gifts-for-geeks/super-mario",
-            "name":"超级玛丽系列",
+            "name":"超级玛丽",
             "icon":"far fa-hand-point-right",
             "show": false
         },
         {
             "id":"20-240",
             "link":"/gifts-for-geeks/space",
-            "name":"NASA系列",
+            "name":"NASA",
             "icon":"far fa-hand-point-right",
             "show": false
         },
         {
             "id":"20-250",
             "link":"/gifts-for-geeks/starcraft",
-            "name":"星际争霸系列",
+            "name":"星际争霸",
             "icon":"far fa-hand-point-right",
             "show": false
         }
     ],
-    "3":[
+    "30":[
         {
-            "id":"3-1",
-            "link":"/toy-games/action-figures",
-            "name":"手办玩偶",
-            "icon":"far fa-hand-point-right"
+            "id":"30-10",
+            "link":"/toy-games/toy-gifts/action-figures",
+            "name":"人形玩偶",
+            "icon":"far fa-hand-point-right",
+            "show": true
         },
         {
-            "id":"3-2",
-            "link":"/toy-games/remote-control-toys",
+            "id":"30-20",
+            "link":"/toy-games/toy-gifts/remote-control-toys",
             "name":"遥控玩具",
-            "icon":"far fa-hand-point-right"
+            "icon":"far fa-hand-point-right",
+            "show": true
         },
         {
-            "id":"3-3",
-            "link":"/toy-games/plushies",
-            "name":"毛绒玩具",
-            "icon":"far fa-hand-point-right"
+            "id":"30-30",
+            "link":"/toy-games/toy-gifts/plushies",
+            "name":"绒毛玩具",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "40":[
+        {
+            "id":"40-10",
+            "link":"/wearable-gifts/accessories",
+            "name":"配件",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"40-20",
+            "link":"/wearable-gifts/clothing",
+            "name":"服装",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"40-30",
+            "link":"/wearable-gifts/shoes",
+            "name":"鞋子",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"40-40",
+            "link":"/wearable-gifts/jewelry",
+            "name":"饰品",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"40-50",
+            "link":"/wearable-gifts/hats-and-ties",
+            "name":"帽子和领带",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"40-60",
+            "link":"/wearable-gifts/costumes",
+            "name":"道具服装",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"40-70",
+            "link":"/wearable-gifts/glasses",
+            "name":"太阳镜",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"40-80",
+            "link":"/wearable-gifts/swimwear",
+            "name":"泳装",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "50":[
+        {
+            "id":"50-10",
+            "link":"/home-and-office-gifts/lights-and-clocks",
+            "name":"灯具与钟表",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-20",
+            "link":"/home-and-office-gifts/office-goodies",
+            "name":"办公室物品",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-30",
+            "link":"/home-and-office-gifts/furniture",
+            "name":"家具",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-40",
+            "link":"/home-and-office-gifts/kitchen-and-cooking",
+            "name":"厨房烹饪",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-50",
+            "link":"/home-and-office-gifts/bedroom",
+            "name":"卧室",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-60",
+            "link":"/home-and-office-gifts/bathroom",
+            "name":"盥洗室",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-70",
+            "link":"/home-and-office-gifts/pool-and-water",
+            "name":"水上娱乐",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-80",
+            "link":"/home-and-office-gifts/yard-and-garden",
+            "name":"后院与花园",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-90",
+            "link":"/home-and-office-gifts/home-decor",
+            "name":"家居装饰",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-100",
+            "link":"/home-and-office-gifts/books-and-reading",
+            "name":"书籍与阅读",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-110",
+            "link":"/home-and-office-gifts/home-security",
+            "name":"安全系统",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-120",
+            "link":"/home-and-office-gifts/housewarming-gifts",
+            "name":"暖房礼物",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-130",
+            "link":"/home-and-office-gifts/cleaning",
+            "name":"清理与保洁",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-140",
+            "link":"/home-and-office-gifts/gifts-for-coffee-lovers",
+            "name":"咖啡爱好者",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"50-150",
+            "link":"/home-and-office-gifts/office-and-work-gifts",
+            "name":"办公室礼物",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "60":[
+        {
+            "id":"60-10",
+            "link":"/food-and-drink-gifts/drinks-and-edibles",
+            "name":"珍馐美味",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"60-20",
+            "link":"/food-and-drink-gifts/mugs-and-glasses",
+            "name":"各式杯具",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"60-30",
+            "link":"/food-and-drink-gifts/eating-utensils",
+            "name":"怪诞餐具",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"60-40",
+            "link":"/food-and-drink-gifts/molds-trays",
+            "name":"模具与托盘",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"60-50",
+            "link":"/food-and-drink-gifts/wine-gifts",
+            "name":"红酒周边",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"60-60",
+            "link":"/food-and-drink-gifts/cooking",
+            "name":"烹饪相关",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "70":[
+        {
+            "id":"70-10",
+            "link":"/gifts-for-men/man-cave-gifts",
+            "name":"男人帮",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"70-20",
+            "link":"/gifts-for-men/alcoholic-gear",
+            "name":"酒精爱好者",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"70-30",
+            "link":"/gifts-for-men/smokers",
+            "name":"烟草爱好者",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"70-40",
+            "link":"/gifts-for-men/grooming",
+            "name":"个人护理",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "80":[
+        {
+            "id":"80-10",
+            "link":"/gifts-for-women/wine-gifts",
+            "name":"红酒周边",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"80-20",
+            "link":"/gifts-for-women/romantic-gifts",
+            "name":"浪漫满屋",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "110":[
+        {
+            "id":"110-10",
+            "link":"/gifts-for-couples/nsfw-sexual",
+            "name":"闺房之趣",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "140":[
+        {
+            "id":"140-10",
+            "link":"/gifts-for-kids/minecraft-gifts",
+            "name":"我的世界",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"140-20",
+            "link":"/gifts-for-kids/lego-2",
+            "name":"乐高",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"140-30",
+            "link":"/gifts-for-kids/back-to-school",
+            "name":"返校清单",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "190":[
+        {
+            "id":"190-10",
+            "link":"/funny-gifts/novelty-and-gag-gifts",
+            "name":"新颖又滑稽",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"190-20",
+            "link":"/funny-gifts/personalized-gifts",
+            "name":"私人订制",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"190-30",
+            "link":"/funny-gifts/prank",
+            "name":"恶作剧",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"190-40",
+            "link":"/funny-gifts/experiences",
+            "name":"亲身体验",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"190-50",
+            "link":"/funny-gifts/gift-ideas",
+            "name":"其他好主意",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "200":[
+        {
+            "id":"200-10",
+            "link":"/wtf/offensive",
+            "name":"冒犯他人",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"200-20",
+            "link":"/wtf/blasphemy",
+            "name":"亵渎侮慢",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"200-30",
+            "link":"/wtf/nsfw-general",
+            "name":"慎重观看",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"200-40",
+            "link":"/wtf/nsfw-sexual",
+            "name":"闺房之趣",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        },
+        {
+            "id":"200-50",
+            "link":"/wtf/nsfw-drugs",
+            "name":"成瘾之物",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "250":[
+        {
+            "id":"250-10",
+            "link":"/christmas-gifts/ugly-christmas-sweaters",
+            "name":"圣诞丑毛衣",
+            "icon":"far fa-hand-point-right",
+            "show": true
+        }
+    ],
+    "270":[
+        {
+            "id":"270-10",
+            "link":"/valentines/valentines-cards",
+            "name":"情人节卡片",
+            "icon":"far fa-hand-point-right",
+            "show": true
         }
     ]
 }

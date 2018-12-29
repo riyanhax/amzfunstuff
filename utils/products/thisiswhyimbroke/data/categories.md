@@ -15,7 +15,6 @@
     * camping-outdoors
     * everyday-carry
     * wallets
-    * pool-and-water
     * car-accessories
     * sports-equiptment
     * road-trip
@@ -63,7 +62,6 @@
     * costumes
     * glasses
     * swimwear
-    * ugly-christmas-sweaters
 
 * home-and-office-gifts
     * lights-and-clocks
@@ -90,20 +88,24 @@
     * wine-gifts
     * cooking
 
-* gifts-for-babies
-
 * gifts-for-men
     * man-cave-gifts
     * alcoholic-gear
     * smokers
-    * gearhead
     * grooming
-
-* gifts-for-dad
 
 * gifts-for-women
     * wine-gifts
     * romantic-gifts
+
+* gifts-for-boyfriends
+
+* gifts-for-girlfriends
+
+* gifts-for-couples
+    * nsfw-sexual
+
+* gifts-for-dad
 
 * gifts-for-mom
 
@@ -112,22 +114,13 @@
     * lego-2
     * back-to-school
 
-* college
+* gifts-for-babies
 
-* wtf
-    * offensive
-    * blasphemy
-    * nsfw-general
-    * nsfw-sexual
-    * nsfw-drugs
+* college
 
 * gifts-for-pets
 
 * diy
-
-* birthday-gifts
-
-* wedding
 
 * funny-gifts
     * novelty-and-gag-gifts
@@ -136,12 +129,18 @@
     * experiences
     * gift-ideas
 
-* gifts-for-couples
+* wtf
+    * offensive
+    * blasphemy
+    * nsfw-general
     * nsfw-sexual
+    * nsfw-drugs
 
-* gifts-for-girlfriends
+* anniversary-gifts
 
-* gifts-for-boyfriends
+* birthday-gifts
+
+* wedding
 
 * cheap-christmas-gifts
 
@@ -152,5 +151,3 @@
 
 * valentines
     * valentines-cards
-
-* anniversary-gifts
