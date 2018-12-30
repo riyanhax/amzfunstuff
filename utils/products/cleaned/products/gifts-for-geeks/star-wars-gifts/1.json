@@ -1,0 +1,125 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "IT6axDvm09e",
+      "titleCN": "迷你互动型楚巴卡",
+      "titleEN": "Miniature Interactive Chewbacca",
+      "description": "作为尤达大师的挚友、出色的武技族战士、优秀的机械修理工、以及银河系里最棒的朋友，这款背着弹匣挎着腰包的迷你互动楚巴卡是小星战迷们最钟爱的绒毛玩具",
+      "price": 109.99,
+      "likes": 91,
+      "link": "http://www.amazon.com/dp/B076JGYZYB/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "oCj6epA0c5",
+      "titleCN": "碳冻汉·索洛制冰盘",
+      "titleEN": "Han Solo Trapped In Carbonite Ice Tray",
+      "description": "云之城被碳冻的汉·索洛是星战帝国反击战中最标志性的剧情之一，这款标新立异的制冰盘能让你在自家冰箱里用冰块和可可粉复刻这经典一幕，相信我，仰慕你的男生会比喜欢你的女生多",
+      "price": 9.99,
+      "likes": 270,
+      "link": "http://www.amazon.com/dp/B00XQ0HS1U/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "zghOwBdgoMr",
+      "titleCN": "乐高星战X翼星际战机套装",
+      "titleEN": "LEGO X-Wing Starfighter Set",
+      "description": "这款731片装的乐高玩具能让你搭建带有杠杆驱动机翼及可收缩起落架的经典X翼星际战机，赶快和迷你的乐高天行者卢克及R2D2一起，向义军同盟宣誓你的忠诚吧~",
+      "price": 63.99,
+      "likes": 73,
+      "link": "http://www.amazon.com/dp/B07BMFCXBV/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "ODafJ5GCK1H",
+      "titleCN": "碳冻汉·索洛充气道具服",
+      "titleEN": "Han Solo Carbonite Inflatable Costume",
+      "description": "在云之城汉·索洛对莉亚公主深情告白后被碳冻的情节是星战系列中最为震撼的一幕，这款100%尼龙的碳冻汉·索洛充气道具服，让你轻松复刻帝国反击战中这一经典时刻",
+      "price": 50,
+      "likes": 182,
+      "link": "http://www.amazon.com/dp/B079GJ37PR/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "UbPdOQUy78",
+      "titleCN": "乐高千年隼套装",
+      "titleEN": "LEGO Millennium Falcon Set",
+      "description": "不管你是乐高粉还是星战粉，这款7541片装的经典乐高千年隼套装都是无可争议的瑰宝级珍藏，很多乐高套装也许只是昙花一现的风潮，但这一套绝对历久弥新值得投资收藏",
+      "price": 799.95,
+      "likes": 399,
+      "link": "http://www.amazon.com/dp/B075SDMMMV/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "Auy4pbcxr_",
+      "titleCN": "Sphero遥控R2-D2机器人",
+      "titleEN": "Sphero Remote Control R2-D2",
+      "description": "Sphero出品，星战迷必备。追求情怀之余可以下载配套教育app和孩子一起完成一系列有趣的STEM课程，更别提还可以通过全息仿真给孩子介绍曾让你痴迷的那个a galaxy far far away...",
+      "price": 54.19,
+      "likes": 238,
+      "link": "http://www.amazon.com/dp/B071KSR86B/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "f3jgFQLZ_Td",
+      "titleCN": "乐高版星战波尔格鸟套装",
+      "titleEN": "Life Size LEGO Star Wars Porg Set",
+      "description": "无论《星战:最后的绝地武士》这部电影毁誉如何，其中呆萌的波尔格鸟绝对圈粉无数；用这套811片零件的星战系列套装，你可以打造一个属于自己的萌鸟波尔格~",
+      "price": 55.99,
+      "likes": 252,
+      "link": "http://www.amazon.com/dp/B07D7PR399/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "Evj4sbyrXvC",
+      "titleCN": "赫特人贾巴咖啡杯",
+      "titleEN": "Jabba The Hut Coffee Mug",
+      "description": "任何星战迷都会对这个淌着口水像鼻涕虫一样缓慢移动的银河系黑社会大佬记忆深刻，这款咖啡杯能让你聊天时绝不冷场 - 你知道贾巴被莱娅公主勒死是卢卡斯向《教父》电影致敬吗？",
+      "price": 16.6,
+      "likes": 92,
+      "link": "http://www.amazon.com/dp/B0796HR1JC/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "qFOjp0zdije",
+      "titleCN": "星战千年隼3D壁灯",
+      "titleEN": "Star Wars Millennium Falcon 3D Light",
+      "description": "飞船的橘色头灯烘托出宁静的氛围，淡蓝色的银河系在其尾部若隐若现呈现出宇宙的浩瀚，当夜幕降临时，这艘破壁而出的千年隼带给你的不仅仅是光亮，还有些许硬核科幻片的诡异既视感",
+      "price": 15.99,
+      "likes": 253,
+      "link": "http://www.amazon.com/dp/B00XHUSUOI/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    },
+    {
+      "id": "SJVGIVe1Bui",
+      "titleCN": "施华洛世奇水晶星战雕塑",
+      "titleEN": "Swarovski Crystal Star Wars Sculptures",
+      "description": "完全按照星战中最受粉丝钟爱的角色精雕细琢，每个细节都彰显高超工艺让人啧啧称奇，不论放在那里，这款水晶雕塑都能让房间蓬荜生辉，更会让你的朋友们垂涎不止",
+      "price": 190,
+      "likes": 72,
+      "link": "http://www.amazon.com/dp/B075FDNW81/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "star-wars-gifts"
+    }
+  ]
+}

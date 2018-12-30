@@ -1,0 +1,41 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "z32ylegNyxw",
+      "titleCN": "雪泥冰沙奶昔制作器",
+      "titleEN": "Slushie Shake Maker",
+      "description": "炎炎夏日里没有任何东西能比清爽的冷饮更让人心动了，这款专为降温解暑而设计的雪泥冰沙奶昔制作器，能在几分钟里便捷地制作出爽口的雪泥美味的冰沙诱人的奶昔甚至冰冻的鸡尾酒",
+      "price": 24.99,
+      "likes": 285,
+      "link": "http://www.amazon.com/dp/B00EVHRYIE/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "molds-trays"
+    },
+    {
+      "id": "oCj6epA0c5",
+      "titleCN": "碳冻汉·索洛制冰盘",
+      "titleEN": "Han Solo Trapped In Carbonite Ice Tray",
+      "description": "云之城被碳冻的汉·索洛是星战帝国反击战中最标志性的剧情之一，这款标新立异的制冰盘能让你在自家冰箱里用冰块和可可粉复刻这经典一幕，相信我，仰慕你的男生会比喜欢你的女生多",
+      "price": 9.99,
+      "likes": 270,
+      "link": "http://www.amazon.com/dp/B00XQ0HS1U/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "molds-trays"
+    },
+    {
+      "id": "HlWlwUiVEyb",
+      "titleCN": "沙皮狗蛋糕模具",
+      "titleEN": "Shar Pei Cake Mold",
+      "description": "这款6英尺半不粘黏的硅胶模具可承受-20°C至230°C的温差，可爱的沙皮狗造型适合和孩子们一起制作蛋糕、面包、果冻、布丁、糖果、巧克力、冷饮、软糖、蜡笔、肥皂时使用",
+      "price": 79.99,
+      "likes": 86,
+      "link": "http://www.amazon.com/dp/B07GBSDTXX/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "molds-trays"
+    }
+  ]
+}
