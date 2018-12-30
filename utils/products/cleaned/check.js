@@ -217,9 +217,9 @@ let bigMap = {
     'whatsnew':[]
 }
 
-// const task = 'check categories'
+const task = 'check categories'
 // const task = 'create folders'
-const task = 'distribute products'
+// const task = 'distribute products'
 
 const main = () => {
 
@@ -260,6 +260,20 @@ const checkCategories = () => {
     for(let product of products){
         if(product.categories.length == 0){
             console.log('this product has no categories')
+            console.log('product id: ', product.id)
+            console.log('\t')
+            continue
+        }
+
+        if(product.titleCN == ''){
+            console.log('this product has no titleCN')
+            console.log('product id: ', product.id)
+            console.log('\t')
+            continue
+        }
+
+        if(product.description == ''){
+            console.log('this product has no description')
             console.log('product id: ', product.id)
             console.log('\t')
             continue
