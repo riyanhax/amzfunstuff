@@ -1,18 +1,18 @@
 {
-    "gear-gadgets":{
+    "gear-and-gadgets-gifts":{
         "title": "小玩意儿",
         "description": "一些适合随身携带的小玩意儿，送给恋人或朋友，你就是机器猫；自己使用，你就是蝙蝠侠。赶紧来瞧瞧吧~",
-        "apocalypse-survival":{
-            "title": "末日生存必备",
-            "description": "看完《行尸走肉》、《2012》、《僵尸世界大战》之后，怎么能不把自己武装起来呢！"
-        },
-        "tools-accessories":{
+        "tools":{
             "title": "工具+附属品",
             "description": "每个能征服世界的男人背后都有一个给他提供工具的朋友 - 邦德有MI6，国产凌凌漆有达文西，钢铁侠有斯塔克工业，那么你呢？"
         },
-        "weapons-armor":{
+        "weapons-and-armor":{
             "title": "武器+弹药",
             "description": "十字弓、投石机、蝙蝠侠的腰带、雷神的锤...只要你想，你就是战争之王。"
+        },
+        "apocalypse-survival":{
+            "title": "末日生存必备",
+            "description": "看完《行尸走肉》、《2012》、《僵尸世界大战》之后，怎么能不把自己武装起来呢！"
         }
     }
 }

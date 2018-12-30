@@ -136,10 +136,12 @@ class Product extends Component {
         const adjustedWidth = viewWidth * viewWidthRatio > maxWidth ? maxWidth : viewWidth * viewWidthRatio
         const adjustedHeight = adjustedWidth * heightToWidthRatio
 
+        const navToLink = product.subcategory != '' ? `/products/${product.category}/${product.subcategory}/${product.id}` : `/products/${product.category}/${product.id}`
+
         return <Grid item>
                     <Grid container justify="center">
-                        <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.category}/${product.subcategory}/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
-                        <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.category}/${product.subcategory}/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>
+                        <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
+                        <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>
                         <div className={classes.singleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/products/${product.id}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
@@ -178,10 +180,12 @@ class Product extends Component {
         
         const priceIcons = this.getPriceIcons(product.price, classes)
 
+        const navToLink = product.subcategory != '' ? `/products/${product.category}/${product.subcategory}/${product.id}` : `/products/${product.category}/${product.id}`
+
         return <Grid item style={{ marginBottom: 20 }}>
                     <Grid container justify="center">
-                        <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.category}/${product.subcategory}/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
-                        <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(`/products/${product.category}/${product.subcategory}/${product.id}`, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>    
+                        <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
+                        <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>    
                         <div className={classes.multipleColImage}>
                             <a href={product.link} rel="nofollow" target="_blank">
                                 <img src={`/assets/images/products/${product.id}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>

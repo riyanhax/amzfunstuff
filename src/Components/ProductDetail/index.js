@@ -119,9 +119,10 @@ class ProductDetail extends Component {
         this.loadLiked()
         window.addEventListener("resize", this.handleResize)
 
-        const links= window.location.href.split('/')
-        const category = links[links.length-3]
-        const subcategory = links[links.length-2]
+        let links = window.location.href.split('products')[1]
+        links= links.split('/')
+        const category = links.length == 4 ? links[links.length-3] : links[links.length-2]
+        const subcategory = links.length == 4 ? links[links.length-2] : ''
         const productId = links[links.length-1]
 
         let product = JSON.parse(localStorage.getItem(`amzfunstuff-${productId}`))
@@ -213,7 +214,7 @@ class ProductDetail extends Component {
                     <Grid container justify="center" alignItems="center">
                         <div>
                             <a href={product.link} rel="nofollow" target="_blank">
-                                <img src={`/assets/images/products/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                <img src={`/assets/images/products/${product.id}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                             </a>
                         </div>
                         <Grid container direction="column" justify="center" alignItems="center">
@@ -260,7 +261,7 @@ class ProductDetail extends Component {
                         <Grid>
                             <div className={classes.image}>
                                 <a href={product.link} rel="nofollow" target="_blank">
-                                    <img src={`/assets/images/products/${product.imageLarge}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
+                                    <img src={`/assets/images/products/${product.id}.jpg`} alt={product.titleCN} style={{ width:adjustedWidth, height:adjustedHeight }}/>
                                     <Grid container direction="column" justify="flex-end" className={classes.imageShadow}>
                                         <div className={classes.imageTitleCN}>{product.titleCN}</div>
                                         <div className={classes.imageTitleEN}>{product.titleEN}</div>
