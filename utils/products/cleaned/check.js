@@ -213,28 +213,76 @@ const cat270 = [
 let categories 
 let categoriesSet
 
+let bigMap = {
+    'whatsnew':[]
+}
+
 // const task = 'check categories'
-const task = 'create folders'
+// const task = 'create folders'
+const task = 'distribute products'
 
 const main = () => {
-
-    setup()
 
     switch (task) {
         case 'check categories':
             checkCategories()
-            break;
+            break
         case 'create folders':
             createFolders()
-            break;
+            break
+        case 'distribute products':
+            distributeProducts()
+            break
         default:
-            break;
+            break
     }
 
     
 }
 
-const setup = () => {
+/** check products.json and see if any product has no categories or has incorrect categories **/
+
+const checkCategories = () => {
+    
+    initializeCategoriesSet()
+
+    // load products from file
+    let products 
+
+    try{
+        products = require(filepath)
+    }catch(ex){
+        console.log('Error: invalid json')
+        process.exit(1)
+    }
+
+    // iterate each product to check
+    for(let product of products){
+        if(product.categories.length == 0){
+            console.log('this product has no categories')
+            console.log('product id: ', product.id)
+            console.log('\t')
+            continue
+        }
+
+        let foundIssue = false
+        let wrongCats = []
+        for(let category of product.categories){
+            if(!categoriesSet.has(category)){
+                foundIssue = true
+                wrongCats.push(category)
+            }
+        }
+        if(foundIssue){
+            console.log('the following categories not included in set')
+            console.log('product id: ', product.id)
+            console.log('categories: ', wrongCats)
+            console.log('\t')
+        }
+    } 
+}
+
+const initializeCategoriesSet = () => {
     categories = cat10
                         .concat(cat20)
                         .concat(cat30)
@@ -272,42 +320,7 @@ const setup = () => {
     console.log('\t')
 }
 
-const checkCategories = () => {
-    // load products from file
-    let products 
-
-    try{
-        products = require(filepath)
-    }catch(ex){
-        console.log('Error: invalid json')
-        process.exit(1)
-    }
-
-    // iterate each product to clean
-    for(let product of products){
-        if(product.categories.length == 0){
-            console.log('this product has no categories')
-            console.log('product id: ', product.id)
-            console.log('\t')
-            continue
-        }
-
-        let foundIssue = false
-        let wrongCats = []
-        for(let category of product.categories){
-            if(!categoriesSet.has(category)){
-                foundIssue = true
-                wrongCats.push(category)
-            }
-        }
-        if(foundIssue){
-            console.log('the following categories not included in set')
-            console.log('product id: ', product.id)
-            console.log('categories: ', wrongCats)
-            console.log('\t')
-        }
-    } 
-}
+/** create folders under cleaned/products based on catXs **/
 
 const createFolders = () => {
 
@@ -354,5 +367,177 @@ const createFoldersForOneCat = (catX) => {
         }
     }
 } 
+
+/** distribute products to corresponding folders **/
+
+const distributeProducts = () => {
+    createBigMap()
+
+    // load products from file
+    let products 
+
+    try{
+        products = require(filepath)
+    }catch(ex){
+        console.log('Error: invalid json')
+        process.exit(1)
+    }
+
+    // iterate each product to distribute it
+    for(let product of products){
+
+        // add every product into whatsnew
+        const product_c = copyProduct(product)
+        delete product_c.categories
+        product_c.category = 'whatsnew'
+        product_c.subcategory = ''
+        bigMap['whatsnew'].push(product_c)
+
+        // iterate each category of current product
+        for(let category of product.categories){
+            distributeProductsForOneCat(category, product, cat10)
+            distributeProductsForOneCat(category, product, cat20)
+            distributeProductsForOneCat(category, product, cat30)
+            distributeProductsForOneCat(category, product, cat40)
+            distributeProductsForOneCat(category, product, cat50)
+            distributeProductsForOneCat(category, product, cat60)
+            distributeProductsForOneCat(category, product, cat70)
+            distributeProductsForOneCat(category, product, cat80)
+            distributeProductsForOneCat(category, product, cat90)
+            distributeProductsForOneCat(category, product, cat100)
+            distributeProductsForOneCat(category, product, cat110)
+            distributeProductsForOneCat(category, product, cat120)
+            distributeProductsForOneCat(category, product, cat130)
+            distributeProductsForOneCat(category, product, cat140)
+            distributeProductsForOneCat(category, product, cat150)
+            distributeProductsForOneCat(category, product, cat160)
+            distributeProductsForOneCat(category, product, cat170)
+            distributeProductsForOneCat(category, product, cat180)
+            distributeProductsForOneCat(category, product, cat190)
+            distributeProductsForOneCat(category, product, cat200)
+            distributeProductsForOneCat(category, product, cat210)
+            distributeProductsForOneCat(category, product, cat220)
+            distributeProductsForOneCat(category, product, cat230)
+            distributeProductsForOneCat(category, product, cat240)
+            distributeProductsForOneCat(category, product, cat250)
+            distributeProductsForOneCat(category, product, cat260)
+            distributeProductsForOneCat(category, product, cat270)
+        }
+    }
+
+    // write arrays into files
+    for(let key of Object.keys(bigMap)){
+        writeToFile(key, bigMap[key])
+    }
+
+}
+
+const writeToFile = (key, array) => {
+    let writeToPath
+    if(key.indexOf('|') != -1){
+        writeToPath = __dirname + `/products/${key.split('|')[0]}/${key.split('|')[1]}`
+    }else{
+        writeToPath = __dirname + `/products/${key}`
+    }
+    
+    const arraybatches = createGroupedArray(array, 100)
+    for(let i = 0; i < arraybatches.length; i++){
+        // construct content
+        const content = {}
+        if(i == arraybatches.length - 1){
+            content.next = false
+        }else{
+            content.next = true
+        }
+        content.products = arraybatches[i]
+
+        const batchWriteToPath = writeToPath+`/${i+1}.json`
+        fs.openSync(batchWriteToPath, 'w')
+        const batchjson = JSON.stringify(content, undefined, 2)
+        fs.writeFileSync(batchWriteToPath, batchjson, 'utf8') 
+    }
+}
+
+// Split an array into chunks of a given size (http://www.frontcoded.com/splitting-javascript-array-into-chunks.html)
+const createGroupedArray = (arr, chunkSize) => {
+    let groups = []
+    let i 
+
+    for (i = 0; i < arr.length; i += chunkSize) {
+        groups.push(arr.slice(i, i + chunkSize));
+    }
+    return groups;
+}
+
+const distributeProductsForOneCat = (category, product, catX) => {
+    // compare current category aganist each value in catX
+    for(let i = 0; i < catX.length; i++){
+        // if category equals to a value in catX, then put the product into corresponding array based on if the value is category or subcategory
+        if(category == catX[i]){
+            const product_c = copyProduct(product)
+            delete product_c.categories
+            product_c.category = catX[0]
+
+            if(i == 0){
+                product_c.subcategory = ''
+                bigMap[catX[0]].push(product_c)
+            }else{
+                product_c.subcategory = catX[i]
+                bigMap[catX[0]+'|'+catX[i]].push(product_c)
+            }
+        }
+    }
+}
+
+const copyProduct = (src) => {
+    return JSON.parse(JSON.stringify(src));
+}
+
+const createBigMap = () => {
+    
+    bigMap = initializeBigMap(cat10, bigMap)
+    bigMap = initializeBigMap(cat20, bigMap)
+    bigMap = initializeBigMap(cat30, bigMap)
+    bigMap = initializeBigMap(cat40, bigMap)
+    bigMap = initializeBigMap(cat50, bigMap)
+    bigMap = initializeBigMap(cat60, bigMap)
+    bigMap = initializeBigMap(cat70, bigMap)
+    bigMap = initializeBigMap(cat80, bigMap)
+    bigMap = initializeBigMap(cat90, bigMap)
+    bigMap = initializeBigMap(cat100, bigMap)
+    bigMap = initializeBigMap(cat110, bigMap)
+    bigMap = initializeBigMap(cat120, bigMap)
+    bigMap = initializeBigMap(cat130, bigMap)
+    bigMap = initializeBigMap(cat140, bigMap)
+    bigMap = initializeBigMap(cat150, bigMap)
+    bigMap = initializeBigMap(cat160, bigMap)
+    bigMap = initializeBigMap(cat170, bigMap)
+    bigMap = initializeBigMap(cat180, bigMap)
+    bigMap = initializeBigMap(cat190, bigMap)
+    bigMap = initializeBigMap(cat200, bigMap)
+    bigMap = initializeBigMap(cat210, bigMap)
+    bigMap = initializeBigMap(cat220, bigMap)
+    bigMap = initializeBigMap(cat230, bigMap)
+    bigMap = initializeBigMap(cat240, bigMap)
+    bigMap = initializeBigMap(cat250, bigMap)
+    bigMap = initializeBigMap(cat260, bigMap)
+    bigMap = initializeBigMap(cat270, bigMap)
+
+    console.log('bigMap ',bigMap)
+}
+
+const initializeBigMap = (catX, bigMap) => {
+
+    for(let i = 0; i < catX.length; i++){
+        if(i == 0){
+            bigMap[catX[i]] = []
+        }else{
+            bigMap[catX[0]+'|'+catX[i]] = []
+        }
+    }
+
+    return bigMap
+}
+
 
 main()
