@@ -39,7 +39,7 @@ class Footer extends Component {
         const { classes } = this.props
        
         return <Grid container justify="center" className={classes.footer}>
-            <div><a href="/"><Icon className={classNames(classes.iconItem, 'fas fa-heart')} style={{ fontSize:10, color:'red' }} /><span className={classes.name}>奇葩好物</span></a><Icon className={classNames(classes.iconItem, 'far fa-copyright')} style={{ fontSize:10 }} /><span className={classes.copyright}> 2018-2019</span></div>
+            <div><a href="/"><Icon className={classNames(classes.iconItem, 'fas fa-heart')} style={{ fontSize:10, color:'red' }} /><span className={classes.name}>无用之趣</span></a><Icon className={classNames(classes.iconItem, 'far fa-copyright')} style={{ fontSize:10 }} /><span className={classes.copyright}> 2018-2019</span></div>
         </Grid>
     }
 }

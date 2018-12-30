@@ -45,7 +45,7 @@ class Header extends Component {
         // used to construct header
         const logo = <div onClick={() => this.props.navToLink('/', false)}><Icon className={classNames(classes.headerItem, 'fas fa-hamsa')} style={{fontSize:30}}/></div>
         const vertical = <div className={classNames(classes.headerItem, classes.vertical)}></div>
-        const title = <div className={classNames(classes.headerItem, classes.title)} onClick={() => this.props.navToLink('/', false)}>奇葩好物</div>
+        const title = <div className={classNames(classes.headerItem, classes.title)} onClick={() => this.props.navToLink('/', false)}>无用之趣</div>
 
         const instagram = <div onClick={() => this.props.navToLink('https://www.instagram.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-instagram')} style={{fontSize:15, marginLeft:10}} /></div>
         const pinterest = <div onClick={() => this.props.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-pinterest')} style={{fontSize:15, marginLeft:10}} /></div>
