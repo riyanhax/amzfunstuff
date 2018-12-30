@@ -424,15 +424,10 @@ class About extends Component {
             <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
                 <Grid container justify="center">
                     <h3 className={classes.paragraph}>我们是谁</h3>
-                    <p className={classes.paragraph}>成吉思汗的骑兵，攻击速度与二十世纪的装甲部队相当；北宋的床弩，射程达一千五百米，与二十世纪的狙击步枪差不多；但这些仍不过是古代的骑兵与弓弩而已，不可能与现代力量抗衡。基础理论决定一切，未来史学派清楚地看到了这一点。而你们，却被回光返照的低级技术蒙住了眼睛。你们躺在现代文明的温床中安于享乐，对即将到来的决定人类命运的终极决战完全没有精神上的准备。</p>
-                    <p className={classes.paragraph}>同为军人，知道我们之间最大的区别在哪里吗，你们按照可能的结果来决定自己的行动；而我们，不管结果如何，必须尽责任，这是唯一的机会，所以我就做了。有一颗遥远的星星，是夜空中一个隐约可见的光点，所有随便望了它一眼的人都说，那颗星星是安全的。宇宙很大，生活更大，也许以后还有缘相见。</p>
-                    <p className={classes.paragraph}>我知道你作为执剑人的经历，只是想说，你没有错。人类世界选择了你，就是选择了用爱来对待生命和一切，尽管要付出巨大的代价。你实现了那个世界的愿望，实现了那里的价值观，你实现了他们的选择，你真的没有错。</p>
-                    <p className={classes.paragraph}>成吉思汗的骑兵，攻击速度与二十世纪的装甲部队相当；北宋的床弩，射程达一千五百米，与二十世纪的狙击步枪差不多；但这些仍不过是古代的骑兵与弓弩而已，不可能与现代力量抗衡。基础理论决定一切，未来史学派清楚地看到了这一点。而你们，却被回光返照的低级技术蒙住了眼睛。你们躺在现代文明的温床中安于享乐，对即将到来的决定人类命运的终极决战完全没有精神上的准备。</p>
-                    <p className={classes.paragraph}>同为军人，知道我们之间最大的区别在哪里吗，你们按照可能的结果来决定自己的行动；而我们，不管结果如何，必须尽责任，这是唯一的机会，所以我就做了。有一颗遥远的星星，是夜空中一个隐约可见的光点，所有随便望了它一眼的人都说，那颗星星是安全的。宇宙很大，生活更大，也许以后还有缘相见。</p>
-                    <p className={classes.paragraph}>我知道你作为执剑人的经历，只是想说，你没有错。人类世界选择了你，就是选择了用爱来对待生命和一切，尽管要付出巨大的代价。你实现了那个世界的愿望，实现了那里的价值观，你实现了他们的选择，你真的没有错。</p>
-                    <p className={classes.paragraph}>成吉思汗的骑兵，攻击速度与二十世纪的装甲部队相当；北宋的床弩，射程达一千五百米，与二十世纪的狙击步枪差不多；但这些仍不过是古代的骑兵与弓弩而已，不可能与现代力量抗衡。基础理论决定一切，未来史学派清楚地看到了这一点。而你们，却被回光返照的低级技术蒙住了眼睛。你们躺在现代文明的温床中安于享乐，对即将到来的决定人类命运的终极决战完全没有精神上的准备。</p>
-                    <p className={classes.paragraph}>同为军人，知道我们之间最大的区别在哪里吗，你们按照可能的结果来决定自己的行动；而我们，不管结果如何，必须尽责任，这是唯一的机会，所以我就做了。有一颗遥远的星星，是夜空中一个隐约可见的光点，所有随便望了它一眼的人都说，那颗星星是安全的。宇宙很大，生活更大，也许以后还有缘相见。</p>
-                    <p className={classes.paragraph}>我知道你作为执剑人的经历，只是想说，你没有错。人类世界选择了你，就是选择了用爱来对待生命和一切，尽管要付出巨大的代价。你实现了那个世界的愿望，实现了那里的价值观，你实现了他们的选择，你真的没有错。</p>
+                    <p className={classes.paragraph}><strong>无用之趣</strong> 是一个免费的线上购物指南，由一群志同道合的朋友们一起在闲暇时运营。</p>
+                    <p className={classes.paragraph}>我们的遵旨很简单，找到有趣的东西，放在网上和你分享。</p>
+                    <h5 className={classes.paragraph}>Disclaimer</h5>
+                    <p className={classes.paragraph}>We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
                 </Grid>  
             </Grid>
             <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>

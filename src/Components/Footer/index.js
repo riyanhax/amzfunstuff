@@ -15,7 +15,7 @@ const styles = theme => ({
         cursor: 'pointer',
     },
     name: {
-        color: '#00796B',
+        color: theme.palette.primary.main,
         textDecoration: 'underline',
         fontWeight: 900,
         fontSize: '.8rem',
