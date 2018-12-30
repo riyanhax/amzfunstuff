@@ -9,163 +9,163 @@
         "link":"/gear-and-gadgets-gifts",
         "name":"小玩意儿",
         "icon":"fas fa-cogs",
-        "show": true
+        "show": false
     },
     "20": {
         "link":"/gifts-for-geeks",
         "name":"宅男宅女",
         "icon":"fas fa-atlas",
-        "show": true
+        "show": false
     },
     "30": {
         "link":"/toy-gifts",
         "name":"玩具游戏",
         "icon":"fas fa-gamepad",
-        "show": true
+        "show": false
     },
     "40": {
         "link":"/wearable-gifts",
         "name":"可穿戴的",
         "icon":"fas fa-tshirt",
-        "show": true
+        "show": false
     },
     "50": {
         "link":"/home-and-office-gifts",
         "name":"家和办公室",
         "icon":"fas fa-home",
-        "show": true
+        "show": false
     },
     "60": {
         "link":"/food-and-drink-gifts",
         "name":"美食和饮料",
         "icon":"fas fa-utensils",
-        "show": true
+        "show": false
     },
     "70": {
         "link":"/gifts-for-men",
         "name":"送男生的",
         "icon":"fas fa-mars",
-        "show": true
+        "show": false
     },
     "80": {
         "link":"/gifts-for-women",
         "name":"送女生的",
         "icon":"fas fa-venus",
-        "show": true
+        "show": false
     },
     "90": {
         "link":"/gifts-for-boyfriends",
         "name":"送男朋友的",
         "icon":"fas fa-motorcycle",
-        "show": true
+        "show": false
     },
     "100": {
         "link":"/gifts-for-girlfriends",
         "name":"送女朋友的",
         "icon":"fas fa-gem",
-        "show": true
+        "show": false
     },
     "110": {
         "link":"/gifts-for-couples",
         "name":"送另一半的",
         "icon":"fas fa-chess",
-        "show": true
+        "show": false
     },
     "120": {
         "link":"/gifts-for-dad",
         "name":"送爸爸的",
         "icon":"fas fa-golf-ball",
-        "show": true
+        "show": false
     },
     "130": {
         "link":"/gifts-for-mom",
         "name":"送妈妈的",
         "icon":"fas fa-wine-glass-alt",
-        "show": true
+        "show": false
     },
     "140": {
         "link":"/gifts-for-kids",
         "name":"送孩子的",
         "icon":"fas fa-child",
-        "show": true
+        "show": false
     },
     "150": {
         "link":"/gifts-for-babies",
         "name":"送宝宝的",
         "icon":"fas fa-baby",
-        "show": true
+        "show": false
     },
     "160": {
         "link":"/college",
         "name":"大学生喜欢的",
         "icon":"fas fa-snowboarding",
-        "show": true
+        "show": false
     },
     "170": {
         "link":"/gifts-for-pets",
         "name":"宠物喜欢的",
         "icon":"fas fa-paw",
-        "show": true
+        "show": false
     },
     "180": {
         "link":"/diy",
         "name":"自己动手做的",
         "icon":"fas fa-wrench",
-        "show": true
+        "show": false
     },
     "190": {
         "link":"/funny-gifts",
         "name":"让人捧腹的",
         "icon":"far fa-grin-squint-tears",
-        "show": true
+        "show": false
     },
     "200": {
         "link":"/wtf",
         "name":"这是什么鬼",
         "icon":"fas fa-book-dead",
-        "show": true
+        "show": false
     },
     "210": {
         "link":"/anniversary-gifts",
         "name":"纪念日礼物",
         "icon":"fas fa-gift",
-        "show": true
+        "show": false
     },
     "220": {
         "link":"/birthday-gifts",
         "name":"生日礼物",
         "icon":"fas fa-birthday-cake",
-        "show": true
+        "show": false
     },
     "230": {
         "link":"/wedding",
         "name":"婚礼礼物",
         "icon":"fas fa-ring",
-        "show": true
+        "show": false
     },
     "240": {
         "link":"/cheap-christmas-gifts",
         "name":"低价圣诞礼物",
         "icon":"fas fa-holly-berry",
-        "show": true
+        "show": false
     },
     "250": {
         "link":"/christmas-gifts",
         "name":"圣诞礼物",
         "icon":"fas fa-sleigh",
-        "show": true
+        "show": false
     },
     "260": {
         "link":"/halloween-gifts",
         "name":"万圣节礼物",
         "icon":"fas fa-ghost",
-        "show": true
+        "show": false
     },
     "270": {
         "link":"/valentines",
         "name":"情人节礼物",
         "icon":"fas fa-hand-holding-heart",
-        "show": true
+        "show": false
     },
     "1000": {
         "link":"divider"
@@ -174,13 +174,13 @@
         "link":"/blogs",
         "name":"随笔",
         "icon":"fas fa-pen-fancy",
-        "show": true
+        "show": false
     },
     "2001": {
         "link":"/guides",
         "name":"败家指南",
         "icon":"fab fa-glide-g",
-        "show": true
+        "show": false
     },
     "3000": {
         "link":"/about",
@@ -201,12 +201,12 @@
         "link":"/thisisalinkthatshouldneverbeusedortyped",
         "name":"",
         "icon":"",
-        "show": true
+        "show": false
     },
     "5002": {
         "link":"/thisisalinkthatshouldneverbeusedortyped",
         "name":"",
         "icon":"",
-        "show": true
+        "show": false
     }
 }

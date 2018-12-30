@@ -417,7 +417,7 @@ class Products extends Component {
 
         //create banner sub-component (display on whatsnew only)
         const banner = info != null || (type == null || type == 'myfavs') ? null :
-                        <a href="www.amazon.com" rel="nofollow" target="_blank">
+                        <a href="https://www.amazon.com" rel="nofollow" target="_blank">
                             <img className={classes.banner} src={`/assets/images/ads/banner.png`}/>
                         </a>
 
@@ -514,7 +514,7 @@ class Products extends Component {
         // console.log('viewWidth ', viewWidth)
 
         return <div className={classes.root}>
-                    {banner}
+                    {/* {banner} */}
                     {header}
                     {panel}
                     {content}
