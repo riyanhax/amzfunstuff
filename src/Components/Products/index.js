@@ -164,7 +164,7 @@ class Products extends Component {
         let products = []
         while(next){
             const content = await axios.get(`${productsURL}/${counter}.json`)
-            products = content.data.products.concat(products)
+            products = products.concat(content.data.products)
             counter++
             next = content.data.next
         }
