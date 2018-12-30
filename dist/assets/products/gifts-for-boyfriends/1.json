@@ -1,0 +1,89 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "gk04XA9VRF",
+      "titleCN": "终极版运动毛巾",
+      "titleEN": "The Ultimate Gym Towel",
+      "description": "生活中每一个细节都蕴藏着巨大的商机，这款将无用工程学发挥到淋漓尽致的终极版运动毛巾提供了磁石挂钩、通用拉链、隐秘口袋、触摸式啮合、防掉落保护等让人瞠目结舌的全新功能",
+      "price": 81.12,
+      "likes": 929,
+      "link": "http://www.amazon.com/dp/B01JZM0CC4/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "RDg0Fw0oLM4",
+      "titleCN": "指尖陀螺刀",
+      "titleEN": "Fidget Spinner Knife",
+      "description": "小李飞刀，例不虚发，这款7英尺长有着钛合金刀柄和锋利无比不锈钢刀片的折叠式指尖陀螺刀，不但吹毛断发削铁如泥，更可以消遣娱乐提神解压，不枉在百晓生兵器谱上排名第三",
+      "price": 59.95,
+      "likes": 1049,
+      "link": "http://www.amazon.com/dp/B074PCW37J/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "qCqgrDOAjW",
+      "titleCN": "龙之气息辣椒酱",
+      "titleEN": "Dragon’s Breath Pepper Sauce",
+      "description": "1912年美国化学家威尔伯.史高维尔以自己姓氏为单位制定了一套度量辣椒素的指标，威尔士的龙之气息辣椒以248万辣度名列世界最辣辣椒榜首，其名字则来源于威尔士自古的象征红龙",
+      "price": 9.99,
+      "likes": 504,
+      "link": "https://www.amazon.com/dp/B079DDFLCD",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "yaumy_pIczo",
+      "titleCN": "007邦德同款幽灵党打火机",
+      "titleEN": "007 James Bond Spectre Lighter",
+      "description": "这款价格不菲的打火机完全仿照《幽灵党》电影中邦德使用的同款设计，和你的贝瑞塔手枪及阿斯顿马丁跑车非常般配，中间的弹孔和隐藏的隔断让你可以像王牌特工一样将机密藏匿其中",
+      "price": 1395,
+      "likes": 535,
+      "link": "http://www.amazon.com/dp/B017PQJ3S6/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "Soltw8ODS8",
+      "titleCN": "腕带火焰喷射器",
+      "titleEN": "Open Hand Fireball Launcher",
+      "description": "无论你是想模仿草薙京的赤炎拳、乌拉拉的火焰咒、伏地魔的incendio，这个安全又小巧的腕带火焰喷射器都会让你在朋友面前大出风头...",
+      "price": 149.95,
+      "likes": 2595,
+      "link": "http://www.amazon.com/dp/B078YFVQSB/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "Wy-9-UMXswq",
+      "titleCN": "打鼾者胶带",
+      "titleEN": "Mouth Breather Tape",
+      "description": "再浓郁的爱意也无法在彻夜不休的鼾声中长久，而”打鼾者胶带“致力于解决您的烦恼，无论昨夜如何风急雨骤，保证浓睡后海棠依旧，婴儿般的睡眠体验，每个人都值得拥有~",
+      "price": 17.99,
+      "likes": 150,
+      "link": "http://www.amazon.com/dp/B076CQ1NR8/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "gnGVE_lJfOq",
+      "titleCN": "卡西欧G-Shock男士腕表",
+      "titleEN": "Casio G-Shock Skeleton Gold Watch",
+      "description": "在G-Shock系列35周年庆之际，卡西欧推出了及其吸睛的G-Shock金色骨感男士腕表，除了一如既往的精密及耐操品质外，粗粝中隐藏高贵的金色外观也让这块纪念款与众不同",
+      "price": 200,
+      "likes": 127,
+      "link": "http://www.amazon.com/dp/B07GSSXRN2/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    }
+  ]
+}

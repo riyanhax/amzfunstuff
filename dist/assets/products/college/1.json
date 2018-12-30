@@ -1,0 +1,29 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "DZ91i9tyzQM",
+      "titleCN": "便携式金属安全门档",
+      "titleEN": "Portable Door Jammer",
+      "description": "使用这款仅有8盎司重不足5英尺高的便携式金属安全门档可以承受强力冲击，非常适合旅行留学出差的单身女性在宾馆宿舍及出租房间使用，额外的安全保护使你高枕无忧",
+      "price": 22.87,
+      "likes": 1643,
+      "link": "http://www.amazon.com/dp/B00BZB97AM/",
+      "type": "amazon",
+      "category": "college",
+      "subcategory": ""
+    },
+    {
+      "id": "y5yojskvYpo",
+      "titleCN": "多功能旅行夹克",
+      "titleEN": "Multi-Function Travel Jacket",
+      "description": "作为一款曾经创下众筹纪录的产品，这款自带颈枕、眼罩、手套、饮水袋、拉链笔等功能，舒适又时尚的旅行夹克绝对名至实归，让你像忍者一样不断掏出花样道具应对所有危机",
+      "price": 149,
+      "likes": 3543,
+      "link": "http://www.amazon.com/dp/B01BGU08VS/",
+      "type": "amazon",
+      "category": "college",
+      "subcategory": ""
+    }
+  ]
+}

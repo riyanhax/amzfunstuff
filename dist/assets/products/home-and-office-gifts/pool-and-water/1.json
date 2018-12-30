@@ -1,0 +1,41 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "7TuZ5qYAFZN",
+      "titleCN": "漂浮啤酒乒乓桌",
+      "titleEN": "Floating Beer Pong Table",
+      "description": "啤酒乒乓毋庸置疑是每个派对最受欢迎的喝酒游戏，这款用轻便耐用的防撕裂泡沫制成的漂浮啤酒乒乓桌，能装载着16盎司标准的塑料啤酒杯漂浮在水面上，让你的泳池派对成为口口相传的都市传奇",
+      "price": 89.99,
+      "likes": 145,
+      "link": "http://www.amazon.com/dp/B079NRQ1YN/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "pool-and-water"
+    },
+    {
+      "id": "ScoXASzpG2H",
+      "titleCN": "超级充气水上乐园",
+      "titleEN": "Mega Blast Inflatable Water Park",
+      "description": "这款设计独特的超级充气水上乐园带有两个可持续发射的水柱的高压加农炮以及可让多个孩子同时玩耍的硕大水上滑梯，能轻易将你的后院变成全街区孩子们口中那流淌着奶与蜜的应许之地",
+      "price": 720.99,
+      "likes": 123,
+      "link": "http://www.amazon.com/dp/B07CLBQ6Y2/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "pool-and-water"
+    },
+    {
+      "id": "yNNOWaNstfs",
+      "titleCN": "皮卡车斗游泳池",
+      "titleEN": "Pick-up Truck Swimming Pool",
+      "description": "这款5.5英尺的聚氯乙烯可拆卸游泳池能完美契合在皮卡车的车斗中，在炎炎夏日里将你的座驾变成清凉通透的移动魔法城堡，让你随心所欲随时随地享受泳池派对的乐趣",
+      "price": 179.99,
+      "likes": 1329,
+      "link": "http://www.amazon.com/dp/B00UA95IDA/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "pool-and-water"
+    }
+  ]
+}

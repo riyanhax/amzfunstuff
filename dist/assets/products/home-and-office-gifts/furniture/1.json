@@ -1,0 +1,29 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "nEyKywk3ns",
+      "titleCN": "带储藏柜的壁床",
+      "titleEN": "Murphy Cabinet Bed",
+      "description": "狭小的空间更需要有创意的家具，这款看起来古色古香的硬木储藏柜能在瞬间降维展开变成一张带两个抽屉铺着记忆海绵极为舒服的加大双人床，让你随心所欲变换客厅和卧室的角色",
+      "price": 1997,
+      "likes": 419,
+      "link": "http://www.amazon.com/dp/B016IB7WKU/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "furniture"
+    },
+    {
+      "id": "eFTxzFD-SOM",
+      "titleCN": "模块化室内/室外家具",
+      "titleEN": "Modular Indoor/Outdoor Furniture",
+      "description": "这款模块化的室内/室外家具提供4模块和6模块两种选择，每个模块彼此独立并可按你的审美单独重新摆设，完全聚苯乙烯制造，单个模块仅重22磅且100%环保可回收",
+      "price": 1199.99,
+      "likes": 131,
+      "link": "http://www.amazon.com/dp/B071DC6SYZ/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "furniture"
+    }
+  ]
+}

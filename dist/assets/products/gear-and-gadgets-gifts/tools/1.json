@@ -1,0 +1,89 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "_Omfu3r1enh",
+      "titleCN": "爬梯固定器",
+      "titleEN": "The Ladder Stabilizer",
+      "description": "拥有了属于自己的房子之后难免需要爬高上低去清理积水槽或更换空调滤芯，这款由14级规格粉末涂层钢打造并配有耐用尼龙扣带的爬梯固定器适用于所有地表环境，能有效地确保你的人身安全",
+      "price": 49.99,
+      "likes": 153,
+      "link": "http://www.amazon.com/dp/B074NBBCG8/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "tools"
+    },
+    {
+      "id": "B0FbmNt6y_1",
+      "titleCN": "扶梯校平工具",
+      "titleEN": "PiViT Ladder Leveling Tool",
+      "description": "当你在不平整的地面如斜坡或楼梯上摆放扶梯时，这款可调整角度并配有额外抓地力和特殊防滑表面的扶梯校平工具，能让你最大程度地减少受伤可能，在你悉心保护家人的时候悉心地保护你",
+      "price": 110.96,
+      "likes": 145,
+      "link": "http://www.amazon.com/dp/B000095SGF/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "tools"
+    },
+    {
+      "id": "9MReESeVqx2",
+      "titleCN": "即时固化超级胶水",
+      "titleEN": "Instant Cure Super Glue",
+      "description": "这款采用了革命性光固化技术的超级胶水其风干速度要比普通胶水快10倍以上，特殊设计的管状出口让你可以进行精密的修补操作，不夸张地说，你工具箱里所有其他的黏合剂已变成了昨日黄花",
+      "price": 9.99,
+      "likes": 277,
+      "link": "http://www.amazon.com/dp/B074828JXL/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "tools"
+    },
+    {
+      "id": "-_3ba_KYnP",
+      "titleCN": "多功能iPhone外壳",
+      "titleEN": "Multi-Tool iPhone Case",
+      "description": "生活中总是会出现让人始料未及的情况，这款007风格的多功能iPhone外壳能在最紧要关头雪中送炭，不管是割炸弹导线还是做原木长矛，其22个用硬化不锈钢制成的工具总有一款能派上用场",
+      "price": 99.95,
+      "likes": 1752,
+      "link": "http://www.amazon.com/dp/B00E8RT9HQ",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "tools"
+    },
+    {
+      "id": "Znjq5Idqh5p",
+      "titleCN": "本田超级静音便携式发电机",
+      "titleEN": "Honda Super Quiet Portable Generators",
+      "description": "本田这款2200W/120V的超级静音发电机可持续工作9小时，其间产生的噪音在低于60分贝，基本上和咖啡厅里情侣之间的聊天类似，是露营时夜间充电最佳之选",
+      "price": 999,
+      "likes": 177,
+      "link": "http://www.amazon.com/dp/B079YF1HF6/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "tools"
+    },
+    {
+      "id": "DIXuXQxHJbk",
+      "titleCN": "StickQuik牌磁力工具放置器",
+      "titleEN": "StickQuik Magnetic Tool Holder Set",
+      "description": "买了房子之后难免需要时不时修理各样问题，这时合用的工具触手可及就至关重要，StickQuik这款内置强力钕铁硼磁铁的产品，可轻易将任何表面转变成迷你工具箱",
+      "price": 39.95,
+      "likes": 81,
+      "link": "http://www.amazon.com/dp/B07F16KBVY/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "tools"
+    },
+    {
+      "id": "aGW3Nr5Y9y_",
+      "titleCN": "超级迷你开锁器",
+      "titleEN": "Grim Workshop Lockpick Probe Micro Tool",
+      "description": "《民调局异闻录》里描述了一个能打开任何锁从而让所有人垂涎的宝物龙须，而这款迷你开锁器则会给你带来同样的能力，电子锁机械锁密码锁，统统不在话下，一起去古灵阁好吗~",
+      "price": 7.89,
+      "likes": 5965,
+      "link": "https://www.amazon.com/dp/B07DS4G1VC",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "tools"
+    }
+  ]
+}

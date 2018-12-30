@@ -1,0 +1,17 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "ndnge4r1Pfy",
+      "titleCN": "GoPro Hero 7 黑色",
+      "titleEN": "GoPro Hero 7 Black",
+      "description": "滑雪攀岩冲浪赛车？这款配有可潜33英尺深防水外壳的黑色GoPro Hero 7，能在语音控制下拍摄4K高清视频及1200万像素照片，把你每一次肾上腺素狂飙的精彩瞬间都永久保存",
+      "price": 399,
+      "likes": 117,
+      "link": "http://www.amazon.com/dp/B07GDGZCCH/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "gifts-for-photographers"
+    }
+  ]
+}

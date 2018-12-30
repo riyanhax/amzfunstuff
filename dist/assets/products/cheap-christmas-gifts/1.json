@@ -1,0 +1,17 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "weXCSKjWhrf",
+      "titleCN": "极简主义旅行钱包",
+      "titleEN": "Minimalist Travel Wallet",
+      "description": "专为旅行而量身定做的极简主义钱包，真皮材质简约设计，不但能安全存放信用卡、现金、护照、登机牌等重要文件，内置RFID保护还可以保证任何电子盗窃都无从下手，信息安全不再有任何后顾之忧",
+      "price": 16.99,
+      "likes": 1105,
+      "link": "http://www.amazon.com/dp/B01K33X2DU/",
+      "type": "amazon",
+      "category": "cheap-christmas-gifts",
+      "subcategory": ""
+    }
+  ]
+}
