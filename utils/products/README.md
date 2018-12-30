@@ -1,34 +1,32 @@
-#### data scrap 
-
-### thisiswhyimbroke
+# thisiswhyimbroke
 
 ## data scrap usage:
 
-# prerequisites
+### prerequisites
 
 * create a folder named after current date under both `data` and `archive` folders 
 
 * modify `currentDate` value in both `scrap.js` and `divide.js`
 
-# run commands 
+### run commands 
 
 * run `make scrap-thisiswhyimbroke`
 
 * run `make divide-thisiswhyimbroke`
 
-# finish
+### finish
 
 * move `amazon.json`, `etsy.json`, `kickstarter.json`, and `others.json` from `data/currentDate` folder to `archieve/currentDate` folder
 
 ## commands:
 
-# scrap data
+### scrap data
 
 * provide a stop date in `scrap.js` file before running the command , this command would scrap newest data from `thisiswhyimbroke.com` to the end date defined, and save the scrapped data into `amazon.json`, `etsy.json`, `kickstarter.json`, and `others.json` based on products' platforms
 
 * command: `make scrap-thisiswhyimbroke`
 
-# divide data
+### divide data
 
 * divide data in `amazon.json`, `etsy.json`, `kickstarter.json`, and `others.json` into corresponding folders with smaller batches (100 products per batch) for later process
 
@@ -38,7 +36,7 @@
 
 ## data process usage:
 
-# prerequisites
+### prerequisites
 
 * copy ready-to-process json files from `data/currentDate/amazon` folder to `etl` folder
 
@@ -46,7 +44,7 @@
 
 * change parameter in `countProducts.js`, `countImages.js`, `image.js`, `download.js`(2 parameters), `clean.js`
 
-# run commands
+### run commands
 
 * run `make countProducts-thisiswhyimbroke` to see initial products number
 
@@ -62,7 +60,7 @@
 
 * run `make clean-thisiswhyimbroke` to clean json file
 
-# finish
+### finish
 
 * move image subfolders from `etl/images` to `cleaned` folder
 
@@ -70,37 +68,37 @@
 
 ## commands:
 
-# get image link
+### get image link
 
 * based on the file path provided in the file, this command will get the image link for each product
 
 * command: `make image-thisiswhyimbroke`
 
-# download image
+### download image
 
 * based on the file path provided in the file, this command will download images for each product based on the image link retrieve from last step
 
 * command: `make download-thisiswhyimbroke`
 
-# remove deleted
+### remove deleted
 
 * based on the file path provided in the file, this command will remove "deleted" products (whose "titleCN" being marked as "deleted")
 
 * command: `make clean-thisiswhyimbroke`
 
-# count products
+### count products
 
 * based on the file path provided in the file, this command will count products
 
 * command: `make clean-thisiswhyimbroke`
 
-# count images
+### count images
 
 * based on the folder path provided in the file, this command will count images
 
 * command: `make clean-thisiswhyimbroke`
 
-# clean product
+### clean product
 
 * based on the file path provided in the file, this command will clean product (removing unnecessary attributes)
 
@@ -112,13 +110,13 @@
 
 ## combine cleaned data usage:
 
-# prerequisite
+### prerequisite
 
 * modify parameter for `move-thisiswhyimbroke` command in `Make` file
 
 * modify parameter in `combine.js`, `countProducts.js`, `countImages.js`
 
-# run commands
+### run commands
 
 * run `make move-thisiswhyimbroke` to move images from subfolders to the main `images` folder
 
@@ -134,11 +132,31 @@
 
 * run `make countImages-thisiswhyimbroke` to see if image number correct
 
-# finish
+### finish
 
 * delete separate json files 
 
 * delete the old products/images in assets folder and move the new data into it
+
+## commands:
+
+### move images into main folder
+
+* based on the file path specified in the Makefile, this command will move images from separate folder into the main folder
+
+* command: `make move-thisiswhyimbroke`
+
+### combine products into the main file
+
+* based on the file number specified in `combine.js`, this command will combine products from each individual json files into the main `product.json` file
+
+* command: `make combine-thisiswhyimbroke`
+
+### check products, create folder structure, and distribute products
+
+* based on the task value specified in `check.js`, this command will 1. check each product in `products.json` file and see if any product is missing `titleCN`, `description`, `categories`, or if any category not in predefined set; 2. create folder structure under `products` folder based on predefined categories; 3. distribute products into corresponding folders based on categories
+
+* command: `make check-thisiswhyimbroke`
 
 ## generic 
 
