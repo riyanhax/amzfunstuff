@@ -86,7 +86,7 @@
 # run commands
 * run `make move-thisiswhyimbroke` to move images from subfolders to the main `images` folder
 * run `make combine-thisiswhyimbroke` to combine new products `x.json` data into main `products.json` file
-* run `make check-thisiswhyimbroke` to check if product has categories
+* run `make check-thisiswhyimbroke` to check if product has categories or if any category is not in the existing set
 * run `make countProducts-thisiswhyimbroke` to see if products number correct
 * run `make countImages-thisiswhyimbroke` to see if image number correct
 

@@ -210,9 +210,32 @@ const cat270 = [
     'valentines-cards'
 ]
 
+let categories 
+let categoriesSet
+
+// const task = 'check categories'
+const task = 'create folders'
+
 const main = () => {
 
-    const categories = cat10
+    setup()
+
+    switch (task) {
+        case 'check categories':
+            checkCategories()
+            break;
+        case 'create folders':
+            createFolders()
+            break;
+        default:
+            break;
+    }
+
+    
+}
+
+const setup = () => {
+    categories = cat10
                         .concat(cat20)
                         .concat(cat30)
                         .concat(cat40)
@@ -243,11 +266,13 @@ const main = () => {
     console.log('categories array length: ', categories.length)
     console.log('\t')
 
-    const categoriesSet = new Set(categories)
+    categoriesSet = new Set(categories)
 
     console.log('categories set size: ', categoriesSet.size)
     console.log('\t')
+}
 
+const checkCategories = () => {
     // load products from file
     let products 
 
@@ -283,5 +308,51 @@ const main = () => {
         }
     } 
 }
+
+const createFolders = () => {
+
+    const whatsnewPath = __dirname + `/products/whatsnew`
+    fs.mkdirSync(whatsnewPath)
+
+    createFoldersForOneCat(cat10)
+    createFoldersForOneCat(cat20)
+    createFoldersForOneCat(cat30)
+    createFoldersForOneCat(cat40)
+    createFoldersForOneCat(cat50)
+    createFoldersForOneCat(cat60)
+    createFoldersForOneCat(cat70)
+    createFoldersForOneCat(cat80)
+    createFoldersForOneCat(cat90)
+    createFoldersForOneCat(cat100)
+    createFoldersForOneCat(cat110)
+    createFoldersForOneCat(cat120)
+    createFoldersForOneCat(cat130)
+    createFoldersForOneCat(cat140)
+    createFoldersForOneCat(cat150)
+    createFoldersForOneCat(cat160)
+    createFoldersForOneCat(cat170)
+    createFoldersForOneCat(cat180)
+    createFoldersForOneCat(cat190)
+    createFoldersForOneCat(cat200)
+    createFoldersForOneCat(cat210)
+    createFoldersForOneCat(cat220)
+    createFoldersForOneCat(cat230)
+    createFoldersForOneCat(cat240)
+    createFoldersForOneCat(cat250)
+    createFoldersForOneCat(cat260)
+    createFoldersForOneCat(cat270)
+}
+
+const createFoldersForOneCat = (catX) => {
+    const rootPath = __dirname + `/products/${catX[0]}`
+    fs.mkdirSync(rootPath)
+
+    if(catX.length > 1){
+        for(let i = 1; i < catX.length; i++){
+            const folderPath = __dirname + `/products/${catX[0]}/${catX[i]}`
+            fs.mkdirSync(folderPath)
+        }
+    }
+} 
 
 main()
