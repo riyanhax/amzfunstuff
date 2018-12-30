@@ -18,6 +18,7 @@ const main = () => {
 
     // iterate each product to clean
     for(let product of products){
+        product.link = product.exLink.split('?')[0]
         delete product.content
         delete product.published
         delete product.uri
