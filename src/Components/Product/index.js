@@ -10,7 +10,7 @@ import { withContext } from '../../context'
 const styles = theme => ({
     // generic css
     titleCN: {
-        fontSize: '1rem',
+        fontSize: '1.1rem',
         fontWeight: '900',
         color: theme.palette.primary.main,
         marginBottom: 3,
@@ -18,8 +18,8 @@ const styles = theme => ({
         textAlign: 'center',
     },
     titleEN: {
-        fontSize: '.6rem',
-        fontWeight: '400',
+        fontSize: '.7rem',
+        fontWeight: '600',
         color: '#000000',
         marginBottom: 10,
         cursor: 'pointer',
