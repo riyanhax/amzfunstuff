@@ -1,8 +1,16 @@
 productsProcess:
 	node ./utils/productsProcess.js 
 
+### deployment 
+
 uploadSandbox:
 	aws s3 sync ./dist s3://amzfunstuff --acl public-read --delete
+
+deployProduction:
+	aws s3 sync ./dist s3://wuyongzhiqu --acl public-read --delete
+
+invalidateCF:
+	aws cloudfront create-invalidation --distribution-id EP0XA8CMBAAN --paths "/*"
 
 ### products extraction
 
