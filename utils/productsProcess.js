@@ -2,21 +2,21 @@
 
 const fs = require('fs')
 
-const inputfilepath = __dirname + '/../assets/products/gear-gadgets/weapons-armor/1.json'
+const inputfilepath = __dirname + '/products/cleaned/products.json'
 
-let rawJson 
+let products 
 
 try{
-    rawJson = require(inputfilepath)
+    products = require(inputfilepath)
 }catch(ex){
     console.log('Error: invalid json')
 }
 
-rawJson.products.forEach((product) => {
-    product.likes = product.price + 10
+products.forEach((product) => {
+    product.link = product.link + '?tag=wuyongzhiqu-20'
 })
 
-let json = JSON.stringify(rawJson, undefined, 2)
+let json = JSON.stringify(products, undefined, 2)
 
 fs.writeFileSync(inputfilepath, json, 'utf8')
 
