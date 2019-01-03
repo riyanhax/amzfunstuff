@@ -141,7 +141,12 @@ class ProductDetail extends Component {
     // load product
     loadProduct = async (category, subcategory, productId) => {
         // load products
-        let productsURL = `/assets/products/${category}/${subcategory}`
+        let productsURL = null
+        if(subcategory != null && subcategory != ''){
+            productsURL = `/assets/products/${category}/${subcategory}`
+        }else{
+            productsURL = `/assets/products/${category}`
+        } 
         let next = true
         let counter = 1
         let products = []

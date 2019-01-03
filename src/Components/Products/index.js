@@ -157,7 +157,7 @@ class Products extends Component {
  
         // load products
         let productsURL = null
-        if(subcategory != null){
+        if(subcategory != null && subcategory != ''){
             productsURL = `/assets/products/${category}/${subcategory}`
         }else{
             productsURL = `/assets/products/${category}`
