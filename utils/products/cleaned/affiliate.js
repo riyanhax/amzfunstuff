@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const filepath = __dirname + '/etl/4.json'
+const filepath = __dirname + '/products.json'
 
 // const task = 'attach affiliate id'
 const task = 'remove affiliate id'
@@ -35,7 +35,9 @@ const attachAffiliateId = () => {
 
     // iterate each product to add affiliate id
     for(let product of products){
-        product.link = product.exLink.split('?')[0] + '?tag=wuyongzhiqu-20'
+        if(product.link.indexOf('?') == -1){
+            product.link = product.link + '?tag=wuyongzhiqu-20'
+        }
     } 
 
     // write to files
@@ -57,7 +59,9 @@ const removeAffiliateId = () => {
 
     // iterate each product to remove affiliate id
     for(let product of products){
-        product.link = product.exLink.split('?')[0]
+        if(product.link.indexOf('?') != -1){
+            product.link = product.link.split('?')[0]
+        }
     } 
 
     // write to files
