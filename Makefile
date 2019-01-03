@@ -52,6 +52,12 @@ check-thisiswhyimbroke:
 affiliate-thisiswhyimbroke:
 	node ./utils/products/cleaned/affiliate.js 
 
+finalMoveImages-thisiswhyimbroke:
+	mv ./utils/products/cleaned/images ./assets/images
+
+finalMoveProducts-thisiswhyimbroke:
+	rm -rf assets/products && mv ./utils/products/cleaned/products ./assets/products
+
 categories-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/categories.js 
 

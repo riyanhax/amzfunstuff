@@ -138,7 +138,9 @@
 
 * delete separate json files 
 
-* delete the old products/images in assets folder and move the data(with affiliate id) into it
+* run `make finalMoveImages-thisiswhyimbroke` to move new images from `cleaned/images` to `assets/images`
+
+* run `make  finalMoveProducts-thisiswhyimbroke` to delete the old folder structure under `assets/products` folder and move the newly created folder structure (with affiliate id) into it
 
 * run `make deployProduction` to deploy to production
 
@@ -146,7 +148,7 @@
 
 * (**change task to remove affiliate id**) run `make affiliate-thisiswhyimbroke` to remove affiliate id into product link
 
-* * delete the old products/images in assets folder and move the data(without affiliate id) into it
+* run `make  finalMoveProducts-thisiswhyimbroke` to delete the old folder structure under `assets/products` folder and move the newly created folder structure (without affiliate id) into it
 
 ## commands:
 
@@ -167,6 +169,20 @@
 * based on the task value specified in `check.js`, this command will 1. check each product in `products.json` file and see if any product is missing `titleCN`, `description`, `categories`, or if any category not in predefined set; 2. create folder structure under `products` folder based on predefined categories; 3. distribute products into corresponding folders based on categories
 
 * command: `make check-thisiswhyimbroke`
+
+### final move images from cleaned/assets folder into assets/images folder
+
+* this command will move the new images from `cleaned/images` folder into `assets/images` folder
+
+* command: `make finalMoveImages-thisiswhyimbroke`
+
+### final move products from cleaned/products folder into assets/products folder
+
+* this command will first delete folder structures under `assets/products` folder and then move the newly created folder structure from `cleaned/products` folder into `assets/products` folder
+
+* command: `make finalMoveProducts-thisiswhyimbroke`
+
+
 
 ## generic 
 
