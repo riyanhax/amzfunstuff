@@ -144,7 +144,7 @@ class Products extends Component {
     // load products (load once for all) 
     loadProducts = async (category, subcategory) => {
         // load product info
-        let info = await axios.get('/assets/products/info.json')
+        let info = await axios.get('/assets/info.json')
         info = info.data
         if(category != 'whatsnew' && category != 'myfavs'){
             info = info[category]
