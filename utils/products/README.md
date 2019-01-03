@@ -122,6 +122,8 @@
 
 * run `make combine-thisiswhyimbroke` to combine new products `x.json` data into main `products.json` file
 
+* (**change task to add affiliate id**) run `make affiliate-thisiswhyimbroke` to add affiliate id into product link
+
 * (**change task to check categories**) run `make check-thisiswhyimbroke` to check if product has titleCN, descrption, categories or if any category is not in the existing set
 
 * (**change task to create folders**) run `make check-thisiswhyimbroke` to create folder structures under `cleaned/products` based on the categories defined in `check.js` (*if any categories changes, please upadte `categories.json` & `subcategories.json` files under `src/menus` folder, `categories.md` file under `utils/thisiswhyimbroke/data` folder, and `check.js` file*)
@@ -136,7 +138,15 @@
 
 * delete separate json files 
 
-* delete the old products/images in assets folder and move the new data into it
+* delete the old products/images in assets folder and move the data(with affiliate id) into it
+
+* run `make deployProduction` to deploy to production
+
+* run `make invalidateCF` to invalidate CloudFround
+
+* (**change task to remove affiliate id**) run `make affiliate-thisiswhyimbroke` to remove affiliate id into product link
+
+* * delete the old products/images in assets folder and move the data(without affiliate id) into it
 
 ## commands:
 

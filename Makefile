@@ -49,6 +49,9 @@ combine-thisiswhyimbroke:
 check-thisiswhyimbroke:
 	node ./utils/products/cleaned/check.js 
 
+affiliate-thisiswhyimbroke:
+	node ./utils/products/cleaned/affiliate.js 
+
 categories-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/categories.js 
 
