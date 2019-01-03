@@ -21,11 +21,12 @@
 * [react test seo - using google fetch](https://blog.pusher.com/seo-react-fetch-as-google/)
 * [Adding Google Analytics to your React Application](https://web-design-weekly.com/2016/07/08/adding-google-analytics-react-application/)
 
-## Redirect Rule 
+## Deploy with S3, SSL, and CloudFront
 * [Fixing the "cannot GET /URL" error on refresh with React Router (or how client side routers work](https://tylermcginnis.com/react-router-cannot-get-url-refresh/)
 * [How to set up React Router and deploy to Amazon S3](https://medium.com/@ervib/how-to-set-up-react-router-and-deploy-to-amazon-s3-d3dffa6ae43)
 * [If you're hosting a react app via AWS Static S3 Hosting & CloudFront](https://code.i-harness.com/en/q/1aa2734)
 * [Serving a Static Site Over HTTPS Using S3, CloudFront, and GoDaddy](https://medium.com/@brodartec/hosting-a-static-site-with-https-enabled-using-aws-s3-cloudfront-and-godaddy-826dae41fdc6)
+* [Serverless: DEPLOYING A REACT APP ON AWS](https://serverless-stack.com/#deploy-react)
 
 ## Use Cloudfront to Compress
 * [New – Gzip Compression Support for Amazon CloudFront](https://aws.amazon.com/blogs/aws/new-gzip-compression-support-for-amazon-cloudfront/)
