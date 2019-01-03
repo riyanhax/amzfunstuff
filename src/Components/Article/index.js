@@ -161,7 +161,7 @@ class Article extends Component {
 
         const adjustedFontSize = viewWidth < 350 ? '1rem' : '1.3rem'
 
-        return <Grid item>
+        return <Grid item onClick={() => {this.props.logEvent('article', article.title)}}>
                     <Grid container justify="center">
                         <div className={classes.singleColImage}>
                             <a href={article.link} rel="nofollow" target="_blank">
@@ -202,7 +202,7 @@ class Article extends Component {
                              <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span className={classes.likeOrNot}><i className="fas fa-heart"></i></span> {article.likes+1}</div> :
                              <div className={classes.multipleColLikes} onClick={() => this.props.navToLink('/myfavs', true)}><span className={classes.likeOrNot}><i className="far fa-heart"></i></span> {article.likes}</div>
 
-        return <Grid item style={{ marginBottom: 20 }}>
+        return <Grid item style={{ marginBottom: 20 }} onClick={() => {this.props.logEvent('article', article.title)}}>
                     <Grid container justify="center">
                         <div className={classes.multipleColImage}>
                             <a href={article.link} rel="nofollow" target="_blank">

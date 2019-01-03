@@ -107,6 +107,10 @@ class About extends Component {
         contactus_success: false,
     }
 
+    componentDidMount() {
+        this.props.logPageView('about')
+    }
+
     handleChange = name => event => {
         this.setState({
           [name]: event.target.value,

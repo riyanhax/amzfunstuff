@@ -7,6 +7,7 @@ import { Slider } from 'material-ui-slider'
 import Product from '../Product'
 import Footer from '../Footer'
 import { compose } from 'recompose'
+import { withContext } from '../../context'
 import { withStyles } from '@material-ui/core/styles'
 import axios from "axios"
 
@@ -91,6 +92,8 @@ class Products extends Component {
                 this.setState({ type:'related' })
             }
         }else{
+            this.props.logPageView('products')
+
             category = pathname.split('/')[1]
             subcategory = pathname.split('/')[2]
             this.setState({ type:'independent' }) 
@@ -524,6 +527,7 @@ class Products extends Component {
 }
 
 export default compose(
+    withContext,
     withRouter,
     withStyles(styles)
 )(Products)

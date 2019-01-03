@@ -9,6 +9,7 @@ import Footer from '../Footer'
 import articleAuthors from '../../menus/articleAuthors'
 import articleCategories from '../../menus/articleCategories'
 import { compose } from 'recompose'
+import { withContext } from '../../context'
 import { withStyles } from '@material-ui/core/styles'
 import axios from "axios"
 
@@ -57,6 +58,8 @@ class Articles extends Component {
             }
             this.setState({ type:'myfavs' }) 
         }else{
+            this.props.logPageView('articles')
+
             if(pathname != null & pathname == '/blogs'){
                 this.loadArticles('blogs')
             }else{
@@ -67,7 +70,6 @@ class Articles extends Component {
             if(search != null){
                 authorFilter = search.indexOf('author') == -1 ? null : this.convertAuthor(search.split('=')[1])
                 categoryFilter = search.indexOf('category') == -1 ? null : this.convertCategory(search.split('=')[1])
-                console.log('categoryFilter ',categoryFilter)
             }
             this.setState({ type:'independent', authorFilter, categoryFilter }) 
         } 
@@ -259,6 +261,7 @@ class Articles extends Component {
 }
 
 export default compose(
+    withContext,
     withRouter,
     withStyles(styles)
 )(Articles)

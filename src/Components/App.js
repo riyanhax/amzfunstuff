@@ -23,7 +23,20 @@ class App extends Component {
     ...this.state,
     navToLink: this.navToLink,
     handleDrawerToggle: this.handleDrawerToggle,
+    logPageView: this.logPageView,
+    logEvent: this.logEvent
   })
+
+  logPageView = (location) => {
+    this.props.ga.pageview(location)
+  }
+
+  logEvent = (e_category, e_action) => {
+    this.props.ga.event({
+      category: e_category,
+      action: e_action
+    })
+  }
 
   // toggle drawer
   handleDrawerToggle = () => {
