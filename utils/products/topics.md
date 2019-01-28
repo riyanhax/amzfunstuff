@@ -2,6 +2,12 @@
 
 * [ideas](https://www.huffpost.com/life/)
 * [ideas](https://laughingsquid.com)
+* [ideas](http://mentalfloss.com)
+
+* [GEEK DAD](https://geekdad.com/)
+* [GEEK MOM](https://geekmom.com)
+
+* [读书推荐](https://www.penguin.co.uk/authors/101/1017933/bill-bryson.html)
 
 * [shut up and take my money](https://www.reddit.com/r/shutupandtakemymoney/)
 * [interesting as fuck](https://www.reddit.com/r/interestingasfuck/)
@@ -18,7 +24,11 @@
 * [一款STEM机器人 顺便介绍一下Scratch](https://www.amazon.com/dp/B078K2T8T8/)
 
 * [各种可食用虫子](B01APP8KK6 https://www.youtube.com/watch?v=HqREvb2VTjw)
-* [动物面具 B0107XRQ7E](https://en.wikipedia.org/wiki/Horse_head_mask https://www.washingtonpost.com/news/the-intersect/wp/2014/07/09/a-very-short-history-of-the-very-weird-horse-mask-meme/?noredirect=on&utm_term=.679de6e8d20b https://www.reddit.com/r/NoStupidQuestions/comments/2h7ot1/what_is_the_significance_of_people_wearing_animal/)
+* [各种charts](https://www.amazon.com/stores/node/11025334011?_encoding=UTF8&field-lbr_brands_browse-bin=Pop%20Chart%20Lab&ref_=bl_dp_s_web_11025334011&productGridPageIndex=2 https://popchart.co/collections/prints)
+
+* [outsmart amazon using honey](https://www.joinhoney.com/g-blog/outsmart-amazon/?utm_source=tabo&utm_medium=dis&utm_campaign=TB_US_Amazon_RON_Broad_None_GhostAmazon2_AmazonPersonStorefront_SmartBid_18-65_ALL_RobBlankAmStore_9989&utm_content=GhostAmazon2&from=r)
+
+* [amazon kickstarter launchpad](https://www.amazon.com/s/ref=lp_13514636011_pg_2?srs=13514636011&rh=i%3Alaunchpad&page=2&ie=UTF8&qid=1548569431)
 
 * [上帝说 要有光 NPR 光在历史中的价值 万古长夜 牛顿带来光 lumos illuminati enlighten 红太阳 对光的崇拜 光明左使 B004NBZLJ2 B07FD2Q3MW B017WOCZAY 在欠发达地区取代煤油灯](https://www.kickstarter.com/projects/lantern/lantern-1000-lumen-flashlight-with-usb-battery-bac)
 * [卡尔萨根,podcast](https://www.amazon.com/dp/1473696402)
@@ -46,7 +56,7 @@
 
 * [cricket joke](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=cricket+fried&rh=i%3Aaps%2Ck%3Acricket+fried B01F0TYT5M B00E3E4XN4)
 * [吸入式咖啡因](B007Y4BIAQ B06XPSFYJB B06X6M7KWX B07B3LZQJ9)
-* [恐龙系列](B06W2M22ZJ)
+* [恐龙系列](B06W2M22ZJ B07BP8HZVS)
 * [怀旧复刻 小时候苹果机 B002HFG6YA](https://www.amazon.com/dp/B075YT5K59)
 * [能量 future president](B06Y3XMQTK)
 * [bridal buddy B0758H7S9D](https://2paragraphs.com/2017/09/bridal-buddy-what-happened-after-75000-shark-tank-deal/ https://bridalbuddy.net/pages/about-us)
@@ -59,6 +69,7 @@
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
 
 * [各种主题的上色绘本 还有之前看到的恐怖风格 也可列入5大囧](1945056088)
+* [B01KJJS8F0](各种政治玩具 总统喜欢给人起外号 想不到亚马逊卖家比他狠)
 
 * [养蜂人 B01J9CG2A6 B007XIWY1A 加州众多果树 缺少蜜蜂 后院养蜂 老顽童小龙女 杨过古墓喂蜂蜜给郭襄 农夫市场自制蜂蜜治过敏鼻炎 硅谷新潮流](http://www.wtfshouldidowithmylife.com/be-a-beekeeper/ 包括下面的推荐链接   https://www.keepingbackyardbees.com/11-considerations-before-becoming-beekeeper/ https://www.npr.org/sections/money/2017/02/24/517076055/episode-756-the-bees-go-to-california https://www.youtube.com/watch?v=4QPes0V7ios
 http://technews.tw/2015/04/17/flowhive/)
@@ -69,8 +80,9 @@ http://technews.tw/2015/04/17/flowhive/)
 * [breaking bad, geologist joke about rock band](B017JF8YME)
 * [beauty horror](https://www.amazon.com/Alan-Robert/e/B0047EGCS4/ref=dp_byline_cont_book_1)
 
-* [创意好物](B01CQJ3E0U B07GCSSS27 B07BTHL7MH B07BP1G35P B07C7X8LG9 B004R08W0O B01MTIH2YB B06Y3TC113 B0752WHGFH B01LWWXVIB B00303KHSY 0761189513 1523503335 0761160965 B077MNWP9L impress people B00BCQ4F8Y 疤面人电影造型 B0772MXJJR B07FFCXSPM+B01LY0WM4A B00NC6ZJA0 B07CMW8JG3 B07C6PT36R B001628LIE B00X0ACG0Y B075JMMQ9B B0756BD1B7 B06VW9HJVB B00F37SX5Y B071CQ3G61 B01LXVMGXN B000095SGF B003CIYMYW B07B7TR54L B00JLSVDYO B07BPBWRM1 B00O50TUSE-B074M6334B B0043V0VM4 B01MXKU5BK B01N9SMYMH B07BXDW18Z 露营时候天堂影院 B00EIAHZF6 - 厂商一系列电子电路产品 B076S4QZFV B00UA3NJ78 - 前面两个合起来是黑衣人虫族和变形金刚机器昆虫 B07CQL4WXT B006GPJ2WU B004GUS7T6 B00P21UF66 B004Z1JUJ2-combine baking with art, can start with baking toy B013WVUIVO B07B3RDZ62 B0721LLM8J B07DP1DWVM B06Y29NXKK B07B35K6XM B01JAT5CQS-抖音撒啤酒 B077BRQZS3 B007CYBTQ6 B019BPYNB6)
+* [创意好物](B01CQJ3E0U B07GCSSS27 B07BTHL7MH B07BP1G35P B07C7X8LG9 B004R08W0O B01MTIH2YB B06Y3TC113 B0752WHGFH B01LWWXVIB B00303KHSY 0761189513 1523503335 0761160965 B077MNWP9L impress people B00BCQ4F8Y 疤面人电影造型 B0772MXJJR B07FFCXSPM+B01LY0WM4A B00NC6ZJA0 B07CMW8JG3 B07C6PT36R B001628LIE B00X0ACG0Y B075JMMQ9B B0756BD1B7 B06VW9HJVB B00F37SX5Y B071CQ3G61 B01LXVMGXN B000095SGF B003CIYMYW B07B7TR54L B00JLSVDYO B07BPBWRM1 B00O50TUSE-B074M6334B B0043V0VM4 B01MXKU5BK B01N9SMYMH B07BXDW18Z 露营时候天堂影院 B00EIAHZF6 - 厂商一系列电子电路产品 B076S4QZFV B00UA3NJ78 - 前面两个合起来是黑衣人虫族和变形金刚机器昆虫 B07CQL4WXT B006GPJ2WU B004GUS7T6 B00P21UF66 B004Z1JUJ2-combine baking with art, can start with baking toy B013WVUIVO B07B3RDZ62 B0721LLM8J B07DP1DWVM B06Y29NXKK B07B35K6XM B01JAT5CQS-抖音撒啤酒 B077BRQZS3 B007CYBTQ6 B019BPYNB6 B01LPQJGA2 B074C1VFZX)
 
+* [20 products](http://mentalfloss.com/article/84237/20-successful-kickstarter-products-you-can-buy-amazon)
 * [B076J2453N 智能足球](和另一个永不会破的足球一起)
 
 * [B00000JBNX 除了德州仪器计算器外 所有的东西都是多功能混搭 比如B0771RGK1W 还有taser手机壳之类](https://www.npr.org/2018/03/22/595967382/why-the-graphing-calculator-hasnt-changed-much-since-1994   https://www.youtube.com/watch?v=GMyg5ohTsVY http://fortune.com/2011/11/01/apple-5-timeless-lessons-from-the-graphing-calculator-story/)
