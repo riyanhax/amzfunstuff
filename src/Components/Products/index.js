@@ -164,18 +164,22 @@ class Products extends Component {
         } 
         let next = true
         let counter = 1
+        let index = null
         let products = []
         while(next){
             const content = await axios.get(`${productsURL}/${counter}.json`)
             products = products.concat(content.data.products)
+            if(counter == 1){
+                index = 24 > products.length ? products.length : 24
+                this.setState({ info, index, products })
+            }
             counter++
             next = content.data.next
         }
-        const index = 24
         if(this.state.type == 'related'){
             this.shuffle(products)
         }
-        this.setState({ info, products, index })
+        this.setState({ products })
     }
 
     // handle scroll - load more by modifying index
