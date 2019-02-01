@@ -92,11 +92,11 @@ class Products extends Component {
                 this.setState({ type:'related' })
             }
         }else{
-            this.props.logPageView('products')
-
             category = pathname.split('/')[1]
             subcategory = pathname.split('/')[2]
             this.setState({ type:'independent' }) 
+
+            this.props.logPageView(category+'/'+subcategory)
         }
         
         // console.log('pathname ', pathname)
