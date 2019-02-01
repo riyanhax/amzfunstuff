@@ -43,3 +43,7 @@
     * xihongshishoufu@gmail.com (b***H)
 * [GA](https://analytics.google.com)
     * xihongshishoufu@gmail.com (b***H)
+* [reCAPPCHA](https://www.google.com/recaptcha/admin/site/344889237)
+    * xihongshishoufu@gmail.com (b***H)
+
+    

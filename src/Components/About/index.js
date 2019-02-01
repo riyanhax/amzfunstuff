@@ -3,6 +3,7 @@ import classNames from 'classnames/bind'
 import {
     Icon, TextField, Button, Grid, CircularProgress
 } from '@material-ui/core'
+import Recaptcha from 'react-recaptcha'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import { withContext } from '../../context'
@@ -73,6 +74,13 @@ const styles = theme => ({
         marginTop: -12,
         marginLeft: -12,
     },
+    rechaptchaError: {
+        fontSize: '.6rem',
+        fontWeight: '700',
+        color: 'red',
+        textAlign: 'center',
+        marginBottom: theme.spacing.unit,
+    }
 })
 
   
@@ -105,6 +113,9 @@ class About extends Component {
 
         contactus_loading: false,
         contactus_success: false,
+
+        recaptcha_verified: false,
+        recaptcha_verify_error: false,
     }
 
     componentDidMount() {
@@ -268,7 +279,15 @@ class About extends Component {
             return
         }
 
-        // validation pass, proceed with data saving
+        // validation pass, proceed with recaptcha check
+        if(!this.state.recaptcha_verified){
+            this.setState({ recaptcha_verify_error: true })
+            return 
+        }else{
+            this.setState({ recaptcha_verify_error: false })
+        }
+
+        // rechaptcha pass, proceed with data saving
         if (!this.state.contactus_loading) {
           this.setState({ contactus_loading: true })
 
@@ -282,6 +301,16 @@ class About extends Component {
 
           setTimeout(() => { this.setState({ contactus_loading: false, contactus_success: true }) }, 2000)
           setTimeout(() => { this.setState({ contactus_name: '', contactus_email: '', contactus_message: '', contactus_success: false }) }, 4000)
+        }
+    }
+
+    recaptchaOnLoad = () => {
+        // do nothing
+    }
+
+    recaptchaVerify = (response) => {
+        if(response){
+            this.setState({ recaptcha_verified: true })
         }
     }
 
@@ -314,7 +343,9 @@ class About extends Component {
             contactus_message_too_long,
 
             contactus_loading, 
-            contactus_success
+            contactus_success,
+
+            recaptcha_verify_error
          } = this.state
 
         const instagram = <div onClick={() => this.props.navToLink('https://www.instagram.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-instagram')} style={{fontSize:30, marginLeft:10}} /></div>
@@ -367,10 +398,30 @@ class About extends Component {
                                     <Button variant="contained" color="primary" className={classes.button} disabled={subscriber_loading} onClick={this.subscribe}>
                                         订阅我们
                                     </Button>
+                                    
                                     {subscriber_loading && <CircularProgress size={24} className={classes.buttonProgress} />}
                                 </Grid>
                             </div>
 
+            const recaptcha = recaptcha_verify_error ? 
+                            <Grid container direction="column" justify="center" alignItems="center">
+                                <div className={classes.rechaptchaError}>请点击下面方块证明你不是机器人</div>
+                                <Recaptcha
+                                    sitekey="6LeVl44UAAAAAMWiMSxkYXPr338m_xAEEObKlMqW"
+                                    render="explicit"
+                                    onloadCallback={this.recaptchaOnLoad}
+                                    verifyCallback={this.recaptchaVerify}
+                                />
+                            </Grid> : 
+                            <Grid container direction="column" justify="center" alignItems="center">
+                                <Recaptcha
+                                    sitekey="6LeVl44UAAAAAMWiMSxkYXPr338m_xAEEObKlMqW"
+                                    render="explicit"
+                                    onloadCallback={this.recaptchaOnLoad}
+                                    verifyCallback={this.recaptchaVerify}
+                                />
+                            </Grid>
+                
             const contactus = contactus_success ? 
                                 <div className={classes.thanksnote} style={{ marginTop: 40 }}>
                                     <Grid container direction="column" justify="center" alignItems="center" style={{ height:'100%' }}>
@@ -416,6 +467,7 @@ class About extends Component {
                                             value={contactus_message}
                                             />
                                     </Grid>
+                                    {recaptcha}
                                     <Grid container direction="column" justify="center" alignItems="center" style={{ position: 'relative', width:'100%' }}>
                                         <Button variant="contained" color="primary" className={classes.button} disabled={contactus_loading} onClick={this.contactus}>
                                             联系我们
