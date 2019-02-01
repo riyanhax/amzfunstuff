@@ -138,7 +138,7 @@ class Product extends Component {
 
         const navToLink = product.subcategory != '' ? `/products/${product.category}/${product.subcategory}/${product.id}` : `/products/${product.category}/${product.id}`
 
-        return <Grid item onClick={() => {this.props.logEvent('product', product.titleCN)}}>
+        return <Grid item onClick={() => {this.props.logEvent('product', product.id, product.titleCN)}}>
                     <Grid container justify="center">
                         <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
                         <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>
@@ -182,7 +182,7 @@ class Product extends Component {
 
         const navToLink = product.subcategory != '' ? `/products/${product.category}/${product.subcategory}/${product.id}` : `/products/${product.category}/${product.id}`
 
-        return <Grid item style={{ marginBottom: 20 }} onClick={() => {this.props.logEvent('product', product.titleCN)}}>
+        return <Grid item style={{ marginBottom: 20 }} onClick={() => {this.props.logEvent('product', product.id, product.titleCN)}}>
                     <Grid container justify="center">
                         <div className={classes.titleCN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleCN}</div>
                         <div className={classes.titleEN} onClick={() => {localStorage.setItem(`amzfunstuff-${product.id}`, JSON.stringify(product)), this.props.navToLink(navToLink, true)}} style={{ width:adjustedWidth }}>{product.titleEN}</div>    

@@ -31,10 +31,11 @@ class App extends Component {
     this.props.ga.pageview(location)
   }
 
-  logEvent = (e_category, e_action) => {
+  logEvent = (e_category, e_action, e_label) => {
     this.props.ga.event({
       category: e_category,
-      action: e_action
+      action: e_action,
+      label: e_label
     })
   }
 
