@@ -348,14 +348,13 @@ class About extends Component {
             recaptcha_verify_error
          } = this.state
 
-        const instagram = <div onClick={() => this.props.navToLink('https://www.instagram.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-instagram')} style={{fontSize:30, marginLeft:10}} /></div>
-        const pinterest = <div onClick={() => this.props.navToLink('https://www.pinterest.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-pinterest')} style={{fontSize:30, marginLeft:10}} /></div>
-        const twitter = <div onClick={() => this.props.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-twitter')} style={{fontSize:30, marginLeft:10}} /></div>
-        const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-facebook')} style={{fontSize:30, marginLeft:10}} /></div>
+        const tumblr = <div onClick={() => this.props.navToLink('https://www.tumblr.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-tumblr-square')} style={{fontSize:30, marginLeft:10}} /></div>
+        const twitter = <div onClick={() => this.props.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-twitter-square')} style={{fontSize:30, marginLeft:10}} /></div>
+        const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-facebook-square')} style={{fontSize:30, marginLeft:10}} /></div>
         const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-weibo')} style={{fontSize:30, marginLeft:10}} /></div>
 
         const follower = <Grid container justify="center" alignItems="center" className={classes.follower}>  
-                                {instagram}{pinterest}{twitter}{facebook}{weibo}
+                                {tumblr}{twitter}{facebook}{weibo}
                             </Grid>
 
         const wechat = <Grid container direction="column" justify="center" alignItems="center" style={{ width:'100%' }}>
