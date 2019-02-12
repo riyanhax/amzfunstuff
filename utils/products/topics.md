@@ -62,19 +62,22 @@
 * [bridal buddy B0758H7S9D](https://2paragraphs.com/2017/09/bridal-buddy-what-happened-after-75000-shark-tank-deal/ https://bridalbuddy.net/pages/about-us)
 * [sharktank products on amazon](https://2paragraphs.com/2017/04/27-favorite-shark-tank-products-at-amazon-new-2017-list/)
 * [啤酒冷藏箱电动车 - geeky world homebrew, davis beer shop, microbrewery - gift, hops market](B000NMSI54 B07C7QWGWF B012Y5T4QE B003AY34A6 B076Z5QK7W Brewed2Burn candles)
-* [蜡烛 homesick蜡烛 pop culture蜡烛 Jane candle business B01MZEH0WV 请你在为我点上一盏烛光](https://www.amazon.com/dp/B00KPY1RH6/ Brewed2Burn candles)
+* [蜡烛 homesick蜡烛 pop culture蜡烛 Jane candle business B01MZEH0WV 请你在为我点上一盏烛光 etsy 226475028](https://www.amazon.com/dp/B00KPY1RH6/ Brewed2Burn candles)
 * [现代易容术](https://www.amazon.com/dp/B07177R3J9)
 * [奇怪的树脂工艺品](https://www.amazon.com/s/ref=hnd_pdp_byline?_encoding=UTF8&node=11260432011&lo=image&me=A2U7L4YWHVSUTP)
 * [各种政治不正确桌游](https://www.amazon.com/dp/B07BK9YGSG)
 * [USAOpoly各种主题的edition](https://www.amazon.com/dp/B07BP3T3Y8)
 
 * [各种主题的上色绘本 还有之前看到的恐怖风格 也可列入5大囧](1945056088)
-* [B01KJJS8F0](各种政治玩具 总统喜欢给人起外号 想不到亚马逊卖家比他狠)
+* [B01KJJS8F0 etsy 619524664](各种政治玩具 总统喜欢给人起外号 想不到亚马逊卖家比他狠)
 
 * [养蜂人 B01J9CG2A6 B007XIWY1A 加州众多果树 缺少蜜蜂 后院养蜂 老顽童小龙女 杨过古墓喂蜂蜜给郭襄 农夫市场自制蜂蜜治过敏鼻炎 硅谷新潮流](http://www.wtfshouldidowithmylife.com/be-a-beekeeper/ 包括下面的推荐链接   https://www.keepingbackyardbees.com/11-considerations-before-becoming-beekeeper/ https://www.npr.org/sections/money/2017/02/24/517076055/episode-756-the-bees-go-to-california https://www.youtube.com/watch?v=4QPes0V7ios
 http://technews.tw/2015/04/17/flowhive/)
 
-* [仿照5大囧 出每周脑残商品列表 无药可救的第一世界 stupid first world](那木买水 比kombucha更离奇 gluten-free kale chips alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J B01HDO7A08 办公室会议室冥想屋 B07D97JYRS B01MY0FOOI B00UA95IDA B072BWKHNY B0773MZH3H B005P0WOZE 比kale还脑残 B00OXMQ9EC 爆炸的手机和打火机 B003AY34A6 B07FFR18VZ 看评论完全不work   B01JZM0CEC and B01MTN5XWB 无用的产品 B005OLZNTS B000GBJ8H4 B07791K9HY B078W52ZGN B079C3XSDG B075CWYXRH 0762435755 B079MJJNDG 0670887269 B07583LC29 - giftcouture.com B06Y39YRZG B01MTX9PGE B07BYVW74M B07BXHKJK9 B06WD4HJCJ B00UI10SDU 1452125740 B073WC3YQV B00AT6SN54 - office episode B017DUOG7C B002RHON8E B078Z9WWV4 B00XQ421CM B005PL9ZL4 B00OZ4TDC8 B07BLQPJKN-writing club B00IYK1XNG 俄国熊啊 B01E96U6C2 B075FCCPLR B01ERVKA3Y-gold含量微乎其微，monica开发的新菜单 B00H2QRJJK B001EIPMRS B07D1JQ664 - 霸王龙近亲 陶喆大公鸡开黄腔 Moana的内内 B010OOVVFO B016Z6IKQ8 B077PQ5SN1 B00CMRENWU B079Z15Z82 B00K3W0WU8 说是本拉登我也信 1601064527 B0797T76YT B01N7CO9KL B0758GKKGZ B07BMLQBM1+nsfw extension pack http://www.sohu.com/a/168455181_329683 B075R3JR2Q B018PIKF7G B079MBZM3Y B07885WLH2)
+* [仿照5大囧 出每周脑残商品列表 无药可救的第一世界 stupid first world](那木买水 比kombucha更离奇 gluten-free kale chips alkaline water B007SMGN9A 滚轮 粑粑军团橡皮泥 B075P2Q6Z3 B01FO79GFI B01N9GBW4S B07F1K46TW 健身的女人 各种diet B07BVC4KMT B00OXVHJLU B00V3OWP32 B01M4RHPE8 B078N3Q7L2 B01LWV0VEC B079Z9PSP5 200刀！小时候的溜溜球 黄药师vs周伯通 B0761VVFDX B07FDQVR5Q B01K9GYSCK B07GN1MNJP B00TLY41Z6 一个系列的脑残墙纸 B01KV3BFD6 why not ipad or chromecast B00AQO8Q88 B074PCW37J B01HDO7A08 办公室会议室冥想屋 B07D97JYRS B01MY0FOOI B00UA95IDA B072BWKHNY B0773MZH3H B005P0WOZE 比kale还脑残 B00OXMQ9EC 爆炸的手机和打火机 B003AY34A6 B07FFR18VZ 看评论完全不work   B01JZM0CEC and B01MTN5XWB 无用的产品 B005OLZNTS B000GBJ8H4 B07791K9HY B078W52ZGN B079C3XSDG B075CWYXRH 0762435755 B079MJJNDG 0670887269 B07583LC29 - giftcouture.com B06Y39YRZG B01MTX9PGE B07BYVW74M B07BXHKJK9 B06WD4HJCJ B00UI10SDU 1452125740 B073WC3YQV B00AT6SN54 - office episode B017DUOG7C B002RHON8E B078Z9WWV4 B00XQ421CM B005PL9ZL4 B00OZ4TDC8 B07BLQPJKN-writing club B00IYK1XNG 俄国熊啊 B01E96U6C2 B075FCCPLR B01ERVKA3Y-gold含量微乎其微，monica开发的新菜单 B00H2QRJJK B001EIPMRS B07D1JQ664 - 霸王龙近亲 陶喆大公鸡开黄腔 Moana的内内 B010OOVVFO B016Z6IKQ8 B077PQ5SN1 B00CMRENWU B079Z15Z82 B00K3W0WU8 说是本拉登我也信 1601064527 B0797T76YT B01N7CO9KL B0758GKKGZ B07BMLQBM1+nsfw extension pack http://www.sohu.com/a/168455181_329683 B075R3JR2Q B018PIKF7G B079MBZM3Y B07885WLH2 )
+
+* [仿照5大囧 etsy](158916719 573891636 484485245 261060365 511317508)
+* [创意好物 etsy](244708815 484928187 252436691 644871073 227324317 489085257 不爱洗手的孩子 605406911 shop/lovemycustomwood 572843744 614037489 553319425)
 
 * [国家地理系列](https://www.amazon.com/stores/page/91320483-08CF-4CE4-A677-82F6B075CD3F?ingress=2&visitId=f8bba3e7-3fb2-49da-bbfa-6397d86ce53d&ref_=bl_dp_s_web_2529974011)
 * [breaking bad, geologist joke about rock band](B017JF8YME)
