@@ -81,10 +81,11 @@ class App extends Component {
         }
       }
     }
-
+    
     routes.push(<Route key={'detail'} path="/products/*" component={ProductDetail} />)
     routes.push(<Route key={'assets'} path="assets/*" onEnter={reload} />)
     routes.push(<Route key={'articles'} path="articles/*" onEnter={reload} />)
+    routes.push(<Route key={'sitemap'} path="/sitemap.xml" onEnter={reload} />)
     routes.push(<Route key={'404'} component={NotFound} />)
 
     return <Switch>{routes}</Switch>

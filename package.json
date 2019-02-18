@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --port 4000 --compress --mode development",
     "build": "webpack --mode production --progress",
-    "buildAll": "rm -rf dist && webpack --mode production --progress && cp -R assets dist/assets && cp -R articles dist/articles"
+    "buildAll": "rm -rf dist && webpack --mode production --progress && cp -R assets dist/assets && cp -R articles dist/articles && cp sitemap.xml dist/sitemap.xml"
   },
   "dependencies": {
     "@material-ui/core": "^3.0.3",
