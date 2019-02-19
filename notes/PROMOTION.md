@@ -20,3 +20,4 @@
     * [关键词工具](https://zhuanlan.zhihu.com/p/41226398)
     * [On Page SEO攻略](https://www.yiquanseo.com/zhanneionpageseo/)
     * [Google Search Console tutorial](https://www.youtube.com/watch?v=PMOny6RDjtg)
+    * [Google Search Console for beginner](https://yoast.com/beginners-guide-to-google-search-console/)
