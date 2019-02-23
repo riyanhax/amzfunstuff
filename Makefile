@@ -41,7 +41,7 @@ clean-thisiswhyimbroke:
 	node ./utils/products/thisiswhyimbroke/clean.js 
 
 move-thisiswhyimbroke:
-	mv ./utils/products/cleaned/7/* ./utils/products/cleaned/images
+	mv ./utils/products/cleaned/2/* ./utils/products/cleaned/images
 
 combine-thisiswhyimbroke:
 	node ./utils/products/cleaned/combine.js 

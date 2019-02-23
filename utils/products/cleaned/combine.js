@@ -11,10 +11,10 @@ const main = () => {
     console.log('existing products  ',allproducts.length)
 
     try{
-        let count = 5
+        let count = 1
         let products 
 
-        while(count != 8){
+        while(count != 3){
             let filepath = __dirname + `/${count}.json`
             products = require(filepath)
             allproducts = products.concat(allproducts)

@@ -120,6 +120,8 @@
 
 * run `make move-thisiswhyimbroke` to move images from subfolders to the main `images` folder
 
+* manually copy all images from `cleaned/images` folder to `assets/images/products` folder
+
 * create a new `products.json` file with empty array, run `make combine-thisiswhyimbroke` to combine new products `x.json` data into main `products.json` file
 
 * change filename of `products.json` in order to indicate the batch and type
