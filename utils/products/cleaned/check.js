@@ -217,8 +217,8 @@ let bigMap = {
     'whatsnew':[]
 }
 
-const task = 'check categories'
-// const task = 'create folders'
+// const task = 'check categories'
+const task = 'create folders'
 // const task = 'distribute products'
 
 const main = () => {

@@ -126,23 +126,17 @@
 
 * change filename of `products.json` in order to indicate the batch and type
 
-* (**change task to add affiliate id**) run `make affiliate-thisiswhyimbroke` to add affiliate id into product link
-
 * (**change task to check categories**) run `make check-thisiswhyimbroke` to check if product has titleCN, descrption, categories or if any category is not in the existing set
+
+* (**change task to add affiliate id**) run `make affiliate-thisiswhyimbroke` to add affiliate id into product link (for products in assets)
 
 * (**change task to create folders**) run `make check-thisiswhyimbroke` to create folder structures under `cleaned/products` based on the categories defined in `check.js` (*if any categories changes, please upadte `categories.json` & `subcategories.json` files under `src/menus` folder, `categories.md` file under `utils/thisiswhyimbroke/data` folder, and `check.js` file*)
 
 * (**change task to distribute products**) run `make check-thisiswhyimbroke` to distribute products into corresponding folders
 
-* run `make countProducts-thisiswhyimbroke` to see if products number correct
-
-* run `make countImages-thisiswhyimbroke` to see if image number correct
-
 ### finish
 
 * delete separate json files 
-
-* run `make finalMoveImages-thisiswhyimbroke` to move new images from `cleaned/images` to `assets/images`
 
 * run `make  finalMoveProducts-thisiswhyimbroke` to delete the old folder structure under `assets/products` folder and move the newly created folder structure (with affiliate id) into it
 
