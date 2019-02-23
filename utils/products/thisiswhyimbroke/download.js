@@ -3,7 +3,7 @@
 const axios = require('axios') 
 const fs = require('fs')
 
-const filepath = __dirname + '/etl/7.json'
+const filepath = __dirname + '/etl/2.json'
 
 const main = async () => {
 
@@ -26,7 +26,7 @@ const main = async () => {
 // download image (based on this tutorial: https://futurestud.io/tutorials/download-files-images-with-axios-in-node-js)
 const download = async (id, imagelink) => {
 
-    const imagepath = __dirname + `/etl/images/7/${id}.jpg`
+    const imagepath = __dirname + `/etl/images/2/${id}.jpg`
         
     const response = await axios({
         method: 'GET',
