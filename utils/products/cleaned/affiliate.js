@@ -1,6 +1,7 @@
 const fs = require('fs')
 
 const filepath = __dirname + '/products.json'
+const files = ['products-1-amz.json', 'products-2-amz.json', 'products-2-etsy.json']
 
 // const task = 'attach affiliate id'
 const task = 'remove affiliate id'
