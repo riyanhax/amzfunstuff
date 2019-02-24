@@ -128,9 +128,9 @@
 
 * (**change task in checker.js to check categories**) run `make check-thisiswhyimbroke` to check if product has titleCN, descrption, categories or if any category is not in the existing set
 
-* run `make sanitize-thisiswhyimbroke` to sanitize categories
+* run `make sanitize-thisiswhyimbroke` to sanitize categories (based on some categories, add certain category)
 
-* (**add new file into file array, and change task in affiliate.js to add/remove affiliate id**) run `make affiliate-thisiswhyimbroke` to add/remove affiliate id into product link (for deployment/development)
+* (**change task in affiliate.js to add/remove affiliate id**) run `make affiliate-thisiswhyimbroke` to add/remove affiliate id into product link (for deployment/development)
 
 * for etsy, need to manually add affiliate id
 

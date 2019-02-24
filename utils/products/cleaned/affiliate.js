@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const files = ['products-1-amz.json', 'products-2-amz.json']
+const filepath = __dirname + '/products-1-amz.json'
 
 const task = 'attach affiliate id'
 // const task = 'remove affiliate id'
@@ -25,14 +25,9 @@ const attachAffiliateId = () => {
 
     // load products from file
     let products 
-    let batch
     
     try{
-        for(let file of files){
-            let filepath = __dirname + '/' + file
-            batch = require(filepath)
-            products = batch.concat(products)
-        }
+        products = require(filepath)
     }catch(ex){
         console.log('Error: invalid json')
         process.exit(1)
@@ -54,14 +49,9 @@ const removeAffiliateId = () => {
     
     // load products from file
     let products 
-    let batch
 
     try{
-        for(let file of files){
-            let filepath = __dirname + '/' + file
-            batch = require(filepath)
-            products = batch.concat(products)
-        }
+        products = require(filepath)
     }catch(ex){
         console.log('Error: invalid json')
         process.exit(1)
