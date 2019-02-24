@@ -132,6 +132,8 @@
 
 * for etsy, need to manually add affiliate id
 
+* replace quotes in all files
+
 * (**change task to create folders**) run `make check-thisiswhyimbroke` to create folder structures under `cleaned/products` based on the categories defined in `check.js` (*if any categories changes, please upadte `categories.json` & `subcategories.json` files under `src/menus` folder, `categories.md` file under `utils/thisiswhyimbroke/data` folder, and `check.js` file*)
 
 * (**add new file into file array, and change task to distribute products**) run `make check-thisiswhyimbroke` to distribute products into corresponding folders

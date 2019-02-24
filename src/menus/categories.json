@@ -9,47 +9,47 @@
         "link":"/gear-and-gadgets-gifts",
         "name":"小玩意儿",
         "icon":"fas fa-cogs",
-        "show": false
+        "show": true
     },
     "20": {
         "link":"/gifts-for-geeks",
         "name":"宅男宅女",
         "icon":"fas fa-atlas",
-        "show": false
+        "show": true
     },
     "30": {
         "link":"/toy-gifts",
         "name":"玩具游戏",
         "icon":"fas fa-gamepad",
-        "show": false
+        "show": true
     },
     "40": {
         "link":"/wearable-gifts",
-        "name":"可穿戴的",
+        "name":"可穿戴设备",
         "icon":"fas fa-tshirt",
-        "show": false
+        "show": true
     },
     "50": {
         "link":"/home-and-office-gifts",
         "name":"家和办公室",
         "icon":"fas fa-home",
-        "show": false
+        "show": true
     },
     "60": {
         "link":"/food-and-drink-gifts",
-        "name":"美食和饮料",
+        "name":"美食与佳酿",
         "icon":"fas fa-utensils",
-        "show": false
+        "show": true
     },
     "70": {
         "link":"/gifts-for-men",
-        "name":"送男生的",
+        "name":"送男孩儿的",
         "icon":"fas fa-mars",
         "show": false
     },
     "80": {
         "link":"/gifts-for-women",
-        "name":"送女生的",
+        "name":"送女孩儿的",
         "icon":"fas fa-venus",
         "show": false
     },
@@ -103,9 +103,9 @@
     },
     "170": {
         "link":"/gifts-for-pets",
-        "name":"宠物喜欢的",
+        "name":"宠物爱好者",
         "icon":"fas fa-paw",
-        "show": false
+        "show": true
     },
     "180": {
         "link":"/diy",
@@ -115,15 +115,15 @@
     },
     "190": {
         "link":"/funny-gifts",
-        "name":"让人捧腹的",
+        "name":"不笑算我输",
         "icon":"far fa-grin-squint-tears",
-        "show": false
+        "show": true
     },
     "200": {
         "link":"/wtf",
         "name":"这是什么鬼",
         "icon":"fas fa-book-dead",
-        "show": false
+        "show": true
     },
     "210": {
         "link":"/anniversary-gifts",
@@ -174,13 +174,13 @@
         "link":"/blogs",
         "name":"随笔",
         "icon":"fas fa-pen-fancy",
-        "show": false
+        "show": true
     },
     "2001": {
         "link":"/guides",
         "name":"败家指南",
         "icon":"fab fa-glide-g",
-        "show": false
+        "show": true
     },
     "3000": {
         "link":"/about",
@@ -201,12 +201,12 @@
         "link":"/thisisalinkthatshouldneverbeusedortyped",
         "name":"",
         "icon":"",
-        "show": false
+        "show": true
     },
     "5002": {
         "link":"/thisisalinkthatshouldneverbeusedortyped",
         "name":"",
         "icon":"",
-        "show": false
+        "show": true
     }
 }

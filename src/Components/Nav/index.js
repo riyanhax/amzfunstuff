@@ -77,7 +77,7 @@ class Nav extends Component {
                                 <span className={navClass}>{navName}</span>
                             </MenuItem>
                             :
-                            <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass}>
+                            <MenuItem to={navTo} key={id} component={Link} selected={selected} className={menuItemClass} onClick={this.props.handleDrawerToggle}>
                                 <ListItemIcon className={classes.icon}>
                                 {icon}
                                 </ListItemIcon>
@@ -85,37 +85,38 @@ class Nav extends Component {
                             </MenuItem>
             menus.push(navItem);
             
-            const subs = subcategories[id];
-            if(subs){
-                const submenus = [];
+            /* uncomment the following code if want to re-introduce sub categories */
+            // const subs = subcategories[id];
+            // if(subs){
+            //     const submenus = [];
                 
-                for(const sub of subs){
-                // if sub items exists, iterate sub nav items
-                if(sub.show != true){
-                    continue
-                }
-                const subId = sub.id;
-                const subNavTo = sub.link;
-                const subNavname = sub.name;
-                const icon = <Icon className={classNames(classes.icon, sub.icon)} style={{fontSize:20}} />
+            //     for(const sub of subs){
+            //     // if sub items exists, iterate sub nav items
+            //     if(sub.show != true){
+            //         continue
+            //     }
+            //     const subId = sub.id;
+            //     const subNavTo = sub.link;
+            //     const subNavname = sub.name;
+            //     const icon = <Icon className={classNames(classes.icon, sub.icon)} style={{fontSize:20}} />
 
-                const visible = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)
-                const selected = subNavTo === pathname
-                const menuItemClass = visible ? selected ? classNames(classes.menuItemSelected, classes.nested) : classNames(classes.menuItem, classes.nested) : classes.hidden
-                const subNavClass = selected ? classes.subNavSelected : classes.subNav
+            //     const visible = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)
+            //     const selected = subNavTo === pathname
+            //     const menuItemClass = visible ? selected ? classNames(classes.menuItemSelected, classes.nested) : classNames(classes.menuItem, classes.nested) : classes.hidden
+            //     const subNavClass = selected ? classes.subNavSelected : classes.subNav
 
-                const subNavItem = <MenuItem to={subNavTo} key={subId} className={menuItemClass} component={Link} selected={subNavTo === pathname} onClick={this.props.handleDrawerToggle}>
-                                        <ListItemIcon className={classes.icon}>
-                                        {icon}
-                                        </ListItemIcon>
-                                        <span className={subNavClass}>{subNavname}</span>
-                                    </MenuItem>
-                submenus.push(subNavItem);
-                }
+            //     const subNavItem = <MenuItem to={subNavTo} key={subId} className={menuItemClass} component={Link} selected={subNavTo === pathname} onClick={this.props.handleDrawerToggle}>
+            //                             <ListItemIcon className={classes.icon}>
+            //                             {icon}
+            //                             </ListItemIcon>
+            //                             <span className={subNavClass}>{subNavname}</span>
+            //                         </MenuItem>
+            //     submenus.push(subNavItem);
+            //     }
 
-                const listid = `/${id}-subs`
-                menus.push(<MenuList key={listid} className={(navTo === pathname || navTo === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden}>{submenus}</MenuList>)
-            }
+            //     const listid = `/${id}-subs`
+            //     menus.push(<MenuList key={listid} className={(navTo === pathname || navTo === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden}>{submenus}</MenuList>)
+            // }
         }
 
         return menus;
