@@ -2,25 +2,25 @@
   "next": false,
   "products": [
     {
-      "id": "SRQqdMezGvr",
-      "titleCN": "金刚爪专业相机三脚架",
-      "titleEN": "Joby GorillaPod Camera Rig",
-      "description": "不管分享平台是快手还是Instagram，不管拍摄地点是眼前的苟且抑或诗和远方，不管传播目的是卖弄性感还是知识变现，都值得拥有这款能固定在任何物体上并支持3个设备同时运作的金刚爪专业相机三脚架",
-      "price": 149,
-      "likes": 133,
-      "link": "http://www.amazon.com/dp/B07BL6BRX6/",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "gifts-for-photographers"
-    },
-    {
       "id": "0x4pCmM9cHa",
       "titleCN": "Parrot可折叠无人机",
       "titleEN": "Parrot Folding 4K HDR Drone",
       "description": "这款由法国Parrot公司针对大疆Mavic产品线设计的可折叠无人机据称受到了昆虫仿生学的启发，在机身整体更加轻量化的同时搭载了可正负90度垂直拍摄及180度转向的全新摄像头，让航拍达到新的高度",
       "price": 699.99,
       "likes": 359,
-      "link": "http://www.amazon.com/dp/B07D5R2JKL/",
+      "link": "http://www.amazon.com/dp/B07D5R2JKL/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "gifts-for-photographers"
+    },
+    {
+      "id": "SRQqdMezGvr",
+      "titleCN": "金刚爪专业相机三脚架",
+      "titleEN": "Joby GorillaPod Camera Rig",
+      "description": "不管分享平台是快手还是Instagram，不管拍摄地点是眼前的苟且抑或诗和远方，不管传播目的是卖弄性感还是知识变现，都值得拥有这款能固定在任何物体上并支持3个设备同时运作的金刚爪专业相机三脚架",
+      "price": 149,
+      "likes": 133,
+      "link": "http://www.amazon.com/dp/B07BL6BRX6/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "gifts-for-photographers"
@@ -32,7 +32,7 @@
       "description": "滑雪攀岩冲浪赛车？这款配有可潜33英尺深防水外壳的黑色GoPro Hero 7，能在语音控制下拍摄4K高清视频及1200万像素照片，把你每一次肾上腺素狂飙的精彩瞬间都永久保存",
       "price": 399,
       "likes": 117,
-      "link": "http://www.amazon.com/dp/B07GDGZCCH/",
+      "link": "http://www.amazon.com/dp/B07GDGZCCH/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "gifts-for-photographers"
