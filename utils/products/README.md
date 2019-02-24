@@ -147,6 +147,8 @@
 
 * run `make  finalMoveProducts-thisiswhyimbroke` to delete the old folder structure under `assets/products` folder and move the newly created folder structure (with affiliate id) into it
 
+* run `npm buildAll` to update dist folder 
+
 * run `make deployProduction` to deploy to production
 
 * run `make invalidateCF` to invalidate CloudFround

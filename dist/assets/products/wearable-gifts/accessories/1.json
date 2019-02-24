@@ -2,13 +2,25 @@
   "next": false,
   "products": [
     {
+      "id": "vh9T5tbJnGO",
+      "titleCN": "袖扣打火机",
+      "titleEN": "Lighter Cufflinks",
+      "description": "无论是在加勒比海的游轮婚礼上点燃雪茄还是在阿尔卑斯山的度假别墅里点燃壁炉，这款设计时尚用优质皮革和高档金属手工打造的袖扣打火机让你的一举一动都像一名职业特工般充满神秘感",
+      "price": 89.99,
+      "likes": 957,
+      "link": "https://www.etsy.com/listing/158916719/leather-or-chrome-working-lighter",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "accessories"
+    },
+    {
       "id": "gnGVE_lJfOq",
       "titleCN": "卡西欧G-Shock男士腕表",
       "titleEN": "Casio G-Shock Skeleton Gold Watch",
       "description": "在G-Shock系列35周年庆之际，卡西欧推出了及其吸睛的G-Shock金色骨感男士腕表，除了一如既往的精密及耐操品质外，粗粝中隐藏高贵的金色外观也让这块纪念款与众不同",
       "price": 200,
       "likes": 127,
-      "link": "http://www.amazon.com/dp/B07GSSXRN2/",
+      "link": "http://www.amazon.com/dp/B07GSSXRN2/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "wearable-gifts",
       "subcategory": "accessories"
@@ -17,10 +29,10 @@
       "id": "GEIKIqlDlp",
       "titleCN": "可当做椅子的旅行背包",
       "titleEN": "BagoBago Backpack Chair",
-      "description": "虽然听起来酷似《国产007》里达文西的某项发明，但当你在卢浮宫外排队、在乞力马扎罗露营、在东单地铁弹吉他的时候，你不会后悔选择了一款可以当椅子用的背包",
+      "description": "虽然听起来酷似『国产007』里达文西的某项发明，但当你在卢浮宫外排队、在乞力马扎罗露营、在东单地铁弹吉他的时候，你不会后悔选择了一款可以当椅子用的背包",
       "price": 118,
       "likes": 58,
-      "link": "http://www.amazon.com/dp/B0123SRX8S/",
+      "link": "http://www.amazon.com/dp/B0123SRX8S/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "wearable-gifts",
       "subcategory": "accessories"

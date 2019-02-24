@@ -1,0 +1,113 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "TRioEgOgR9c",
+      "titleCN": "防污疏水T恤衫",
+      "titleEN": "Stainproof Hydrophobic Shirt",
+      "description": "这款受到荷叶天然疏水性启发并采用尖端纳米技术达到相似效果的聚酯纤维防污疏水T恤衫，能将溅到表面的液体颗粒化为细小的水滴并使其沿着衣料自然滑落，非常适合咖啡店员或餐厅服务员工作时穿着",
+      "price": 60,
+      "likes": 2067,
+      "link": "http://www.amazon.com/dp/B01JAT5CQS/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "pYO8e37kRs",
+      "titleCN": "配对披萨亲子T恤衫",
+      "titleEN": "Father & Son Matching Pizza Shirts",
+      "description": "粤语里当形容孩子长得像父亲时经常用『饼印』这个特别传神的俚语，这款虽然根植于美国文化但明显流露出相似寓意的配对披萨亲子T恤衫，让你低调而骄傲地炫耀初为人父那种难以言表的无穷喜悦",
+      "price": 11.2,
+      "likes": 344,
+      "link": "https://www.etsy.com/listing/540733417/father-son-shirts-pizza-slice-matching",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "1e2BvJ6uVy4",
+      "titleCN": "智能LED皮草大衣",
+      "titleEN": "Smart LED Fur Coat",
+      "description": "这款专门为硅谷时尚周设计的智能LED皮草大衣完美地展示了艺术和科技在可穿戴设备市场中无限的可能性，其内置的300枚手机可控LED灯让你发挥想象力在黑夜来临时向全世界诠释什么叫闪亮登场",
+      "price": 4500,
+      "likes": 90,
+      "link": "https://www.etsy.com/listing/508886967/glitch-smart-burning-man-fur-coat-with",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "1b29FgCEpnd",
+      "titleCN": "彩虹猫连体衣",
+      "titleEN": "Nyan Cat Onesie",
+      "description": "这款完美复刻YouTube早期经典网红视频彩虹猫的成人连体衣设计别致且将彩虹元素添加在了袖口和裤管，是的，尽管非常不愿意承认，但是日新月异的互联网已经让我们开始品尝怀旧的伤感情怀了",
+      "price": 99,
+      "likes": 131,
+      "link": "https://www.etsy.com/listing/579991448/nyan-cat-costume-adult-catwoman-costume",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "CgrZu35wMrV",
+      "titleCN": "正装睡衣",
+      "titleEN": "Suit Pajamas",
+      "description": "这款大牌设计感十足、由柔软的真丝和纯棉制造、『老爸老妈浪漫史』中永远西装笔挺的把妹达人巴尼·斯廷森倾情力荐的正装睡衣，让时刻注重仪表和体态的你风度翩翩毫无顾忌地整装入眠",
+      "price": 99.95,
+      "likes": 10227,
+      "link": "http://www.amazon.com/dp/B005PL9ZL4/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "3XHUr_lNH2",
+      "titleCN": "防割损T恤衫",
+      "titleEN": "Cut Proof Shirt",
+      "description": "对于诸如警察保镖驯兽员建筑工人精神病医师或职业军人等高危行业从业者来说，这款防割损级别比杜邦公司的Kevlar防火纤维高5倍的防割损T恤衫能有效保护身体不被刀片玻璃或撕咬损伤",
+      "price": 129,
+      "likes": 527,
+      "link": "https://www.amazon.com/dp/B07DP1DWVM/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "cuqAM4L6rr",
+      "titleCN": "熊臂长袖T恤衫",
+      "titleEN": "Right To Bear Arms Shirt",
+      "description": "这款用高级仿熊皮人造皮草制成的熊臂长袖T恤衫穿起来暖和透气而且无与伦比得舒适，特别适合在初夏阿拉斯加广袤的苔原上观赏慵懒肥硕的棕熊捕捉三文鱼时穿着",
+      "price": 25,
+      "likes": 702,
+      "link": "http://www.amazon.com/dp/B00IYK1XNG/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "00xzkcOcx3p",
+      "titleCN": "霓虹紫外线派对礼服",
+      "titleEN": "NEON UV Glow Party Dress",
+      "description": "这款设计新颖的时尚霓虹紫外线派对礼服以莱卡氨纶人造弹性纤维为原料手工制作，加倍舒适更有拉伸力且能在暗处散发出魔幻般耀眼光芒，让你在任何场所都能毫无悬念地成为最受人瞩目的那个女孩",
+      "price": 49.99,
+      "likes": 160,
+      "link": "https://www.etsy.com/listing/196579755/neon-uv-glow-worm-print-long-sleeve",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    },
+    {
+      "id": "jZGL65snSA",
+      "titleCN": "美丽狐狸帽衫",
+      "titleEN": "Pretty Fox Hoodie",
+      "description": "这款带着两只可爱狐狸耳朵和白色胸前绒球的针织帽衫由混有少量涤纶的纯棉材料制成，让天生丽质的你瞬间变成我见犹怜的狐狸精，善变的眼神闪烁的言辞美丽的容颜无助的表情，让他欲罢不能",
+      "price": 86.24,
+      "likes": 227,
+      "link": "https://www.etsy.com/listing/263173353/hoodie-fox-orange-kawaii-nerd-cosplay",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "clothing"
+    }
+  ]
+}

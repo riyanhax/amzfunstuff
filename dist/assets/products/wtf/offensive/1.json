@@ -2,13 +2,25 @@
   "next": false,
   "products": [
     {
+      "id": "VwymkTlemkn",
+      "titleCN": "让你尝尝我的厉害",
+      "titleEN": "A Can Of Whoop Ass",
+      "description": "这句美国俚语如果按照信雅达翻译的话非常契合中文里那句『让你尝尝我的厉害』，这款设计令人捧腹的罐头道具在其成分标签里以极其细节的方式列举了各种威胁性的言辞和话语，绝对让对方不寒而栗",
+      "price": 5.99,
+      "likes": 817,
+      "link": "http://www.amazon.com/dp/B018PIKF7G/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "wtf",
+      "subcategory": "offensive"
+    },
+    {
       "id": "mNXKPkHGvj6",
       "titleCN": "野蛮人的选择(聚会桌游)",
       "titleEN": "Savage Choices Party Game",
       "description": "随机抽取一个角色，如Miley Cyrus/Lady Gaga/Kim Jong-Un/Donald Trump/Tony Soprano，然后打出手中最为政治不正确的牌，赢得本局的胜利...",
       "price": 25,
       "likes": 232,
-      "link": "http://www.amazon.com/dp/B07CJLTXKR/",
+      "link": "http://www.amazon.com/dp/B07CJLTXKR/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "wtf",
       "subcategory": "offensive"

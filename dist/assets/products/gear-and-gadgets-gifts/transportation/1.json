@@ -2,13 +2,37 @@
   "next": false,
   "products": [
     {
+      "id": "Sen9GE-3Uq8",
+      "titleCN": "夜间闪耀单速自行车",
+      "titleEN": "Glow In The Dark Bicycle",
+      "description": "这款轻便耐用充满设计感的固定齿轮单速自行车带有40mm的车轮，触地感卓越的700x28C Thickslick轮胎，以及用高张力钢材制成的车架，轮胎上的太阳能涂料能在夜幕降临后闪烁出耀眼光芒",
+      "price": 399.99,
+      "likes": 541,
+      "link": "http://www.amazon.com/dp/B008CNNZPE/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "transportation"
+    },
+    {
+      "id": "blCjI-Iu8Bq",
+      "titleCN": "水上漂浮碰碰车",
+      "titleEN": "Motorized Floating Bumper Cars",
+      "description": "急速拨打着碰碰车的方向盘然后开足马力撞向暗恋的他/她是很多人年少时甜蜜的记忆，这款自带大型水枪的水上漂浮碰碰车让你能和朋友们一起在后院的泳池或山中的湖水里重温年少时最美好的记忆",
+      "price": 99.9,
+      "likes": 7560,
+      "link": "http://www.amazon.com/dp/B001CKWAG4/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "transportation"
+    },
+    {
       "id": "4zYmN9dPwkX",
       "titleCN": "单轮电动滑板",
       "titleEN": "Onewheel Electric Skateboard",
       "description": "想在钢筋水泥的丛林里做一个飞驰电掣的自由灵魂？这款单轮电动滑板轮胎弹性极佳、刹车性能优异、强劲马达提供的卓越动力和扭矩足以逾越任何障碍，给你带来单板滑雪的体验",
       "price": 1999,
       "likes": 1640,
-      "link": "http://www.amazon.com/dp/B01KILG2UM/",
+      "link": "http://www.amazon.com/dp/B01KILG2UM/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "transportation"
@@ -20,7 +44,7 @@
       "description": "这款载重350磅的电动车可在其伪装成冷藏箱的座位里放置24听罐装啤酒，让你驾驶时痛快畅饮而不必顾忌酒驾罚单，铭记大法官Kavanaugh的名言: I like beer.",
       "price": 829.98,
       "likes": 1986,
-      "link": "http://www.amazon.com/dp/B000NMSI54/",
+      "link": "http://www.amazon.com/dp/B000NMSI54/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "transportation"
@@ -32,7 +56,7 @@
       "description": "想飞上天和太阳肩并肩？这款小巧的背包式动力伞碳纤维飞行器在安全性能和可操控性方面都有了飞跃提高，要记住，斯塔克的钢铁侠战衣也是从莱特兄弟试图让一把椅子飞上天开始的",
       "price": 8450,
       "likes": 1933,
-      "link": "http://www.amazon.com/dp/B00IRQ77YG/",
+      "link": "http://www.amazon.com/dp/B00IRQ77YG/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "transportation"

@@ -2,13 +2,37 @@
   "next": false,
   "products": [
     {
+      "id": "PLuzXxINy90",
+      "titleCN": "单刃手动刮胡刀",
+      "titleEN": "Single Edge Razor",
+      "description": "对于传统的手动刮胡刀来说，刀片的数量和舒适度成反比，道理很简单，刀片越多越容易产生摩擦从而刺激皮肤产生不适感，这款用高端不锈钢打造并精密设计的单刃手动刮胡刀为你带来最棒的剃须体验",
+      "price": 899.99,
+      "likes": 200,
+      "link": "http://www.amazon.com/dp/B075X4H8DC/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gifts-for-men",
+      "subcategory": "grooming"
+    },
+    {
+      "id": "z3n499xFz4H",
+      "titleCN": "螺旋状耳垢去除器",
+      "titleEN": "Spiral Ear Wax Removal Tool",
+      "description": "对于所有人(尤其是游泳爱好者)来说，保持耳道的清爽干净是一件不容小觑的事情，这款带有别致螺旋纹路设计的耳垢去除器比普通的棉签相比更加舒适与安全，让你在手腕轻轻一抖中保持耳道卫生",
+      "price": 12.99,
+      "likes": 1029,
+      "link": "http://www.amazon.com/dp/B079YP5SQV/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gifts-for-men",
+      "subcategory": "grooming"
+    },
+    {
       "id": "PHANX5aaesm",
       "titleCN": "维京战斧式刮胡刀",
       "titleEN": "Viking Axe Straight Shaving Razor",
       "description": "如果你对北欧神话中骁勇善战的维京海盗情有独钟，那这款用弹性钢纯手工打造制作精美的维京战斧式刮胡刀一定让你爱不释手，由山毛榉木和黄铜制成的复古外盒还可镌刻自定义的花纹或文字",
       "price": 125,
       "likes": 348,
-      "link": "http://www.amazon.com/dp/B06VW9HJVB/",
+      "link": "http://www.amazon.com/dp/B06VW9HJVB/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gifts-for-men",
       "subcategory": "grooming"
@@ -20,7 +44,7 @@
       "description": "这款设计独特的U形超声波电动牙刷完美契合牙齿，760根透明的有机硅牙刷毛通过每分钟5000-15000赫兹的震动100%清除牙齿缝隙中每一个微小的牙斑和污渍，让你的笑容变得更加自信迷人",
       "price": 50.89,
       "likes": 597,
-      "link": "http://www.amazon.com/dp/B07CQD86CG/",
+      "link": "http://www.amazon.com/dp/B07CQD86CG/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gifts-for-men",
       "subcategory": "grooming"

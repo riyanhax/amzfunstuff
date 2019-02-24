@@ -2,13 +2,13 @@
   "next": false,
   "products": [
     {
-      "id": "ACZPF1HO8fe",
-      "titleCN": "咖啡冲泡烟斗套装",
-      "titleEN": "Coffee Brewing Pipe Kit",
-      "description": "这款一体式咖啡冲泡烟斗套装包括丁烷四角喷枪、集成吸管、温度计、铜制冷却架、不锈钢过滤器、以及试管状研磨罐，将咖啡和水加入冲泡器加热到185度，冷却后即可享受纯正的咖啡",
-      "price": 69.99,
-      "likes": 135,
-      "link": "http://www.amazon.com/dp/B06XPSFYJB/",
+      "id": "oHT80JrMpi",
+      "titleCN": "虫草白桦茸咖啡",
+      "titleEN": "Mushroom Coffee",
+      "description": "作为一名成功地商业人士如何在每日繁忙的工作生活中保持清醒的头脑和充沛的体力？这款用香醇咖啡混合了天然冬虫夏草和北美白桦茸制成的口感极佳的虫草白桦茸咖啡，为你注入无限活力",
+      "price": 12.17,
+      "likes": 137,
+      "link": "http://www.amazon.com/dp/B00UI10SDU/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "home-and-office-gifts",
       "subcategory": "gifts-for-coffee-lovers"
@@ -20,7 +20,19 @@
       "description": "这款Keurig K迷你咖啡机名声在外毋需多言，5英尺的修长外型能适应最狭小的空间，经典的红黑设计能与任何风格的家居完美契合，让你随时随地品尝到顶级的浓香黑咖啡",
       "price": 99.95,
       "likes": 156,
-      "link": "http://www.amazon.com/dp/B07DR89BR6/",
+      "link": "http://www.amazon.com/dp/B07DR89BR6/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "gifts-for-coffee-lovers"
+    },
+    {
+      "id": "ACZPF1HO8fe",
+      "titleCN": "咖啡冲泡烟斗套装",
+      "titleEN": "Coffee Brewing Pipe Kit",
+      "description": "这款一体式咖啡冲泡烟斗套装包括丁烷四角喷枪、集成吸管、温度计、铜制冷却架、不锈钢过滤器、以及试管状研磨罐，将咖啡和水加入冲泡器加热到185度，冷却后即可享受纯正的咖啡",
+      "price": 69.99,
+      "likes": 135,
+      "link": "http://www.amazon.com/dp/B06XPSFYJB/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "home-and-office-gifts",
       "subcategory": "gifts-for-coffee-lovers"
@@ -32,7 +44,7 @@
       "description": "咖啡是一种宗教。如果你恰好有位信教的朋友，不管是什么教派 - Starbucks or Philz，Fair trade or Home made，蓝山或摩卡，炭烧或爱尔兰，这本书都会是最棒的礼物",
       "price": 31.87,
       "likes": 62,
-      "link": "http://www.amazon.com/dp/1770854703/",
+      "link": "http://www.amazon.com/dp/1770854703/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "home-and-office-gifts",
       "subcategory": "gifts-for-coffee-lovers"
@@ -44,7 +56,7 @@
       "description": "Joe, Java, Brew, Go Juice, Rocket Fuel...不管你叫它什么，虹吸真空咖啡机只要求你注满水并将磨好的咖啡放入，然后等待崭新的一天在香味中到来~",
       "price": 66.99,
       "likes": 81,
-      "link": "http://www.amazon.com/dp/B07HDRLFFZ/",
+      "link": "http://www.amazon.com/dp/B07HDRLFFZ/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "home-and-office-gifts",
       "subcategory": "gifts-for-coffee-lovers"

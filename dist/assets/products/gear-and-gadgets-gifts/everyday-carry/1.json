@@ -2,25 +2,49 @@
   "next": false,
   "products": [
     {
+      "id": "przfOqTAbl",
+      "titleCN": "皮革钥匙链金属小酒瓶",
+      "titleEN": "Leather Keychain Flasks",
+      "description": "生活中总会遇到一些意想不到的逆境和挫折，这款由不锈钢打造并用上蜡尼龙线手工缝制的高档皮革做护套且可随身携带的钥匙链小酒瓶，让你在需要振奋精神或平稳心绪时能够方便地微量小酌",
+      "price": 15,
+      "likes": 193,
+      "link": "https://www.etsy.com/listing/214717898/1-oz-leather-keychain-flasks",
+      "type": "etsy",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "everyday-carry"
+    },
+    {
+      "id": "obQZUCCNLg6",
+      "titleCN": "钥匙链手机充电器",
+      "titleEN": "The Keychain Smartphone Charger",
+      "description": "在5G网络和大数据的时代，智能手机已然成为了我们身体虚拟的组成部分，这款设计精巧便于携带的迷你手机充电器能方便挂在钥匙链上或装在衣服口袋中，让你永远不会陷入电量用尽后一筹莫展的窘境",
+      "price": 29.99,
+      "likes": 443,
+      "link": "http://www.amazon.com/dp/B078278R92/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "everyday-carry"
+    },
+    {
+      "id": "W2UZxl9FU3w",
+      "titleCN": "迷你螺丝刀签字笔",
+      "titleEN": "Mini Tool Pen",
+      "description": "文能提笔安天下，武能上马定乾坤，这款携带方便设计美观用特种航空铝制成的签字笔可随时变身为多功能螺丝刀，让你像金庸笔下武当派铁画银钩张五侠一般，胸有凌云志，文体两开花",
+      "price": 69,
+      "likes": 358,
+      "link": "http://www.amazon.com/dp/B00XQ421CM/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "everyday-carry"
+    },
+    {
       "id": "Z1gvFT3Z59",
       "titleCN": "折叠式口袋武士刀",
       "titleEN": "Folding Pocket Samurai Knives",
       "description": "这款用航天级铝做刀身锋利的440c不锈钢做刀刃并镌刻有武士道花纹的折叠式口袋武士刀，让你可以用佐佐木小次郎匪夷所思的拔刀术或宫本武藏目不暇接的双刀流来裁信封切苹果割胶带",
       "price": 19.95,
       "likes": 422,
-      "link": "http://www.amazon.com/dp/B071LD6TRR/",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "everyday-carry"
-    },
-    {
-      "id": "HSdrFgMmnWN",
-      "titleCN": "野外防水记事本",
-      "titleEN": "Field Notes Waterproof Notebook",
-      "description": "灵感总是在猝不及防的时候不期而至，倘若无法及时记录则会抱憾终身，这款专为作家、音乐人、设计师、创业者等高密度创意群体设计的野外防水记事本，让你在灵感迸发时不漏掉一点一滴",
-      "price": 12.95,
-      "likes": 221,
-      "link": "http://www.amazon.com/dp/B00AQO8Q88/",
+      "link": "http://www.amazon.com/dp/B071LD6TRR/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "everyday-carry"
@@ -32,7 +56,19 @@
       "description": "小李飞刀，例不虚发，这款7英尺长有着钛合金刀柄和锋利无比不锈钢刀片的折叠式指尖陀螺刀，不但吹毛断发削铁如泥，更可以消遣娱乐提神解压，不枉在百晓生兵器谱上排名第三",
       "price": 59.95,
       "likes": 1049,
-      "link": "http://www.amazon.com/dp/B074PCW37J/",
+      "link": "http://www.amazon.com/dp/B074PCW37J/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "everyday-carry"
+    },
+    {
+      "id": "HSdrFgMmnWN",
+      "titleCN": "野外防水记事本",
+      "titleEN": "Field Notes Waterproof Notebook",
+      "description": "灵感总是在猝不及防的时候不期而至，倘若无法及时记录则会抱憾终身，这款专为作家、音乐人、设计师、创业者等高密度创意群体设计的野外防水记事本，让你在灵感迸发时不漏掉一点一滴",
+      "price": 12.95,
+      "likes": 221,
+      "link": "http://www.amazon.com/dp/B00AQO8Q88/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "everyday-carry"
@@ -44,7 +80,7 @@
       "description": "在手机被当做移动多媒体游戏影音中心使用的今天，耳机是出门时不可或缺的必备之物，这款闲置时可以巧妙幻化成漂亮腕带的尼龙绳耳机，便携易用之余也消除了耳机线打结的困扰",
       "price": 24.95,
       "likes": 335,
-      "link": "http://www.amazon.com/dp/B01CQJ3E0U/",
+      "link": "http://www.amazon.com/dp/B01CQJ3E0U/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "everyday-carry"
@@ -56,7 +92,7 @@
       "description": "将这款轻便小巧耐用防水的追踪器挂在钥匙、钱包、旅行箱等重要物品上，确保在60米半径的范围里，只需轻轻一摁按钮，即可通过88分贝的悠扬乐曲迅速定位",
       "price": 19.99,
       "likes": 215,
-      "link": "http://www.amazon.com/dp/B073QPMFVJ/",
+      "link": "http://www.amazon.com/dp/B073QPMFVJ/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "everyday-carry"
