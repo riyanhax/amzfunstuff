@@ -2,6 +2,42 @@
   "next": false,
   "products": [
     {
+      "id": "Ll1Pn0JiJkf",
+      "titleCN": "可遥控冷藏箱",
+      "titleEN": "Remote Control Drink Cooler",
+      "description": "如果穆罕默德不想走向大山，那么就让大山走向穆罕默德 - 这款可遥控的冷藏箱能让夏日午后慵懒躺在泳池太阳伞沙发椅上的你美梦成真，让一箱清凉饮料和冰镇啤酒摇摇摆摆走到你面前任君挑选",
+      "price": 90.95,
+      "likes": 670,
+      "link": "http://www.amazon.com/dp/B001EIPMRS/",
+      "type": "amazon",
+      "category": "toy-gifts",
+      "subcategory": "remote-control-toys"
+    },
+    {
+      "id": "7IODLk9O1U",
+      "titleCN": "遥控牧马人吉普车",
+      "titleEN": "Radio Control Jeep Wrangler",
+      "description": "作为越野吉普系列中最强悍的品牌，牧马人吉普车是无数车迷心中的永远的挚爱，这款红色的遥控牧马人吉普不但以翔实的细节完美复刻本尊，其自带的四轮驱动轴更让操控者切实体验征服极限的乐趣",
+      "price": 409.99,
+      "likes": 437,
+      "link": "http://www.amazon.com/dp/B077SHLV6K/",
+      "type": "amazon",
+      "category": "toy-gifts",
+      "subcategory": "remote-control-toys"
+    },
+    {
+      "id": "oknceri2_P",
+      "titleCN": "超高速遥控跑车玩具",
+      "titleEN": "100 MPH RC Supercar",
+      "description": "作为一个对挑战速度极限情有独钟的赛车爱好者，这款百公里加速时间不足3秒最高时速可达100MPH的超高速遥控跑车玩具让你领略前所未有的速度感，试驾时请保持谨慎，毕竟这不是一款普通玩具",
+      "price": 901,
+      "likes": 230,
+      "link": "http://www.amazon.com/dp/B006GPJ2WU/",
+      "type": "amazon",
+      "category": "toy-gifts",
+      "subcategory": "remote-control-toys"
+    },
+    {
       "id": "Qm3ium7K6I",
       "titleCN": "智能手机控制飞行器",
       "titleEN": "Smartphone App Controlled Airplane",

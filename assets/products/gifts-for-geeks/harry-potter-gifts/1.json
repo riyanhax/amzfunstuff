@@ -2,6 +2,18 @@
   "next": false,
   "products": [
     {
+      "id": "uhdlFHfbhD9",
+      "titleCN": "哈利波特主题茶叶魔药",
+      "titleEN": "Harry Potter Inspired Tea Potions",
+      "description": "如何给你的麻瓜朋友送上一份魔法礼物？这款装在试管瓶内设计独特的哈利波特主题茶叶魔药味道香醇并提供了包括“恶龙的血”、“凤凰的眼泪”、“狼毒乌头”等口味，让你轻松将霍格沃茨下午茶搬到家来",
+      "price": 15.78,
+      "likes": 398,
+      "link": "https://www.etsy.com/listing/551670901/tea-potions-harry-potter-inspired-tea",
+      "type": "etsy",
+      "category": "gifts-for-geeks",
+      "subcategory": "harry-potter-gifts"
+    },
+    {
       "id": "cjeJTZvASzy",
       "titleCN": "哈利波特魔杖制作编程套装",
       "titleEN": "Harry Potter Build a Wand Coding Kit",

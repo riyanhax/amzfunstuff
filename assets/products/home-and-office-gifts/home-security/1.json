@@ -2,6 +2,66 @@
   "next": false,
   "products": [
     {
+      "id": "390QeUexExJ",
+      "titleCN": "诺顿核心安全无线路由器",
+      "titleEN": "Norton Core Secure WiFi Router",
+      "description": "诺顿这款核心安全无线路由器采用多层安全防护机制防止身份盗用发生，最新的双核处理器显著提升了无线上网体验，智能家长控制面板可以为孩子设置浏览权限，移动端软件让你在手机上轻松掌控一切",
+      "price": 199.98,
+      "likes": 292,
+      "link": "http://www.amazon.com/dp/B06Y2B4NWY/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "home-security"
+    },
+    {
+      "id": "lL4-Lblfu9",
+      "titleCN": "全天候无线安全摄像头",
+      "titleEN": "Weatherproof Wire-Free Security Camera",
+      "description": "这款能识别Alexa语音控制的全天候无线安全摄像头除了视频加密功能以及无与伦比的HD高清画质外还提供116度的广角镜头及夜视功能，让你随时随地通过手机监控豪宅周围任何的风吹草动",
+      "price": 149.99,
+      "likes": 338,
+      "link": "http://www.amazon.com/dp/B0731B1T7N/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "home-security"
+    },
+    {
+      "id": "pUrMc3CMRrM",
+      "titleCN": "室内智能安全摄像头",
+      "titleEN": "Pan/Tilt/Zoom WiFi Security Camera",
+      "description": "这款外观简约但颇具设计感的室内智能安全摄像头有每秒110度的转速、360度的水平视野及93度的垂直视野、1080的高清HD画质及夜视功能，内置的声动感应可被自动触发并发送提醒到你的手机",
+      "price": 37.98,
+      "likes": 470,
+      "link": "http://www.amazon.com/dp/B07DGR98VQ/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "home-security"
+    },
+    {
+      "id": "t-imKJ2H3o",
+      "titleCN": "保险柜邮箱",
+      "titleEN": "Mailbox Vault",
+      "description": "这款设计前卫以粉末塗料喷漆整体没有一颗螺栓的镀锌钢保险柜邮箱不但全新诠释了坚不可摧的概念，而且将金库级别的安全机制带到了寻常家庭，让你毋需担忧任何通过邮件泄露而造成的身份盗窃",
+      "price": 229,
+      "likes": 611,
+      "link": "http://www.amazon.com/dp/B004GUS7T6/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "home-security"
+    },
+    {
+      "id": "EdZAO-VWYlo",
+      "titleCN": "智能家居安全系统",
+      "titleEN": "Ring Smart Home Security System",
+      "description": "这款配备了动感探测器和接触传感器的智能家居安全系统能24小时全天候监测门窗状态及周边异常保护你的住宅不被非法入侵，自带的Alexa语音支持和手机同步功能让你无论身在何处都能掌握实时信息",
+      "price": 199,
+      "likes": 187,
+      "link": "http://www.amazon.com/dp/B07D7Q6CHB/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "home-security"
+    },
+    {
       "id": "D6spJMLEb3",
       "titleCN": "智能条形码邮件挂锁",
       "titleEN": "Smart Barcode Padlock For Deliveries",

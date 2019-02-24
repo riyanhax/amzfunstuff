@@ -2,6 +2,30 @@
   "next": false,
   "products": [
     {
+      "id": "aj_ROM_e2BW",
+      "titleCN": "人脸烤馅饼",
+      "titleEN": "People Pot Pie",
+      "description": "如何鉴别谁能在僵尸袭城的末日恐怖片中孤独地存活下来？在月黑风高夜将所有吹嘘自己无所畏惧的好友聚在一起，呈上这款美味可口的9英尺人脸烤馅饼，看谁能淡定地切一块配着红酒咬下去",
+      "price": 30,
+      "likes": 629,
+      "link": "https://www.etsy.com/listing/678454341/people-pot-pie-extra-chunky-c",
+      "type": "etsy",
+      "category": "wtf",
+      "subcategory": "nsfw-general"
+    },
+    {
+      "id": "CyTJpfxnTyf",
+      "titleCN": "词语地雷阵派对游戏",
+      "titleEN": "Word Mines Party Game",
+      "description": "这款设计别出心裁的派对游戏让大家组队来猜测最新潮最时髦的流行语，只不过每个词条下面都罗列了几个绝对不能被提及的相关词，我真的觉得不管是不是母语，玩儿这款游戏都能把人给憋坏了",
+      "price": 25,
+      "likes": 176,
+      "link": "http://www.amazon.com/dp/B07996Z467/",
+      "type": "amazon",
+      "category": "wtf",
+      "subcategory": "nsfw-general"
+    },
+    {
       "id": "IErFsgz3Wh3",
       "titleCN": "断头僵尸保龄球",
       "titleEN": "Decapitated Zombie Head Bowling Balls",

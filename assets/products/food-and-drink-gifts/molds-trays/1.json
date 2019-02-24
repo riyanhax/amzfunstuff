@@ -2,6 +2,54 @@
   "next": false,
   "products": [
     {
+      "id": "L9rY8EEUVsm",
+      "titleCN": "柯基饼干切割器",
+      "titleEN": "Corgi Cookie Cutter",
+      "description": "作为一个厨艺高超的吃货妈妈，是否憧憬着和女儿一起烤出最可口的甜点？这款设计可爱包括了“高兴的柯基”、“睡着的柯基”、及“撅屁股的柯基”三件套的饼干切割器，让孩子在欢乐中爱上烘焙",
+      "price": 12.71,
+      "likes": 329,
+      "link": "https://www.etsy.com/listing/563790655/happy-corgi-cookie-cutter-o-cute-fluffy",
+      "type": "etsy",
+      "category": "food-and-drink-gifts",
+      "subcategory": "molds-trays"
+    },
+    {
+      "id": "HitxqrW5yx3",
+      "titleCN": "吉娃娃墨西哥玉米饼托盘",
+      "titleEN": "Chihuahua Taco Holder",
+      "description": "如果你喜欢墨西哥浓烈的龙舌兰美味的辣椒酱酱和酥脆的玉米饼，那么你估计也会喜欢以墨西哥吉娃娃州命名的世界最小犬种，这款设计新颖的吉娃娃墨西哥玉米饼托盘，为你带来热情而诙谐的中美洲风情",
+      "price": 19.99,
+      "likes": 1217,
+      "link": "http://www.amazon.com/dp/B079KT7XH9/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "molds-trays"
+    },
+    {
+      "id": "HG6uAuJ9viu",
+      "titleCN": "寿司堆垛工具套装",
+      "titleEN": "Sushi Stacking Kit",
+      "description": "风靡全美的”寿司之神“纪录片将本已颇受欢迎的日本料理推向了全新的高度，这款由高级不锈钢制成的寿司堆垛工具套装包含了正方形、三角形、圆形三种形状，让你轻松整治出玄机与禅意并存的各色饭团",
+      "price": 19.99,
+      "likes": 154,
+      "link": "http://www.amazon.com/dp/B073SK1XVF/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "molds-trays"
+    },
+    {
+      "id": "9tzowp0W3u",
+      "titleCN": "粑粑形状饼干切割器",
+      "titleEN": "Poop Swirl Cookie Cutter",
+      "description": "如果童年的你也曾被鸟山明笔下那个每天拿着冰激凌形状的粑粑无忧无虑疯跑的阿拉蕾萌到过的话，那么这款添加了舒适护手橡胶外缘的粑粑形状饼干切割器，让你轻松自如重温儿时那些奇怪的恶趣味",
+      "price": 7.02,
+      "likes": 66,
+      "link": "http://www.amazon.com/dp/B073WC3YQV/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "molds-trays"
+    },
+    {
       "id": "z32ylegNyxw",
       "titleCN": "雪泥冰沙奶昔制作器",
       "titleEN": "Slushie Shake Maker",

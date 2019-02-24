@@ -1,0 +1,41 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "V5aRlKQ0gNa",
+      "titleCN": "犬儒主义棒球帽",
+      "titleEN": "In Dog Years I’m Dead Hat",
+      "description": "这款有多种颜色可选设计别致的犬儒主义棒球帽上镌刻了颇有禅意的一句话，”倘若我是一只狗，那我早已逝去多年“，让人感叹纵然如夏花之绚烂的璀璨生命但也可能在刹那燃烧后如电如露转瞬即逝",
+      "price": 14.99,
+      "likes": 291,
+      "link": "https://www.etsy.com/listing/272874422/in-dog-years-im-dead-hat",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "hats-and-ties"
+    },
+    {
+      "id": "--Wzf8UpNVS",
+      "titleCN": "帽檐蜂鸟喂食器",
+      "titleEN": "Hat Hummingbird Feeder",
+      "description": "作为世界上已知最小的且唯一能够向后飞行的鸟类，蜂鸟可以通过每秒快速扇动翅膀80次左右而悬停在空中，这款铜制的帽檐蜂鸟喂食器，让你得以近距离地观察这种令人叹为观止的神奇生物",
+      "price": 13.95,
+      "likes": 140,
+      "link": "https://www.etsy.com/listing/190796099/hat-hummingbird-feeder",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "hats-and-ties"
+    },
+    {
+      "id": "FhUomBhRuS6",
+      "titleCN": "女士时尚雨帽",
+      "titleEN": "Women Rain Hat",
+      "description": "如何在突如其来的下雨天保证你精致的发型不被淋湿搞坏？这款用超细防水纤维涤纶制成的现代感十足女士时尚雨帽连带前端的浅色遮风面罩，让你再也不必担心霏霏的细雨会淋湿你的面颊搞坏你的秀发",
+      "price": 49.99,
+      "likes": 112,
+      "link": "http://www.amazon.com/dp/B07963CR52/",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "hats-and-ties"
+    }
+  ]
+}

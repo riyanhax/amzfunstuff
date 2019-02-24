@@ -53,7 +53,7 @@ affiliate-thisiswhyimbroke:
 	node ./utils/products/cleaned/affiliate.js 
 
 finalMoveImages-thisiswhyimbroke:
-	mv ./utils/products/cleaned/images ./assets/images
+	cp ./utils/products/cleaned/images ./assets/images/products
 
 finalMoveProducts-thisiswhyimbroke:
 	rm -rf assets/products && mv ./utils/products/cleaned/products ./assets/products

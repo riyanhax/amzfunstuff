@@ -2,6 +2,18 @@
   "next": false,
   "products": [
     {
+      "id": "xsqwwP8oV6",
+      "titleCN": "闪光碎屑弹簧炸弹",
+      "titleEN": "Spring Loaded Glitter Bomb",
+      "description": "不管是蓝天下的毕业典礼还是教堂里的结婚仪式，在到达人生每一个重要幸福里程碑时，请拿出这款设计巧妙的闪光碎屑弹簧炸弹，不要吝惜地瞄准你的至亲好友发射出去，让所有的祝福在空中随风飘扬",
+      "price": 34.99,
+      "likes": 4784,
+      "link": "http://www.amazon.com/dp/B00XTH7SSS/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "prank"
+    },
+    {
       "id": "ILoHjqT9dyh",
       "titleCN": "混搭脏话生成器",
       "titleEN": "Mix & Match Profanity Generator",

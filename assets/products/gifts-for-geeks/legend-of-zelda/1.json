@@ -1,0 +1,17 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "1yUBrsrcr12",
+      "titleCN": "塞尔达传说守护之剑",
+      "titleEN": "Zelda Guardian Sword",
+      "description": "这款以聚乳酸为原料3D打印的塞尔达传说守护之剑长35英尺，自带Arduino组件与NeoPixel灯带控制LED，内置USB接口充电后可以6小时续航，能瞬间将你的角色扮演专业度提升到全新的高度",
+      "price": 178.94,
+      "likes": 425,
+      "link": "https://www.etsy.com/listing/587204187/zelda-guardian-sword-prop-zelda-breath",
+      "type": "etsy",
+      "category": "gifts-for-geeks",
+      "subcategory": "legend-of-zelda"
+    }
+  ]
+}

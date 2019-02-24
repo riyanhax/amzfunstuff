@@ -2,6 +2,42 @@
   "next": false,
   "products": [
     {
+      "id": "MxaIGZMamo_",
+      "titleCN": "梦幻云朵挂灯",
+      "titleEN": "Dream Cloud Light",
+      "description": "风中有朵雨做的云，嗯，也可能是硕大的棉花糖，那个，偶尔投影在你的波心，这款设计充满创意用防过敏材料手工制作的梦幻云朵挂灯特别适合悬挂在婴儿房里，让宝宝们流着口水掰着指头云计算",
+      "price": 75,
+      "likes": 3832,
+      "link": "https://www.etsy.com/listing/233104918/dream-cloud-light-14-with-multi",
+      "type": "etsy",
+      "category": "home-and-office-gifts",
+      "subcategory": "bedroom"
+    },
+    {
+      "id": "oQoVxn9XU9F",
+      "titleCN": "记忆海绵地毯闹钟",
+      "titleEN": "Alarm Clock Rug",
+      "description": "是否有过昏睡中无意将闹钟关掉而误事的痛心经历？这款设计巧妙专为嗜睡人士定做的记忆海绵地毯闹钟，要求使用者必须双脚站立在上面至少3秒钟后才能将闹铃关掉，逼你从此养成健康的作息时间",
+      "price": 69.99,
+      "likes": 3317,
+      "link": "http://www.amazon.com/dp/B01JU0Y4WA/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "bedroom"
+    },
+    {
+      "id": "siLIvxaAa9E",
+      "titleCN": "巨型白菜凉毯",
+      "titleEN": "Giant Cabbage Blanket",
+      "description": "从拇指姑娘到罐头小人再到漫游奇境的爱丽丝，领略一下自己变小后的世界是每个人挥之不去的玄幻想法，这款设计独特的聚酯纤维羽毛面料巨型白菜凉毯让秉承素食主义的你在夏日里美梦成真",
+      "price": 40,
+      "likes": 316,
+      "link": "http://www.amazon.com/dp/B073VLWJMN/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "bedroom"
+    },
+    {
       "id": "5T69Pj6U4Kc",
       "titleCN": "蜂窝状抽屉整理架",
       "titleEN": "Honeycomb Drawer Organizer",

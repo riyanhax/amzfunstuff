@@ -2,6 +2,18 @@
   "next": false,
   "products": [
     {
+      "id": "htJ_VDNj2Jy",
+      "titleCN": "可调色打火器",
+      "titleEN": "Colored Flame Lighters",
+      "description": "这款3英尺长1.5英尺宽按照人体工学设计的可调色打火器携带方便抓握牢固，透明的燃料仓能看到天然气使用情况，自带的气阀是其能在高海拔地带使用，别致的调色功能可让火焰时呈现出诡异的色彩",
+      "price": 12.99,
+      "likes": 5165,
+      "link": "http://www.amazon.com/dp/B007W0SKF8/",
+      "type": "amazon",
+      "category": "gifts-for-men",
+      "subcategory": "smokers"
+    },
+    {
       "id": "Tm8MJYkVrNw",
       "titleCN": "打火机手机盒",
       "titleEN": "Smartphone Lighter Case",

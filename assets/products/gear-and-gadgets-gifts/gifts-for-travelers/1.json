@@ -2,6 +2,30 @@
   "next": false,
   "products": [
     {
+      "id": "oy2E9o64r_n",
+      "titleCN": "长途旅行经济舱专用睡眠枕",
+      "titleEN": "The Long Distance Travel Pillow",
+      "description": "如何在长途旅行的飞机经济舱中实现高质量睡眠？这款专为解决上述问题而存在的长途旅行经济舱专用睡眠枕，通过其独特的设计既遮盖了面部也保证了头颈与脊椎一致，让你在三万英尺的高空里美梦成真",
+      "price": 51.97,
+      "likes": 418,
+      "link": "http://www.amazon.com/dp/B0051VEHP2/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "gifts-for-travelers"
+    },
+    {
+      "id": "hOY4N-4a9lp",
+      "titleCN": "便携式旅行真空压缩机",
+      "titleEN": "Portable Clothing Compression Tool",
+      "description": "旅行时的行李箱和一线城市黄金地段的楼盘一样都是寸土寸金，这款便携式旅行真空压缩机可以将放置了任何物品的真空袋戏剧般缩小50%的体积，给你足够的空间携带所有物品，让出行变得更加高效",
+      "price": 59.95,
+      "likes": 1099,
+      "link": "http://www.amazon.com/dp/B0773W7NKJ/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "gifts-for-travelers"
+    },
+    {
       "id": "7cjs2SA3f_x",
       "titleCN": "智能国际语言翻译器",
       "titleEN": "Smart International Language Translator",

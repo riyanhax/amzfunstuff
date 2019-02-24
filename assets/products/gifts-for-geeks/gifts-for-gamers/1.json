@@ -2,6 +2,66 @@
   "next": false,
   "products": [
     {
+      "id": "RGndT7--lF8",
+      "titleCN": "掷骰子城堡",
+      "titleEN": "Rolling Dice Tower",
+      "description": "如果凯撒皇宫是你在拉斯维加斯最为钟爱的酒店，那么这款以中世纪城堡为造型，通过可降解的聚乳酸材料3D打印制作，设计精美的掷骰子城堡，必然会让追求完美和刺激的你爱不释手",
+      "price": 28.73,
+      "likes": 298,
+      "link": "https://www.etsy.com/listing/615799530/dice-tower-with-spiral-staircase-dice",
+      "type": "etsy",
+      "category": "gifts-for-geeks",
+      "subcategory": "gifts-for-gamers"
+    },
+    {
+      "id": "eoBzPfDnB5a",
+      "titleCN": "战神角色扮演道具服",
+      "titleEN": "Kratos God Of War Cosplay Costume",
+      "description": "作为《战神》游戏的铁杆粉丝，这款用天然皮革加铆钉通过人工做旧制成的角色扮演道具服不但做工精美而且细节无微不至，从肩甲到护腿一应俱全，让你在朋友们的惊叹中完美复刻斯巴达的幽灵",
+      "price": 420,
+      "likes": 63,
+      "link": "https://www.etsy.com/listing/644871073/kratos-cosplay-costume-exact-copy-god-of",
+      "type": "etsy",
+      "category": "gifts-for-geeks",
+      "subcategory": "gifts-for-gamers"
+    },
+    {
+      "id": "791GomoHm6",
+      "titleCN": "使命召唤之幽灵面具",
+      "titleEN": "Call Of Duty Ghost Mask",
+      "description": "这款基于经典电子游戏“使命召唤”系列第十部作品打造的幽灵面具以纤维增强塑料玻璃钢为材料制成，并在表面覆盖了胶衣以增加额外的承压力和耐用性，是该游戏忠实粉丝不容错过的收藏品",
+      "price": 95.19,
+      "likes": 193,
+      "link": "https://www.etsy.com/listing/186278983/ghost-mask",
+      "type": "etsy",
+      "category": "gifts-for-geeks",
+      "subcategory": "gifts-for-gamers"
+    },
+    {
+      "id": "962Kj8MpNa",
+      "titleCN": "社交大冒险纸牌游戏",
+      "titleEN": "Social Sabotage Card Game",
+      "description": "拿出你全部的勇气和所有的决心和最亲密的朋友一起玩儿这款超级无敌的社交大冒险纸牌游戏，当黄色的纸牌和黑色的纸牌拼凑出最荒诞离奇的大冒险挑战时，输的那一方要不假思索的照做并发朋友圈",
+      "price": 15.59,
+      "likes": 256,
+      "link": "http://www.amazon.com/dp/B077PQ5SN1/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "gifts-for-gamers"
+    },
+    {
+      "id": "-rAzKzSaw7",
+      "titleCN": "复古游戏设计平台",
+      "titleEN": "Credit Card Size Game System",
+      "description": "是否可以在一边教孩子编程的同时一边重温儿时那些经典的黑白机游戏？这款基于Arduino芯片设计的复古游戏设计平台帮你了却了这个心愿，让你在帮孩子领略编程乐趣的同时穿越到三十年前",
+      "price": 49,
+      "likes": 1544,
+      "link": "http://www.amazon.com/dp/B01MTK2U7U/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "gifts-for-gamers"
+    },
+    {
       "id": "hS7bf6Bh8W",
       "titleCN": "任天堂实验室手工纸模赛车套装",
       "titleEN": "Nintendo Labo Vehicle Kit",

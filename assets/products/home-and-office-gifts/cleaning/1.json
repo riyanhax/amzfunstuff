@@ -2,6 +2,18 @@
   "next": false,
   "products": [
     {
+      "id": "ybux-o7t1fH",
+      "titleCN": "海绵球胶皮手套",
+      "titleEN": "Sponge Gloves",
+      "description": "这款别出心裁将防水胶皮手套与洗涤海绵完美结合在一起的产品，在保持你双手干燥的同时将掌心和指尖都变成了灵活的清洗工具，让你不费吹灰之力弹指间就将所有碗碟全部擦洗得焕然一新",
+      "price": 9.99,
+      "likes": 297,
+      "link": "http://www.amazon.com/dp/B015H0M5QE/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "cleaning"
+    },
+    {
       "id": "VX7IOSU7jdf",
       "titleCN": "干湿同步吸尘器",
       "titleEN": "The Simultaneous Wet-Dry Vacuum",

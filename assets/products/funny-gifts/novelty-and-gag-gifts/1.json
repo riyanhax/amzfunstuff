@@ -2,6 +2,54 @@
   "next": false,
   "products": [
     {
+      "id": "6r-0Dn7voP4",
+      "titleCN": "盒中的薛定谔猫珐琅胸针",
+      "titleEN": "Schrodinger’s Cat In A Box",
+      "description": "感谢“生活大爆炸”的热播，薛定谔著名的思想实验已然成了最为人熟知的量子力学科普故事，这款设计精美的珐琅胸针以薛定谔的猫为主题，非常契合题意，只有在打开盒子后才会发现猫是死是活",
+      "price": 10,
+      "likes": 150,
+      "link": "https://www.etsy.com/listing/572843744/schrodingers-cat-in-a-box-enamel-pin",
+      "type": "etsy",
+      "category": "funny-gifts",
+      "subcategory": "novelty-and-gag-gifts"
+    },
+    {
+      "id": "pgmTsDpUSVj",
+      "titleCN": "QLOCKTWO 文字时钟",
+      "titleEN": "QLOCKTWO Text Clock",
+      "description": "现代时钟与腕表一样，最重要的功能已经变成了彰显个性与品味，以及装饰家居并体现出对生活品质的追求；这款来自德国用文字述说时间的QLOCKTWO时钟，以绝佳创意搭配现代技术，带给你赏心与悦目",
+      "price": 1050,
+      "likes": 3599,
+      "link": "http://www.amazon.com/dp/B006IZXP1M/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "novelty-and-gag-gifts"
+    },
+    {
+      "id": "YF0dro4Gv5p",
+      "titleCN": "川皇镇纸/搁笔架",
+      "titleEN": "Donald Trump Pen Holder",
+      "description": "作为美国历史上最爱通过人身攻击贬低对手的霸凌总统，川普显然低估了亚马逊卖家的创造力，在这款设计独特的产品里，川皇戴着他标志性的红领带和MAGA帽，以极为不雅的方式充当了搁笔架的角色",
+      "price": 19.97,
+      "likes": 1414,
+      "link": "http://www.amazon.com/dp/B01KJJS8F0/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "novelty-and-gag-gifts"
+    },
+    {
+      "id": "X3mdgjREh6",
+      "titleCN": "可食用食物喷漆",
+      "titleEN": "Edible Spray Paint",
+      "description": "蓝色的鲜草莓金色的三文鱼银色的烤火鸡？这款颠覆世界观的可食用食物喷漆让你可以像卡通片中的魔法师一样做出一桌色彩纷呈摄人心神的丰盛彩虹大餐，把食物美学上升到前所未有的全新高度",
+      "price": 38,
+      "likes": 3347,
+      "link": "http://www.amazon.com/dp/B0043V0VM4/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "novelty-and-gag-gifts"
+    },
+    {
       "id": "mNXKPkHGvj6",
       "titleCN": "野蛮人的选择(聚会桌游)",
       "titleEN": "Savage Choices Party Game",

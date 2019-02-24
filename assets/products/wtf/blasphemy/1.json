@@ -2,6 +2,30 @@
   "next": false,
   "products": [
     {
+      "id": "VwymkTlemkn",
+      "titleCN": "让你尝尝我的厉害",
+      "titleEN": "A Can Of Whoop Ass",
+      "description": "这句美国俚语如果按照信雅达翻译的话非常契合中文里那句”让你尝尝我的厉害“，这款设计令人捧腹的罐头道具在其成分标签里以极其细节的方式列举了各种威胁性的言辞和话语，绝对让对方不寒而栗",
+      "price": 5.99,
+      "likes": 817,
+      "link": "http://www.amazon.com/dp/B018PIKF7G/",
+      "type": "amazon",
+      "category": "wtf",
+      "subcategory": "blasphemy"
+    },
+    {
+      "id": "heQ4F7HwI",
+      "titleCN": "耶稣主题烤面包机",
+      "titleEN": "Jesus Toaster",
+      "description": "据圣经旧约胡诌福音早餐记28章16节记载，每一个信徒都应该从一顿丰盛可口的早餐开始其虔诚的一天；这款以耶稣基督为主题的烤面包机，让你在每天清晨补充营养时领略充满荣光的弥赛亚肖像",
+      "price": 34.95,
+      "likes": 1357,
+      "link": "http://www.amazon.com/dp/B00K3W0WU8/",
+      "type": "amazon",
+      "category": "wtf",
+      "subcategory": "blasphemy"
+    },
+    {
       "id": "ILoHjqT9dyh",
       "titleCN": "混搭脏话生成器",
       "titleEN": "Mix & Match Profanity Generator",

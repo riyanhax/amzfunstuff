@@ -28,11 +28,8 @@ const attachAffiliateId = () => {
     let batch
     
     try{
-        for(let index in files){
-            console.log(index)
-            console.log(files[index])
-            let filepath = __dirname + '/' + files[index]
-            console.log('filepath ',filepath)
+        for(let file of files){
+            let filepath = __dirname + '/' + file
             batch = require(filepath)
             products = batch.concat(products)
         }
@@ -57,9 +54,14 @@ const removeAffiliateId = () => {
     
     // load products from file
     let products 
+    let batch
 
     try{
-        products = require(filepath)
+        for(let file of files){
+            let filepath = __dirname + '/' + file
+            batch = require(filepath)
+            products = batch.concat(products)
+        }
     }catch(ex){
         console.log('Error: invalid json')
         process.exit(1)

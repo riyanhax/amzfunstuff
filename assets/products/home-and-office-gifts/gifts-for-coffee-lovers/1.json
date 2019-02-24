@@ -2,6 +2,18 @@
   "next": false,
   "products": [
     {
+      "id": "oHT80JrMpi",
+      "titleCN": "虫草白桦茸咖啡",
+      "titleEN": "Mushroom Coffee",
+      "description": "作为一名成功地商业人士如何在每日繁忙的工作生活中保持清醒的头脑和充沛的体力？这款用香醇咖啡混合了天然冬虫夏草和北美白桦茸制成的口感极佳的虫草白桦茸咖啡，为你注入无限活力",
+      "price": 12.17,
+      "likes": 137,
+      "link": "http://www.amazon.com/dp/B00UI10SDU/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "gifts-for-coffee-lovers"
+    },
+    {
       "id": "ACZPF1HO8fe",
       "titleCN": "咖啡冲泡烟斗套装",
       "titleEN": "Coffee Brewing Pipe Kit",

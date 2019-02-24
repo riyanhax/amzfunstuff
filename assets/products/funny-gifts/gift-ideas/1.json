@@ -2,6 +2,78 @@
   "next": false,
   "products": [
     {
+      "id": "4TuLkWWOqyg",
+      "titleCN": "婴儿胚胎香皂",
+      "titleEN": "Human Fetus Soap Bar",
+      "description": "这款设计奇特的胚胎香皂非常准确地呈现了婴儿在母体中刚刚成型时的模样，在羊奶香皂制作的胚胎模型及甘油香皂制作的子宫模型中都添加了薰衣草精油，让你在盥洗室中思考人类存在的意义",
+      "price": 15,
+      "likes": 3359,
+      "link": "https://www.etsy.com/listing/88996953/fetus-soap",
+      "type": "etsy",
+      "category": "funny-gifts",
+      "subcategory": "gift-ideas"
+    },
+    {
+      "id": "blCjI-Iu8Bq",
+      "titleCN": "水上漂浮碰碰车",
+      "titleEN": "Motorized Floating Bumper Cars",
+      "description": "急速拨打着碰碰车的方向盘然后开足马力撞向暗恋的他/她是很多人年少时甜蜜的记忆，这款自带大型水枪的水上漂浮碰碰车让你能和朋友们一起在后院的泳池或山中的湖水里重温年少时最美好的记忆",
+      "price": 99.9,
+      "likes": 7560,
+      "link": "http://www.amazon.com/dp/B001CKWAG4/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "gift-ideas"
+    },
+    {
+      "id": "pgmTsDpUSVj",
+      "titleCN": "QLOCKTWO 文字时钟",
+      "titleEN": "QLOCKTWO Text Clock",
+      "description": "现代时钟与腕表一样，最重要的功能已经变成了彰显个性与品味，以及装饰家居并体现出对生活品质的追求；这款来自德国用文字述说时间的QLOCKTWO时钟，以绝佳创意搭配现代技术，带给你赏心与悦目",
+      "price": 1050,
+      "likes": 3599,
+      "link": "http://www.amazon.com/dp/B006IZXP1M/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "gift-ideas"
+    },
+    {
+      "id": "Bdt_JM2r1Ax",
+      "titleCN": "防盗午餐袋",
+      "titleEN": "Anti-Theft Lunch Bag",
+      "description": "想必你对《老友记》里罗斯因为莫妮卡做的火鸡三明治被人偷走而情绪失控的剧情记忆犹新吧？这款设计巧妙的防盗午餐袋让你精心准备的美味午餐看上去似乎长出了霉菌，有效防止垂涎美食的午餐盗贼",
+      "price": 6,
+      "likes": 1559,
+      "link": "http://www.amazon.com/dp/B00JLSVDYO/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "gift-ideas"
+    },
+    {
+      "id": "X3mdgjREh6",
+      "titleCN": "可食用食物喷漆",
+      "titleEN": "Edible Spray Paint",
+      "description": "蓝色的鲜草莓金色的三文鱼银色的烤火鸡？这款颠覆世界观的可食用食物喷漆让你可以像卡通片中的魔法师一样做出一桌色彩纷呈摄人心神的丰盛彩虹大餐，把食物美学上升到前所未有的全新高度",
+      "price": 38,
+      "likes": 3347,
+      "link": "http://www.amazon.com/dp/B0043V0VM4/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "gift-ideas"
+    },
+    {
+      "id": "CgrZu35wMrV",
+      "titleCN": "正装睡衣",
+      "titleEN": "Suit Pajamas",
+      "description": "这款大牌设计感十足、由柔软的真丝和纯棉制造、《老爸老妈浪漫史》中永远西装笔挺的把妹达人巴尼·斯廷森倾情力荐的正装睡衣，让时刻注重仪表和体态的你风度翩翩毫无顾忌地整装入眠",
+      "price": 99.95,
+      "likes": 10227,
+      "link": "http://www.amazon.com/dp/B005PL9ZL4/",
+      "type": "amazon",
+      "category": "funny-gifts",
+      "subcategory": "gift-ideas"
+    },
+    {
       "id": "4NYzVMl5P",
       "titleCN": "时尚厨房刀具套装",
       "titleEN": "Modern Knives Set",

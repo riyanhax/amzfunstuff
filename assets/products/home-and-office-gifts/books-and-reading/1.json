@@ -2,6 +2,18 @@
   "next": false,
   "products": [
     {
+      "id": "YVQq9hZsuee",
+      "titleCN": "嗨客涂色书",
+      "titleEN": "Coloring Book For Stoners",
+      "description": "据说很多音乐人和艺术家们都坦陈大麻是其天马行空匪夷所思灵感的重要来源，这本设计非常冷门的涂色书让嗨客们在眼神迷离思绪飘荡才华溢满一地时乘兴将书中魔幻主义色彩浓郁的图案勾画出来",
+      "price": 12.99,
+      "likes": 1120,
+      "link": "https://www.etsy.com/listing/250476106/stoner-coloring-book-for-adults-weed",
+      "type": "etsy",
+      "category": "home-and-office-gifts",
+      "subcategory": "books-and-reading"
+    },
+    {
       "id": "8ZHaYRHd-",
       "titleCN": "沃尔玛中的人涂色书",
       "titleEN": "The People Of Walmart Coloring Book",

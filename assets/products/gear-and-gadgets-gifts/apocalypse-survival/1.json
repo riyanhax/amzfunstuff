@@ -2,6 +2,54 @@
   "next": false,
   "products": [
     {
+      "id": "eEENjdyY9zz",
+      "titleCN": "折叠式太阳能灯笼",
+      "titleEN": "Collapsible Solar Powered Lantern",
+      "description": "这款有三个亮度级别可以调节的折叠式太阳能灯笼设计新颖光线柔和折叠后携带方便，充足电后可持续照明长达令人惊叹的35个小时，是游园夜会或野外露营是特别合用的随身照明工具",
+      "price": 19.95,
+      "likes": 408,
+      "link": "http://www.amazon.com/dp/B07BMJPH8L/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "apocalypse-survival"
+    },
+    {
+      "id": "VwTwPbZH6AH",
+      "titleCN": "荒野生存套装",
+      "titleEN": "Survival Grenade",
+      "description": "这款由前美国海军陆战队狙击手设计的防水荒野生存套装轻巧美观，包含了线锯、罗盘、刀片、安全哨、防水纸、打火器、捕兽网、净水药片等必须物品，平时可当做钥匙链或装饰吊坠随身携带",
+      "price": 74.99,
+      "likes": 2188,
+      "link": "http://www.amazon.com/dp/B00H9YEGW8/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "apocalypse-survival"
+    },
+    {
+      "id": "f3nenigE0x4",
+      "titleCN": "72小时紧急生存背包",
+      "titleEN": "The 72 Hour Survival Kit Backpack",
+      "description": "充满未知的冒险是所有户外运动爱好者钟爱于此的原因，这款携带了35种精选应急工具与物品的72小时紧急生存背包使用气密结构设计，让你在享受肾上腺素狂飙的同时不忘防范任何小几率的意外发生",
+      "price": 350,
+      "likes": 346,
+      "link": "http://www.amazon.com/dp/B01NCZZ0DS/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "apocalypse-survival"
+    },
+    {
+      "id": "igiDLI1Xi8",
+      "titleCN": "72小时避难包",
+      "titleEN": "Bug Out Bag",
+      "description": "看了无数惊悚片灾难片和末日主题系列电视剧的你应该非常清楚灾难发生后黄金72小时的重要性，这款携带了所有应急和生存必须物品的72小时避难包让你在灾难来临之际保持冷静并保护好家人",
+      "price": 229.99,
+      "likes": 1660,
+      "link": "https://www.amazon.com/s/field-keywords=bug+out+bag+kit&tag=097-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "apocalypse-survival"
+    },
+    {
       "id": "_D1aa75odmX",
       "titleCN": "减震膝盖护具",
       "titleEN": "Shock Absorbing Protective Knee Pad",

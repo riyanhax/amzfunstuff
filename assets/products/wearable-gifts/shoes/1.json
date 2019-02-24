@@ -2,6 +2,66 @@
   "next": false,
   "products": [
     {
+      "id": "gvdPfwxlyt",
+      "titleCN": "定制化大头贴袜子",
+      "titleEN": "Personalized Face Socks",
+      "description": "当你偷偷喜欢上了一个人后，如何以一种最特殊的方式宣泄自己心中对其的爱慕？这款无论如何都不能错过的定制化大头贴尼龙涤纶袜子，让你以最隐秘的方式亲密接触到你最爱的那个他/她",
+      "price": 22.99,
+      "likes": 325,
+      "link": "https://www.etsy.com/listing/589483402/custom-face-socks-custom-photo-socks",
+      "type": "etsy",
+      "category": "wearable-gifts",
+      "subcategory": "shoes"
+    },
+    {
+      "id": "7wyqNPmCaXT",
+      "titleCN": "耐克拉链小包拖鞋",
+      "titleEN": "Nike Fanny Pack Sandals",
+      "description": "作为永远引领风潮的时尚先锋，这款舒适美观自带拉链小包的前卫拖鞋让你即便涂着防晒霜半裸上身穿着沙滩裤漫步在马里布海滩时，也有地方携带诸如钥匙现金信用卡等随身物品",
+      "price": 49.99,
+      "likes": 271,
+      "link": "https://www.amazon.com/dp/B00H2QRJJK",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "shoes"
+    },
+    {
+      "id": "daabkXy8xqm",
+      "titleCN": "丝绒鲨鱼拖鞋",
+      "titleEN": "Velvet Shark Slippers",
+      "description": "如何在气温骤将的冬夜里得到最舒适的居家体验？这款用开司米细绒山羊毛制成的丝绒鲨鱼拖鞋不但造型可爱，鞋底的防滑颗粒还帮你消除一切安全隐患，将双脚伸入其口中享受前所未有的温暖与舒适",
+      "price": 25.9,
+      "likes": 228,
+      "link": "http://www.amazon.com/dp/B01N1I20FV/",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "shoes"
+    },
+    {
+      "id": "CUgj1bx5Ddt",
+      "titleCN": "多彩发光休闲运动鞋",
+      "titleEN": "Colorful Light Up Shoes",
+      "description": "试图标新立异和追求与众不同对于青春期的孩子来说是恒古不变的主题，这款设计出挑透气舒适的休闲运动鞋在底部嵌入了绚丽多彩的LED闪烁灯，让你无论是走路跑步还是跳舞都能神采奕奕足下生辉",
+      "price": 69.99,
+      "likes": 1090,
+      "link": "https://www.amazon.com/dp/B07GBXSK1H",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "shoes"
+    },
+    {
+      "id": "FSwJ961_iXF",
+      "titleCN": "极简主义赤脚袜鞋",
+      "titleEN": "Minimalist Barefoot Sock Shoes",
+      "description": "还记得《天降美食》动画片中的喷涂鞋吗？这款创意相似设计新颖的极简主义赤脚袜鞋不但轻便耐用而且能有效保护脚趾，采用防水防滑的黏着材料制成的鞋底适合包括水边嬉戏或海滩跑步在内一切运动",
+      "price": 59.9,
+      "likes": 335,
+      "link": "http://www.amazon.com/dp/B077VQGHM1/",
+      "type": "amazon",
+      "category": "wearable-gifts",
+      "subcategory": "shoes"
+    },
+    {
       "id": "meZXCMWfW-",
       "titleCN": "卡骆驰女士高跟鞋",
       "titleEN": "Crocs High Heels",

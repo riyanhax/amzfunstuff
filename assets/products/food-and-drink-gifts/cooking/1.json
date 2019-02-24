@@ -2,6 +2,42 @@
   "next": false,
   "products": [
     {
+      "id": "8lJsyneB0h6",
+      "titleCN": "分子料理新手套装",
+      "titleEN": "Molecular Gastronomy Starter Kit",
+      "description": "将食材分子结构改变后再重新组合的分子料理因制作过程如同科学实验般复杂而价格极高，这款专为初学者准备的分子料理新手套装，让你从零开始制作出诸如巧克力意大利面或薄荷鱼子珍珠等经典菜式",
+      "price": 41.95,
+      "likes": 294,
+      "link": "http://www.amazon.com/dp/B00GN0YN86/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "cooking"
+    },
+    {
+      "id": "yzviMlbPZXc",
+      "titleCN": "高效烹饪锅套件",
+      "titleEN": "High Performance Cook Pans",
+      "description": "由现实生活中真正的火箭科学家设计，这款造型独特且传热性能极佳的高效铸铝烹饪锅套件让你不但能够以更快的速度准备好可口的饭菜，而且能够有效节能多达40%，绝对是厨房中不可或缺的神器",
+      "price": 223.96,
+      "likes": 1005,
+      "link": "http://www.amazon.com/dp/B00WRA1KAK/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "cooking"
+    },
+    {
+      "id": "heQ4F7HwI",
+      "titleCN": "耶稣主题烤面包机",
+      "titleEN": "Jesus Toaster",
+      "description": "据圣经旧约胡诌福音早餐记28章16节记载，每一个信徒都应该从一顿丰盛可口的早餐开始其虔诚的一天；这款以耶稣基督为主题的烤面包机，让你在每天清晨补充营养时领略充满荣光的弥赛亚肖像",
+      "price": 34.95,
+      "likes": 1357,
+      "link": "http://www.amazon.com/dp/B00K3W0WU8/",
+      "type": "amazon",
+      "category": "food-and-drink-gifts",
+      "subcategory": "cooking"
+    },
+    {
       "id": "kihIus1rXjJ",
       "titleCN": "便携式BBQ披萨烤箱",
       "titleEN": "Portable BBQ Pizza Oven Box",

@@ -2,6 +2,66 @@
   "next": false,
   "products": [
     {
+      "id": "Xq4sgdSw2zg",
+      "titleCN": "我对你的爱就像一根蜡烛",
+      "titleEN": "My Love Is Like A Candle",
+      "description": "这款设计精美由天然大豆蜡为原料手工制作的香薰蜡烛是情人节或纪念日时送给另一半的绝佳礼物，就像镌刻在烛身上的那句话，”我对你的爱就像一根蜡烛，若敢忘记我，我会点燃你该死的房子！“",
+      "price": 13,
+      "likes": 255,
+      "link": "https://www.etsy.com/listing/556410353/soy-candle-valentines-day-gift-for-him",
+      "type": "etsy",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "ZPQSSIiE6Xp",
+      "titleCN": "终极户外便携式音箱",
+      "titleEN": "The Ultimate Outdoor/Portable Speaker",
+      "description": "这款设计亮眼的户外便携式防水音箱在带来高品质音效的同时也带来了充电后长达50小时的续航能力与明亮夺目的360度环绕光，为你下一次的户外派对带来或动感激昂或清澈悠扬或缠绵悱恻的绝佳BGM",
+      "price": 199.99,
+      "likes": 756,
+      "link": "http://www.amazon.com/dp/B01MFESB51/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "-foPaY6vwDM",
+      "titleCN": "内外耳道全覆盖耳机",
+      "titleEN": "In-Ear & Over-Ear Headphones",
+      "description": "每一个人的听力系统就和其指纹一样独一无二，这款设计巧妙内置蓝牙的内外耳道全覆盖耳机将音乐中的旋律与低音部分分别处理，并根据耳道内的耳声发射自动学习并调节设置以呈现最完美的听觉盛宴",
+      "price": 399,
+      "likes": 929,
+      "link": "http://www.amazon.com/dp/B076X4KH11/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "-LPvmF0Wtxw",
+      "titleCN": "牛肉干玫瑰花束",
+      "titleEN": "Beef Jerky Rose Bouquets",
+      "description": "俗话说”送人玫瑰手有余香“，这款别具创意秀色可餐用上等精选腌牛肉特制而成的牛肉干玫瑰花束，在手有余香的同时口中也垂涎不止，是将浪漫情愫和口腹之欲完美结合在一起的绝妙礼物",
+      "price": 69,
+      "likes": 1239,
+      "link": "http://www.amazon.com/dp/B07BWR8WWX/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
+      "id": "x-w13CC3q0",
+      "titleCN": "“如果你有一个故事”软皮日志本",
+      "titleEN": "If A Story Is In You Leather Journal",
+      "description": "这款散发着旧时光气息的淡黄色软皮日志本封面上镌刻着威廉.福克纳的名言 - if a story is in you, it has to come out - 所以，请写下你的故事吧，在孤单旅途中或露营篝火旁，我有酒",
+      "price": 40,
+      "likes": 204,
+      "link": "http://www.amazon.com/dp/B07BLQPJKN/",
+      "type": "amazon",
+      "category": "gifts-for-boyfriends",
+      "subcategory": ""
+    },
+    {
       "id": "gk04XA9VRF",
       "titleCN": "终极版运动毛巾",
       "titleEN": "The Ultimate Gym Towel",

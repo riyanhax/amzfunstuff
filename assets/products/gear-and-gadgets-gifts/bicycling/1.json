@@ -1,0 +1,53 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "LNiRa-N42kS",
+      "titleCN": "二氧化碳车胎快速充气瓶",
+      "titleEN": "Quick Co2 Bike Tire Inflator",
+      "description": "作为一个山地越野自行车爱好者，传统的手持打气管既难于操作也不够迅捷，这款自带绝缘套管和简单一转式阀门设计的二氧化碳车胎快速充气瓶，让你在野外可以随时快速而精准地为车胎加压和充气",
+      "price": 19.98,
+      "likes": 294,
+      "link": "http://www.amazon.com/dp/B017KU1DIK/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "bicycling"
+    },
+    {
+      "id": "M8pSHV48WY2",
+      "titleCN": "自行车激光尾灯",
+      "titleEN": "Bike Tail Laser Light",
+      "description": "夜间骑车时最大的风险源自于在路灯照明不足的区域里被不专心开车的司机无意中追尾，这款设计独特的自行车激光尾灯用耀眼的红色射光规划出一英里外就能看到的非机动车行驶车道，显著提高骑行安全",
+      "price": 9.99,
+      "likes": 5710,
+      "link": "http://www.amazon.com/dp/B007CDGPV6/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "bicycling"
+    },
+    {
+      "id": "Sen9GE-3Uq8",
+      "titleCN": "夜间闪耀单速自行车",
+      "titleEN": "Glow In The Dark Bicycle",
+      "description": "这款轻便耐用充满设计感的固定齿轮单速自行车带有40mm的车轮，触地感卓越的700x28C Thickslick轮胎，以及用高张力钢材制成的车架，轮胎上的太阳能涂料能在夜幕降临后闪烁出耀眼光芒",
+      "price": 399.99,
+      "likes": 541,
+      "link": "http://www.amazon.com/dp/B008CNNZPE/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "bicycling"
+    },
+    {
+      "id": "NT1Cu3HL0q6",
+      "titleCN": "闪亮自行车轮",
+      "titleEN": "Light Up Bicycle Wheels",
+      "description": "夜间骑车时保证安全固然是无可辩驳的首要任务但传统的尾灯无法彰显你的与众不同和独树一帜？这款设计出众的闪亮自行车轮能在骑行时发出夺目光彩，绝对让你在呼啸而过时给所有人留下深刻印象",
+      "price": 199.99,
+      "likes": 657,
+      "link": "http://www.amazon.com/dp/B00O50TUSE/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "bicycling"
+    }
+  ]
+}

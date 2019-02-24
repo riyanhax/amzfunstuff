@@ -2,6 +2,66 @@
   "next": false,
   "products": [
     {
+      "id": "ds0RHIdrA5",
+      "titleCN": "LED道路紧急发光灯",
+      "titleEN": "LED Emergency Road Flares",
+      "description": "无论是自驾旅游还是常规通勤，如果在傍晚或深夜车潮汹涌的高速公路行驶时出现车辆故障，这款三件套防磨抗压带有9种不同发光模式的全天候LED道路紧急发光灯能快速便捷地为你搭建出安全区域",
+      "price": 21.98,
+      "likes": 192,
+      "link": "http://www.amazon.com/dp/B075K4BHC9/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "car-accessories"
+    },
+    {
+      "id": "1W59K2IMPnp",
+      "titleCN": "日本武士刀柄换挡杆",
+      "titleEN": "Japanese Katana Shift Knob",
+      "description": "将这款用天然金属加镀镍黄铜以及涤纶织物制成的6英尺高仿真日本武士刀柄换挡杆安在你新购置的低调奢华小跑车里，不但瞬间提高内饰文化韵味，也让每一次的加速和转弯多了一份武士道的专注与禅意",
+      "price": 39.99,
+      "likes": 1459,
+      "link": "http://www.amazon.com/dp/B01D3U289E/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "car-accessories"
+    },
+    {
+      "id": "XX6oEecP8ik",
+      "titleCN": "车载空气芳香风扇",
+      "titleEN": "Car Fragrance Diffuser Air Freshener",
+      "description": "对于注重仪表的男士来说，爱车内的气味是个人品位的最直接延伸，这款以涡轮发动机为外型由梨花木为原料制作的车载空气芳香风扇散发出清淡的柠檬与森林味道，轻描淡写渲染出成熟而有故事的你",
+      "price": 8.99,
+      "likes": 327,
+      "link": "http://www.amazon.com/dp/B078S52NZK/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "car-accessories"
+    },
+    {
+      "id": "M8pSHV48WY2",
+      "titleCN": "自行车激光尾灯",
+      "titleEN": "Bike Tail Laser Light",
+      "description": "夜间骑车时最大的风险源自于在路灯照明不足的区域里被不专心开车的司机无意中追尾，这款设计独特的自行车激光尾灯用耀眼的红色射光规划出一英里外就能看到的非机动车行驶车道，显著提高骑行安全",
+      "price": 9.99,
+      "likes": 5710,
+      "link": "http://www.amazon.com/dp/B007CDGPV6/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "car-accessories"
+    },
+    {
+      "id": "NT1Cu3HL0q6",
+      "titleCN": "闪亮自行车轮",
+      "titleEN": "Light Up Bicycle Wheels",
+      "description": "夜间骑车时保证安全固然是无可辩驳的首要任务但传统的尾灯无法彰显你的与众不同和独树一帜？这款设计出众的闪亮自行车轮能在骑行时发出夺目光彩，绝对让你在呼啸而过时给所有人留下深刻印象",
+      "price": 199.99,
+      "likes": 657,
+      "link": "http://www.amazon.com/dp/B00O50TUSE/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "car-accessories"
+    },
+    {
       "id": "w07Fdb4gB_",
       "titleCN": "霸王龙头骨拖车挂钩",
       "titleEN": "T-Rex Trailer Hitch Cover",

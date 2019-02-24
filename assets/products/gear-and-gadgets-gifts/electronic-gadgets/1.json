@@ -2,6 +2,30 @@
   "next": false,
   "products": [
     {
+      "id": "bzlO1bAVnL",
+      "titleCN": "会闪光的充电线",
+      "titleEN": "Light Up Charging Cable",
+      "description": "作为一个学完了大学电子电路课程的视觉系人士，当看到这款设计新奇充电时会闪烁炫目迷人LED光的闪光充电线时，我依然固执地相信我看到了电能以每秒30万千米的速度疯狂冲向iPhone的锂电池",
+      "price": 9.95,
+      "likes": 4291,
+      "link": "https://www.amazon.com/dp/B07H1D6F97",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "electronic-gadgets"
+    },
+    {
+      "id": "Kslw4qejenM",
+      "titleCN": "透明扬声器",
+      "titleEN": "The Transparent Speaker",
+      "description": "这款低音浑厚高音清亮支持蓝牙和无线播放充斥着后现代工业设计立体主义风格的透明扬声器，在完美融入任何现代家居装修风格的同时，给你疲惫的耳朵带来前所未有的听觉盛宴",
+      "price": 1100,
+      "likes": 1692,
+      "link": "http://www.amazon.com/dp/B00OQH9892/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "electronic-gadgets"
+    },
+    {
       "id": "-_3ba_KYnP",
       "titleCN": "多功能iPhone外壳",
       "titleEN": "Multi-Tool iPhone Case",

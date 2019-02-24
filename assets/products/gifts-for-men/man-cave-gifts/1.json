@@ -2,6 +2,30 @@
   "next": false,
   "products": [
     {
+      "id": "dA5AkYzM1KS",
+      "titleCN": "啤酒桶小便池",
+      "titleEN": "Beer Keg Urinal",
+      "description": "如何证明你对啤酒与众不同的挚爱？这款以不锈钢为原料制作的脑洞大开啤酒桶小便池，能让喝到微醺的客人在盥洗室中产生进入爱尔兰自酿啤酒酒吧的错觉，甚至在冲水后产生恋恋不舍的复杂情绪",
+      "price": 595,
+      "likes": 1031,
+      "link": "https://www.etsy.com/listing/184754334/beer-keg-urinal-stainless-novelty-toilet",
+      "type": "etsy",
+      "category": "gifts-for-men",
+      "subcategory": "man-cave-gifts"
+    },
+    {
+      "id": "2eTpYP3rfCa",
+      "titleCN": "高端桌上足球",
+      "titleEN": "Essex Foosball Table",
+      "description": "这款做工精美品味独特的高端桌上足球台采用了人体工程学的木制操纵柄和打磨精致的金属球员杆，既为你带回大学兄弟会的欢乐消遣气氛，又为你低调奢华的室内设计增添了一份端庄优雅和青春情趣",
+      "price": 531.45,
+      "likes": 159,
+      "link": "http://www.amazon.com/dp/B071WF6RMD/",
+      "type": "amazon",
+      "category": "gifts-for-men",
+      "subcategory": "man-cave-gifts"
+    },
+    {
       "id": "fRgFJed66y4",
       "titleCN": "三星隐身QLED平板电视",
       "titleEN": "Samsung Wall Blending QLED Flat TV",

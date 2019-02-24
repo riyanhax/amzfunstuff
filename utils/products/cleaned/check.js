@@ -218,8 +218,8 @@ let bigMap = {
 }
 
 // const task = 'check categories'
-const task = 'create folders'
-// const task = 'distribute products'
+// const task = 'create folders'
+const task = 'distribute products'
 
 const main = () => {
 
@@ -385,21 +385,26 @@ const createFoldersForOneCat = (catX) => {
 /** distribute products to corresponding folders **/
 
 const distributeProducts = () => {
-    createBigMap()
 
-    // load products from file
-    let products 
+    const files = ['products-1-amz.json', 'products-2-amz.json', 'products-2-etsy.json']
+    let products = []
+    let batch
 
     try{
-        products = require(filepath)
+        for(let file of files){
+            let filepath = __dirname + '/' + file
+            batch = require(filepath)
+            products = batch.concat(products)
+        }
     }catch(ex){
         console.log('Error: invalid json')
         process.exit(1)
     }
 
+    createBigMap()
+
     // iterate each product to distribute it
     for(let product of products){
-
         // add every product into whatsnew
         const product_c = copyProduct(product)
         delete product_c.categories

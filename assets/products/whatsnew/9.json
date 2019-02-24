@@ -1,0 +1,77 @@
+{
+  "next": false,
+  "products": [
+    {
+      "id": "ELa13ttKWt",
+      "titleCN": "Kasa智能WiFi插座",
+      "titleEN": "Kasa Smart Wi-Fi Power Strip",
+      "description": "TP-LINK出品的这款智能WiFi插座，可通过手机APP或语音指令(支持Alexa及Google Assistant)控制6个独立的充电插座和2个独立的USB接口，智能家居一步之遥",
+      "price": 79.84,
+      "likes": 91,
+      "link": "http://www.amazon.com/dp/B07G95FFN3/",
+      "type": "amazon",
+      "category": "whatsnew",
+      "subcategory": ""
+    },
+    {
+      "id": "UsAEhhQRn7",
+      "titleCN": "螺旋刀刃匕首",
+      "titleEN": "Spiral Blade Knife",
+      "description": "这款8英尺长由玻璃纤维加强尼龙为刀柄、2Cr13不锈钢为刀刃的螺旋状匕首，如果只用一个词来形容其致命性和锋利程度的话，那只能是：Dragonglass Dagger(龙晶匕首)",
+      "price": 69.99,
+      "likes": 3899,
+      "link": "http://www.amazon.com/dp/B01NAZK69G/",
+      "type": "amazon",
+      "category": "whatsnew",
+      "subcategory": ""
+    },
+    {
+      "id": "ZCRf6oFf99",
+      "titleCN": "贴身睡专用枕",
+      "titleEN": "The Cuddling Pillow",
+      "description": "使用这款专门为喜欢cuddling(贴身睡)的伴侣们准备的专用枕，你再也不必因为你的伴侣喜欢枕着你那已被压得麻木而失去知觉的臂膀安然入睡而愁云密布辗转反侧了",
+      "price": 38,
+      "likes": 436,
+      "link": "http://www.amazon.com/dp/B07B4JZC5G/",
+      "type": "amazon",
+      "category": "whatsnew",
+      "subcategory": ""
+    },
+    {
+      "id": "PT1jdVL-DL",
+      "titleCN": "头骨骷髅开瓶器",
+      "titleEN": "Skull Bottle Opener",
+      "description": "当你从吧台墙上拿出这款用锻铁打造、面目狰狞、充斥着浓郁哥特气息的头骨骷髅开瓶器，用其牙齿撬开一瓶瓶精酿啤酒时，不必多说话，你的硬汉气质就已将所有人征服",
+      "price": 16.49,
+      "likes": 96,
+      "link": "http://www.amazon.com/dp/B01IRL2TSY/",
+      "type": "amazon",
+      "category": "whatsnew",
+      "subcategory": ""
+    },
+    {
+      "id": "qgViAIl88X",
+      "titleCN": "给宠物穿的蜘蛛道具服",
+      "titleEN": "Pet Spider Costume",
+      "description": "这款为15磅以下宠物准备的万圣节道具服，可以将你萌宠的爱犬与爱猫轻易地变成长着八条毛绒绒的长腿、行动敏捷、面容可憎、让人唯恐避之不及的大狼蛛~",
+      "price": 19.99,
+      "likes": 316,
+      "link": "http://www.amazon.com/dp/B072W5VV44/",
+      "type": "amazon",
+      "category": "whatsnew",
+      "subcategory": ""
+    },
+    {
+      "id": "szRMqaNJg1",
+      "titleCN": "侏罗纪世界同款可遥控机器迅猛龙",
+      "titleEN": "Jurassic World Trainable Robotic Pet Blue",
+      "description": "这款按照《侏罗纪世界》里最受粉丝喜欢的迅猛龙Blue制作的同款玩具，可以让你可以影片中欧文一样拿着遥控器，训练并操纵这只行动灵活的爬行动物杀手",
+      "price": 249.99,
+      "likes": 225,
+      "link": "http://www.amazon.com/dp/B076FSLQVQ/",
+      "type": "amazon",
+      "category": "whatsnew",
+      "subcategory": ""
+    }
+  ]
+}
