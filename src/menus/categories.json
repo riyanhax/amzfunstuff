@@ -117,7 +117,7 @@
         "link":"/funny-gifts",
         "name":"不笑算我输",
         "icon":"far fa-grin-squint-tears",
-        "show": true
+        "show": false
     },
     "200": {
         "link":"/wtf",
