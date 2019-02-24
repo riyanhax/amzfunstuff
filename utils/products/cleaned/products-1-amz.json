@@ -48,7 +48,8 @@
     "price": 74.95,
     "likes": 149,
     "categories": [
-      "car-accessories"
+      "car-accessories",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B0752WHGFH/",
     "type": "amazon"
@@ -63,7 +64,8 @@
     "categories": [
       "drinks-and-edibles",
       "food-and-drink-gifts",
-      "gifts-for-men"
+      "gifts-for-men",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B005P0WOZE/",
     "type": "amazon"
@@ -77,7 +79,8 @@
     "likes": 938,
     "categories": [
       "gear-and-gadgets-gifts",
-      "smokers"
+      "smokers",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B00OXMQ9EC/",
     "type": "amazon"
@@ -105,7 +108,8 @@
     "categories": [
       "gear-and-gadgets-gifts",
       "home-and-office-gifts",
-      "man-cave-gifts"
+      "man-cave-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B079YV5XQH/",
     "type": "amazon"
@@ -119,7 +123,9 @@
     "likes": 131,
     "categories": [
       "alcoholic-gear",
-      "gifts-for-men"
+      "gifts-for-men",
+      "gear-and-gadgets-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B003AY34A6/",
     "type": "amazon"
@@ -185,7 +191,8 @@
     "price": 5.07,
     "likes": 302,
     "categories": [
-      "mugs-and-glasses"
+      "mugs-and-glasses",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07H7489Y9/",
     "type": "amazon"
@@ -217,7 +224,8 @@
       "gifts-for-boyfriends",
       "gifts-for-men",
       "gifts-for-women",
-      "health-and-fitness"
+      "health-and-fitness",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B01JZM0CC4/",
     "type": "amazon"
@@ -245,7 +253,9 @@
     "likes": 156,
     "categories": [
       "lego-2",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-geeks",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B07FQ3KF2B/",
     "type": "amazon"
@@ -286,7 +296,8 @@
     "likes": 153,
     "categories": [
       "home-and-office-gifts",
-      "tools"
+      "tools",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B074NBBCG8/",
     "type": "amazon"
@@ -300,7 +311,8 @@
     "likes": 270,
     "categories": [
       "gifts-for-men",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B01F3ARIZG/",
     "type": "amazon"
@@ -343,7 +355,8 @@
     "categories": [
       "funny-gifts",
       "home-and-office-gifts",
-      "yard-and-garden"
+      "yard-and-garden",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B00BCQ4F8Y/",
     "type": "amazon"
@@ -383,7 +396,8 @@
     "price": 19.99,
     "likes": 360,
     "categories": [
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07FFCXSPM/",
     "type": "amazon"
@@ -493,7 +507,8 @@
     "price": 89.99,
     "likes": 145,
     "categories": [
-      "pool-and-water"
+      "pool-and-water",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B079NRQ1YN/",
     "type": "amazon"
@@ -508,7 +523,8 @@
     "categories": [
       "batman",
       "gifts-for-geeks",
-      "gifts-for-babies"
+      "gifts-for-babies",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B00WIRXAKA/",
     "type": "amazon"
@@ -552,7 +568,8 @@
       "camping-outdoors",
       "gear-and-gadgets-gifts",
       "gifts-for-men",
-      "sports-equiptment"
+      "sports-equiptment",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B00JAHWQ10/",
     "type": "amazon"
@@ -579,7 +596,8 @@
     "price": 399,
     "likes": 175,
     "categories": [
-      "weapons-and-armor"
+      "weapons-and-armor",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07791K9HY/",
     "type": "amazon"
@@ -593,7 +611,8 @@
     "likes": 642,
     "categories": [
       "camping-outdoors",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07FQPGCNJ/",
     "type": "amazon"
@@ -620,7 +639,9 @@
     "likes": 164,
     "categories": [
       "alcoholic-gear",
-      "food-and-drink-gifts"
+      "food-and-drink-gifts",
+      "gear-and-gadgets-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B07C6PT36R/",
     "type": "amazon"
@@ -634,7 +655,8 @@
     "likes": 102,
     "categories": [
       "gifts-for-men",
-      "wearable-gifts"
+      "wearable-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B078W52ZGN/",
     "type": "amazon"
@@ -716,7 +738,9 @@
     "likes": 216,
     "categories": [
       "bathroom",
-      "gifts-for-women"
+      "gifts-for-women",
+      "home-and-office-gifts",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B0755D5J5S/",
     "type": "amazon"
@@ -811,7 +835,8 @@
     "categories": [
       "camping-outdoors",
       "gifts-for-coffee-lovers",
-      "gear-and-gadgets-gifts"
+      "gear-and-gadgets-gifts",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B06XPSFYJB/",
     "type": "amazon"
@@ -880,7 +905,8 @@
     "likes": 190,
     "categories": [
       "lights-and-clocks",
-      "toy-gifts"
+      "toy-gifts",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00AVMWPDW/",
     "type": "amazon"
@@ -894,7 +920,9 @@
     "likes": 101,
     "categories": [
       "gifts-for-men",
-      "jewelry"
+      "jewelry",
+      "wearable-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B00CRS2R9K/",
     "type": "amazon"
@@ -935,7 +963,8 @@
     "likes": 348,
     "categories": [
       "gifts-for-men",
-      "grooming"
+      "grooming",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B06VW9HJVB/",
     "type": "amazon"
@@ -964,7 +993,8 @@
     "likes": 123,
     "categories": [
       "gifts-for-kids",
-      "pool-and-water"
+      "pool-and-water",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07CLBQ6Y2/",
     "type": "amazon"
@@ -977,7 +1007,8 @@
     "price": 40,
     "likes": 191,
     "categories": [
-      "lights-and-clocks"
+      "lights-and-clocks",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B0751R557G/",
     "type": "amazon"
@@ -990,7 +1021,8 @@
     "price": 11.02,
     "likes": 503,
     "categories": [
-      "books-and-reading"
+      "books-and-reading",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/1945056088/",
     "type": "amazon"
@@ -1017,7 +1049,8 @@
     "price": 199,
     "likes": 615,
     "categories": [
-      "musical-instruments"
+      "musical-instruments",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00F37SX5Y/",
     "type": "amazon"
@@ -1031,7 +1064,8 @@
     "likes": 173,
     "categories": [
       "remote-control-toys",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B071CQ3G61/",
     "type": "amazon"
@@ -1072,7 +1106,8 @@
     "price": 144,
     "likes": 921,
     "categories": [
-      "camping-outdoors"
+      "camping-outdoors",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B001UB8CKI/",
     "type": "amazon"
@@ -1086,7 +1121,8 @@
     "likes": 145,
     "categories": [
       "home-and-office-gifts",
-      "tools"
+      "tools",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B000095SGF/",
     "type": "amazon"
@@ -1101,7 +1137,8 @@
     "categories": [
       "bathroom",
       "gifts-for-men",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B019H25GOQ/",
     "type": "amazon"
@@ -1158,7 +1195,8 @@
     "categories": [
       "food-and-drink-gifts",
       "kitchen-and-cooking",
-      "molds-trays"
+      "molds-trays",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00EVHRYIE/",
     "type": "amazon"
@@ -1186,7 +1224,8 @@
     "likes": 189,
     "categories": [
       "food-and-drink-gifts",
-      "gifts-for-men"
+      "gifts-for-men",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B003CIYMYW/",
     "type": "amazon"
@@ -1199,7 +1238,8 @@
     "price": 14.77,
     "likes": 661,
     "categories": [
-      "books-and-reading"
+      "books-and-reading",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/0670887269/",
     "type": "amazon"
@@ -1265,7 +1305,8 @@
     "price": 29.99,
     "likes": 202,
     "categories": [
-      "bedroom"
+      "bedroom",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B074PD5SBV/",
     "type": "amazon"
@@ -1346,7 +1387,8 @@
     "price": 79.99,
     "likes": 2438,
     "categories": [
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00V3OWP32/",
     "type": "amazon"
@@ -1432,7 +1474,9 @@
     "likes": 4257,
     "categories": [
       "funny-gifts",
-      "mugs-and-glasses"
+      "mugs-and-glasses",
+      "food-and-drink-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B00LSUNPHG/",
     "type": "amazon"
@@ -1445,7 +1489,8 @@
     "price": 319,
     "likes": 168,
     "categories": [
-      "gifts-for-computer-geeks"
+      "gifts-for-computer-geeks",
+      "gifts-for-geeks"
     ],
     "link": "http://www.amazon.com/dp/B01K32MU2A/",
     "type": "amazon"
@@ -1461,7 +1506,8 @@
       "alcoholic-gear",
       "camping-outdoors",
       "gear-and-gadgets-gifts",
-      "gifts-for-men"
+      "gifts-for-men",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B07C7QWGWF/",
     "type": "amazon"
@@ -1520,7 +1566,8 @@
       "home-and-office-gifts",
       "housewarming-gifts",
       "kitchen-and-cooking",
-      "gift-ideas"
+      "gift-ideas",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B002JTWRDS/",
     "type": "amazon"
@@ -1548,7 +1595,9 @@
     "categories": [
       "alcoholic-gear",
       "gifts-for-men",
-      "sports-equiptment"
+      "sports-equiptment",
+      "gear-and-gadgets-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B079Z9PSP5/",
     "type": "amazon"
@@ -1562,7 +1611,8 @@
     "likes": 457,
     "categories": [
       "food-and-drink-gifts",
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B075ZKDHD3/",
     "type": "amazon"
@@ -1605,7 +1655,8 @@
     "categories": [
       "gear-and-gadgets-gifts",
       "gifts-for-men",
-      "car-accessories"
+      "car-accessories",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B015TKUPIC/",
     "type": "amazon"
@@ -1731,7 +1782,8 @@
     "price": 50.89,
     "likes": 597,
     "categories": [
-      "grooming"
+      "grooming",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B07CQD86CG/",
     "type": "amazon"
@@ -1757,7 +1809,8 @@
     "price": 9.99,
     "likes": 255,
     "categories": [
-      "mugs-and-glasses"
+      "mugs-and-glasses",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B019TVIYDA/",
     "type": "amazon"
@@ -1785,7 +1838,8 @@
     "price": 29.95,
     "likes": 87,
     "categories": [
-      "bathroom"
+      "bathroom",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B01K9GYSCK/",
     "type": "amazon"
@@ -1966,7 +2020,8 @@
     "price": 94.88,
     "likes": 165,
     "categories": [
-      "gifts-for-computer-geeks"
+      "gifts-for-computer-geeks",
+      "gifts-for-geeks"
     ],
     "link": "http://www.amazon.com/dp/B07FNJB8TT/",
     "type": "amazon"
@@ -2063,7 +2118,8 @@
     "price": 39,
     "likes": 199,
     "categories": [
-      "lights-and-clocks"
+      "lights-and-clocks",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B074KH9LYC/",
     "type": "amazon"
@@ -2105,7 +2161,8 @@
     "categories": [
       "gifts-for-geeks",
       "molds-trays",
-      "star-wars-gifts"
+      "star-wars-gifts",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00XQ0HS1U/",
     "type": "amazon"
@@ -2189,7 +2246,8 @@
     "likes": 140,
     "categories": [
       "food-and-drink-gifts",
-      "gifts-for-men"
+      "gifts-for-men",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B012Y5T4QE/",
     "type": "amazon"
@@ -2203,7 +2261,8 @@
     "likes": 114,
     "categories": [
       "eating-utensils",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00032SB2O/",
     "type": "amazon"
@@ -2270,7 +2329,8 @@
     "price": 39.95,
     "likes": 114,
     "categories": [
-      "lights-and-clocks"
+      "lights-and-clocks",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00CHV3U9S/",
     "type": "amazon"
@@ -2352,7 +2412,8 @@
     "price": 179.99,
     "likes": 1329,
     "categories": [
-      "pool-and-water"
+      "pool-and-water",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00UA95IDA/",
     "type": "amazon"
@@ -2367,7 +2428,8 @@
     "categories": [
       "drinks-and-edibles",
       "food-and-drink-gifts",
-      "gifts-for-men"
+      "gifts-for-men",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B004R08W0O/",
     "type": "amazon"
@@ -2436,7 +2498,8 @@
     "likes": 477,
     "categories": [
       "gifts-for-men",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B072BWKHNY/",
     "type": "amazon"
@@ -2462,7 +2525,8 @@
     "price": 49,
     "likes": 203,
     "categories": [
-      "gifts-for-women"
+      "gifts-for-women",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B0773MZH3H/",
     "type": "amazon"
@@ -2660,7 +2724,8 @@
     "price": 49,
     "likes": 1057,
     "categories": [
-      "home-decor"
+      "home-decor",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00A2UZ3KU/",
     "type": "amazon"
@@ -2786,7 +2851,8 @@
     "price": 29.99,
     "likes": 102,
     "categories": [
-      "health-and-fitness"
+      "health-and-fitness",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B003QWG0IA/",
     "type": "amazon"
@@ -2990,7 +3056,8 @@
     "categories": [
       "funny-gifts",
       "novelty-and-gag-gifts",
-      "wearable-gifts"
+      "wearable-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B01AD3KZN0/",
     "type": "amazon"
@@ -3003,7 +3070,8 @@
     "price": 53.31,
     "likes": 80,
     "categories": [
-      "musical-instruments"
+      "musical-instruments",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/405605732X/",
     "type": "amazon"
@@ -3017,7 +3085,8 @@
     "likes": 61,
     "categories": [
       "costumes",
-      "halloween-gifts"
+      "halloween-gifts",
+      "wearable-gifts"
     ],
     "link": "http://www.amazon.com/dp/B06Y3CCMLJ/",
     "type": "amazon"
@@ -3033,7 +3102,9 @@
       "alcoholic-gear",
       "funny-gifts",
       "gear-and-gadgets-gifts",
-      "transportation"
+      "transportation",
+      "gifts-for-boyfriends",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B000NMSI54/",
     "type": "amazon"
@@ -3047,7 +3118,8 @@
     "likes": 196,
     "categories": [
       "home-decor",
-      "housewarming-gifts"
+      "housewarming-gifts",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B06VVZ3291/",
     "type": "amazon"
@@ -3075,7 +3147,8 @@
     "categories": [
       "blasphemy",
       "funny-gifts",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "wtf"
     ],
     "link": "https://www.amazon.com/dp/B00KPY1RH6/",
     "type": "amazon"
@@ -3105,7 +3178,8 @@
     "categories": [
       "gifts-for-kids",
       "man-cave-gifts",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B076Q8MNTX/",
     "type": "amazon"
@@ -3162,7 +3236,8 @@
     "categories": [
       "gear-and-gadgets-gifts",
       "gifts-for-men",
-      "sports-equiptment"
+      "sports-equiptment",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B075JYBB33/",
     "type": "amazon"
@@ -3193,7 +3268,8 @@
     "categories": [
       "home-and-office-gifts",
       "home-decor",
-      "man-cave-gifts"
+      "man-cave-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B079K7K6Y2/",
     "type": "amazon"
@@ -3207,7 +3283,9 @@
     "likes": 81,
     "categories": [
       "gifts-for-men",
-      "tools"
+      "tools",
+      "gear-and-gadgets-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B07F16KBVY/",
     "type": "amazon"
@@ -3222,7 +3300,10 @@
     "categories": [
       "anniversary-gifts",
       "home-decor",
-      "housewarming-gifts"
+      "housewarming-gifts",
+      "home-and-office-gifts",
+      "gifts-for-boyfriends",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B01LX3QQNU/",
     "type": "amazon"
@@ -3237,7 +3318,8 @@
     "categories": [
       "gifts-for-geeks",
       "remote-control-toys",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B07DLM5DL7/",
     "type": "amazon"
@@ -3252,7 +3334,8 @@
     "categories": [
       "apocalypse-survival",
       "camping-outdoors",
-      "weapons-and-armor"
+      "weapons-and-armor",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00EP6UPYQ/",
     "type": "amazon"
@@ -3280,7 +3363,8 @@
     "likes": 184,
     "categories": [
       "cooking",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00GJIEBDO/",
     "type": "amazon"
@@ -3294,7 +3378,8 @@
     "likes": 479,
     "categories": [
       "nsfw-general",
-      "gift-ideas"
+      "gift-ideas",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B008DUMM50/",
     "type": "amazon"
@@ -3323,7 +3408,9 @@
     "categories": [
       "lego-2",
       "star-wars-gifts",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-geeks",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B07BMFCXBV/",
     "type": "amazon"
@@ -3351,7 +3438,8 @@
     "likes": 86,
     "categories": [
       "gifts-for-pets",
-      "molds-trays"
+      "molds-trays",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07GBSDTXX/",
     "type": "amazon"
@@ -3405,7 +3493,8 @@
     "price": 24.99,
     "likes": 187,
     "categories": [
-      "car-accessories"
+      "car-accessories",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B0753K4CWG/",
     "type": "amazon"
@@ -3418,7 +3507,8 @@
     "price": 70,
     "likes": 175,
     "categories": [
-      "costumes"
+      "costumes",
+      "wearable-gifts"
     ],
     "link": "http://www.amazon.com/dp/B075H1Z2SV/",
     "type": "amazon"
@@ -3505,7 +3595,8 @@
       "home-decor",
       "housewarming-gifts",
       "lights-and-clocks",
-      "gift-ideas"
+      "gift-ideas",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B010EZ4VBE/",
     "type": "amazon"
@@ -3520,7 +3611,8 @@
     "categories": [
       "gifts-for-geeks",
       "lego-2",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B0784P9LQV/",
     "type": "amazon"
@@ -3535,7 +3627,8 @@
     "categories": [
       "gifts-for-geeks",
       "lego-2",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B07BLDTWW1/",
     "type": "amazon"
@@ -3645,7 +3738,9 @@
     "categories": [
       "funny-gifts",
       "gifts-for-men",
-      "wearable-gifts"
+      "wearable-gifts",
+      "gifts-for-boyfriends",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B0762NM14V/",
     "type": "amazon"
@@ -3701,7 +3796,8 @@
     "likes": 141,
     "categories": [
       "books-and-reading",
-      "gifts-for-geeks"
+      "gifts-for-geeks",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/1506702694/",
     "type": "amazon"
@@ -3715,7 +3811,9 @@
     "likes": 107,
     "categories": [
       "books-and-reading",
-      "gifts-for-men"
+      "gifts-for-men",
+      "home-and-office-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/0711238898/",
     "type": "amazon"
@@ -3731,7 +3829,8 @@
       "college",
       "gifts-for-travelers",
       "road-trip",
-      "wearable-gifts"
+      "wearable-gifts",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B01BGU08VS/",
     "type": "amazon"
@@ -3747,7 +3846,8 @@
       "costumes",
       "gifts-for-geeks",
       "halloween-gifts",
-      "star-wars-gifts"
+      "star-wars-gifts",
+      "wearable-gifts"
     ],
     "link": "http://www.amazon.com/dp/B079GJ37PR/",
     "type": "amazon"
@@ -3817,7 +3917,8 @@
     "likes": 80,
     "categories": [
       "gifts-for-women",
-      "wearable-gifts"
+      "wearable-gifts",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B0758H7S9D/",
     "type": "amazon"
@@ -3830,7 +3931,8 @@
     "price": 219,
     "likes": 193,
     "categories": [
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B01MU08Z9C/",
     "type": "amazon"
@@ -3845,7 +3947,8 @@
     "categories": [
       "gifts-for-geeks",
       "lego-2",
-      "star-wars-gifts"
+      "star-wars-gifts",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B075SDMMMV/",
     "type": "amazon"
@@ -3873,7 +3976,8 @@
     "likes": 358,
     "categories": [
       "funny-gifts",
-      "novelty-and-gag-gifts"
+      "novelty-and-gag-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B079DH2DXC/",
     "type": "amazon"
@@ -3916,7 +4020,8 @@
       "gifts-for-men",
       "gifts-for-boyfriends",
       "funny-gifts",
-      "novelty-and-gag-gifts"
+      "novelty-and-gag-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B078YFVQSB/",
     "type": "amazon"
@@ -3932,7 +4037,8 @@
       "gifts-for-geeks",
       "remote-control-toys",
       "star-wars-gifts",
-      "toy-gifts"
+      "toy-gifts",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B071KSR86B/",
     "type": "amazon"
@@ -3961,7 +4067,8 @@
     "likes": 62,
     "categories": [
       "books-and-reading",
-      "gifts-for-coffee-lovers"
+      "gifts-for-coffee-lovers",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/1770854703/",
     "type": "amazon"
@@ -3974,7 +4081,8 @@
     "price": 12.95,
     "likes": 100,
     "categories": [
-      "gifts-for-women"
+      "gifts-for-women",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/0811866297/",
     "type": "amazon"
@@ -4013,7 +4121,8 @@
     "price": 112.44,
     "likes": 722,
     "categories": [
-      "sports-equiptment"
+      "sports-equiptment",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07914JX99/",
     "type": "amazon"
@@ -4026,7 +4135,8 @@
     "price": 22.27,
     "likes": 77,
     "categories": [
-      "books-and-reading"
+      "books-and-reading",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/1473696402/",
     "type": "amazon"
@@ -4040,7 +4150,8 @@
     "likes": 123,
     "categories": [
       "funny-gifts",
-      "novelty-and-gag-gifts"
+      "novelty-and-gag-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/1601063040/",
     "type": "amazon"
@@ -4054,7 +4165,8 @@
     "likes": 112,
     "categories": [
       "home-and-office-gifts",
-      "smart-home"
+      "smart-home",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B076JVVQH4/",
     "type": "amazon"
@@ -4068,7 +4180,8 @@
     "likes": 150,
     "categories": [
       "gifts-for-boyfriends",
-      "gifts-for-couples"
+      "gifts-for-couples",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B076CQ1NR8/",
     "type": "amazon"
@@ -4139,7 +4252,8 @@
     "price": 39.95,
     "likes": 68,
     "categories": [
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07GZ2LX28/",
     "type": "amazon"
@@ -4181,7 +4295,8 @@
     "likes": 222,
     "categories": [
       "gifts-for-pets",
-      "car-accessories"
+      "car-accessories",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B004BU5WHG/",
     "type": "amazon"
@@ -4224,7 +4339,8 @@
     "categories": [
       "gifts-for-geeks",
       "mugs-and-glasses",
-      "star-wars-gifts"
+      "star-wars-gifts",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B0796HR1JC/",
     "type": "amazon"
@@ -4238,7 +4354,8 @@
     "likes": 2401,
     "categories": [
       "gear-and-gadgets-gifts",
-      "glasses"
+      "glasses",
+      "wearable-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07G8GLCPZ/",
     "type": "amazon"
@@ -4264,7 +4381,8 @@
     "price": 22.99,
     "likes": 82,
     "categories": [
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07B91V1S3/",
     "type": "amazon"
@@ -4291,7 +4409,8 @@
     "likes": 122,
     "categories": [
       "books-and-reading",
-      "gifts-for-kids"
+      "gifts-for-kids",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/076035782X/",
     "type": "amazon"
@@ -4307,7 +4426,8 @@
       "gifts-for-geeks",
       "gifts-for-kids",
       "lights-and-clocks",
-      "star-wars-gifts"
+      "star-wars-gifts",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B00XHUSUOI/",
     "type": "amazon"
@@ -4376,7 +4496,8 @@
     "price": 16.51,
     "likes": 231,
     "categories": [
-      "books-and-reading"
+      "books-and-reading",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/1984819194/",
     "type": "amazon"
@@ -4390,7 +4511,8 @@
     "likes": 70,
     "categories": [
       "gifts-for-computer-geeks",
-      "gear-and-gadgets-gifts"
+      "gear-and-gadgets-gifts",
+      "gifts-for-geeks"
     ],
     "link": "http://www.amazon.com/dp/B07HZ88879/",
     "type": "amazon"
@@ -4405,7 +4527,8 @@
     "categories": [
       "drinks-and-edibles",
       "gifts-for-geeks",
-      "harry-potter-gifts"
+      "harry-potter-gifts",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07F6ZC96H/",
     "type": "amazon"
@@ -4419,7 +4542,8 @@
     "likes": 81,
     "categories": [
       "gifts-for-coffee-lovers",
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B07HDRLFFZ/",
     "type": "amazon"
@@ -4474,7 +4598,8 @@
     "likes": 1477,
     "categories": [
       "funny-gifts",
-      "novelty-and-gag-gifts"
+      "novelty-and-gag-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B01N24IY59/",
     "type": "amazon"
@@ -4584,7 +4709,9 @@
     "categories": [
       "food-and-drink-gifts",
       "gifts-for-men",
-      "gifts-for-travelers"
+      "gifts-for-travelers",
+      "gear-and-gadgets-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B07F2QSD92/",
     "type": "amazon"
@@ -4628,7 +4755,10 @@
     "categories": [
       "alcoholic-gear",
       "gifts-for-men",
-      "mugs-and-glasses"
+      "mugs-and-glasses",
+      "gear-and-gadgets-gifts",
+      "food-and-drink-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B01M65OSHP/",
     "type": "amazon"
@@ -4655,7 +4785,8 @@
     "price": 14.99,
     "likes": 78,
     "categories": [
-      "kitchen-and-cooking"
+      "kitchen-and-cooking",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/B074GD57XY/",
     "type": "amazon"
@@ -4685,7 +4816,9 @@
       "books-and-reading",
       "diy",
       "gifts-for-kids",
-      "lego-2"
+      "lego-2",
+      "gifts-for-geeks",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/1593279426/",
     "type": "amazon"
@@ -4717,7 +4850,8 @@
     "likes": 69,
     "categories": [
       "electronic-gadgets",
-      "musical-instruments"
+      "musical-instruments",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B01M9IPZ7U/",
     "type": "amazon"
@@ -4731,7 +4865,8 @@
     "likes": 217,
     "categories": [
       "gifts-for-kids",
-      "remote-control-toys"
+      "remote-control-toys",
+      "toy-gifts"
     ],
     "link": "http://www.amazon.com/dp/B079RZ46WX/",
     "type": "amazon"
@@ -4762,7 +4897,8 @@
     "likes": 141,
     "categories": [
       "funny-gifts",
-      "novelty-and-gag-gifts"
+      "novelty-and-gag-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B07F2PJ2DX/",
     "type": "amazon"
@@ -4792,7 +4928,8 @@
     "categories": [
       "funny-gifts",
       "gifts-for-kids",
-      "toy-gifts"
+      "toy-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B07DPKVQB4/",
     "type": "amazon"
@@ -4807,7 +4944,8 @@
     "categories": [
       "funny-gifts",
       "halloween-gifts",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B00FNWRWT2/",
     "type": "amazon"
@@ -4834,7 +4972,8 @@
     "likes": 280,
     "categories": [
       "back-to-school",
-      "gear-and-gadgets-gifts"
+      "gear-and-gadgets-gifts",
+      "gifts-for-kids"
     ],
     "link": "http://www.amazon.com/dp/B072MKKJFP/",
     "type": "amazon"
@@ -4847,7 +4986,8 @@
     "price": 4.99,
     "likes": 8793,
     "categories": [
-      "drinks-and-edibles"
+      "drinks-and-edibles",
+      "food-and-drink-gifts"
     ],
     "link": "http://www.amazon.com/dp/B007SMGN9A/",
     "type": "amazon"
@@ -4878,7 +5018,12 @@
       "alcoholic-gear",
       "housewarming-gifts",
       "kitchen-and-cooking",
-      "wine-gifts"
+      "wine-gifts",
+      "gear-and-gadgets-gifts",
+      "home-and-office-gifts",
+      "food-and-drink-gifts",
+      "gifts-for-boyfriends",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B01FO79GFI/",
     "type": "amazon"
@@ -4893,7 +5038,8 @@
     "categories": [
       "gear-and-gadgets-gifts",
       "gifts-for-travelers",
-      "accessories"
+      "accessories",
+      "wearable-gifts"
     ],
     "link": "http://www.amazon.com/dp/B0123SRX8S/",
     "type": "amazon"
@@ -4907,7 +5053,10 @@
     "likes": 176,
     "categories": [
       "alcoholic-gear",
-      "mugs-and-glasses"
+      "mugs-and-glasses",
+      "gear-and-gadgets-gifts",
+      "food-and-drink-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B012SGPZRG/",
     "type": "amazon"
@@ -4923,7 +5072,9 @@
       "costumes",
       "funny-gifts",
       "gifts-for-pets",
-      "halloween-gifts"
+      "halloween-gifts",
+      "wearable-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B075P2Q6Z3/",
     "type": "amazon"
@@ -4936,7 +5087,8 @@
     "price": 23.79,
     "likes": 151,
     "categories": [
-      "books-and-reading"
+      "books-and-reading",
+      "home-and-office-gifts"
     ],
     "link": "http://www.amazon.com/dp/1523504455/",
     "type": "amazon"
@@ -4966,7 +5118,8 @@
     "likes": 980,
     "categories": [
       "halloween-gifts",
-      "musical-instruments"
+      "musical-instruments",
+      "gear-and-gadgets-gifts"
     ],
     "link": "http://www.amazon.com/dp/B01N9GBW4S/",
     "type": "amazon"
@@ -4996,7 +5149,8 @@
     "categories": [
       "funny-gifts",
       "novelty-and-gag-gifts",
-      "wearable-gifts"
+      "wearable-gifts",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B07BVC4KMT/",
     "type": "amazon"
@@ -5011,7 +5165,10 @@
     "categories": [
       "gifts-for-women",
       "nsfw-sexual",
-      "wearable-gifts"
+      "wearable-gifts",
+      "gifts-for-girlfriends",
+      "gifts-for-boyfriends",
+      "wtf"
     ],
     "link": "http://www.amazon.com/dp/B00EQZP8S4/",
     "type": "amazon"
@@ -5038,7 +5195,8 @@
     "likes": 145,
     "categories": [
       "gifts-for-gamers",
-      "gear-and-gadgets-gifts"
+      "gear-and-gadgets-gifts",
+      "gifts-for-geeks"
     ],
     "link": "http://www.amazon.com/dp/B07H9V6PHZ/",
     "type": "amazon"
@@ -5081,7 +5239,9 @@
     "categories": [
       "bathroom",
       "gifts-for-women",
-      "housewarming-gifts"
+      "housewarming-gifts",
+      "home-and-office-gifts",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B07571LXYD/",
     "type": "amazon"
@@ -5210,7 +5370,9 @@
     "categories": [
       "bedroom",
       "gifts-for-couples",
-      "home-and-office-gifts"
+      "home-and-office-gifts",
+      "gifts-for-boyfriends",
+      "gifts-for-girlfriends"
     ],
     "link": "http://www.amazon.com/dp/B07B4JZC5G/",
     "type": "amazon"
@@ -5225,7 +5387,9 @@
     "categories": [
       "alcoholic-gear",
       "halloween-gifts",
-      "man-cave-gifts"
+      "man-cave-gifts",
+      "gear-and-gadgets-gifts",
+      "gifts-for-boyfriends"
     ],
     "link": "http://www.amazon.com/dp/B01IRL2TSY/",
     "type": "amazon"
@@ -5239,7 +5403,8 @@
     "likes": 316,
     "categories": [
       "costumes",
-      "gifts-for-pets"
+      "gifts-for-pets",
+      "wearable-gifts"
     ],
     "link": "http://www.amazon.com/dp/B072W5VV44/",
     "type": "amazon"

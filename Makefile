@@ -46,6 +46,9 @@ move-thisiswhyimbroke:
 combine-thisiswhyimbroke:
 	node ./utils/products/cleaned/combine.js 
 
+sanitize-thisiswhyimbroke:
+	node ./utils/products/cleaned/sanitize.js
+
 check-thisiswhyimbroke:
 	node ./utils/products/cleaned/check.js 
 

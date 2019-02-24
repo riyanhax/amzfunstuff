@@ -172,15 +172,15 @@
     },
     "2000": {
         "link":"/blogs",
-        "name":"随笔",
+        "name":"脑洞随笔",
         "icon":"fas fa-pen-fancy",
-        "show": true
+        "show": false
     },
     "2001": {
         "link":"/guides",
         "name":"败家指南",
         "icon":"fab fa-glide-g",
-        "show": true
+        "show": false
     },
     "3000": {
         "link":"/about",

@@ -114,7 +114,7 @@
 
 * modify parameter for `move-thisiswhyimbroke` command in `Make` file
 
-* modify parameter in `combine.js`, `countProducts.js`, `countImages.js`
+* modify parameter in `combine.js`, `countProducts.js`, `countImages.js`, `sanitize.js`
 
 ### run commands
 
@@ -126,17 +126,19 @@
 
 * change filename of `products.json` in order to indicate the batch and type
 
-* (**change task to check categories**) run `make check-thisiswhyimbroke` to check if product has titleCN, descrption, categories or if any category is not in the existing set
+* (**change task in checker.js to check categories**) run `make check-thisiswhyimbroke` to check if product has titleCN, descrption, categories or if any category is not in the existing set
 
-* (**add new file into file array, and change task to add/remove affiliate id**) run `make affiliate-thisiswhyimbroke` to add/remove affiliate id into product link (for deployment/development)
+* run `make sanitize-thisiswhyimbroke` to sanitize categories
+
+* (**add new file into file array, and change task in affiliate.js to add/remove affiliate id**) run `make affiliate-thisiswhyimbroke` to add/remove affiliate id into product link (for deployment/development)
 
 * for etsy, need to manually add affiliate id
 
 * replace quotes in all files
 
-* (**change task to create folders**) run `make check-thisiswhyimbroke` to create folder structures under `cleaned/products` based on the categories defined in `check.js` (*if any categories changes, please upadte `categories.json` & `subcategories.json` files under `src/menus` folder, `categories.md` file under `utils/thisiswhyimbroke/data` folder, and `check.js` file*)
+* (**change task in checker.js to create folders**) run `make check-thisiswhyimbroke` to create folder structures under `cleaned/products` based on the categories defined in `check.js` (*if any categories changes, please upadte `categories.json` & `subcategories.json` files under `src/menus` folder, `categories.md` file under `utils/thisiswhyimbroke/data` folder, and `check.js` file*)
 
-* (**add new file into file array, and change task to distribute products**) run `make check-thisiswhyimbroke` to distribute products into corresponding folders
+* (**add new file into file array, and change task in cheker.js to distribute products**) run `make check-thisiswhyimbroke` to distribute products into corresponding folders
 
 
 ### finish
