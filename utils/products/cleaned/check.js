@@ -382,19 +382,39 @@ const createFoldersForOneCat = (catX) => {
     }
 } 
 
+const shuffle = (products) => {
+    let currentIndex = products.length
+    let temporaryValue = null 
+    let randomIndex = null 
+
+    while(0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        temporaryValue = products[currentIndex];
+        products[currentIndex] = products[randomIndex];
+        products[randomIndex] = temporaryValue;
+    }
+}
+
 /** distribute products to corresponding folders **/
 
 const distributeProducts = () => {
 
-    const files = ['products-1-amz.json', 'products-2-amz.json', 'products-2-etsy.json']
+    const allfiles = [['products-1-amz.json'], ['products-2-amz.json', 'products-2-etsy.json']]
     let products = []
     let batch
 
     try{
-        for(let file of files){
-            let filepath = __dirname + '/' + file
-            batch = require(filepath)
-            products = batch.concat(products)
+        for(let files of allfiles){
+            let productsfromsamebatch = []
+            for(let file of files){
+                let filepath = __dirname + '/' + file
+                batch = require(filepath)
+                productsfromsamebatch = batch.concat(productsfromsamebatch)
+            }
+            shuffle(productsfromsamebatch)
+            products = productsfromsamebatch.concat(products)
         }
     }catch(ex){
         console.log('Error: invalid json')

@@ -14,18 +14,6 @@
       "subcategory": "office-goodies"
     },
     {
-      "id": "H7L5yDkIbGK",
-      "titleCN": "脏话炸弹镇纸",
-      "titleEN": "F-Bomb Paperweight",
-      "description": "这款用可回收钢材打造的脏话炸弹镇纸，除了帮你保持办公桌上各种文件摘要和会议记录井然有序之外，还能用略显无厘头的幽默元素和反讽方式在严肃的职场环境里让人会心一笑",
-      "price": 44.99,
-      "likes": 935,
-      "link": "http://www.amazon.com/dp/B00KZ3027I/",
-      "type": "amazon",
-      "category": "home-and-office-gifts",
-      "subcategory": "office-goodies"
-    },
-    {
       "id": "2DWAGk2Hn0u",
       "titleCN": "紫外线数字点钞机",
       "titleEN": "UV Digital Bill Counter",
@@ -33,6 +21,18 @@
       "price": 146.86,
       "likes": 181,
       "link": "http://www.amazon.com/dp/B003NOJLYQ/",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "office-goodies"
+    },
+    {
+      "id": "H7L5yDkIbGK",
+      "titleCN": "脏话炸弹镇纸",
+      "titleEN": "F-Bomb Paperweight",
+      "description": "这款用可回收钢材打造的脏话炸弹镇纸，除了帮你保持办公桌上各种文件摘要和会议记录井然有序之外，还能用略显无厘头的幽默元素和反讽方式在严肃的职场环境里让人会心一笑",
+      "price": 44.99,
+      "likes": 935,
+      "link": "http://www.amazon.com/dp/B00KZ3027I/",
       "type": "amazon",
       "category": "home-and-office-gifts",
       "subcategory": "office-goodies"

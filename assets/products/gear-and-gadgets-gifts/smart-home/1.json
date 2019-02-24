@@ -2,13 +2,13 @@
   "next": false,
   "products": [
     {
-      "id": "UGpobVRV5Z-",
-      "titleCN": "抽屉内置多功能充电器",
-      "titleEN": "In-Drawer Charging Outlet",
-      "description": "手机、iPad、笔记本、Kindle、Fitbit...太多需要充电的电子产品让屋子变得不够整洁？使用抽屉内置多功能充电器，轻松地将闲置的抽屉转变成一个隐秘的充电基地吧~",
-      "price": 239,
-      "likes": 112,
-      "link": "http://www.amazon.com/dp/B076JVVQH4/",
+      "id": "JCyOfbrJG7W",
+      "titleCN": "实时太阳能面板电量使用监视器",
+      "titleEN": "Real Time Solar-Electricity Usage Monitor",
+      "description": "将此产品安装在屋顶的太阳能面板上并和家中WiFi连接，然后便可轻松地在手机APP上实时查看太阳能面板生产的电量以及家里消耗的电量，让你的生活更加数字化",
+      "price": 349,
+      "likes": 111,
+      "link": "http://www.amazon.com/dp/B075K51T9X/",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "smart-home"
@@ -26,18 +26,6 @@
       "subcategory": "smart-home"
     },
     {
-      "id": "JCyOfbrJG7W",
-      "titleCN": "实时太阳能面板电量使用监视器",
-      "titleEN": "Real Time Solar-Electricity Usage Monitor",
-      "description": "将此产品安装在屋顶的太阳能面板上并和家中WiFi连接，然后便可轻松地在手机APP上实时查看太阳能面板生产的电量以及家里消耗的电量，让你的生活更加数字化",
-      "price": 349,
-      "likes": 111,
-      "link": "http://www.amazon.com/dp/B075K51T9X/",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "smart-home"
-    },
-    {
       "id": "euVceiS3GnM",
       "titleCN": "Roku Premiere HD/4K/HDR机顶盒",
       "titleEN": "Roku Premiere HD/4K/HDR Streaming Device",
@@ -45,6 +33,18 @@
       "price": 39.99,
       "likes": 85,
       "link": "http://www.amazon.com/dp/B07HDBZN7Q/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "smart-home"
+    },
+    {
+      "id": "UGpobVRV5Z-",
+      "titleCN": "抽屉内置多功能充电器",
+      "titleEN": "In-Drawer Charging Outlet",
+      "description": "手机、iPad、笔记本、Kindle、Fitbit...太多需要充电的电子产品让屋子变得不够整洁？使用抽屉内置多功能充电器，轻松地将闲置的抽屉转变成一个隐秘的充电基地吧~",
+      "price": 239,
+      "likes": 112,
+      "link": "http://www.amazon.com/dp/B076JVVQH4/",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "smart-home"

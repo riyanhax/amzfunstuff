@@ -2,30 +2,6 @@
   "next": false,
   "products": [
     {
-      "id": "DvUmsn_hlb",
-      "titleCN": "空鼓打击乐器",
-      "titleEN": "Air Drumming Percussion Instrument",
-      "description": "即便藏在装了隔音膜的地下室里，练习架子鼓时产生的噪音依然会让邻居皱眉，这款携带方便可带着耳机练习并能通过电脑视频捕捉发出与真鼓相同音效的空鼓打击乐器让你在练习时再无后顾之忧",
-      "price": 199,
-      "likes": 615,
-      "link": "http://www.amazon.com/dp/B00F37SX5Y/",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "musical-instruments"
-    },
-    {
-      "id": "FU3WHNkffW0",
-      "titleCN": "Gakken迷你电吉他工具箱",
-      "titleEN": "Gakken Mini Electric Guitar Kit",
-      "description": "作为一名音乐爱好者，当灵感不期而至时手边却没有乐器是最令人惋惜的事情；这款工具箱能让你在顷刻间做出一款自带功放音箱的迷你电吉他，使你突然来袭的灵感在琴弦中尽情释放",
-      "price": 53.31,
-      "likes": 80,
-      "link": "http://www.amazon.com/dp/405605732X/",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "musical-instruments"
-    },
-    {
       "id": "WYY1vZ09YG0",
       "titleCN": "自带灯光秀的便携式DJ混音器",
       "titleEN": "LED Light Show Portable DJ Mixer",
@@ -45,6 +21,30 @@
       "price": 43.97,
       "likes": 3412,
       "link": "http://www.amazon.com/dp/1480360295/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "musical-instruments"
+    },
+    {
+      "id": "FU3WHNkffW0",
+      "titleCN": "Gakken迷你电吉他工具箱",
+      "titleEN": "Gakken Mini Electric Guitar Kit",
+      "description": "作为一名音乐爱好者，当灵感不期而至时手边却没有乐器是最令人惋惜的事情；这款工具箱能让你在顷刻间做出一款自带功放音箱的迷你电吉他，使你突然来袭的灵感在琴弦中尽情释放",
+      "price": 53.31,
+      "likes": 80,
+      "link": "http://www.amazon.com/dp/405605732X/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "musical-instruments"
+    },
+    {
+      "id": "DvUmsn_hlb",
+      "titleCN": "空鼓打击乐器",
+      "titleEN": "Air Drumming Percussion Instrument",
+      "description": "即便藏在装了隔音膜的地下室里，练习架子鼓时产生的噪音依然会让邻居皱眉，这款携带方便可带着耳机练习并能通过电脑视频捕捉发出与真鼓相同音效的空鼓打击乐器让你在练习时再无后顾之忧",
+      "price": 199,
+      "likes": 615,
+      "link": "http://www.amazon.com/dp/B00F37SX5Y/",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "musical-instruments"

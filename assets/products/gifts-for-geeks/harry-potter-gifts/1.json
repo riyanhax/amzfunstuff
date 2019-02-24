@@ -14,18 +14,6 @@
       "subcategory": "harry-potter-gifts"
     },
     {
-      "id": "cjeJTZvASzy",
-      "titleCN": "哈利波特魔杖制作编程套装",
-      "titleEN": "Harry Potter Build a Wand Coding Kit",
-      "description": "冬青木凤凰羽毛和太妃糖？这款与众不同的魔杖制作编程套装让每一个麻瓜孩子都有机会通过编程用科技实现自己的魔法梦想，打开配套APP念出咒语让羽毛飞舞金币暴增火焰流动吧",
-      "price": 99.99,
-      "likes": 159,
-      "link": "http://www.amazon.com/dp/B07C7X8LG9/",
-      "type": "amazon",
-      "category": "gifts-for-geeks",
-      "subcategory": "harry-potter-gifts"
-    },
-    {
       "id": "6PkUXkoSWHA",
       "titleCN": "哈利波特牛奶巧克力魔杖",
       "titleEN": "Harry Potter Milk Chocolate Wands",
@@ -33,6 +21,18 @@
       "price": 11.3,
       "likes": 183,
       "link": "http://www.amazon.com/dp/B07F6ZC96H/",
+      "type": "amazon",
+      "category": "gifts-for-geeks",
+      "subcategory": "harry-potter-gifts"
+    },
+    {
+      "id": "cjeJTZvASzy",
+      "titleCN": "哈利波特魔杖制作编程套装",
+      "titleEN": "Harry Potter Build a Wand Coding Kit",
+      "description": "冬青木凤凰羽毛和太妃糖？这款与众不同的魔杖制作编程套装让每一个麻瓜孩子都有机会通过编程用科技实现自己的魔法梦想，打开配套APP念出咒语让羽毛飞舞金币暴增火焰流动吧",
+      "price": 99.99,
+      "likes": 159,
+      "link": "http://www.amazon.com/dp/B07C7X8LG9/",
       "type": "amazon",
       "category": "gifts-for-geeks",
       "subcategory": "harry-potter-gifts"

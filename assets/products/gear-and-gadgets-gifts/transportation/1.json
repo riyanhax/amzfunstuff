@@ -2,18 +2,6 @@
   "next": false,
   "products": [
     {
-      "id": "blCjI-Iu8Bq",
-      "titleCN": "水上漂浮碰碰车",
-      "titleEN": "Motorized Floating Bumper Cars",
-      "description": "急速拨打着碰碰车的方向盘然后开足马力撞向暗恋的他/她是很多人年少时甜蜜的记忆，这款自带大型水枪的水上漂浮碰碰车让你能和朋友们一起在后院的泳池或山中的湖水里重温年少时最美好的记忆",
-      "price": 99.9,
-      "likes": 7560,
-      "link": "http://www.amazon.com/dp/B001CKWAG4/",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "transportation"
-    },
-    {
       "id": "Sen9GE-3Uq8",
       "titleCN": "夜间闪耀单速自行车",
       "titleEN": "Glow In The Dark Bicycle",
@@ -21,6 +9,18 @@
       "price": 399.99,
       "likes": 541,
       "link": "http://www.amazon.com/dp/B008CNNZPE/",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "transportation"
+    },
+    {
+      "id": "blCjI-Iu8Bq",
+      "titleCN": "水上漂浮碰碰车",
+      "titleEN": "Motorized Floating Bumper Cars",
+      "description": "急速拨打着碰碰车的方向盘然后开足马力撞向暗恋的他/她是很多人年少时甜蜜的记忆，这款自带大型水枪的水上漂浮碰碰车让你能和朋友们一起在后院的泳池或山中的湖水里重温年少时最美好的记忆",
+      "price": 99.9,
+      "likes": 7560,
+      "link": "http://www.amazon.com/dp/B001CKWAG4/",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "transportation"

@@ -14,18 +14,6 @@
       "subcategory": "smokers"
     },
     {
-      "id": "Tm8MJYkVrNw",
-      "titleCN": "打火机手机盒",
-      "titleEN": "Smartphone Lighter Case",
-      "description": "不知道产品设计师是不是从安徒生的《打火匣》经典童话中汲取的灵感，但在三星手机电池或自燃或爆炸的新闻之后还试图在锂电池上添加喷火装置，绝对彰显了设计师的气魄和使用者的硬汉本色",
-      "price": 11.99,
-      "likes": 938,
-      "link": "http://www.amazon.com/dp/B00OXMQ9EC/",
-      "type": "amazon",
-      "category": "gifts-for-men",
-      "subcategory": "smokers"
-    },
-    {
       "id": "yaumy_pIczo",
       "titleCN": "007邦德同款幽灵党打火机",
       "titleEN": "007 James Bond Spectre Lighter",
@@ -33,6 +21,18 @@
       "price": 1395,
       "likes": 535,
       "link": "http://www.amazon.com/dp/B017PQJ3S6/",
+      "type": "amazon",
+      "category": "gifts-for-men",
+      "subcategory": "smokers"
+    },
+    {
+      "id": "Tm8MJYkVrNw",
+      "titleCN": "打火机手机盒",
+      "titleEN": "Smartphone Lighter Case",
+      "description": "不知道产品设计师是不是从安徒生的《打火匣》经典童话中汲取的灵感，但在三星手机电池或自燃或爆炸的新闻之后还试图在锂电池上添加喷火装置，绝对彰显了设计师的气魄和使用者的硬汉本色",
+      "price": 11.99,
+      "likes": 938,
+      "link": "http://www.amazon.com/dp/B00OXMQ9EC/",
       "type": "amazon",
       "category": "gifts-for-men",
       "subcategory": "smokers"
