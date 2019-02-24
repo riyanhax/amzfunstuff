@@ -35,6 +35,26 @@
         "title": "美食与佳酿",
         "description": "若你是一位传统的饕客，请去看『舌尖上的中国』再一并读读汪曾祺，这里的美食与佳酿不但让你垂涎欲滴还能让你脑洞大开"
     },
+    "gifts-for-boyfriends":{
+        "title": "奖励男朋友",
+        "description": "有点儿羞羞地坦白，已经连续两年情人节都把自己当礼物送给男朋友了，虽然他很喜欢，但今年我决定还是给他一些意想不到的惊喜"
+    },
+    "gifts-for-girlfriends":{
+        "title": "讨好女朋友",
+        "description": "昨天晚上『开黑』的时候脑子一热居然连续赢了女朋友两盘，半夜吓醒好几次，鉴于周末还要去打球，寻思赶紧买个小礼物哄一下为好"
+    },
+    "gifts-for-dad":{
+        "title": "亲爱的爸爸",
+        "description": "xxx"
+    },
+    "gifts-for-mom":{
+        "title": "美丽的妈妈",
+        "description": "xxx"
+    },
+    "gifts-for-kids":{
+        "title": "淘气的小朋友",
+        "description": "xxx"
+    },
     "gifts-for-pets":{
         "title": "宠物爱好者",
         "description": ""

@@ -55,15 +55,15 @@
     },
     "90": {
         "link":"/gifts-for-boyfriends",
-        "name":"送男朋友的",
+        "name":"奖励男朋友",
         "icon":"fas fa-motorcycle",
-        "show": false
+        "show": true
     },
     "100": {
         "link":"/gifts-for-girlfriends",
-        "name":"送女朋友的",
+        "name":"讨好女朋友",
         "icon":"fas fa-gem",
-        "show": false
+        "show": true
     },
     "110": {
         "link":"/gifts-for-couples",
@@ -73,21 +73,21 @@
     },
     "120": {
         "link":"/gifts-for-dad",
-        "name":"送爸爸的",
+        "name":"亲爱的爸爸",
         "icon":"fas fa-golf-ball",
-        "show": false
+        "show": true
     },
     "130": {
         "link":"/gifts-for-mom",
-        "name":"送妈妈的",
+        "name":"美丽的妈妈",
         "icon":"fas fa-wine-glass-alt",
-        "show": false
+        "show": true
     },
     "140": {
         "link":"/gifts-for-kids",
-        "name":"送孩子的",
+        "name":"淘气的小朋友",
         "icon":"fas fa-child",
-        "show": false
+        "show": true
     },
     "150": {
         "link":"/gifts-for-babies",
