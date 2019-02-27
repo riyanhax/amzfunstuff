@@ -124,7 +124,7 @@
 
 * create a new `products.json` file with empty array, run `make combine-thisiswhyimbroke` to combine new products `x.json` data into main `products.json` file
 
-* change filename of `products.json` in order to indicate the batch and type
+* change filename of `products.json` in order to indicate the batch and type (check http or https)
 
 * (**change task in checker.js to check categories**) run `make check-thisiswhyimbroke` to check if product has titleCN, descrption, categories or if any category is not in the existing set
 
@@ -198,3 +198,8 @@
 * based on data.json file, list all categories and put the result in categories.json
 
 * command: `categories-thisiswhyimbroke`
+
+## translation progress
+
+* amazon - 1,2,3,4,5,6,7
+* etsy - 1,2

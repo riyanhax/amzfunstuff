@@ -1,9 +1,9 @@
 [
   {
     "id": "COGgYbcy2-T",
-    "titleCN": "",
+    "titleCN": "玻璃烟熏箱",
     "titleEN": "Glass Cloche Smoke Infusing Kit",
-    "description": "",
+    "description": "对食物挑剔的你总是希望在咀嚼时品尝到丰富的层次感，这款设计新颖由不锈钢和有机玻璃制作的玻璃烟熏箱能让你轻松为包括鸡尾酒鱼子酱烤牛排炸薯条在内的美食添加一缕胡桃木苹果木樱桃木的淡香",
     "content": "Give your favorite foods a subtle and savory smoky taste using this glass cloche smoke infusing kit. This battery operated handheld smoker lets you conveniently infuse everything from chips to cocktails with an aromatic smoked flavor.\n",
     "price": 199.95,
     "likes": 219,
@@ -21,9 +21,9 @@
   },
   {
     "id": "_Zp9wus9FRo",
-    "titleCN": "",
+    "titleCN": "游戏驱动RGB灯光音箱",
     "titleEN": "Game Driven RGB Lighting PC Speakers",
-    "description": "",
+    "description": "作为一个拥有各种定制化设备的深度专业游戏玩家，这款内置LED灯设计巧妙紧凑的游戏驱动RGB灯光音箱，能随着显示器屏幕内容的变化而呈现出不同色彩的光泽，让声音从此也充斥着鲜活的生命力",
     "content": "Enhance your viewing experience with these game driven RGB lighting PC speakers. Each of the two compact speakers come with built-in RGB LEDs that project a dynamic glow of light based on what’s playing on your screen.\n",
     "price": 199.99,
     "likes": 451,
@@ -42,9 +42,9 @@
   },
   {
     "id": "BujX0wlzmDX",
-    "titleCN": "",
+    "titleCN": "女士果味多种维他命软糖",
     "titleEN": "Women’s Multivitamin Gummies",
-    "description": "",
+    "description": "对于女性来说，保持身体内各种微量元素和维他命的平衡是维持高效新陈代谢的基础，这款果味多种维他命软糖富含女性所需的维生素A，C，D，E，B，辅酶R，叶酸等，让健康生活变得更容易且好滋味",
     "content": "Staying healthy is easier and tastier than ever with these women’s multivitamin gummies. These delectable fruity gummies come with the right blend of vitamins A, C, D, E, Bs, biotin, and folic acid to keep your body in tip-top shape even if your eating habits are less than perfect.\n",
     "price": 13.99,
     "likes": 104,
@@ -61,9 +61,9 @@
   },
   {
     "id": "gTsR8H_h3qi",
-    "titleCN": "",
+    "titleCN": "时间球极简主义时钟",
     "titleEN": "Timesphere Minimalist Clock",
-    "description": "",
+    "description": "这款设计独特看起来颇像天体力学三维模型的时间球极简主义时钟，不但时尚美观而且悬浮在半空的小红球还创造出其不受地心引力牵绊的视觉幻象，在为你准确报时的同时增添一份后现代艺术作品既视感",
     "content": "Add a contemporary and stylish touch to your home by hanging up the Timesphere minimalist clock. As the bright red ball makes its way around the dial to mark the time, it creates the eye-catching illusion that it is somehow defying gravity.\n",
     "price": 77.95,
     "likes": 338,
@@ -81,9 +81,9 @@
   },
   {
     "id": "UZ8vhNrOBwY",
-    "titleCN": "",
+    "titleCN": "收割者多功能纳米刀钥匙链",
     "titleEN": "Reaper Multitool Nano Blade Keychain",
-    "description": "",
+    "description": "你是否也曾遇到过拿着沁凉的啤酒但无法开启的沮丧或收到期待的邮包却无法打开的窘迫？这款由不锈钢打造设计独特的收割者多功能纳米刀钥匙链携带方便使用安全，让你对各种不期事件时刻准备着",
     "content": "With the Reaper multitool nano blade keychain you’ll always be prepared to pop open any bottle or cut open any box that comes your way. It boasts a robust stainless steel construction and comes with a small blade that can easily be whipped out using your thumb.\n",
     "price": 29.75,
     "likes": 349,
@@ -100,9 +100,9 @@
   },
   {
     "id": "OD88Zi3vVYH",
-    "titleCN": "",
+    "titleCN": "巨型菠萝游泳圈",
     "titleEN": "Giant Pineapple Pool Float",
-    "description": "",
+    "description": "炎热慵懒的夏日午后，在半山别墅俯瞰大海的湛蓝游泳池里，躺在这款舒适的巨型菠萝游泳圈中，吸着甘甜可口的热带鲜榨水果汁，听着尤克里里演奏的小夜曲随着棕榈树宽阔的叶子一起在微风中摇曳...",
     "content": "Imagine yourself floating in your pool, sipping a tropical drink while a ukulele serenades you & palm trees sway in the breeze. Then reality strikes, and your realize you’re still at work and its Tuesday. Get to your tropical happy-place with this ultra-comfy pineapple pool float!\n",
     "price": 14.99,
     "likes": 170,
@@ -119,7 +119,7 @@
   },
   {
     "id": "ss9By-pppoQ",
-    "titleCN": "",
+    "titleCN": "包裹式弹力运动鞋",
     "titleEN": "Wrap Around Sneakers",
     "description": "",
     "content": "Slip into these wrap around sneakers and the way you look at footwear will change forever. The lightweight design lets you wrap the shoes around your feet just like a bandage, instead of forcing them to conform to the shape of traditional shoe soles.\n",
@@ -134,7 +134,7 @@
     "uri": "https://www.thisiswhyimbroke.com/wrap-around-sneakers/",
     "source": "thisiswhyimbroke",
     "exId": 116896,
-    "exLink": "http://www.amazon.com/dp/B074WM8GM2/?tag=097-20&ascsubtag=default",
+    "exLink": "http://www.amazon.com/dp/B074T74LXZ/?tag=097-20&ascsubtag=default",
     "type": "amazon"
   },
   {
