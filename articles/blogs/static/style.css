@@ -31,6 +31,10 @@ buttons {
   z-index: 2;
   transition: left 0.2s;
 }
+
+#header .mui-appbar{
+  background-color: #009688; 
+} 
  
 #sidedrawer {
   position: fixed;
