@@ -201,5 +201,6 @@
 
 ## translation progress
 
-* amazon - 1,2,3,4,5,6,7
-* etsy - 1,2
+* 2018-11-17
+    * amazon - 1,2,3,4,5,6,7
+    * etsy - 1,2
