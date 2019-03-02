@@ -521,7 +521,7 @@ class Products extends Component {
         // console.log('viewWidth ', viewWidth)
 
         return <div className={classes.root}>
-                    {/* {banner} */}
+                    {banner}
                     {header}
                     {panel}
                     {content}
