@@ -23,14 +23,13 @@
     
     <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico"/>
     <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <link href="/articles/static/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- add this if use blockquote -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
   </head>
   <body class="hide-sidedrawer">
-    <div w3-include-html="/articles/blogs/sidedrawer.html"></div>
+    <div id="sidedrawer" class="mui--no-user-select"></div>
     <header id="header">
       <div class="mui-appbar mui--appbar-line-height">
         <div class="mui-container-fluid">
@@ -45,7 +44,7 @@
         <div class="mui-container-fluid">
 
             <div class="banner">
-                <img src="/articles/blogs/static/images/lets-name-it/banner.jpg" alt="banner">
+                <img src="/articles/static/images/lets-name-it/banner.jpg" alt="banner">
             </div>
 
             <div class="caption">
@@ -120,7 +119,7 @@
                 <p>我俩听完后频频点头，小卡在女神面前果然思绪敏捷，马上就祭出了J.R.Smith当年被交易到骑士队后发的那个著名ins：</p>
                 
                 <div class="picture">
-                    <img src="/articles/blogs/static/images/lets-name-it/jrsmith.jpg" alt="One man's trash is another man's treasure">
+                    <img src="/articles/static/images/lets-name-it/jrsmith.jpg" alt="One man's trash is another man's treasure">
                 </div>
              
                 <p>茉黛小姐颇为赞许地看了他一眼，开始讲『人世间』中记载的另一个故事。</p>
@@ -145,10 +144,10 @@
 
             <div class="related">
                 <div class="mui-row">
-                  <a href="/articles/blogs/demo.html" rel="nofollow">
+                  <a href="/articles/demo.html" rel="nofollow">
                     <div class="mui-col-md-4 mui-col-xs-12"> 
                       <div class="related-image">
-                          <img src="/articles/blogs/static/images/demo/banner.png" alt="post image">
+                          <img src="/articles/static/images/demo/banner.png" alt="post image">
                       </div>
                       <div class="related-title">
                           给岁月以文明，而不是给文明以岁月
@@ -156,10 +155,10 @@
                       <div class="related-subtitle"><h5>同为军人，知道我们之间最大的区别在哪里吗，你们按照可能的结果来决定自己的行动；而我们，不管结果如何，必须尽责任，这是唯一的机会，所以我就做了</h5></div>
                     </div>
                   </a>
-                  <a href="/articles/blogs/demo.html" rel="nofollow">
+                  <a href="/articles/demo.html" rel="nofollow">
                     <div class="mui-col-md-4 mui-col-xs-12">
                         <div class="related-image">
-                            <img src="/articles/blogs/static/images/demo/banner.png" alt="post image">
+                            <img src="/articles/static/images/demo/banner.png" alt="post image">
                         </div>
                         <div class="related-title">
                             给岁月以文明，而不是给文明以岁月
@@ -167,10 +166,10 @@
                         <div class="related-subtitle"><h5>同为军人，知道我们之间最大的区别在哪里吗，你们按照可能的结果来决定自己的行动；而我们，不管结果如何，必须尽责任，这是唯一的机会，所以我就做了</h5></div>
                     </div>
                   </a>
-                  <a href="/articles/blogs/demo.html" rel="nofollow">
+                  <a href="/articles/demo.html" rel="nofollow">
                     <div class="mui-col-md-4 mui-col-xs-12">
                         <div class="related-image">
-                            <img src="/articles/blogs/static/images/demo/banner.png" alt="post image">
+                            <img src="/articles/static/images/demo/banner.png" alt="post image">
                         </div>
                         <div class="related-title">
                             给岁月以文明，而不是给文明以岁月
@@ -194,32 +193,7 @@
     
     <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="static/script.js"></script>
+    <script src="/articles/static/script.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bd1011e78e3a52e"></script>
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                    } 
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    return;
-                }
-            }
-        }
-        includeHTML();
-    </script>
   </body>
 </html>
