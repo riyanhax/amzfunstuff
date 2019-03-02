@@ -277,8 +277,8 @@ class ProductDetail extends Component {
                         <Grid>
                             <Grid container direction="column" justify="space-evenly" alignItems="center" style={{ height:adjustedHeight, marginLeft: 20 }}>
                                 <div>
-                                    <a href="https://www.amazon.com" rel="nofollow" target="_blank">
-                                        {/* <img className={classes.banner} src={`/assets/images/ads/ad.png`}/> */}
+                                    <a href="https://amzn.to/2EGGeVN" rel="nofollow" target="_blank">
+                                        <img className={classes.banner} src={`/assets/images/ads/ad.png`}/>
                                     </a>
                                 </div>
                                 <div className={classes.description} style={{ width: 280 }}>{product.description}</div>
