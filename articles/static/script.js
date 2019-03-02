@@ -28,5 +28,6 @@ jQuery(function($) {
     $('.js-show-sidedrawer').on('click', showSidedrawer);
     $('.js-hide-sidedrawer').on('click', hideSidedrawer);
 
+    $('#sidedrawer').load('/articles/blogs/sidedrawer.html');
   });
   
