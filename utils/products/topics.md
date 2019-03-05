@@ -112,4 +112,6 @@ http://technews.tw/2015/04/17/flowhive/)
 
 * [现实版的铁甲钢拳](https://techcrunch.com/2018/01/11/this-1600-fighting-robot-toy-kicks-serious-butt/   B07BHDXY6K B079MDS92B  https://www.youtube.com/watch?v=0r5I5QGCgjw)
 
+* [45 cool products](https://www.reddit.com/r/savedyouaclick/comments/5izg13/45_weird_but_utterly_brilliant_items_trending_on/)
+
 * [cnn vs espn](https://www.youtube.com/watch?v=4pS4x8hXQ5c)
