@@ -180,7 +180,7 @@
         "link":"/guides",
         "name":"败家指南",
         "icon":"fab fa-glide-g",
-        "show": false
+        "show": true
     },
     "3000": {
         "link":"/about",
