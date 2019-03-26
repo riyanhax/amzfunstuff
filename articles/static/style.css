@@ -149,11 +149,13 @@ img {
   color: #4a4a4a;
 }
 
-/* rating */
-.rating {
-  text-align: center;
+/* product title */
+.p-title{
   color: #009688;
   line-height: 1.5;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 40px;
 }
 
 .rating span {
