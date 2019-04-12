@@ -12,6 +12,18 @@
         "category":"猿氏物语",
         "date": "2019-03-05",
         "likes": 108
+      },
+      {
+        "title": "那些诡异而有趣的面具",
+        "summary": "无论是疯狂派对还是开心嘉年华，戴上这些诡异而有趣的面具，不但能完美地将你性格中神秘的一面呈现出来，而且也可以瞬间提高气场并拉高逼格...",
+        "link": "/articles/guides/animal-mask-products.html",
+        "image": "guide2",
+        "id": "g-2",
+        "author":"野菜王子",
+        "avatar":"W",
+        "category":"猿氏物语",
+        "date": "2019-03-23",
+        "likes": 121
       }
     ]
 }
