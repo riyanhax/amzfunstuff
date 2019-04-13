@@ -8,7 +8,7 @@
       "description": "这款低音浑厚高音清亮支持蓝牙和无线播放充斥着后现代工业设计立体主义风格的透明扬声器，在完美融入任何现代家居装修风格的同时，给你疲惫的耳朵带来前所未有的听觉盛宴",
       "price": 1100,
       "likes": 1692,
-      "link": "http://www.amazon.com/dp/B00OQH9892/?tag=wuyongzhiqu-20",
+      "link": "https://www.amazon.com/dp/B00OQH9892/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "electronic-gadgets"
@@ -32,19 +32,7 @@
       "description": "高音清脆，低音浑厚，灯光炫目，节奏激昂，无数双手在空中舞动，即兴打碟让血脉偾张，荷尔蒙的气息在人群中弥漫，这款便携式DJ混音器让你的派对从始至终热度超常！",
       "price": 499.99,
       "likes": 69,
-      "link": "http://www.amazon.com/dp/B01M9IPZ7U/?tag=wuyongzhiqu-20",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "electronic-gadgets"
-    },
-    {
-      "id": "ELa13ttKWt",
-      "titleCN": "Kasa智能WiFi插座",
-      "titleEN": "Kasa Smart Wi-Fi Power Strip",
-      "description": "TP-LINK出品的这款智能WiFi插座，可通过手机APP或语音指令(支持Alexa及Google Assistant)控制6个独立的充电插座和2个独立的USB接口，智能家居一步之遥",
-      "price": 79.84,
-      "likes": 91,
-      "link": "http://www.amazon.com/dp/B07G95FFN3/?tag=wuyongzhiqu-20",
+      "link": "https://www.amazon.com/dp/B01M9IPZ7U/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "electronic-gadgets"
@@ -56,19 +44,7 @@
       "description": "不管你是在世界屋脊采雪莲、热带岛屿扮海盗、非洲草原看角马，这款便携式太阳能发电机确保即便远离尘世，你依然有足够的电量供给电子设备，从而和文明世界保持丝缕联系",
       "price": 455.59,
       "likes": 186,
-      "link": "http://www.amazon.com/dp/B01K60N1DQ/?tag=wuyongzhiqu-20",
-      "type": "amazon",
-      "category": "gear-and-gadgets-gifts",
-      "subcategory": "electronic-gadgets"
-    },
-    {
-      "id": "Q7Vy0y84bd2",
-      "titleCN": "终极便携式电源储藏盒",
-      "titleEN": "The Ultimate Portable Power Bank",
-      "description": "作为出行频繁的商务人士，这款带100wh交流电插头，2.4A USB接口，OLED显示频，支持无线充电且被航空公司许可的25,600毫安便携式电源储藏盒，是绝对的必备之选",
-      "price": 299.95,
-      "likes": 315,
-      "link": "http://www.amazon.com/dp/B07HFHTGX3/?tag=wuyongzhiqu-20",
+      "link": "https://www.amazon.com/dp/B01K60N1DQ/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "electronic-gadgets"
@@ -80,7 +56,31 @@
       "description": "生活中总是会出现让人始料未及的情况，这款007风格的多功能iPhone外壳能在最紧要关头雪中送炭，不管是割炸弹导线还是做原木长矛，其22个用硬化不锈钢制成的工具总有一款能派上用场",
       "price": 99.95,
       "likes": 1752,
-      "link": "http://www.amazon.com/dp/B00E8RT9HQ?tag=wuyongzhiqu-20",
+      "link": "https://www.amazon.com/dp/B00E8RT9HQ?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "electronic-gadgets"
+    },
+    {
+      "id": "Q7Vy0y84bd2",
+      "titleCN": "终极便携式电源储藏盒",
+      "titleEN": "The Ultimate Portable Power Bank",
+      "description": "作为出行频繁的商务人士，这款带100wh交流电插头，2.4A USB接口，OLED显示频，支持无线充电且被航空公司许可的25,600毫安便携式电源储藏盒，是绝对的必备之选",
+      "price": 299.95,
+      "likes": 315,
+      "link": "https://www.amazon.com/dp/B07HFHTGX3/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "gear-and-gadgets-gifts",
+      "subcategory": "electronic-gadgets"
+    },
+    {
+      "id": "ELa13ttKWt",
+      "titleCN": "Kasa智能WiFi插座",
+      "titleEN": "Kasa Smart Wi-Fi Power Strip",
+      "description": "TP-LINK出品的这款智能WiFi插座，可通过手机APP或语音指令(支持Alexa及Google Assistant)控制6个独立的充电插座和2个独立的USB接口，智能家居一步之遥",
+      "price": 79.84,
+      "likes": 91,
+      "link": "https://www.amazon.com/dp/B07G95FFN3/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "gear-and-gadgets-gifts",
       "subcategory": "electronic-gadgets"
