@@ -24,6 +24,18 @@
         "category":"猿氏物语",
         "date": "2019-03-23",
         "likes": 121
+      },
+      {
+        "title": "夜空中最亮的『灯』",
+        "summary": "在一个星光黯淡的夜晚，当你背着沉重的行囊孤独地走在空旷而漆黑的原野时，作为一个不会魔法的麻瓜或忘记带魔杖的巫师，要怎样做才能将世界完全照亮...",
+        "link": "/articles/guides/let-there-be-light-products.html",
+        "image": "guide3",
+        "id": "g-3",
+        "author":"胡萝卜先生",
+        "avatar":"J",
+        "category":"猿氏物语",
+        "date": "2019-03-31",
+        "likes": 98
       }
     ]
 }
