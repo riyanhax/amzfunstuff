@@ -44,7 +44,7 @@ const styles = theme => ({
     },
     wechat: {
         marginTop: 20,
-        width: '80%',
+        width: '60%',
     },
     email: {
         marginTop: 50,
@@ -58,10 +58,11 @@ const styles = theme => ({
     textField: {
         marginLeft: theme.spacing.unit,
         marginRight: theme.spacing.unit,
+        marginBottom: 2 * theme.spacing.unit,
         width: '80%',
     },
     button: {
-        margin: theme.spacing.unit,
+        marginTop: 2 * theme.spacing.unit,
         width: '80%',
         fontSize: '1rem',
         fontWeight: '900',
@@ -98,21 +99,6 @@ class About extends Component {
 
         subscriber_loading: false,
         subscriber_success: false,
-
-        contactus_name: '',
-        contactus_email: '',
-        contactus_message: '',
-
-        contactus_name_error: false,
-        contactus_email_error: false,
-        contactus_message_error: false,
-
-        contactus_name_too_long: false,
-        contactus_email_too_long: false,
-        contactus_message_too_long: false,
-
-        contactus_loading: false,
-        contactus_success: false,
 
         recaptcha_verified: false,
         recaptcha_verify_error: false,
@@ -196,91 +182,8 @@ class About extends Component {
             return
         }
 
-        // validation pass, proceed with data saving
-        if (!this.state.subscriber_loading) {
-          this.setState({ subscriber_loading: true })
- 
-          const subscriberListRef = firebase.database().ref().child('subscriberList')
-          const newSubscriber = subscriberListRef.push()
-          newSubscriber.set({
-              name: this.state.subscriber_name,
-              email: this.state.subscriber_email
-          })
-
-          setTimeout(() => { this.setState({ subscriber_loading: false, subscriber_success: true }) }, 2000)
-          setTimeout(() => { this.setState({ subscriber_name: '', subscriber_email: '', subscriber_success: false }) }, 4000)
-        }
-    }
-
-    contactus = () => {
-        let contactNameHasError = false
-        let contactEmailHasError = false
-        let contactMessageHasError = false
-
-        let contactNameTooLong = false
-        let contactEmailTooLong = false
-        let contactMessageTooLong = false
-
-        // check contactus_name null or not
-        if(!this.validateNull(this.state.contactus_name)){
-            this.setState({ contactus_name_error: true })
-            contactNameHasError = true
-        }else{
-            this.setState({ contactus_name_error: false })
-            contactNameHasError = false
-        }
-
-        // check contactus_email null or not || valid email format or not
-        if(!this.validateNull(this.state.contactus_email) || !this.validateEmail(this.state.contactus_email)){
-            this.setState({ contactus_email_error: true })
-            contactEmailHasError = true
-        }else{
-            this.setState({ contactus_email_error: false })
-            contactEmailHasError = false
-        }
-
-        // check contactus_message null or not || valid email format or not
-        if(!this.validateNull(this.state.contactus_message)){
-            this.setState({ contactus_message_error: true })
-            contactMessageHasError = true
-        }else{
-            this.setState({ contactus_message_error: false })
-            contactMessageHasError = false
-        }
-
-        // check contactus_name if too long
-        if(!this.validateLength(this.state.contactus_name, 40)){
-            this.setState({ contactus_name_too_long: true })
-            contactNameTooLong = true
-        }else{
-            this.setState({ contactus_name_too_long: false })
-            contactNameTooLong = false
-        }
-
-        // check contactus_email if too long
-        if(!this.validateLength(this.state.contactus_email, 40)){
-            this.setState({ contactus_email_too_long: true })
-            contactEmailTooLong = true
-        }else{
-            this.setState({ contactus_email_too_long: false })
-            contactEmailTooLong = false
-        }
-
-        // check contactus_message if too long
-        if(!this.validateLength(this.state.contactus_message, 1000)){
-            this.setState({ contactus_message_too_long: true })
-            contactMessageTooLong = true
-        }else{
-            this.setState({ contactus_message_too_long: false })
-            contactMessageTooLong = false
-        }
-
-        if(contactNameHasError || contactEmailHasError || contactMessageHasError || contactNameTooLong || contactEmailTooLong || contactMessageTooLong){
-            return
-        }
-
-        // validation pass, proceed with recaptcha check
-        if(!this.state.recaptcha_verified){
+         // validation pass, proceed with recaptcha check
+         if(!this.state.recaptcha_verified){
             this.setState({ recaptcha_verify_error: true })
             return 
         }else{
@@ -288,19 +191,18 @@ class About extends Component {
         }
 
         // rechaptcha pass, proceed with data saving
-        if (!this.state.contactus_loading) {
-          this.setState({ contactus_loading: true })
+        if (!this.state.subscriber_loading) {
+            this.setState({ subscriber_loading: true })
 
-          const contactUsListRef = firebase.database().ref().child('contactUsList')
-          const newContacUs = contactUsListRef.push()
-          newContacUs.set({
-              name: this.state.contactus_name,
-              email: this.state.contactus_email,
-              message: this.state.contactus_message
-          })
+            const subscriberListRef = firebase.database().ref().child('subscriberList')
+            const newSubscriber = subscriberListRef.push()
+            newSubscriber.set({
+                name: this.state.subscriber_name,
+                email: this.state.subscriber_email
+            })
 
-          setTimeout(() => { this.setState({ contactus_loading: false, contactus_success: true }) }, 2000)
-          setTimeout(() => { this.setState({ contactus_name: '', contactus_email: '', contactus_message: '', contactus_success: false }) }, 4000)
+            setTimeout(() => { this.setState({ subscriber_loading: false, subscriber_success: true }) }, 2000)
+            setTimeout(() => { this.setState({ subscriber_name: '', subscriber_email: '', subscriber_success: false }) }, 4000)
         }
     }
 
@@ -330,21 +232,6 @@ class About extends Component {
             subscriber_loading, 
             subscriber_success, 
 
-            contactus_name,
-            contactus_email,
-            contactus_message,
-
-            contactus_name_error,
-            contactus_email_error,
-            contactus_message_error,
-
-            contactus_name_too_long,
-            contactus_email_too_long,
-            contactus_message_too_long,
-
-            contactus_loading, 
-            contactus_success,
-
             recaptcha_verify_error
          } = this.state
 
@@ -357,8 +244,27 @@ class About extends Component {
                                 {tumblr}{twitter}{facebook}{weibo}
                             </Grid>
 
-        const wechat = <Grid container direction="column" justify="center" alignItems="center" style={{ width:'100%' }}>
-                            {/* <img src={`/assets/images/ads/wechat.png`} className={classes.wechat}/> */}
+        const wechat = <Grid container direction="column" justify="center" alignItems="center">
+                            <img src={`/assets/images/ads/QR.jpg`} className={classes.wechat}/>
+                        </Grid>
+
+        const recaptcha = recaptcha_verify_error ? 
+                        <Grid container direction="column" justify="center" alignItems="center">
+                            <div className={classes.rechaptchaError}>请点击下面方块证明你不是机器人</div>
+                            <Recaptcha
+                                sitekey="6LeVl44UAAAAAMWiMSxkYXPr338m_xAEEObKlMqW"
+                                render="explicit"
+                                onloadCallback={this.recaptchaOnLoad}
+                                verifyCallback={this.recaptchaVerify}
+                            />
+                        </Grid> : 
+                        <Grid container direction="column" justify="center" alignItems="center">
+                            <Recaptcha
+                                sitekey="6LeVl44UAAAAAMWiMSxkYXPr338m_xAEEObKlMqW"
+                                render="explicit"
+                                onloadCallback={this.recaptchaOnLoad}
+                                verifyCallback={this.recaptchaVerify}
+                            />
                         </Grid>
 
         const subscriber = subscriber_success ? 
@@ -367,7 +273,7 @@ class About extends Component {
                                     感谢订阅我们的邮件列表！
                                 </Grid>
                             </div> :
-                            <div style={{ width:'100%' }}>
+                            <div style={{ width:'100%' }} id="wechat">
                                 <Grid container direction="column" justify="center" alignItems="center">
                                     <TextField
                                         error={subscriber_name_error || subscriber_name_too_long}
@@ -393,6 +299,7 @@ class About extends Component {
                                         value={subscriber_email}
                                     />
                                 </Grid>
+                                {recaptcha}
                                 <Grid container direction="column" justify="center" alignItems="center" style={{ position: 'relative', width:'100%' }}>
                                     <Button variant="contained" color="primary" className={classes.button} disabled={subscriber_loading} onClick={this.subscribe}>
                                         订阅我们
@@ -401,79 +308,6 @@ class About extends Component {
                                     {subscriber_loading && <CircularProgress size={24} className={classes.buttonProgress} />}
                                 </Grid>
                             </div>
-
-            const recaptcha = recaptcha_verify_error ? 
-                            <Grid container direction="column" justify="center" alignItems="center">
-                                <div className={classes.rechaptchaError}>请点击下面方块证明你不是机器人</div>
-                                <Recaptcha
-                                    sitekey="6LeVl44UAAAAAMWiMSxkYXPr338m_xAEEObKlMqW"
-                                    render="explicit"
-                                    onloadCallback={this.recaptchaOnLoad}
-                                    verifyCallback={this.recaptchaVerify}
-                                />
-                            </Grid> : 
-                            <Grid container direction="column" justify="center" alignItems="center">
-                                <Recaptcha
-                                    sitekey="6LeVl44UAAAAAMWiMSxkYXPr338m_xAEEObKlMqW"
-                                    render="explicit"
-                                    onloadCallback={this.recaptchaOnLoad}
-                                    verifyCallback={this.recaptchaVerify}
-                                />
-                            </Grid>
-                
-            const contactus = contactus_success ? 
-                                <div className={classes.thanksnote} style={{ marginTop: 40 }}>
-                                    <Grid container direction="column" justify="center" alignItems="center" style={{ height:'100%' }}>
-                                        感谢您的回馈，我们的团队会尽快回复您！
-                                    </Grid>
-                                </div> :
-                                <div style={{ width:'100%', marginTop: 40 }} id="wechat">
-                                    <Grid container direction="column" justify="center" alignItems="center">
-                                        <TextField
-                                            error={contactus_name_error || contactus_name_too_long}
-                                            required
-                                            id="contactName"
-                                            label= {contactus_name_too_long ? "请勿超过40字" : "请问如何称呼您"}
-                                            className={classes.textField}
-                                            margin="dense"
-                                            variant="outlined"
-                                            onChange={this.handleChange('contactus_name')}
-                                            value={contactus_name}
-                                        />
-                                        <TextField
-                                            error={contactus_email_error || contactus_email_too_long}
-                                            required
-                                            id="contactEmail"
-                                            label= {contactus_email_too_long ? "请勿超过40字" : "请输入邮件地址"}
-                                            className={classes.textField}
-                                            type="email"
-                                            margin="dense"
-                                            variant="outlined"
-                                            onChange={this.handleChange('contactus_email')}
-                                            value={contactus_email}
-                                        />
-                                        <TextField
-                                            error={contactus_message_error || contactus_message_too_long}
-                                            required
-                                            id="contactMessage"
-                                            label= {contactus_message_too_long ? "请勿超过1000字" : "请输入邮件内容"}
-                                            multiline
-                                            rows="4"
-                                            className={classes.textField}
-                                            margin="normal"
-                                            variant="outlined"
-                                            onChange={this.handleChange('contactus_message')}
-                                            value={contactus_message}
-                                            />
-                                    </Grid>
-                                    {recaptcha}
-                                    <Grid container direction="column" justify="center" alignItems="center" style={{ position: 'relative', width:'100%' }}>
-                                        <Button variant="contained" color="primary" className={classes.button} disabled={contactus_loading} onClick={this.contactus}>
-                                            联系我们
-                                        </Button>
-                                        {contactus_loading && <CircularProgress size={24} className={classes.buttonProgress} />}
-                                    </Grid>
-                                </div>
 
         return <Grid container justify="center">
             <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
@@ -488,7 +322,6 @@ class About extends Component {
             <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
                 <Grid container direction="column" justify="center" alignItems="center" className={classes.sidebar}>
                     {subscriber}
-                    {contactus}
                     {follower}
                     {wechat}
                 </Grid> 
