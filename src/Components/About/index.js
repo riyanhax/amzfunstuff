@@ -46,11 +46,6 @@ const styles = theme => ({
         marginTop: 20,
         width: '60%',
     },
-    email: {
-        marginTop: 20, 
-        height:'100%',
-        color: theme.palette.secondary.main,
-    },
     iconItem: {
         display: 'inline-block',
         cursor: 'pointer',
@@ -324,7 +319,7 @@ class About extends Component {
                     <p className={classes.paragraph}>说的不少了，请记住，人生苦短，<strong>请把生命浪费在有趣的东西上！</strong></p>
    
                     <h5 className={classes.paragraph}>Disclaimer</h5>
-                    <p className={classes.paragraph} style={{fontSize:12}}>The email that we may collect from you, depending on whether you register our email list or not, will be generally used to provide information and newsletters that may be of interest to you.</p>
+                    <p className={classes.paragraph} style={{fontSize:12}}>The email that we may collect from you, depending on whether you register our email list or not, will be only used to provide information and newsletters that may be of interest to you.</p>
                     <p className={classes.paragraph} style={{fontSize:12}}>We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
                 </Grid>  
             </Grid>
