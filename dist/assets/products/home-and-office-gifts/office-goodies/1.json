@@ -8,19 +8,7 @@
       "description": "想必你对『老友记』里罗斯因为莫妮卡做的火鸡三明治被人偷走而情绪失控的剧情记忆犹新吧？这款设计巧妙的防盗午餐袋让你精心准备的美味午餐看上去似乎长出了霉菌，有效防止垂涎美食的午餐盗贼",
       "price": 6,
       "likes": 1559,
-      "link": "http://www.amazon.com/dp/B00JLSVDYO/?tag=wuyongzhiqu-20",
-      "type": "amazon",
-      "category": "home-and-office-gifts",
-      "subcategory": "office-goodies"
-    },
-    {
-      "id": "H7L5yDkIbGK",
-      "titleCN": "脏话炸弹镇纸",
-      "titleEN": "F-Bomb Paperweight",
-      "description": "这款用可回收钢材打造的脏话炸弹镇纸，除了帮你保持办公桌上各种文件摘要和会议记录井然有序之外，还能用略显无厘头的幽默元素和反讽方式在严肃的职场环境里让人会心一笑",
-      "price": 44.99,
-      "likes": 935,
-      "link": "http://www.amazon.com/dp/B00KZ3027I/?tag=wuyongzhiqu-20",
+      "link": "https://www.amazon.com/dp/B00JLSVDYO/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "home-and-office-gifts",
       "subcategory": "office-goodies"
@@ -32,7 +20,19 @@
       "description": "睡觉睡到自然醒，数钱数到手抽筋儿？这款自带紫外线防伪功能、每分钟能清点1300张钞票的点钞机不但工作起来准确高效，类似蛤壳的设计也便于清洗保养，是高净值人士必备的私人定制",
       "price": 146.86,
       "likes": 181,
-      "link": "http://www.amazon.com/dp/B003NOJLYQ/?tag=wuyongzhiqu-20",
+      "link": "https://www.amazon.com/dp/B003NOJLYQ/?tag=wuyongzhiqu-20",
+      "type": "amazon",
+      "category": "home-and-office-gifts",
+      "subcategory": "office-goodies"
+    },
+    {
+      "id": "H7L5yDkIbGK",
+      "titleCN": "脏话炸弹镇纸",
+      "titleEN": "F-Bomb Paperweight",
+      "description": "这款用可回收钢材打造的脏话炸弹镇纸，除了帮你保持办公桌上各种文件摘要和会议记录井然有序之外，还能用略显无厘头的幽默元素和反讽方式在严肃的职场环境里让人会心一笑",
+      "price": 44.99,
+      "likes": 935,
+      "link": "https://www.amazon.com/dp/B00KZ3027I/?tag=wuyongzhiqu-20",
       "type": "amazon",
       "category": "home-and-office-gifts",
       "subcategory": "office-goodies"
