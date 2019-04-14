@@ -47,10 +47,10 @@ class Header extends Component {
         const vertical = <div className={classNames(classes.headerItem, classes.vertical)}></div>
         const title = <div className={classNames(classes.headerItem, classes.title)} onClick={() => this.props.navToLink('/', false)}>无用之趣</div>
 
-        const tumblr = <div onClick={() => this.props.navToLink('https://www.tumblr.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-tumblr-square')} style={{fontSize:18, marginLeft:10}} /></div>
-        const twitter = <div onClick={() => this.props.navToLink('https://www.twitter.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter-square')} style={{fontSize:18, marginLeft:10}} /></div>
-        const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook-square')} style={{fontSize:18, marginLeft:10}} /></div>
-        const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weibo')} style={{fontSize:18, marginLeft:10}} /></div>
+        const tumblr = <div onClick={() => this.props.navToLink('https://wuyongzhiqu.tumblr.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-tumblr-square')} style={{fontSize:18, marginLeft:10}} /></div>
+        const twitter = <div onClick={() => this.props.navToLink('https://twitter.com/wuyongzhiqu', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter-square')} style={{fontSize:18, marginLeft:10}} /></div>
+        const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com/wuyongzhiqu', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook-square')} style={{fontSize:18, marginLeft:10}} /></div>
+        const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com/6331003492', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weibo')} style={{fontSize:18, marginLeft:10}} /></div>
         const wechat = <div onClick={() => this.props.navToLink('/about#wechat', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weixin')} style={{fontSize:18, marginLeft:10}} /></div>
 
         return <Grid container className={classes.header}>   

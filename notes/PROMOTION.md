@@ -11,6 +11,19 @@
     * jianshu:
         * lia****3@gmail.com
         * 1****1
+    * tumblr:
+        * xi***fu@gmail.com
+        * b***H
+    * twitter:
+        * 旧账号
+    * facebook:
+        * 旧账号
+    * weibo:
+        * 00153***3
+        * b***H
+    * canva:
+        * xi***fu@gmail.com
+        * b***H
 
 * SEO
     * [tutorial](https://moz.com/learn/seo)
