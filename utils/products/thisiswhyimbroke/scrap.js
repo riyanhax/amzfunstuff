@@ -11,7 +11,7 @@ const kickstarterfilepath = __dirname + `/data/${currentDate}/kickstarter.json`
 const othersfilepath = __dirname + `/data/${currentDate}/others.json`
 
 // date to stop search (start date of last time)
-const dateToStop = '2018-11-17T09:05:00.000Z'
+const dateToStop = '2019-04-14T09:05:00.000Z'
 
 const main = async () => {
 
