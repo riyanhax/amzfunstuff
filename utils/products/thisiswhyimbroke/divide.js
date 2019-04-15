@@ -2,10 +2,10 @@
 
 const fs = require('fs')
 
-const currentDate = '2018-11-17'
+const currentDate = '2019-04-14'
 const amazonfilepath = __dirname + `/data/${currentDate}/amazon.json`
 const etsyfilepath = __dirname + `/data/${currentDate}/etsy.json`
-const kickstarterfilepath = __dirname + `/data/${currentDate}kickstarter.json`
+const kickstarterfilepath = __dirname + `/data/${currentDate}/kickstarter.json`
 const othersfilepath = __dirname + `/data/${currentDate}/others.json`
 
 const main = () => {

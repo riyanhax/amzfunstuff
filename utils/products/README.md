@@ -28,7 +28,11 @@
 
 ### divide data
 
+* create `amazon`, `etsy`, `kickstarter`, and `others` 4 folders
+
 * divide data in `amazon.json`, `etsy.json`, `kickstarter.json`, and `others.json` into corresponding folders with smaller batches (100 products per batch) for later process
+
+* move the origianl 4 json files under `archive` folder
 
 * command: `make divide-thisiswhyimbroke`
 
