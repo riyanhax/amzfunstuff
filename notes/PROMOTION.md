@@ -2,7 +2,16 @@
 
 ## weixin
 * [排版](https://www.jianshu.com/p/5326de235497)
-* [工具](https://www.135editor.com/)
+* [工具](https://www.135editor.com/) 
+
+* 排版
+    * 两端 16
+    * 段后 5
+    * 行间距 2
+    * 字间距 1
+    * 颜色 #d6fcf3
+    * 头部图片 canva blog image
+    * 底部图片 canva twitter image
 
 * accounts
     * zhihu: 
