@@ -89,6 +89,8 @@ buttons {
   text-align: left;
   color:#757575;
   margin-bottom: 25px;
+  line-height: 2;
+  letter-spacing: .6px;
 }
 
 .avatar {
@@ -115,12 +117,17 @@ buttons {
 
  /* paragragh */
 p {
-  line-height: 1.7;
+  line-height: 2;
   font-size: 16px;
   font-weight: 400;
   word-break: break-word!important;
+  letter-spacing: .6px;
   color:#000;
   margin-top: 30px;
+}
+
+p span {
+  background-color: #d6fcf3;
 }
 
 /* banner */
@@ -174,7 +181,7 @@ blockquote {
   text-align: left;
   padding: 1rem 1.2rem;
   width: 80%;  
-  margin: 1rem auto 2rem;
+  margin: 2rem auto 2rem;
   color: #4a4a4a;
   background: #E8E8E8;
 }
