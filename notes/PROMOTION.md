@@ -20,8 +20,8 @@
     * jianshu:
         * lia****3@gmail.com
         * 1****1
-    * tumblr:
-        * xi***fu@gmail.com
+    * instagram:
+        * she***83
         * b***H
     * twitter:
         * 旧账号

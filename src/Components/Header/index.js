@@ -47,7 +47,7 @@ class Header extends Component {
         const vertical = <div className={classNames(classes.headerItem, classes.vertical)}></div>
         const title = <div className={classNames(classes.headerItem, classes.title)} onClick={() => this.props.navToLink('/', false)}>无用之趣</div>
 
-        const tumblr = <div onClick={() => this.props.navToLink('https://wuyongzhiqu.tumblr.com', true)}><Icon className={classNames(classes.headerItem, 'fab fa-tumblr-square')} style={{fontSize:18, marginLeft:10}} /></div>
+        const instagram = <div onClick={() => this.props.navToLink('https://www.instagram.com/wuyongzhiqu', true)}><Icon className={classNames(classes.iconItem, 'fab fa-instagram')} style={{fontSize:18, marginLeft:10}} /></div>
         const twitter = <div onClick={() => this.props.navToLink('https://twitter.com/wuyongzhiqu', true)}><Icon className={classNames(classes.headerItem, 'fab fa-twitter-square')} style={{fontSize:18, marginLeft:10}} /></div>
         const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com/wuyongzhiqu', true)}><Icon className={classNames(classes.headerItem, 'fab fa-facebook-square')} style={{fontSize:18, marginLeft:10}} /></div>
         const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com/6331003492', true)}><Icon className={classNames(classes.headerItem, 'fab fa-weibo')} style={{fontSize:18, marginLeft:10}} /></div>
@@ -61,7 +61,7 @@ class Header extends Component {
                     </Grid>
                     <Grid item xs={4}>
                         <Grid container justify="flex-end" alignItems="center" style={{height:'100%'}}>  
-                            <Hidden xsDown>{tumblr}{twitter}{facebook}{weibo}{wechat}</Hidden>  
+                            <Hidden xsDown>{instagram}{twitter}{facebook}{weibo}{wechat}</Hidden>  
                         </Grid>
                     </Grid>
                 </Grid>

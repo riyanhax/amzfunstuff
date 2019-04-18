@@ -230,13 +230,13 @@ class About extends Component {
             recaptcha_verify_error
          } = this.state
 
-        const tumblr = <div onClick={() => this.props.navToLink('https://wuyongzhiqu.tumblr.com', true)}><Icon className={classNames(classes.iconItem, 'fab fa-tumblr-square')} style={{fontSize:30, marginLeft:10}} /></div>
+        const instagram = <div onClick={() => this.props.navToLink('https://www.instagram.com/wuyongzhiqu', true)}><Icon className={classNames(classes.iconItem, 'fab fa-instagram')} style={{fontSize:30, marginLeft:10}} /></div>
         const twitter = <div onClick={() => this.props.navToLink('https://twitter.com/wuyongzhiqu', true)}><Icon className={classNames(classes.iconItem, 'fab fa-twitter-square')} style={{fontSize:30, marginLeft:10}} /></div>
         const facebook = <div onClick={() => this.props.navToLink('https://www.facebook.com/wuyongzhiqu', true)}><Icon className={classNames(classes.iconItem, 'fab fa-facebook-square')} style={{fontSize:30, marginLeft:10}} /></div>
         const weibo = <div onClick={() => this.props.navToLink('https://www.weibo.com/6331003492', true)}><Icon className={classNames(classes.iconItem, 'fab fa-weibo')} style={{fontSize:30, marginLeft:10}} /></div>
 
         const follower = <Grid container justify="center" alignItems="center" className={classes.follower}>  
-                                {tumblr}{twitter}{facebook}{weibo}
+                                {instagram}{twitter}{facebook}{weibo}
                             </Grid>
 
         const wechat = <Grid container direction="column" justify="center" alignItems="center">
