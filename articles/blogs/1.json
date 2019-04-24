@@ -1,5 +1,5 @@
 {
-    "next": false,
+    "next": true,
     "articles": [
       {
         "title": "『无用之趣』网站的来历",
@@ -120,18 +120,6 @@
         "category":"假装知识分子",
         "date": "2019-04-15",
         "likes": 113
-      },
-      {
-        "title": "让直男大开眼界的女同性恋隐晦『暗语』",
-        "summary": "『伯爵红茶』是什么隐喻？『Lickalotapus』是哪种恐龙？送你鞋带儿的那个朋友是『Dorothy』还是『Ellen』还是『Kiyoko』？你的新车是『斯巴鲁』吗？",
-        "link": "/articles/blogs/lesbian-codes.html",
-        "image": "blog11",
-        "id": "b-11",
-        "author":"胡萝卜先生",
-        "avatar":"J",
-        "category":"假装知识分子",
-        "date": "2019-04-19",
-        "likes": 98
       }
     ]
 }
