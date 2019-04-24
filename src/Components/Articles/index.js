@@ -124,7 +124,7 @@ class Articles extends Component {
         let articles = []
         while(next){
             const content = await axios.get(`${articlesURL}/${counter}.json`)
-            articles = content.data.articles.concat(articles)
+            articles = articles.concat(content.data.articles)
             counter++
             next = content.data.next
         }
