@@ -9,13 +9,11 @@ import Articles from './Articles'
 import About from './About'
 import MyFavs from './MyFavs'
 import categories from '../menus/categories'
-import subcategories from '../menus/subcategories'
 
 class App extends Component {
 
   state = {
     categories,
-    subcategories,
     mobileOpen: false,
   }
 
@@ -53,8 +51,8 @@ class App extends Component {
     }
   }
 
-  // create routes based on categories and subcategories
-  createRoutes = (categories, subcategories) => {
+  // create routes based on categories
+  createRoutes = (categories) => {
     const routes = []
     const reload = () => window.location.reload()
 
@@ -72,13 +70,6 @@ class App extends Component {
         routes.push(<Route exact key={id} path={categories[id].link} component={MyFavs} />)
       }else{
         routes.push(<Route exact key={id} path={categories[id].link} component={Products} />)
-
-        const subs = subcategories[id];
-        if(subs){
-          for(const sub of subs){
-            routes.push(<Route exact key={sub.id} path={sub.link} component={Products} />)
-          }
-        }
       }
     }
     
@@ -93,13 +84,13 @@ class App extends Component {
 
   render() {
 
-    const { categories, subcategories } = this.state
+    const { categories } = this.state
 
     return (
       <Provider value={this.getContext()}>
         <BrowserRouter>
           <Layout>
-            {this.createRoutes(categories, subcategories)}
+            {this.createRoutes(categories)}
           </Layout>
         </BrowserRouter>
       </Provider>

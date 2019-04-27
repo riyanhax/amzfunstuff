@@ -136,7 +136,7 @@ class Product extends Component {
         const adjustedWidth = viewWidth * viewWidthRatio > maxWidth ? maxWidth : viewWidth * viewWidthRatio
         const adjustedHeight = adjustedWidth * heightToWidthRatio
 
-        const navToLink = product.subcategory != '' ? `/products/${product.category}/${product.subcategory}/${product.id}` : `/products/${product.category}/${product.id}`
+        const navToLink = `/products/${product.category}/${product.id}`
 
         return <Grid item onClick={() => {this.props.logEvent('product', product.id, product.titleCN)}}>
                     <Grid container justify="center">
@@ -180,7 +180,7 @@ class Product extends Component {
         
         const priceIcons = this.getPriceIcons(product.price, classes)
 
-        const navToLink = product.subcategory != '' ? `/products/${product.category}/${product.subcategory}/${product.id}` : `/products/${product.category}/${product.id}`
+        const navToLink = `/products/${product.category}/${product.id}`
 
         return <Grid item style={{ marginBottom: 20 }} onClick={() => {this.props.logEvent('product', product.id, product.titleCN)}}>
                     <Grid container justify="center">

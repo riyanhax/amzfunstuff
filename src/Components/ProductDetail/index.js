@@ -122,13 +122,12 @@ class ProductDetail extends Component {
         let links = window.location.href.split('products')[1]
         links= links.split('/')
         const category = links.length == 4 ? links[links.length-3] : links[links.length-2]
-        const subcategory = links.length == 4 ? links[links.length-2] : ''
         const productId = links[links.length-1]
 
         let product = JSON.parse(localStorage.getItem(`amzfunstuff-${productId}`))
 
         if(product == null){
-            this.loadProduct(category, subcategory, productId)
+            this.loadProduct(category, productId)
         }else{
             this.setState({ product })
         }
@@ -139,14 +138,9 @@ class ProductDetail extends Component {
     }
 
     // load product
-    loadProduct = async (category, subcategory, productId) => {
+    loadProduct = async (category, productId) => {
         // load products
-        let productsURL = null
-        if(subcategory != null && subcategory != ''){
-            productsURL = `/assets/products/${category}/${subcategory}`
-        }else{
-            productsURL = `/assets/products/${category}`
-        } 
+        let productsURL = `/assets/products/${category}`
         let next = true
         let counter = 1
         let products = []
@@ -351,7 +345,7 @@ class ProductDetail extends Component {
             this.props.navToLink('/', false)
         }else{
             content = this.createContent(classes, product, viewWidth, liked)
-            related = <Products category={product.category} subcategory={product.subcategory} />
+            related = <Products category={product.category} />
         }
         
         return <Grid container justify="center" alignItems="center">

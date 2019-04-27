@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import classNames from 'classnames/bind'
 import {
-    MenuList, MenuItem, ListItemIcon, Icon, Divider
+    MenuItem, ListItemIcon, Icon, Divider
 } from '@material-ui/core'
 import { compose } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
@@ -49,7 +49,7 @@ const styles = theme => ({
 class Nav extends Component {
 
     // used to create nav and subnav in the drawer
-    createMenus = (categories, subcategories, pathname, classes) => {
+    createMenus = (categories, pathname, classes) => {
         const menus = []
 
         for(const id of Object.keys(categories)){
@@ -84,48 +84,15 @@ class Nav extends Component {
                                 <span className={navClass}>{navName}</span>
                             </MenuItem>
             menus.push(navItem);
-            
-            /* uncomment the following code if want to re-introduce sub categories */
-            // const subs = subcategories[id];
-            // if(subs){
-            //     const submenus = [];
-                
-            //     for(const sub of subs){
-            //     // if sub items exists, iterate sub nav items
-            //     if(sub.show != true){
-            //         continue
-            //     }
-            //     const subId = sub.id;
-            //     const subNavTo = sub.link;
-            //     const subNavname = sub.name;
-            //     const icon = <Icon className={classNames(classes.icon, sub.icon)} style={{fontSize:20}} />
-
-            //     const visible = (navTo === pathname || navTo === `/${pathname.split('/')[1]}`)
-            //     const selected = subNavTo === pathname
-            //     const menuItemClass = visible ? selected ? classNames(classes.menuItemSelected, classes.nested) : classNames(classes.menuItem, classes.nested) : classes.hidden
-            //     const subNavClass = selected ? classes.subNavSelected : classes.subNav
-
-            //     const subNavItem = <MenuItem to={subNavTo} key={subId} className={menuItemClass} component={Link} selected={subNavTo === pathname} onClick={this.props.handleDrawerToggle}>
-            //                             <ListItemIcon className={classes.icon}>
-            //                             {icon}
-            //                             </ListItemIcon>
-            //                             <span className={subNavClass}>{subNavname}</span>
-            //                         </MenuItem>
-            //     submenus.push(subNavItem);
-            //     }
-
-            //     const listid = `/${id}-subs`
-            //     menus.push(<MenuList key={listid} className={(navTo === pathname || navTo === `/${pathname.split('/')[1]}`) ? classes.nested : classes.hidden}>{submenus}</MenuList>)
-            // }
         }
 
         return menus;
     }
 
     render() {
-        const { classes, location: { pathname }, categories, subcategories } = this.props
+        const { classes, location: { pathname }, categories } = this.props
 
-        return this.createMenus(categories, subcategories, pathname, classes)
+        return this.createMenus(categories, pathname, classes)
     }
 }
 

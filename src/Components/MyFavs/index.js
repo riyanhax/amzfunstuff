@@ -47,7 +47,7 @@ class MyFavs extends Component {
                         <Grid container direction="column" justify="center" alignItems="center">
                             <div className={classes.note}>如果您使用手机或平板电脑，在主页面会看不到“喜欢”按钮，请点击产品标题进入详细页面进行操作</div>
                             <div className={classes.note}>本页中的数据依赖于缓存，如果您使用了不同的设备或者清除过缓存，则可能无法看到之前保存的记录</div>
-                            <Products category={'myfavs'} subcategory={'dummyvalue'} /> 
+                            <Products category={'myfavs'} /> 
                         </Grid>
                     </div>
         }else if(value == 1){

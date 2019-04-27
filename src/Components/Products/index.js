@@ -80,12 +80,10 @@ class Products extends Component {
         const { location: { pathname } } = this.props
 
         let category = null
-        let subcategory = null 
 
-        // if used as related products in product detail component, then these 2 props would be passed; otherwise, it's used as independent component
-        if(this.props.category != null && this.props.subcategory != null){
+        // if used as related products in product detail component, then category props would be passed; otherwise, it's used as independent component
+        if(this.props.category != null){
             category = this.props.category
-            subcategory = this.props.subcategory
             if(category == 'myfavs'){
                 this.setState({ type: 'myfavs' })
             }else{
@@ -93,24 +91,20 @@ class Products extends Component {
             }
         }else{
             category = pathname.split('/')[1]
-            subcategory = pathname.split('/')[2]
             this.setState({ type:'independent' }) 
 
-            this.props.logPageView(category+'/'+subcategory)
+            this.props.logPageView(category)
         }
         
         // console.log('pathname ', pathname)
         // console.log('category ', category)
-        // console.log('subcategory ', subcategory)
 
         this.loadLiked()
 
         if((pathname != null && pathname == '/') || category == 'myfavs'){
             this.loadProducts('whatsnew', null)
-        }else if(category != null && subcategory == null){
-            this.loadProducts(category, null)
-        }else if(category != null && subcategory != null){
-            this.loadProducts(category, subcategory)
+        }else if(category != null){
+            this.loadProducts(category)
         }
     }
 
@@ -142,26 +136,18 @@ class Products extends Component {
     }
 
     // load products (load once for all) 
-    loadProducts = async (category, subcategory) => {
+    loadProducts = async (category) => {
         // load product info
         let info = await axios.get('/assets/info.json')
         info = info.data
         if(category != 'whatsnew' && category != 'myfavs'){
             info = info[category]
-            if(subcategory != null){
-                info = info[subcategory]
-            }
         }else{
             info = null
         } 
  
         // load products
-        let productsURL = null
-        if(subcategory != null && subcategory != ''){
-            productsURL = `/assets/products/${category}/${subcategory}`
-        }else{
-            productsURL = `/assets/products/${category}`
-        } 
+        let productsURL = productsURL = `/assets/products/${category}`
         let next = true
         let counter = 1
         let index = null
