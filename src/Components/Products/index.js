@@ -93,7 +93,7 @@ class Products extends Component {
             category = pathname.split('/')[1]
             this.setState({ type:'independent' }) 
 
-            this.props.logPageView(category)
+            this.props.logPageView(category+'/')
         }
         
         // console.log('pathname ', pathname)
