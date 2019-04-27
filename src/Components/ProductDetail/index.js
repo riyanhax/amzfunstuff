@@ -140,7 +140,7 @@ class ProductDetail extends Component {
     // load product
     loadProduct = async (category, productId) => {
         // load products
-        let productsURL = `/assets/products/${category}`
+        let productsURL = `/assets/products/whatsnew`
         let next = true
         let counter = 1
         let products = []
